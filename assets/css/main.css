@@ -996,22 +996,22 @@ footer img {
     right: -200px;
 }
 .circle-left {
-    height: 800px;
-    width: 800px;
+    height: 1000px;
+    width: 1000px;
     border-radius: 100%;
     top: 50%;
     left: -200px;
 }
 .circle-right {
-    height: 800px;
-    width: 800px;
+    height: 1000px;
+    width: 1000px;
     border-radius: 100%;
     top: 30%;
     right: -200px;
 }
 .circle-right-2 {
-    height: 800px;
-    width: 800px;
+    height: 1000px;
+    width: 1000px;
     border-radius: 100%;
     top: 70%;
     right: -200px;

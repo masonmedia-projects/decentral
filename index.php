@@ -93,9 +93,10 @@ include 'includes/header.php';
         </div>
     </div><!--end row-->
      
-     <div class="row d-flex bg-light">
-        <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/jaxx-imac-white-2.jpg" class="img-full absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
+     <div class="row d-flex bg-white">
+        <div class="col-lg-12 min-700-lg d-flex flex-column justify-content-center align-items-center">
+            <img data-src="/assets/img/jaxx-imac-white.jpg" class="img-full absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
+<!--            <img data-src="/assets/img/jaxx-macbook-air.png" class="w-75 absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">-->
         </div>
     </div>
       
