@@ -37,7 +37,7 @@ PHP is used minimally for header and footer includes.
 
 4. Class order conventions:
 
-    - With layout elements classes generally proceed in the same order (with some variation depending on when edits were made or if certain individual elements needed specific treatment):
+    - With layout elements, classes generally proceed in the same order (with some variation depending on when edits were made or if certain individual elements needed specific treatment):
         - structural element (`.container, .row, .column`)
         - height (`.min-500`)
         - alignment (bootstrap flexbox alignment classes)
@@ -56,8 +56,8 @@ PHP is used minimally for header and footer includes.
         - animation classes
 
 5. Height units
-    - initially `vh` was used throughout for base layout heights, ranging from .min-100 to .min-70 and .min-50 classes. Google Chrome (as of Sept 18, 2018) has a 'bug' (they claim it's intentional) with vh units on mobile where the browser repaints vh elements causing janky scroll behaviour.
-    - an alternative in Jaxx Liberty version 2.0 is using fixed heights but with the min-height css selector. Base heights are now `.min-700`, with an `-lg` class added to make 700px ~ 500px @media (max-width: 768px), `.min-500`, `.min-400`, and `min-300`, the latter primarily for images. This solves the jank issue and offers good scroll UX.
+    - initially `vh` was used throughout for base layout heights, ranging from `.min-100` to `.min-70` and `.min-50` classes. Google Chrome (as of Sept 18, 2018) has a 'bug' (they claim it's intentional) with vh units on mobile where the browser repaints vh elements causing janky scroll behaviour.
+    - an alternative in Jaxx Liberty version 2.0 is using fixed heights but with the min-height css selector. Base heights are now `.min-700`, with an `-lg` class added to make 700px ~ 500px @media (max-width: 768px), `.min-500`, `.min-400`, and `.min-300`, the latter primarily for images. This solves the jank issue and offers good scroll UX.
 
 ## **JS**
 
