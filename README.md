@@ -4,9 +4,9 @@ The official website of Jaxx Liberty, the leading Multi-Platform Cryptocurrent W
 
 For more information see [jaxx.io](https://jaxx.io) and [decentral.ca](https://decentral.ca).
 
-## SWUP**
+## **SWUP**
 
-This version of decentral.ca is essentially the same though uses SWUP as a framework for AJAX page transitions and the addition of entrance/exit animation classes. Like smoothstate, this gives it an app feel, as pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple css for animations.
+This version of decentral.ca is essentially the same though uses [SWUP](https://github.com/gmrchk/swup) as a framework for AJAX page transitions and the addition of entrance/exit animation classes. Like smoothstate, this gives the site an app feel, as pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple (or complex) css animations.
 
 Compared to smoothstate.js - the library used on decentral.ca first version - SWUP's implementation is much easier, uses less code, and is more flexible in terms of animation, onAfter reinitialization of js and plugins, with simple css animations that can be applied to any element. Smoothstate seemed to be more finnicky and got bogged down a bit in terms of performance when used with large numbers of images, and with animations other than relatively simple fading.
 
@@ -28,12 +28,12 @@ PHP is used minimally for header and footer includes.
 
 3. Naming conventions: 
 
-    - titles and headings: `site-title`, `page-title`, `section-title`
-    - p description subheadings and CTAs: `p-big`, `p-btn`
+    - titles and headings: `.site-title`, `.page-title`, `.section-title`
+    - p description subheadings and CTAs: `.p-big`, `.p-btn`
     - fonts: `Helvetica Neue` is the primary theme font.
-    - background images: `bg--...`
-    - background colors: `bg-...`
-    - logos and icons: `decentral-logo`
+    - background images: `.bg--...`
+    - background colors: `.bg-...`
+    - logos and icons: `.decentral-logo`
 
 4. Class order conventions:
 

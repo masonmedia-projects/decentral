@@ -38,6 +38,7 @@ include 'includes/header.php';
         <div class="offset-lg-5"></div>
     </div>
    
+<!--
    <div class="row d-flex min-100 min--100 bg-black relative">
         <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-black-fluorescents.jpeg" alt="">
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left text-light ts p-5">
@@ -47,6 +48,7 @@ include 'includes/header.php';
         </div>
         <div class="offset-lg-5"></div>
     </div>
+-->
     
 <!--
     <div class="row d-flex min-100 min--100 bg--home-banner-2 lazy">
