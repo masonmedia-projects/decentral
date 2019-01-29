@@ -10,7 +10,7 @@ include 'includes/header.php';
 
 <!--banner-->
 
-    <div role="banner" class="container-fluid">
+    <div role="banner" class="container-fluid p-0">
         <div class="row d-flex min-700-lg bg-white text-secondary py-5 scene_element scene_element--fadein">
             <div class="offset-lg-2"></div>
             <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center p-5">
@@ -24,7 +24,7 @@ include 'includes/header.php';
    
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-phone-hand-car.jpg" alt="Leading the blockchain market into 2019.">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-phone-hand-car-2.jpg" alt="Leading the blockchain market into 2019.">
         </div>
     </div>
 

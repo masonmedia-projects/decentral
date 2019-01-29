@@ -28,15 +28,17 @@ include 'includes/header.php';
     </div>
 -->
   
-  <div class="row d-flex min-100 min--100 bg-black text-light relative scene_element scene_element--fadein">
-        <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
+  <div class="row d-flex min-100 min--100 bg-black text-light relative">
+        <img class="img-full min-700-lg absolute z-0 left-0 transition-fade up lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
-            <h1 class="h4 scene_element scene_element--fadeindown">Canada's leading blockchain company</h1>
-            <h2 class="site-title knockout-gradient text-light font-weight-bold scene_element scene_element--fadeinleft">Changing the world through decentralized technologies.</h2>
-            <i href="#sec-1" class="fa fa-angle-down knockout-gradient p-0 scene_element scene_element--fadeinup"></i>
+            <h1 class="h4 transition-fade down">Canada's leading blockchain company</h1>
+            <h2 class="site-title knockout-gradient text-light font-weight-bold transition-fade right">Changing the world through decentralized technologies.</h2>
+            <i href="#sec-1" class="fa fa-angle-down knockout-gradient p-0 transition-fade up"></i>
         </div>
         <div class="offset-lg-5"></div>
     </div>
+    
+</div>
    
 <!--
    <div class="row d-flex min-100 min--100 bg-black relative">
@@ -80,22 +82,22 @@ include 'includes/header.php';
 
    <!--main body-->
 
-<div class="container-fluid p-0 text-secondary scene_element scene_element--fadein">
+<div class="container-fluid p-0 text-secondary up">
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
             <h2 class="h4">About Decentral</h2>
             <h3 class="section-title text-dark">Canada's leading blockchain company.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 scene_element scene_element--fadeinright">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
+            <p class="p-big pt-3">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
             <a href="/about.php"><p class="p-btn mt-3">Discover &#8594;</p></a>  
         </div>
     </div><!--end row-->
      
      <div class="row d-flex bg-white">
         <div class="col-lg-12 min-700-lg d-flex flex-column justify-content-center align-items-center">
-            <img data-src="/assets/img/jaxx-imac-white.jpg" class="img-full absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
+            <img data-src="/assets/img/jaxx-imac-white.jpg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
 <!--            <img data-src="/assets/img/jaxx-macbook-air.png" class="w-75 absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">-->
         </div>
     </div>
@@ -115,7 +117,7 @@ include 'includes/header.php';
 
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/jaxx-group-people.jpg" class="img-full absolute z-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">
+            <img data-src="/assets/img/jaxx-group-people.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">
         </div>
     </div>
     
@@ -133,7 +135,7 @@ include 'includes/header.php';
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/decentral-toronto-flatiron.jpeg" class="img-full absolute z-0 lazy" alt="Decentral is a critical node in a growing network of companies using decentralized technologies.">
+            <img data-src="/assets/img/decentral-toronto-flatiron.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is a critical node in a growing network of companies using decentralized technologies.">
         </div>
     </div>
     
@@ -152,7 +154,7 @@ include 'includes/header.php';
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/jaxx-testimonials.jpeg" class="img-full absolute z-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
+            <img data-src="/assets/img/jaxx-testimonials.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
         </div>
     </div>
     
@@ -296,7 +298,7 @@ include 'includes/header.php';
 
      <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-full absolute z-0 lazy" alt="Decentral" title="Decentral Inc.">
+            <img src="/assets/img/decentral-community-red.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral" title="Decentral Inc.">
         </div>
     </div>
      

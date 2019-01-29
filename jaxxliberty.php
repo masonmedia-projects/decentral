@@ -10,7 +10,7 @@ include 'includes/header.php';
 
 <!--banner-->
 
-<div role="banner" class="container-fluid">
+<div role="banner" class="container-fluid p-0">
     <div class="row d-flex min-700-lg py-5 bg-white text-secondary scene_element scene_element--fadein">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-3 scene_element scene_element--fadeinright">Your all-in-one digital asset wallet</h1>

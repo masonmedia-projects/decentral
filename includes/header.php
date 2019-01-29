@@ -75,7 +75,7 @@
     
        
        <!--nav-->
-        <nav id="menu" class="navbar fixed-top navbar-expand-lg scene_element scene_element--fadeindown">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg">
             <a class="navbar-brand" href="/index.php">
                 <img class="decentral-navbar-brand lazy" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             </a>

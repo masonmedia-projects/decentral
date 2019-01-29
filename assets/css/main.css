@@ -87,12 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html,
 body {
     background: black;
 	font-family: 'Helvetica Neue', Avenir, Helvetica, sans-serif;
 	overflow-x: hidden;
-    max-width: 2000px;
+    max-width: 1500px;
     margin: auto;
 	width: 100%;
 }
@@ -446,7 +445,7 @@ p {
 .z-2 {
 	z-index: 2;
 }
-/* animation */
+/* animation ===================*/
 
 .animated-slow {
 	-webkit-animation-duration: 2s;
@@ -456,13 +455,54 @@ p {
 }
 
 /*SWUP transition animations*/
+
+
+/*fade*/
 .transition-fade {
     transition: .4s;
+    transition-timing-function: ease-in-out;
     opacity: 1;
 }
-html.is-animating .transition-fade{
+.is-animating .transition-fade {
     opacity: 0;
 }
+/*fade-down*/
+.down {
+    transition: 1s;
+    transform: translateY(0);
+}
+.is-animating .down {
+    transform: translateY(-100px);
+}
+
+/*fade right*/
+.right {
+    transition: 1s;
+    transform: translateX(0);
+}
+.is-animating .right {
+    transform: translateX(-100px);
+}
+/*fade left*/
+.left {
+    transition: 1s;
+    transform: translateX(0);
+}
+.is-animating .left {
+    transform: translateX(100px);
+}
+
+/*fade-up*/
+.up {
+    transition: 1s;
+    transform: translateY(0);
+}
+.is-animating .up {
+    transform: translateY(100px);
+}
+
+
+
 
 /* colors ===================*/
 
@@ -922,7 +962,7 @@ footer img {
 	background-size: cover;
 }
 
-/* history ======================*/
+/* history timeline ======================*/
 
 .timeline-item {
   padding: 3em 2em 2em;

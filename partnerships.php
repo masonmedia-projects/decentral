@@ -11,12 +11,12 @@ include 'includes/header.php';
 <!--banner-->
     
 <div id="home" role="banner" class="container-fluid bg-black relative p-0">  
-    <div class="row d-flex min-700-lg text-light ts py-5 scene_element scene_element--fadein">
-        <img class="img-full min-700-lg absolute z-0 left-0 filter-dark lazy" data-src="/assets/img/decentral-partnerships-banner.jpeg" alt="Decentral partnerships.">  
+    <div class="row d-flex min-700-lg text-light ts py-5 px-0">
+        <img class="img-full absolute z-0 left-0 filter-dark lazy" data-src="/assets/img/decentral-partnerships-dark.jpeg" alt="Decentral partnerships.">  
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5 mt-5">
-            <h1 class="h4 mt-3 scene_element scene_element--fadeindown">Decentral partnerships</h1>
-            <h2 class="site-title font-weight-bold scene_element scene_element--fadeinleft">Work with Canada's leading blockchain company.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0 scene_element scene_element--fadeinup"></i></a>
+            <h1 class="h4 mt-3">Decentral partnerships</h1>
+            <h2 class="site-title font-weight-bold">Work with Canada's leading blockchain company.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
         </div>
         <div class="offset-lg-3"></div>
     </div>
@@ -24,7 +24,7 @@ include 'includes/header.php';
 
    <!--main body-->
 
-<div class="container-fluid p-0 text-secondary relative scene_element scene_element--fadein">
+<div class="container-fluid p-0 text-secondary relative p-0">
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">

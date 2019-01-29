@@ -1,6 +1,6 @@
  <!--footer-->
         <footer>
-            <div class="container-fluid scene_element scene_element--fadeinup">
+            <div class="container-fluid p-0">
                 <div class="row d-flex d-flex justify-content-center align-items-end text-secondary bg-light text-secondary px-3 pt-5">
                    <div class="col-lg-3 col-md-6 px-4 py-3 skew">
                         <ul class="list-unstyled w-100">
