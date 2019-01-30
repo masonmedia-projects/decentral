@@ -598,6 +598,7 @@ p {
 }
 
 /*lazy loading classes*/
+
 img {
   opacity: 0;
   transition: opacity .5s ease-in;
@@ -607,7 +608,8 @@ img.lazy-loaded {
     opacity: 1;
 } 
 
-footer img {
+footer img,
+img.decentral-navbar-brand {
     opacity: 1;
 }
 
@@ -1447,6 +1449,7 @@ footer li a {
     .site-title {
         font-size: 54px;
         font-size: 48px;
+        font-size: 13vmin;
     }
     .img--banner {
         width: 50%;

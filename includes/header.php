@@ -71,13 +71,13 @@
         </script>
   </head>
   <body>
-<!--    <div class="m-scene" id="main">-->
+    <div id="swup" class="transition-fade">
     
        
        <!--nav-->
-        <nav id="menu" class="navbar fixed-top navbar-expand-lg">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg down">
             <a class="navbar-brand" href="/index.php">
-                <img class="decentral-navbar-brand lazy" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+                <img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             
@@ -87,6 +87,7 @@
                   <div class="line-menu"></div>
                   <div class="line-menu half end"></div>
                 </div>
+                
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -116,5 +117,5 @@
         </nav>
         <!--end nav--> 
         
-        <div id="swup" class="transition-fade">
+<!--        <div id="swup" class="transition-fade">-->
         

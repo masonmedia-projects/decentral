@@ -29,7 +29,6 @@ $(document).ready(function() {
         })
 });
 
-
 //close mobile nav on click
 $(document).ready(function() {
     $('.nav-link, body').on('click',function() {
@@ -88,7 +87,7 @@ document.addEventListener('swup:contentReplaced', function () {
 
     //mobile menu animation
 
-    var wrapperMenu = document.querySelector('.wrapper-menu');
+    var wrapperMenu = document.querySelector('.wrapper-menu, .nav-item');
         wrapperMenu.addEventListener('click', function(){
         wrapperMenu.classList.toggle('open');  
         })
