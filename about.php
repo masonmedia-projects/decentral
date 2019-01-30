@@ -49,7 +49,7 @@ include 'includes/header.php';
                 <h3 class="section-title text-dark mb-0">Redefining.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-                <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Jaxx Classic, a leading multi-platform digital wallet with over a million downloadeds, was developed in 2015 by Anthony Di Iorio, co-founder of Ethereum, and founder and CEO of Decentral Inc. Jaxx Classic was created to give people an easy way to manage their digital assets and virtual lives.</p>
+                <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Jaxx Classic, a leading multi-platform digital wallet with over a million downloads, was developed in 2015 by Anthony Di Iorio, co-founder of Ethereum, and founder and CEO of Decentral Inc. Jaxx Classic was created to give people an easy way to manage their digital assets and virtual lives.</p>
             </div>
         </div><!--end row-->
             
