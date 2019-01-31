@@ -11,16 +11,16 @@ include 'includes/header.php';
 <!--banner-->
 
 <div role="banner" class="container-fluid p-0">
-    <div class="row d-flex min-700-lg py-5 bg-white text-secondary scene_element scene_element--fadein">
+    <div class="row d-flex min-700-lg py-5 bg-white text-secondary">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 mt-3 scene_element scene_element--fadeinright">Your all-in-one digital asset wallet</h1>
-            <h2 class="section-title knockout-gradient font-weight-bold scene_element scene_element--fadeindown">Jaxx Liberty is an industry leading investment tool that is reshaping the way people manage their digital portfolios.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0 scene_element scene_element--fadeinup"></i></a>
+            <h1 class="h4 mt-3">Your all-in-one digital asset wallet</h1>
+            <h2 class="section-title knockout-gradient font-weight-bold">Jaxx Liberty is an industry leading investment tool that is reshaping the way people manage their digital portfolios.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
         </div>
         <div class="offset-lg-4"></div>
     </div>
   
-    <div class="row d-flex bg-light relative scene_element scene_element--fadein">
+    <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
             <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-2-people-selfie.jpeg" alt="Jaxx Classic">
         </div>
@@ -29,12 +29,12 @@ include 'includes/header.php';
 
    <!--main body-->
 
-<div id="sec-1" class="container-fluid p-0 text-secondary scene_element scene_element--fadein">
+<div id="sec-1" class="container-fluid p-0 text-secondary">
         
     <div class="row d-flex min-500 bg-white py-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 scene_element scene_element--fadeinright">Transforming the way you invest</h1>
-            <h2 class="section-title font-weight-bold scene_element scene_element--fadeindown">Securely manage and exchange more than 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash, all for free.</h2>
+            <h1 class="h4">Transforming the way you invest</h1>
+            <h2 class="section-title font-weight-bold">Securely manage and exchange more than 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash, all for free.</h2>
         </div>
         <div class="offset-lg-4"></div>
     </div>
@@ -47,8 +47,8 @@ include 'includes/header.php';
       
     <div class="row d-flex min-500 bg-white py-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 scene_element scene_element--fadeinright">Features</h1>
-            <h2 class="section-title font-weight-bold scene_element scene_element--fadeindown">Get the latest blockchain headline news, real-time market data, check your portfolio, and exchange between digital assets all in one convenient place.</h2>
+            <h1 class="h4">Features</h1>
+            <h2 class="section-title font-weight-bold">Get the latest blockchain headline news, real-time market data, check your portfolio, and exchange between digital assets all in one convenient place.</h2>
         </div>
         <div class="offset-lg-4"></div>
     </div>
@@ -62,8 +62,8 @@ include 'includes/header.php';
 <!--      security-->
       <div class="row d-flex min-500 bg-white py-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 scene_element scene_element--fadeinright">Security</h1>
-            <h2 class="section-title font-weight-bold scene_element scene_element--fadeindown">Enjoy industry leading security features including a 12-word backup phrase,  password protection, password strength checker, facial recognition, and state-of-the-art encryption.</h2>
+            <h1 class="h4">Security</h1>
+            <h2 class="section-title font-weight-bold">Enjoy industry leading security features including a 12-word backup phrase,  password protection, password strength checker, facial recognition, and state-of-the-art encryption.</h2>
         </div>
         <div class="offset-lg-4"></div>
     </div>  
@@ -78,8 +78,8 @@ include 'includes/header.php';
       
     <div class="row d-flex min-500 bg-white py-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 scene_element scene_element--fadeinright">Support</h1>
-            <h2 class="section-title font-weight-bold scene_element scene_element--fadeindown">Jaxx Liberty's world class User Success Team is available to answer all of your questions through our written channels, 24/7.</h2>
+            <h1 class="h4">Support</h1>
+            <h2 class="section-title font-weight-bold">Jaxx Liberty's world class User Success Team is available to answer all of your questions through our written channels, 24/7.</h2>
         </div>
         <div class="offset-lg-4"></div>
     </div>
@@ -94,8 +94,8 @@ include 'includes/header.php';
       
       <div class="row d-flex min-500 bg-white py-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 scene_element scene_element--fadeinright">Community</h1>
-            <h2 class="section-title font-weight-bold scene_element scene_element--fadeindown">Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.</h2>
+            <h1 class="h4">Community</h1>
+            <h2 class="section-title font-weight-bold">Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.</h2>
         </div>
         <div class="offset-lg-4"></div>
     </div>

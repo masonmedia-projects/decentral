@@ -12,7 +12,7 @@ include 'includes/header.php';
     
 <div id="home" role="banner" class="container-fluid bg-black relative p-0">  
     <div class="row d-flex min-700-lg text-light ts py-5 px-0">
-        <img class="img-full absolute z-0 left-0 filter-dark lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Decentral partnerships.">  
+        <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Decentral partnerships.">  
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5 mt-5">
             <h1 class="h4 mt-3">Decentral partnerships</h1>
             <h2 class="site-title font-weight-bold">Work with Canada's leading blockchain company.</h2>
@@ -27,13 +27,13 @@ include 'includes/header.php';
 <div class="container-fluid p-0 text-secondary relative p-0">
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Working together</h2>
             <h3 class="section-title text-dark">Canada's blockchain innovators.</h3>
-            <p class="p-big pt-3 scene_element scene_element--fadeinright">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
+            <p class="p-big pt-3">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 scene_element scene_element--fadeinright">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant Internet of the future.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+            <p class="p-big pt-3">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant Internet of the future.</p>
         </div>
     </div><!--end row-->
    
@@ -46,13 +46,13 @@ include 'includes/header.php';
     <!--relationships-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">The way forward</h2>
             <h3 class="section-title text-dark">Building relationships.</h3>
             <p class="p-big pt-3 scene_element scene_element--fadeinright">Mutually beneficial partnerships are the best way forward on this mission.</p>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">To that end Decentral is building relationships with a variety of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+            <p class="p-big pt-3 m-0">To that end Decentral is building relationships with a variety of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
         </div>
     </div><!--end row-->
     
@@ -65,12 +65,12 @@ include 'includes/header.php';
     <!--integrations-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Integrations</h2>
             <h3 class="section-title text-dark">The Jaxx Liberty digital asset wallet.</h3>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet available on iOS, Android, Chrome Extension, Mac, Windows and Linux desktops, integrating over 85 blockchain projects.</p>
+            <p class="p-big pt-3 m-0">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet available on iOS, Android, Chrome Extension, Mac, Windows and Linux desktops, integrating over 85 blockchain projects.</p>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
             <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Our user base of blockchain and cryptocurrency investors (over 600,000 downloads of Jaxx Classic, with thousands now using the new Jaxx Liberty) are experienced and savvy. Exposure of new blockchain projects and cryptoassets to this group of insiders is a strong way to drive attention to, and adoption of, those new projects. Reach out to us for more information on integration of new tokens into Jaxx Liberty.</p>
             <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Get in touch &#8594;</p></a>  
         </div>
@@ -86,13 +86,13 @@ include 'includes/header.php';
     <!--advisory-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Advisory</h2>
             <h3 class="section-title text-dark">Refine your blockchain strategy.</h3>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Anthony Di Iorio and the Decentral team provide expertise to enterprises, small businesses and start-ups on the rapidly changing, disruptive space of digital currencies and blockchain technologies.</p>
+            <p class="p-big pt-3 m-0">Anthony Di Iorio and the Decentral team provide expertise to enterprises, small businesses and start-ups on the rapidly changing, disruptive space of digital currencies and blockchain technologies.</p>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Engage Anthony and the experts of the Decentral team to create and refine your blockchain strategy. The team has recent experience guiding companies in a variety of sectors including: identity, lending, real estate, credit reporting, accounting and audit, e-sports, artificial intelligence, fine art, music licensing, content creation, digital advertising, and more. Reach out to us for more information on working with Anthony and the Decentral Team.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+            <p class="p-big pt-3 m-0 ">Engage Anthony and the experts of the Decentral team to create and refine your blockchain strategy. The team has recent experience guiding companies in a variety of sectors including: identity, lending, real estate, credit reporting, accounting and audit, e-sports, artificial intelligence, fine art, music licensing, content creation, digital advertising, and more. Reach out to us for more information on working with Anthony and the Decentral Team.</p>
             <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Contact us &#8594;</p></a> 
         </div>
     </div><!--end row-->
@@ -106,12 +106,12 @@ include 'includes/header.php';
    <!--social-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
-            <h2 class="h4 scene_element scene_element--fadeinright">Get in touch</h2>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+            <h2 class="h4">Get in touch</h2>
             <h3 class="section-title">Contact our business development team for more information.</h3>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Or reach out on one of our verified social channels.</p>
+            <p class="p-big pt-3 m-0">Or reach out on one of our verified social channels.</p>
         </div>
-        <div class="col-lg-6 d-flex justify-content-start align-items-center o-12 scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
            <div class="container-fluid">
                <div class="row">
                    <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">

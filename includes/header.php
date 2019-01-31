@@ -72,10 +72,9 @@
   </head>
   <body>
     <div id="swup" class="transition-fade">
-    
        
        <!--nav-->
-        <nav id="menu" class="navbar fixed-top navbar-expand-lg down">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-med">
             <a class="navbar-brand" href="/index.php">
                 <img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             </a>

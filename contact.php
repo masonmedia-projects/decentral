@@ -1,6 +1,6 @@
 <?php
 
-$title = "Jaxx Liberty | Jaxx Liberty";
+$title = "Jaxx Liberty | Contact";
 
 $metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.";
 
@@ -11,13 +11,13 @@ include 'includes/header.php';
 <!--banner-->
 
 <div role="banner" class="container-fluid bg-black relative p-0">
-    <div class="row d-flex min-700-lg text-light scene_element scene_element--fadein">
-        <img class="img-full min-700-lg absolute z-0 left-0 filter-dark lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
+    <div class="row d-flex min-700-lg text-light">
+        <img class="img-full min-700-lg absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center ts p-5">
-            <h1 class="h4 mt-3 scene_element scene_element--fadeinright">Contact Decentral</h1>
-            <h2 class="site-title font-weight-bold scene_element scene_element--fadeindown">Connect with us.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0 scene_element scene_element--fadeinup"></i></a>
+            <h1 class="h4 mt-3">Contact Decentral</h1>
+            <h2 class="site-title font-weight-bold">Connect with us.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>
@@ -25,13 +25,13 @@ include 'includes/header.php';
   
 <!--main body-->
 
-<div id="sec-1" class="container-fluid p-0 relative scene_element scene_element--fadein">
+<div id="sec-1" class="container-fluid p-0 relative">
         
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 mt-4 scene_element scene_element--fadeinright">Jaxx Liberty customer support</h2>
-            <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Get free world-class support from our User Success Team, via email or social media, available 24/7.</h3>
+            <h2 class="h4 mt-4">Jaxx Liberty customer support</h2>
+            <h3 class="section-title font-weight-bold">Get free world-class support from our User Success Team, via email or social media, available 24/7.</h3>
             <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-3">Get in touch &#8594;</p></a>
         </div>
         <div class="offset-lg-2"></div>
@@ -46,14 +46,14 @@ include 'includes/header.php';
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 mt-4 scene_element scene_element--fadeinright">Get in touch</h2>
-            <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">General inquiries.</h3>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">292 Adelaide Street West
+            <h2 class="h4 mt-4">Get in touch</h2>
+            <h3 class="section-title font-weight-bold">General inquiries.</h3>
+            <p class="p-big pt-3 m-0">292 Adelaide Street West
                 <span class="d-block">Suite 401, 4th Floor</span>
                 <span class="d-block">Toronto, Ontario</span>
                 <span class="d-block">M5V 1P6</span>
                 </p>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright"><a href="mailto:info@decentral.ca"><span class="orange">info@decentral.ca</span></a></p>
+            <p class="p-big pt-3 m-0"><a href="mailto:info@decentral.ca"><span class="orange">info@decentral.ca</span></a></p>
         </div>
         <div class="offset-lg-2"></div>
     </div>

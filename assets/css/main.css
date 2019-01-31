@@ -483,6 +483,11 @@ p {
 .is-animating .right {
     transform: translateX(-100px);
 }
+
+.right-slow {
+    transition: 2s;
+}
+
 /*fade left*/
 .left {
     transition: 1s;
@@ -492,6 +497,14 @@ p {
     transform: translateX(100px);
 }
 
+/*left variations*/
+.left-med {
+    transition: 1.5s;
+}
+.left-slow {
+    transition: 2s;
+}
+
 /*fade-up*/
 .up {
     transition: 1s;
@@ -499,6 +512,28 @@ p {
 }
 .is-animating .up {
     transform: translateY(100px);
+}
+/*up variations*/
+.up-med {
+    transition: 1.5s;
+}
+.up-slow {
+    transition: 2s;
+}
+
+/*med variations*/
+.right-med, 
+.left-med, 
+.up-med, 
+.down-med {
+    transition: 1.5s;
+}
+/*slow variations*/
+.right-slow, 
+.left-slow, 
+.up-slow, 
+.down-slow {
+    transition: 2s;
 }
 
 
