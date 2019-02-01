@@ -13,7 +13,7 @@ include 'includes/header.php';
 <div id="home" role="banner" class="container-fluid bg-black relative p-0">  
     <div class="row d-flex min-700-lg text-light ts py-5 px-0">
         <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Decentral partnerships.">  
-        <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5 mt-5">
+        <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-3">Decentral partnerships</h1>
             <h2 class="site-title font-weight-bold">Work with Canada's leading blockchain company.</h2>
             <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>

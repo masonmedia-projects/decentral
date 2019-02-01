@@ -28,14 +28,14 @@ include 'includes/header.php';
     </div>
 -->
   
-  <div class="row d-flex min-100 min--100 bg-black text-light relative">
-        <img class="img-full min-700-lg absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
-        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
-            <h1 class="h4">Canada's leading blockchain company</h1>
+  <div class="row d-flex min-700-lg bg-black text-light relative py-5">
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
+        <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
+            <h1 class="h4 mt-3">Canada's leading blockchain company</h1>
             <h2 class="site-title knockout-gradient text-light font-weight-bold">Changing the world through decentralized technologies.</h2>
             <i href="#sec-1" class="fa fa-angle-down knockout-gradient p-0"></i>
         </div>
-        <div class="offset-lg-5"></div>
+        <div class="offset-lg-3"></div>
     </div>
     
 </div>
