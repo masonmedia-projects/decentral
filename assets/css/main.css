@@ -186,6 +186,7 @@ border: 1px solid #ff6902;
 .btn-navy:active,
 .btn-navy:focus,
 .btn-navy:visited {
+	background: #264277;
 	background: rgb(38, 66, 119);
 	border: 1px solid rgb(38, 66, 119);
 	color: white;
@@ -200,6 +201,7 @@ border: 1px solid #ff6902;
 /* borders */
 
 .border-navy {
+	border-color: #264277 !important;
 	border-color: rgb(38, 66, 119) !important;
 }
 .border-orange {

@@ -37,7 +37,7 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
             <h2 class="h4 scene_element scene_element--fadeinright">Decentral Inc.</h2>
             <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Decentral opened its doors in January 2014. It has since become Canada’s leading blockchain company.</h3>
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">We introduced Canada’s first two-way Bitcoin ATM and later that same month, the Ethereum Project was co-founded by Decentral CEO and founders Anthony Di Iorio, with Vitalik Buterin, Charles Hoskinson, Amir Chetrit, and Mihai Alisie.</p>
+            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">We introduced Canada’s first two-way Bitcoin ATM and later that same month, the Ethereum Project was co-founded by Decentral CEO and founder Anthony Di Iorio, with Vitalik Buterin, Charles Hoskinson, Amir Chetrit, and Mihai Alisie.</p>
         </div>
         <div class="offset-lg-2"></div>
     </div>   
@@ -94,14 +94,6 @@ include 'includes/header.php';
         <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
             <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
             <div class="relative p-3">
-                <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-micah.png" alt="Cartoon avatar of Micah Bond" title="Micah Bond">
-                <p class="p-big my-3">Micah Bond</p>
-            </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
-            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
-            <div class="relative p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-kirby.png" alt="Cartoon avatar of Kirby Chicas" title="Kirby Chicas">
                 <p class="p-big my-3">Kirby Chicas</p>    
             </div>
@@ -142,7 +134,7 @@ include 'includes/header.php';
         <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
             <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
             <div class="relative p-3">
-                <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-di.png" alt="Cartoon avatar of Di Gallo" title="Di Gallo">
+                <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-di2.png" alt="Cartoon avatar of Di Gallo" title="Di Gallo">
                 <p class="p-big my-3">Di Gallo</p>
             </div>
         </div>
@@ -160,14 +152,6 @@ include 'includes/header.php';
             <div class="relative p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-adam2.png" alt="Cartoon avatar of Adam Jacobs" title="Adam Jacobs">
                 <p class="p-big my-3">Adam Jacobs</p>
-            </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
-            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
-            <div class="relative p-3">
-                <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-anthony-k.png" alt="Cartoon avatar of Tony Karaganis" title="Tony Karaganis">
-                <p class="p-big my-3">Tony Karaganis</p>    
             </div>
         </div>
         
@@ -216,6 +200,14 @@ include 'includes/header.php';
             <div class="relative z-2 p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-jon.png" alt="Cartoon avatar of Jon Newlands" title="Jon Newlands">
                 <p class="p-big my-3">Jon Newlands</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+            <div class="relative p-3">
+                <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-sheldon.png" alt="Cartoon avatar of Sheldon Norton" title="Sheldon Norton">
+                <p class="p-big my-3">Sheldon Norton</p>
             </div>
         </div>
         

@@ -78,8 +78,7 @@ include 'includes/header.php';
 
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-iphone-X-left-grey-bg.jpg" alt="Reach out to us for more information on integration of new tokens into Jaxx Liberty.">
-<!--            <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/jaxx-iphone-X-black-bg.jpg" alt="Reach out to us for more information on integration of new tokens into Jaxx Liberty.">-->
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-desk-paraphernalia.jpg" alt="Reach out to us for more information on integration of new tokens into Jaxx Liberty.">
         </div>
     </div>
     
