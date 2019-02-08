@@ -30,12 +30,30 @@ include 'includes/header.php';
   
   <div class="row d-flex min-700-lg bg-black text-light relative py-5">
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
-        <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
-            <h1 class="h4 mt-3">Canada's leading blockchain company</h1>
-            <h2 class="site-title knockout-gradient text-light font-weight-bold">Changing the world through decentralized technologies.</h2>
-            <i href="#sec-1" class="fa fa-angle-down knockout-gradient p-0"></i>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
+<!--            <h1 class="h4 mt-5">Decentral</h1>-->
+<img class="decentral-navbar-brand mb-3 ml-0 pl-0" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+<!--            <h2 class="site-title knockout-gradient text-light font-weight-bold">Changing the world through decentralized technologies.</h2>-->
+            <h2 class="site-title knockout-gradient text-light font-weight-bold">Interface. Infrastructure. Integrations. Innovation.</h2>
+<!--            <h2 class="">Ushering in a new age of decentralization.</h2>-->
+<!--            <h2 class="">Providing the tools  to empower and unite individuals.</h2>-->
+            <h2 class="">Building the tools to usher in a new world of decentralization.</h2>
+            
+            <div class="container-fluid pt-4">
+                <div class="row d-flex">
+                    <div class="col-xs-6">
+                        <p class="btn btn-outline-light btn-lg  mr-2">Learn more</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="btn btn-outline-light btn-lg ">Download Jaxx Liberty</p>
+                    </div>
+                </div>
+            </div>
+
+<!--            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>-->
+            
         </div>
-        <div class="offset-lg-3"></div>
+        <div class="offset-lg-4"></div>
     </div>
     
 </div>

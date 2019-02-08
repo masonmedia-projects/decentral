@@ -76,7 +76,8 @@
        <!--nav-->
         <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-med">
             <a class="navbar-brand" href="/index.php">
-                <img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+<!--                <img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">-->
+                <img class="decentral-navbar-brand w-25" src="/assets/img/decentral-D-logo.webp" alt="Decentral Inc.">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             
@@ -96,21 +97,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/jaxxliberty.php">Jaxx Liberty</a>
                     </li>
+<!--
                     <li class="nav-item">
                         <a class="nav-link" href="/history.php">History</a>
                     </li>
+-->
                     <li class="nav-item">
-                        <a class="nav-link" href="/partnerships.php">Partnerships</a>
+                        <a class="nav-link" href="/partnerships.php">Partner Network</a>
                     </li>
+<!--
                     <li class="nav-item">
                         <a class="nav-link" href="/team.php">Team</a>
                     </li>
+-->
                     <li class="nav-item">
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact.php">Contact</a>
                     </li>
+<!--
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-orange" href="/contact.php">Download</a>
+                    </li>
+-->
                 </ul>
             </div>
         </nav>

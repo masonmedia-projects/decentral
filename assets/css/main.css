@@ -151,7 +151,7 @@ footer a:hover {
 .btn,
 .btn-default,
 .btn-lg {
-    border-radius: 23px;
+/*    border-radius: 23px;*/
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
