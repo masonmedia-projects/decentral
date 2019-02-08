@@ -70,7 +70,8 @@ include 'includes/header.php';
 
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-security-phone-angle-top.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">
+<!--            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-security-phone-angle-top.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">-->
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/jaxx-pc-coffee.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">
         </div>
     </div>
       

@@ -72,13 +72,6 @@ include 'includes/header.php';
         <div class="offset-lg-5"></div>
     </div>
 -->
-    
-<!--
-    <div class="row d-flex min-700-lg bg--home-skyline" data-aos="fade" data-aos-easing="ease-in-out-quart" data-aos-duration="1000">
-       bg--home-anthony
-       bg--home-building
-    </div>
--->
 
    <!--main body-->
 
