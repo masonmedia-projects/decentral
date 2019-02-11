@@ -16,6 +16,53 @@ $(document).ready(function() {
     });
 });
 
+//init slick slider
+$('.slick-slider').slick({
+  dots: true,
+  infinite: true,
+//     vertical: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    useTransform: true,
+    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+    
+
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	
+
+
+
 //init AOS library
 $(document).ready(function() {
     AOS.init();

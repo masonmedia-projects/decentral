@@ -15,7 +15,7 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-3">Your all-in-one digital asset wallet</h1>
             <h2 class="section-title knockout-gradient font-weight-bold">Jaxx Liberty is an industry leading investment tool that is reshaping the way people manage their digital portfolios.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
+            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>
         </div>
         <div class="offset-lg-4"></div>
     </div>

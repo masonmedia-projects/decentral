@@ -40,8 +40,13 @@
         <link rel="stylesheet" href="/assets/css/normalize.css">
         <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/html5-device-mockups/dist/device-mockups.min.css">
-        <link rel="stylesheet" href="/assets/css/keyframes.css">
-        <link rel="stylesheet" href="/assets/css/pageTransitions.css">
+        <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"/>
+       
+       
+       
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/main.min.css">
         <!--cookies banner-->
@@ -76,8 +81,8 @@
        <!--nav-->
         <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-med">
             <a class="navbar-brand" href="/index.php">
-<!--                <img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">-->
-                <img class="decentral-navbar-brand w-25" src="/assets/img/decentral-D-logo.webp" alt="Decentral Inc.">
+                <!--<img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">-->
+                <img class="decentral-navbar-brand" src="/assets/img/decentral_D_logo_white.png" alt="Decentral Inc.">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             
@@ -105,11 +110,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/partnerships.php">Partner Network</a>
                     </li>
-<!--
                     <li class="nav-item">
                         <a class="nav-link" href="/team.php">Team</a>
                     </li>
--->
                     <li class="nav-item">
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
                     </li>

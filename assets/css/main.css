@@ -153,6 +153,7 @@ footer a:hover {
 .btn-lg {
 /*    border-radius: 23px;*/
 	-webkit-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 .btn-orange,
@@ -160,9 +161,8 @@ footer a:hover {
 .btn-orange:focus,
 .btn-orange:visited {
 	background: #ff6902;
-border: 1px solid #ff6902;
+    border: 1px solid #ff6902;
 	color: white;
-	font-weight: bold;
 }
 .btn-orange:hover {
 	background: transparent;
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6, p, button, .btn {
 	font-family: 'Helvetica Neue', Avenir, sans-serif;
 }
-.h1 {
+.h1, .h2, .h3 {
     letter-spacing: -2px;
     line-height: 90%;
 }
@@ -646,7 +646,9 @@ img.lazy-loaded {
 } 
 
 footer img,
-img.decentral-navbar-brand {
+img.decentral-navbar-brand,
+img.decentral-logo,
+#avatars img {
     opacity: 1;
 }
 
@@ -656,6 +658,11 @@ img.decentral-navbar-brand {
 .decentral-navbar-brand {
 	height: auto;
 	margin: 0 0 0 10px;
+	width: 185px;
+    width: 35px;
+}
+.decentral-logo {
+	height: auto;
 	width: 185px;
 }
 .decentral-mobile-menu {
@@ -667,7 +674,6 @@ img.decentral-navbar-brand {
 	margin-bottom: -20px;
 	width: 20vw;
 }
-.decentral-logo,
 .decentral-heart-logo {
 	height: auto;
 	width: 500px;
@@ -981,6 +987,15 @@ img.decentral-navbar-brand {
 	background-size: cover;
 }
 
+/*about carousel slick*/
+
+/*
+.slick-prev {
+    color: black;
+    background: orange;
+}
+*/
+
 /* partnerships ======================*/
 
 .bg--partnerships-banner {
@@ -1008,6 +1023,7 @@ img.decentral-navbar-brand {
   position: relative;
 /*  color: rgba(0, 0, 0, 0.7);*/
   border-left: 2px solid rgba(0, 0, 0, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
 }
 .timeline-item p:first-of-type {
     padding: 10px 0;
@@ -1016,6 +1032,7 @@ img.decentral-navbar-brand {
 
 .timeline-item::before {
     border-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to top, rgba(255, 255, 255, 0.8) 60%, rgba(255, 105, 2, 0)) 1 100%;
     color: #ff6902;    
     content: attr(date-is);
     position: absolute;
@@ -1037,11 +1054,12 @@ img.decentral-navbar-brand {
   border-radius: 10px;
   content: '';
   border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
   background: white;
 }
 .timeline-item:last-child {
-  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0)) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0)) 1 100%;
 }
 
 /*shapes ==================*/
@@ -1276,6 +1294,7 @@ nav,
 	border-bottom: none;
 	background-color: rgba(0, 0, 0, 0.9) !important;
 	-webkit-transition: all 200ms ease-in-out;
+	transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 .decentral-navbar-brand.scrolled,

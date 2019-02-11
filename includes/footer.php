@@ -65,6 +65,8 @@
     <script src="/assets/js/aos.js"></script>
     <!-- recliner lazy load js-->
     <script src="/assets/js/recliner.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <!--js tilt 404-->
     <script src="/assets/js/tilt.jquery.min.js"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>

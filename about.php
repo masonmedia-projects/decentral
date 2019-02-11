@@ -16,16 +16,115 @@ include 'includes/header.php';
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-3">About Decentral</h1>
                 <h2 class="site-title knockout-gradient font-weight-bold">On a mission to create opportunity and empower individuals around the world.</h2>
-                <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
+                <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>
             </div>
             <div class="offset-lg-3"></div>
         </div>
     </div>
     
     <div class="container-fluid p-0 relative">
-        <!--anthony message-->       
 
-        <div id="sec-1" class="row d-flex p-5 min-500 text-secondary bg-white">
+       <!--intro-->
+       <div id="sec-1" class="row d-flex p-5 min-500 text-secondary bg-white">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+                <h2 class="h4 orange">Company</h2>
+                <h3 class="section-title text-dark mb-0">Working together to unite blockchain projects around the globe.</h3>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
+                <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our purpose is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
+                <!-- Button trigger modal -->
+                <p type="button" class="p-btn mt-3" data-toggle="modal" data-target="#values">Explore our values &#8594;</p>
+            </div>
+        </div><!--end row-->
+
+        <!-- values modal -->
+        <div class="modal fade" id="values" tabindex="-1" role="dialog" aria-labelledby="values" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5 pt-0">
+                <h2 class="section-title knockout-gradient pb-4 pt-0" data-aos="fade" data-aos-duration="1000">Our Values</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <h3 class="h2 font-weight-bold">1. Think big. Be bold.</h3>
+                        <p>The ability to think big and to be bold are vital to success. It’s what motivates you. We want you to step outside of your comfort zone.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">2. Challenge equals opportunity.</h3>
+                        <p>We see challenges as opportunities in disguise. We can definitely turn each challenge into an opportunity.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">3. Normal sucks. Be strange.</h3>
+                        <p>We live and thrive outside the lines. Are you ready to be strange?</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">4. Perfect for some. Not for everyone.</h3>
+                        <p>and that’s perfectly okay.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
+                        <p>We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">6. Question everything. There's a solution to every problem.</h3>
+                        <p>Problems arise from making assumptions. Ask questions, and seek answers.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">7. Present minded. Future driven. Long term focused.</h3>
+                        <p>And forward looking</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">8. Come and say Hi. We've got nothing to hide.</h3>
+                        <p>We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
+                        <p>We adopt a focused approach at work that centers on the most important things that increase our efficiency.</p>
+                    </li>
+                    <li>
+                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
+                        <p>We adopt a focused approach at work that centers on the most important things that increase our efficiency.</p>
+                    </li>
+                    <li></li>
+                </ul>
+
+
+                8. COME SAY HI! WE’VE GOT NOTHING TO HIDE.
+                …
+
+                9. WE’RE SIDEKICKS IN A WORLD OF HEROES.
+                Our customers and partners are the heroes. We’re here to guide and provide the tools to…
+
+                10. LIFE’S A GAME. KEEP LEVELLING UP.
+
+                11. CHANGE HAPPENS. EMBRACE IT.
+                We know that change is inevitable in life. We choose to embrace and adapt to it and learn how to benefit from it. Change is an opportunity for growth.
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+       
+       
+       
+       
+        
+        <div class="row d-flex bg-light relative">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+            </div>
+        </div>
+        
+        <!--anthony message-->       
+        <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Anthony Di Iorio</h2>
                 <h3 class="section-title text-dark mb-0">A message from the founder.</h3>
@@ -38,11 +137,418 @@ include 'includes/header.php';
         
         <div class="row d-flex bg-light relative">
             <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
+            </div>
+        </div>
+        
+     <!--history-->       
+        <div class="row d-flex p-5 min-500 text-secondary bg-white">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+                <h2 class="h4 orange">Decentral history</h2>
+                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
+                <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In the course of six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. Find out more about Decentral.</p>
+                <!-- Button trigger modal -->
+                <p type="button" class="p-btn mt-3" data-toggle="modal" data-target="#exampleModalCenter">Find out more &#8594;</p>
+            </div>
+        </div><!--end row-->
+        
+        <div class="row d-flex bg-light relative">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
+            </div>
+        </div>
+       
+       <!-- history Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-black text-light">
+              <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5 pt-0">
+                <h2 class="section-title knockout-gradient pb-4 pt-0" data-aos="fade" data-aos-duration="1000">The History of Decentral</h2>
+                <div class="timeline-item" date-is='1' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2012</h2>
+                    <p>Anthony Di Iorio organizes a variety of Bitcoin meetups in the Toronto area. BTC trades under $10. Anthony starts the Toronto Bitcoin Group.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='2' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2013</h2>
+                    <p>Anthony Diiorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="http://blockchainassociation.ca" target="_blank"><span class="orange">“Blockchain Association”</span>)</a></p>
+                    <p>Kryptokit is conceived and development begins. Kryptokit becomes the first Bitcoin wallet browser extension on release.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='3' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Late 2013</h2>
+                    <p>Vitalik Buterin shows Anthony a project he has been working on: Anthony is the first reader of what will become the Ethereum Whitepaper. Anthony dedicates funds and his full attention to building a team to pursue the Ethereum Project and becomes co-founder of Ethereum.</p>
+                    <p>Ethereum is born: Decentral gives the Ethereum Project its first home. Anthony Di Iorio, Mihai Alisie, Vitalik Buterin, Charles Hoskinson and Amir Chetrit co-found the project to develop the platform laid out in the whitepaper. (Joseph Lubin, Gavin Wood, and Jeffrey Wilke are added as founders a few months later).</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+                <div class="timeline-item" date-is='4' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2014</h2>
+                    <p>New Year’s Day: Decentral opens its doors at 64 Spadina Ave. The Bitcoin ATM in this new office is the first in Toronto and second in the country.</p>
+                    <p>Decentral organizes and runs the Bitcoin Expo 2014 (bitcoinexpo.ca), attended by thousands and the biggest cryptocurrency event in Canada at the time.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='5' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Summer 2014</h2>
+                    <p>Ethereum global crowdsale begins and eventually leads to $18m in ether sales (now worth over $44 billion).</p>
+                    <p>Rushwallet by KryptoKit launches in beta as a simple HTML5 Bitcoin wallet.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='6' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Late 2014</h2>
+                    <p>Decentral hosts its 100th event. Seeks new event space to accommodate demand and crowd size.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='7' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2015</h2>
+                    <p>Decentral partners with <a href="https://www.marsdd.com/facilities/event-space/" target="_blank"><span class="orange">MaRS</span></a> to host events in 2015.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='8' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2016</h2>
+                    <p>Jaxx 1.0 released. Additional platforms supported.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='9' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Late 2016</h2>
+                    <p>Jaxx passes 100,000 users; Android is the most popular of the 9 platforms Jaxx supports.</p>
+                    <p>In-app cryptocurrency swapping features go live; Jaxx users are able to exchange a variety of cryptocurrencies for each other, instantly.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='10' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Early 2017</h2>
+                    <p>Jaxx hits 300,000 users; users can pair their Jaxx masterseeds across iOS, Android, Chrome Browser, Linux, Mac, and Windows.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='11' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Spring 2017</h2>
+                    <p>Decentral announces upwards of 70 industry partnerships; companies include Coinbase, RSK, BitPay, Bittrex, Blockchain Capital, QTUM, Bancor, MonaCoin, Omni, Lisk, Stratus and others.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='12' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">Summer 2017</h2>
+                    <p>Decentral Grand Odyssey Boat Cruise - hit blockchain event celebrates 4 years of Decentral events.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='13' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">November 2017</h2>
+                    <p>Jaxx exceeds 400,000 users around the world.</p>
+                    <p>Decentral Inc. begins construction for 5-floor, 15,000 square foot office and event space in the heart Toronto’s financial district.</p>
+                    <hr class="mb-0 mt-4">
+                </div>
+
+                <div class="timeline-item" date-is='14' data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="h1">December 2017</h2>
+                    <p><p>Bitcoin prices hits $20,000 CAD. 2000x higher than when Decentral’s founder, Anthony Diiorio, started building the Toronto cryptocurrency community.</p>
+                    <hr class="mb-0 mt-4">
+                </div>	
+              </div><!--end modal content-->
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end modal-->
+        
+        <!--Innovation-->
+        <div class="row d-flex p-5 min-500 bg-white">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+                <h2 class="h4 orange">Innovation</h2>
+                <h3 class="section-title text-dark mb-0">Leading the blockchain market into 2019.</h3>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+                <p class="p-big pt-3 m-0">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
+                <!-- Button trigger modal -->
+                <p type="button" class="p-btn mt-3" data-toggle="modal" data-target="#team">Meet the Decentral team &#8594;</p>
+            </div>
+        </div><!--end row-->
+        
+        <!-- team Modal -->
+        <div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="team" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5 pt-0">
+                	<!--avatars-->
+                    <div id="avatars" class="row">
+                        <div class="offset-lg-2"></div>
+                        <div class="col-lg-8 pb-4 mb-3 d-flex flex-column justify-content-center align-items-center text-center">
+                           <h2 class="h4">Decentral</h2>
+                            <h3 class="site-title knockout-gradient font-weight-bold mt-0">Meet the team.</h3>   
+                            <img class="w-50 mb-4 rounded-circle shadow-lg" src="/assets/img/team_decentral/avatar-anthony.png" alt="Cartoon avatar of Anthony DiIorio" title="Anthony DiIorio">
+                            <h4>Anthony Di Iorio</h4>
+                            <p class="p-big">Founder & CEO</p>
+                            <p>Anthony Diiorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies. Anthony is the Founder and CEO of Decentral Inc.</p>
+                        </div>
+                        <div class="offset-lg-2"></div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative z-2 p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-bram.png" alt="Cartoon avatar of Bram Abramson" title="Bram Abramson">
+                                <p class="p-big my-3">Bram Abramson</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-kirby.png" alt="Cartoon avatar of Kirby Chicas" title="Kirby Chicas">
+                                <p class="p-big my-3">Kirby Chicas</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-alex.png" alt="Cartoon avatar of Alexandru Culea" title="Alexandru Culea">
+                                <p class="p-big my-3">Alexandru Culea</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative z-2 p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-andrei.png" alt="Cartoon avatar of Andrei Daniliuc" title="Andrei Daniliuc">
+                                <p class="p-big my-3">Andrei Daniliuc</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-rhonda.png" alt="Cartoon avatar of Rhonda Fairman" title="Rhonda Fairman">
+                                <p class="p-big my-3">Rhonda Fairman</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-paolo.png" alt="Cartoon avatar of Paolo Frescura" title="Paolo Frescura">
+                                <p class="p-big my-3">Paolo Frescura</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-di2.png" alt="Cartoon avatar of Di Gallo" title="Di Gallo">
+                                <p class="p-big my-3">Di Gallo</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative z-2 p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-anik.png" alt="Cartoon avatar of Anik Ghosh" title="Anik Ghosh">
+                                <p class="p-big my-3">Anik Ghosh</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-adam2.png" alt="Cartoon avatar of Adam Jacobs" title="Adam Jacobs">
+                                <p class="p-big my-3">Adam Jacobs</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-nick.png" alt="Cartoon avatar of Nick Lacroix" title="Nick Lacroix">
+                                <p class="p-big my-3">Nick Lacroix</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-tyler.png" alt="Cartoon avatar of Tyler MacDonald" title="Tyler MacDonald">
+                                <p class="p-big my-3">Tyler MacDonald</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-raz.png" alt="Cartoon avatar of Razvan Marin" title="Razvan Marin">
+                                <p class="p-big my-3">Razvan Marin</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow p-1 bg-white" src="/assets/img/team_decentral/avatar-andrew-min.png" alt="Cartoon avatar of Andrew Mason" title="Andrew Mason">
+                                <p class="p-big my-3">Andrew Mason</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-lucian.png" alt="Cartoon avatar of Lucian Mocanu" title="Lucian Mocanu">
+                                <p class="p-big my-3">Lucian Mocanu</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative z-2 p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-jon.png" alt="Cartoon avatar of Jon Newlands" title="Jon Newlands">
+                                <p class="p-big my-3">Jon Newlands</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-sheldon.png" alt="Cartoon avatar of Sheldon Norton" title="Sheldon Norton">
+                                <p class="p-big my-3">Sheldon Norton</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-pas.png" alt="Cartoon avatar of Bogdan Pascu" title="Bogdan Pascu">
+                                <p class="p-big my-3">Bogdan Pascu</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-marc.png" alt="Cartoon avatar of Marc Roopchand" title="Marc Roopchand">
+                                <p class="p-big my-3">Marc Roopchand</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-danielbeard.png" alt="Cartoon avatar of Daniel Shakhmundes" title="Daniel Shakhmundes">
+                                <p class="p-big my-3">Daniel Shakhmundes</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative z-2 p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-oliver.png" alt="Cartoon avatar of Oliver Soriano" title="Oliver Soriano">
+                                <p class="p-big my-3">Oliver Soriano</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-maxwell.png" alt="Cartoon avatar of Maxwell Stennett" title="Maxwell Stennett">
+                                <p class="p-big my-3">Maxwell Stennett</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-thageesan.png" alt="Cartoon avatar of Thageesan Thanabalasingam" title="Thageesan Thanabalasingam">
+                                <p class="p-big my-3">Thageesan Thanabalasingam</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-anges.png" alt="Cartoon avatar of Agnes Veres" title="Agnes Veres">
+                                <p class="p-big my-3">Agnes Veres</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-shu.png" alt="Cartoon avatar of Shu Wang" title="Shu Wang">
+                                <p class="p-big my-3">Shu Wang</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-maggie.png" alt="Cartoon avatar of Maggie Xu" title="Maggie Xu">
+                                <p class="p-big my-3">Maggie Xu</p>    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-3">
+                            <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
+                            <div class="relative p-3">
+                                <img class="w-75 rounded-circle shadow" src="/assets/img/team_decentral/avatar-warren.png" alt="Cartoon avatar of Warren Yen" title="Warren Yen">
+                                <p class="p-big my-3">Warren Yen</p>
+                            </div>
+                        </div>
+                        <div class="offset-lg-3"></div>
+                    </div><!--end avatars row-->       	
+                	
+              </div><!--end modal content-->
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div><!--end modal-->
+
+        <div class="row d-flex bg-light relative">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Jaxx Classic">
+            </div>
+        </div>
+        
+        <!--careers-->       
+        <div class="row d-flex p-5 min-500 text-secondary bg-white">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+                <h2 class="h4 orange">Careers</h2>
+                <h3 class="section-title text-dark mb-0">Informing. Empowering. Uniting.</h3>
+                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world, changing the way we think about the exchange of value.</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
+                <p class="p-big pt-3 m-0">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
+                <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3">Get in touch &#8594;</p></a>
+            </div>
+        </div><!--end row-->
+        
+        <div class="row d-flex bg-light relative">
+            <div class="col-lg-12 min-700-lg">
+<!--                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Work for Decentral">-->
+                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/jaxx-testimonials.jpeg" alt="Work for Decentral">
             </div>
         </div>
 
         <!--jaxx classic-->
+<!--
         <div class="row d-flex p-5 min-500 bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Jaxx Classic</h2>
@@ -51,51 +557,14 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
                 <p class="p-big pt-3 m-0">Jaxx Classic, a leading multi-platform digital wallet with over a million downloads, was developed in 2015 by Anthony Di Iorio, co-founder of Ethereum, and founder and CEO of Decentral Inc. Jaxx Classic was created to give people an easy way to manage their digital assets and virtual lives.</p>
             </div>
-        </div><!--end row-->
+        </div>
             
         <div class="row d-flex bg-light relative">
             <div class="col-lg-12 min-700-lg">
                 <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-jaxx-classic-closeup.jpg" alt="Jaxx Classic">
-<!--               <img data-src="/assets/img/decentral-jaxx-classic.png" class="w-75 m-auto lazy absolute z-1" alt="">-->
             </div>
         </div>
-        
-        <!--Built on success-->
-        <div class="row d-flex p-5 min-500 text-secondary bg-white">
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Jaxx Liberty</h2>
-                <h3 class="section-title text-dark mb-0">Built on Success.</h3>
-                <p class="p-big pt-3 m-0">In September 2018, the company launched Jaxx Liberty, the new Jaxx and the future of blockchain interface. Extending beyond the cryptocurrency wallet, Jaxx Liberty is packed with the tools most requested by our users around the world.</p>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">With the wallet at its core, Jaxx Liberty is a module-based platform integrating a personalized portfolio, exchange, blockchain news feed, market data tracking, and block explorers for reviewing transaction data across a wide range of blockchain platforms. In the pursuit of unprecedented transparency and trustworthiness, Decentral intends for its new platform to empower the general public to take control of their digital lives.</p>
-                <a href="https://jaxx.io"><p class="p-btn mt-3">Find out more &#8594;</p></a>
-            </div>
-        </div><!--end row-->
-        
-        <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-multi-device-2-pair.jpg" alt="Jaxx Classic">
-            </div>
-        </div>
-        
-        <!--Innovation-->
-        <div class="row d-flex p-5 min-500 bg-white">
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Innovation</h2>
-                <h3 class="section-title text-dark mb-0">Made with love in Canada.</h3>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-                <p class="p-big pt-3 m-0">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
-            </div>
-        </div><!--end row-->
-        
-        <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Jaxx Classic">
-            </div>
-        </div>
-        
+-->
         
     </div>
     <!--end container-->   

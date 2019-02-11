@@ -32,26 +32,21 @@ include 'includes/header.php';
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
 <!--            <h1 class="h4 mt-5">Decentral</h1>-->
-<img class="decentral-navbar-brand mb-3 ml-0 pl-0" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
-<!--            <h2 class="site-title knockout-gradient text-light font-weight-bold">Changing the world through decentralized technologies.</h2>-->
+            <img class="decentral-logo mb-3 mt-5" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold">Interface. Infrastructure. Integrations. Innovation.</h2>
-<!--            <h2 class="">Ushering in a new age of decentralization.</h2>-->
-<!--            <h2 class="">Providing the tools  to empower and unite individuals.</h2>-->
-            <h2 class="">Building the tools to usher in a new world of decentralization.</h2>
-            
+            <h2 class="h4">Building the tools to usher in a new world of decentralization.</h2>
+            <!--button container-->
             <div class="container-fluid pt-4">
                 <div class="row d-flex">
                     <div class="col-xs-6">
-                        <p class="btn btn-outline-light btn-lg  mr-2">Learn more</p>
+                        <a href="#sec-1"><p class="btn btn-outline-light btn-lg  mr-2">Learn more</p></a>
                     </div>
                     <div class="col-xs-6">
                         <p class="btn btn-outline-light btn-lg ">Download Jaxx Liberty</p>
                     </div>
                 </div>
             </div>
-
-<!--            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>-->
-            
+        <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>-->
         </div>
         <div class="offset-lg-4"></div>
     </div>
@@ -116,12 +111,12 @@ include 'includes/header.php';
     <!--jaxx liberty-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Jaxx Liberty</h2>
             <h3 class="section-title text-dark">The leading multi-platform digital asset wallet.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Decentral's flagship product, <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
+            <p class="p-big pt-3 m-0">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
             <a href="/jaxxliberty.php"><p class="p-btn mt-3">Explore &#8594;</p></a>  
         </div>
     </div><!--end row-->
@@ -135,12 +130,13 @@ include 'includes/header.php';
     <!--partnerships-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Decentral partnerships</h2>
             <h3 class="section-title text-dark">Connecting, informing, sharing.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
+            <p class="p-big pt-3 m-0">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
+            <a href="/partnerships.php"><p class="p-btn mt-3">Learn more &#8594;</p></a> 
         </div>
     </div><!--end row-->
     
@@ -152,31 +148,33 @@ include 'includes/header.php';
     
     <!--team-->
     
+<!--
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
             <h2 class="h4">Decentral team</h2>
             <h3 class="section-title text-dark mb-0">Working together to unite blockchain projects around the globe.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+            <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
             <a href="/team.php"><p class="p-btn mt-3">Learn more &#8594;</p></a>  
         </div>
-    </div><!--end row-->
+    </div>end row
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
             <img data-src="/assets/img/jaxx-testimonials.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
         </div>
     </div>
+-->
     
     <!--testimonials-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Trusted by the best</h2>
             <h3 class="section-title mb-0">You're in good company.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
              <p class="p-big pt-0 m-0">Decentral has diverse relationships with a variety of companies in a wide range of sectors, in addition to thousands of users of our products. See what industry leaders are saying.</p>
         </div>
     </div>
@@ -253,7 +251,7 @@ include 'includes/header.php';
         </div>
         </div><!--end slide-->
       </div>
-    </div>           
+    </div>  <!--end carousel-->         
     
    <!--social-->
     
