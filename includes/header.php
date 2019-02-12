@@ -40,13 +40,6 @@
         <link rel="stylesheet" href="/assets/css/normalize.css">
         <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/html5-device-mockups/dist/device-mockups.min.css">
-        <!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"/>
-       
-       
-       
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/main.min.css">
         <!--cookies banner-->
@@ -102,16 +95,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/jaxxliberty.php">Jaxx Liberty</a>
                     </li>
-<!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="/history.php">History</a>
-                    </li>
--->
                     <li class="nav-item">
                         <a class="nav-link" href="/partnerships.php">Partner Network</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/team.php">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
@@ -119,11 +104,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact.php">Contact</a>
                     </li>
-<!--
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-orange" href="/contact.php">Download</a>
-                    </li>
--->
                 </ul>
             </div>
         </nav>

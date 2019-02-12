@@ -43,83 +43,77 @@ include 'includes/header.php';
             <div class="modal-content">
               <div class="modal-header border-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                  <span aria-hidden="true">X</span>
                 </button>
               </div>
-              <div class="modal-body px-5 pt-0">
-                <h2 class="section-title knockout-gradient pb-4 pt-0" data-aos="fade" data-aos-duration="1000">Our Values</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <h3 class="h2 font-weight-bold">1. Think big. Be bold.</h3>
-                        <p>The ability to think big and to be bold are vital to success. It’s what motivates you. We want you to step outside of your comfort zone.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">2. Challenge equals opportunity.</h3>
-                        <p>We see challenges as opportunities in disguise. We can definitely turn each challenge into an opportunity.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">3. Normal sucks. Be strange.</h3>
-                        <p>We live and thrive outside the lines. Are you ready to be strange?</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">4. Perfect for some. Not for everyone.</h3>
-                        <p>and that’s perfectly okay.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
-                        <p>We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">6. Question everything. There's a solution to every problem.</h3>
-                        <p>Problems arise from making assumptions. Ask questions, and seek answers.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">7. Present minded. Future driven. Long term focused.</h3>
-                        <p>And forward looking</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">8. Come and say Hi. We've got nothing to hide.</h3>
-                        <p>We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
-                        <p>We adopt a focused approach at work that centers on the most important things that increase our efficiency.</p>
-                    </li>
-                    <li>
-                        <h3 class="h2 font-weight-bold">5. Improve, improve, improve. Waste is a villain.</h3>
-                        <p>We adopt a focused approach at work that centers on the most important things that increase our efficiency.</p>
-                    </li>
-                    <li></li>
-                </ul>
-
-
-                8. COME SAY HI! WE’VE GOT NOTHING TO HIDE.
-                …
-
-                9. WE’RE SIDEKICKS IN A WORLD OF HEROES.
-                Our customers and partners are the heroes. We’re here to guide and provide the tools to…
-
-                10. LIFE’S A GAME. KEEP LEVELLING UP.
-
-                11. CHANGE HAPPENS. EMBRACE IT.
-                We know that change is inevitable in life. We choose to embrace and adapt to it and learn how to benefit from it. Change is an opportunity for growth.
-              </div>
-              <div class="modal-footer border-0">
+              <div class="modal-body px-4 pt-0">
+               <h2 class="section-title knockout-gradient text-center pb-4 pl-4 pt-0 border-bottom w-100" data-aos="fade" data-aos-duration="1000">Our Values</h2>
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">1. Think big. Be bold.</h3>
+                            <p class="py-2">The ability to think big and to be bold are vital to success. It’s what motivates you. We want you to step outside of your comfort zone.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">2. Challenge equals opportunity.</h3>
+                            <p class="pt-2">We see challenges as opportunities in disguise. We can definitely turn each challenge into an opportunity.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">3. Normal sucks. Be strange.</h3>
+                            <p class="py-2">We live and thrive outside the lines. Are you ready to be strange?</p>
+                       </div>
+                       
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">4. Perfect for some. Not for everyone.</h3>
+                            <p class="py-2">And that’s perfectly okay.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">5. Improve, improve, improve. Waste is a villain.</h3>
+                            <p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">6. Question everything. There's a solution to every problem.</h3>
+                            <p class="py-2">Problems arise from making assumptions. Ask questions, and seek answers.</p>
+                       </div>
+                    
+                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">7. Present minded. Future driven. Long term focused.</h3>
+                            <p class="py-2">We strive to continuously adapt and evolve, constantly improving our products, services, and processes, while maintaining an eye on the future.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                            <h3 class="h2 font-weight-bold pt-2">8. Come and say Hi. We'd love to hear from you.</h3>
+                            <p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                           <h3 class="h2 font-weight-bold pt-2">9. We're sidekicks in a world of Heroes.</h3>
+                           <p class="py-2">Our customers, partners, and community are the heroes. We’re here to be the guides and provide them with the tools they need to be empowered.</p>
+                       </div>
+                       
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right">
+                            <h3 class="h2 font-weight-bold pt-2">10. Life's a game. Keep leveling up.</h3>
+                            <p class="py-2">We strive to always improve the way we do things, making sure we never plateau. We work smarter, not harder.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right">
+                            <h3 class="h2 font-weight-bold pt-2">11. Change happens. Embrace it.</h3>
+                            <p class="py-2">We know that change is inevitable in life. We choose to embrace it. Change is an opportunity for growth.</p>
+                       </div>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4">
+                            <h3 class="h2 font-weight-bold pt-2">12. We are Decentral.</h3>
+                            <p class="py-2">Championing the decentralized movement, building the technology that empowers and creates wins for all.</p>
+                       </div>
+                   </div>
+               </div><!--end container-->
+              </div><!--end modal body-->
+              <div class="modal-footer">
                 <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-        </div>
+        </div><!--end modal-->
 
-
-       
-       
-       
-       
-        
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+            <div class="col-lg-12 min-500">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             </div>
         </div>
         
@@ -136,8 +130,8 @@ include 'includes/header.php';
         </div><!--end row-->
         
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
+            <div class="col-lg-12 min-500">
+                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
             </div>
         </div>
         
@@ -150,23 +144,23 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In the course of six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. Find out more about Decentral.</p>
                 <!-- Button trigger modal -->
-                <p type="button" class="p-btn mt-3" data-toggle="modal" data-target="#exampleModalCenter">Find out more &#8594;</p>
+                <p type="button" class="p-btn mt-3" data-toggle="modal" data-target="#history">Find out more &#8594;</p>
             </div>
         </div><!--end row-->
         
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
+            <div class="col-lg-12 min-500">
+                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
             </div>
         </div>
        
        <!-- history Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-black text-light">
               <div class="modal-header border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">X</span>
                 </button>
               </div>
               <div class="modal-body px-5 pt-0">
@@ -179,7 +173,7 @@ include 'includes/header.php';
 
                 <div class="timeline-item" date-is='2' data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="h1">Early 2013</h2>
-                    <p>Anthony Diiorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="http://blockchainassociation.ca" target="_blank"><span class="orange">“Blockchain Association”</span>)</a></p>
+                    <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="http://blockchainassociation.ca" target="_blank"><span class="orange">“Blockchain Association”</span>)</a></p>
                     <p>Kryptokit is conceived and development begins. Kryptokit becomes the first Bitcoin wallet browser extension on release.</p>
                     <hr class="mb-0 mt-4">
                 </div>
@@ -256,7 +250,7 @@ include 'includes/header.php';
 
                 <div class="timeline-item" date-is='14' data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="h1">December 2017</h2>
-                    <p><p>Bitcoin prices hits $20,000 CAD. 2000x higher than when Decentral’s founder, Anthony Diiorio, started building the Toronto cryptocurrency community.</p>
+                    <p><p>Bitcoin prices hits $20,000 CAD. 2000x higher than when Decentral’s founder, Anthony Di Iorio, started building the Toronto cryptocurrency community.</p>
                     <hr class="mb-0 mt-4">
                 </div>	
               </div><!--end modal content-->
@@ -286,7 +280,7 @@ include 'includes/header.php';
             <div class="modal-content">
               <div class="modal-header border-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                  <span aria-hidden="true">X</span>
                 </button>
               </div>
               <div class="modal-body px-5 pt-0">
@@ -296,10 +290,10 @@ include 'includes/header.php';
                         <div class="col-lg-8 pb-4 mb-3 d-flex flex-column justify-content-center align-items-center text-center">
                            <h2 class="h4">Decentral</h2>
                             <h3 class="site-title knockout-gradient font-weight-bold mt-0">Meet the team.</h3>   
-                            <img class="w-50 mb-4 rounded-circle shadow-lg" src="/assets/img/team_decentral/avatar-anthony.png" alt="Cartoon avatar of Anthony DiIorio" title="Anthony DiIorio">
+                            <img class="w-50 mb-4 rounded-circle shadow-lg" src="/assets/img/team_decentral/avatar-anthony.png" alt="Cartoon avatar of Anthony Di Iorio" title="Anthony Di Iorio">
                             <h4>Anthony Di Iorio</h4>
                             <p class="p-big">Founder & CEO</p>
-                            <p>Anthony Diiorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies. Anthony is the Founder and CEO of Decentral Inc.</p>
+                            <p>Anthony Di Iorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies. Anthony is the Founder and CEO of Decentral Inc.</p>
                         </div>
                         <div class="offset-lg-2"></div>
 
@@ -522,8 +516,8 @@ include 'includes/header.php';
         </div><!--end modal-->
 
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Jaxx Classic">
+            <div class="col-lg-12 min-500">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Jaxx Classic">
             </div>
         </div>
         
@@ -532,7 +526,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Careers</h2>
                 <h3 class="section-title text-dark mb-0">Informing. Empowering. Uniting.</h3>
-                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world, changing the way we think about the exchange of value.</p>
+                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world, changing the way people think about the exchange of value.</p>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
@@ -541,9 +535,9 @@ include 'includes/header.php';
         </div><!--end row-->
         
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
+            <div class="col-lg-12 min-500">
 <!--                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Work for Decentral">-->
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/jaxx-testimonials.jpeg" alt="Work for Decentral">
+                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/jaxx-testimonials.jpeg" alt="Work for Decentral">
             </div>
         </div>
 

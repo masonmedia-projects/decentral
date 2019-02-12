@@ -252,9 +252,9 @@ p {
 /*	font-size: 54px; */
     /*apple homepod gradient text*/
 	font-weight: 600;
-	line-height: 100%;
+	line-height: 95%;
     letter-spacing: -2px;
-    padding: 10px 0;
+    padding: 0 0 10px;
 }
 .site-title-big {
     font-size: 80px; /*apple app store text*/
@@ -1019,7 +1019,8 @@ img.decentral-logo,
 /* history timeline ======================*/
 
 .timeline-item {
-  padding: 3em 2em 2em;
+/*  padding: 3em 2em 2em;*/
+  padding: 3em 0 2em 2em;
   position: relative;
 /*  color: rgba(0, 0, 0, 0.7);*/
   border-left: 2px solid rgba(0, 0, 0, 0.3);
@@ -1323,12 +1324,17 @@ nav,
 #swup .fa {
 	font-size: 10vmin;
     font-size: 6vmin;
+    font-size: 35px;
 	padding: 30px 20px;
 }
 #testimonials .fa {
     font-size: 6vmin;
     font-size: 40px;
     padding: 10px 40px 10px 0;
+}
+#banner .fa-btn {
+    font-size: 20px;
+    padding: 0 5px;
 }
 .fa--stroke {
     color: transparent;
@@ -1517,6 +1523,18 @@ footer li a {
     p {
         font-size: 19px;
         font-weight: bold;
+    }
+    
+    /*about page history modal*/
+    .timeline-item {
+      padding: 3em 0 1.5em 1.5em;
+    }
+    
+    #values p,
+    #history p {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 120%;
     }
 
     .jaxx-mobile-menu {

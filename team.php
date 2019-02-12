@@ -87,7 +87,7 @@ include 'includes/header.php';
             <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
             <div class="relative z-2 p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-bram.png" alt="Cartoon avatar of Bram Abramson" title="Bram Abramson">
-                <p class="p-big my-3">Bram Abramson</p>
+                <p class="p-big my-3">Bram <span class="d-table">Abramson</span></p>
             </div>
         </div>
         
@@ -95,7 +95,7 @@ include 'includes/header.php';
             <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
             <div class="relative p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-kirby.png" alt="Cartoon avatar of Kirby Chicas" title="Kirby Chicas">
-                <p class="p-big my-3">Kirby Chicas</p>    
+                <p class="p-big my-3">Kirby <span class="d-table">Chicas</span></p>    
             </div>
         </div>
         
@@ -103,7 +103,7 @@ include 'includes/header.php';
             <div class="h-50 w-75 absolute z-0 top-0 shadow bg-lightgrey"></div>
             <div class="relative p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-alex.png" alt="Cartoon avatar of Alexandru Culea" title="Alexandru Culea">
-                <p class="p-big my-3">Alexandru Culea</p>
+                <p class="p-big my-3">Alexandru <span class="d-table">Culea</span></p>
             </div>
         </div>
       
@@ -111,7 +111,7 @@ include 'includes/header.php';
             <div class="h-50 w-75 absolute z-1 top-0 shadow bg-lightgrey"></div>
             <div class="relative z-2 p-3">
                 <img class="w-75 rounded-circle shadow lazy" data-src="/assets/img/team_decentral/avatar-andrei.png" alt="Cartoon avatar of Andrei Daniliuc" title="Andrei Daniliuc">
-                <p class="p-big my-3">Andrei Daniliuc</p>
+                <p class="p-big my-3">Andrei <span class="d-table">Daniliuc</span></p>
             </div>
         </div>
         

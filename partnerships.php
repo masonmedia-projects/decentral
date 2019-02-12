@@ -39,7 +39,7 @@ include 'includes/header.php';
    
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-people-2.jpg" alt="Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" alt="Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.">
         </div>
     </div>
     
@@ -113,7 +113,7 @@ include 'includes/header.php';
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Get in touch</h2>
             <h3 class="section-title">Contact our business development team for more information.</h3>
-            <p class="p-big pt-3 m-0">Or reach out on one of our verified social channels.</p>
+<!--            <p class="p-big pt-3 m-0">Or reach out on one of our verified social channels.</p>-->
         </div>
         <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
            <div class="container-fluid">
@@ -141,7 +141,8 @@ include 'includes/header.php';
                         </div>
                        
                    </div>
-                   <div class="col-lg-12 d-flex justify-content-start align-items-start">
+                   <div class="col-lg-12 d-flex flex-column justify-content-start align-items-start">
+                       <p class="p-big m-0">Or drop us a line out on one of our verified social channels.</p>
                        <a href="mailto:bd@decentral.ca" target="_blank"><p class="p-btn mt-3">Reach out &#8594;</p></a>
                    </div>
                </div>

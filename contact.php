@@ -38,8 +38,8 @@ include 'includes/header.php';
     </div>
       
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-banner-redux.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-banner-redux.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">
         </div>
     </div>
       
@@ -58,10 +58,10 @@ include 'includes/header.php';
         <div class="offset-lg-2"></div>
     </div>
     
-    <div class="row d-flex p-0 min-700-lg bg-light">
-        <div class="col-lg-12 p-0">
+    <div class="row d-flex p-0 bg-light">
+        <div class="col-lg-12 p-0 min-500">
             <!--<iframe class="min-700-lg lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.124304114213!2d-79.39482969890314!3d43.64558207901915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d07b501a7b%3A0x9f88ec38c17e1b76!2sDecentral+Inc.!5e0!3m2!1sen!2sca!4v1516810481885" width="100%" frameborder="0"></iframe>-->
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-map-orange.png" alt="Contact Decentral Inc.">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-map-orange.png" alt="Contact Decentral Inc.">
         </div>
     </div><!--end row-->
      
@@ -81,8 +81,8 @@ include 'includes/header.php';
     </div>
          
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="Get in touch.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="Get in touch.">
         </div>
     </div>
     

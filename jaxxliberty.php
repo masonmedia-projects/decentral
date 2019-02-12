@@ -11,6 +11,18 @@ include 'includes/header.php';
 <!--banner-->
 
 <div role="banner" class="container-fluid p-0">
+<!--
+    <div class="row d-flex min-700-lg py-5 text-light ts">
+       <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" src="/assets/img/jaxx-ipad-black-wood-table.jpg" alt="Jaxx Liberty">
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left p-5">
+            <h1 class="h4">Jaxx Liberty.</h1>
+            <h2 class="site-title text-light font-weight-bold">Your all-in-one digital asset wallet.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>
+        </div>
+        <div class="offset-lg-5"></div>
+    </div>
+-->
+    
     <div class="row d-flex min-700-lg py-5 bg-white text-secondary">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-3">Your all-in-one digital asset wallet</h1>
@@ -21,8 +33,8 @@ include 'includes/header.php';
     </div>
   
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-2-people-selfie.jpeg" alt="Jaxx Classic">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-2-people-selfie.jpeg" alt="Jaxx Classic">
         </div>
     </div>
 </div>
@@ -40,8 +52,8 @@ include 'includes/header.php';
     </div>
       
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Classic">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Classic">
         </div>
     </div>
       
@@ -54,8 +66,8 @@ include 'includes/header.php';
     </div>
     
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-iphone-isometric-gallery.jpg" alt="Jaxx Liberty is packed with features. Go to jaxx.io for more.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-iphone-isometric-gallery.jpg" alt="Jaxx Liberty is packed with features. Go to jaxx.io for more.">
         </div>
     </div>     
       
@@ -69,9 +81,9 @@ include 'includes/header.php';
     </div>  
 
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
+        <div class="col-lg-12 min-500">
 <!--            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-security-phone-angle-top.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">-->
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" src="/assets/img/jaxx-pc-coffee.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">
+            <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/jaxx-pc-coffee.png" alt="Jaxx Liberty has industry leading security features from facial recognition to qr-code support, a 12-word backup phrase, and password protection.">
         </div>
     </div>
       
@@ -86,8 +98,8 @@ include 'includes/header.php';
     </div>
   
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free 24/7 support from our User Success Team.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free 24/7 support from our User Success Team.">
         </div>
     </div>
       
@@ -102,8 +114,8 @@ include 'includes/header.php';
     </div>
 
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-friends.jpg" alt="Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-friends.jpg" alt="Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.">
         </div>
     </div>
        
@@ -131,8 +143,8 @@ include 'includes/header.php';
     </div>
     
     <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-clay-iphone-ipad-myjaxx.jpg" alt="Join thousands of users who already trust Jaxx Liberty. Download it for free.">
+        <div class="col-lg-12 min-500">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-clay-iphone-ipad-myjaxx.jpg" alt="Join thousands of users who already trust Jaxx Liberty. Download it for free.">
         </div>
     </div>
     
