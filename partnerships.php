@@ -39,7 +39,7 @@ include 'includes/header.php';
    
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" alt="Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-desk-paraphernalia.jpg" alt="Reach out to us for more information on integration of new tokens into Jaxx Liberty.">
         </div>
     </div>
     
@@ -69,7 +69,6 @@ include 'includes/header.php';
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Integrations</h2>
             <h3 class="section-title text-dark">The Jaxx Liberty digital asset wallet.</h3>
-<!--            <p class="p-big pt-3 m-0">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet available on iOS, Android, Chrome Extension, Mac, Windows and Linux desktops, integrating over 85 blockchain projects.</p>-->
             <p class="p-big pt-3 m-0">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet integrating over 85 blockchain projects. It is available on all platforms including iOS, Android, Chrome Extension, Mac, Windows and Linux desktops.</p>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
@@ -80,7 +79,7 @@ include 'includes/header.php';
 
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-desk-paraphernalia.jpg" alt="Reach out to us for more information on integration of new tokens into Jaxx Liberty.">
+           <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-ipad-palm-desk.jpg" alt="Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.">
         </div>
     </div>
     
@@ -113,7 +112,6 @@ include 'includes/header.php';
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4">Get in touch</h2>
             <h3 class="section-title">Contact our business development team for more information.</h3>
-<!--            <p class="p-big pt-3 m-0">Or reach out on one of our verified social channels.</p>-->
         </div>
         <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
            <div class="container-fluid">
@@ -152,7 +150,7 @@ include 'includes/header.php';
 
      <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-heart-hands.jpg" alt="Get in touch with us!">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-heart-hands-love.jpg" alt="Get in touch with us!">
         </div>
     </div>
       

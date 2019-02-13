@@ -32,7 +32,7 @@ include 'includes/header.php';
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
 <!--            <h1 class="h4 mt-5">Decentral</h1>-->
-            <img class="decentral-logo my-3" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+            <img class="decentral-logo my-3 lazy" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold">Interface. Infrastructure. Integrations. Innovation.</h2>
             <h2 class="h4">Building the tools to usher in a new world of decentralization.</h2>
             <!--button container-->
@@ -104,7 +104,7 @@ include 'includes/header.php';
     </div><!--end row-->
      
      <div class="row d-flex bg-white">
-        <div class="col-lg-12 min-500 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-lg-12 min-700-lg d-flex flex-column justify-content-center align-items-center">
             <img data-src="/assets/img/jaxx-imac-white.jpg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
 <!--            <img data-src="/assets/img/jaxx-macbook-air.png" class="w-75 absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">-->
         </div>
@@ -124,8 +124,9 @@ include 'includes/header.php';
     </div><!--end row-->
 
     <div class="row d-flex bg-light">
-        <div class="col-lg-12 min-500">
-            <img data-src="/assets/img/jaxx-group-people.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">
+        <div class="col-lg-12 min-700-lg">
+<!--            <img data-src="/assets/img/jaxx-group-people.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">-->
+            <img data-src="/assets/img/jaxx-android-tablet-pc.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">
         </div>
     </div>
     
@@ -143,14 +144,13 @@ include 'includes/header.php';
     </div><!--end row-->
     
     <div class="row d-flex bg-light">
-        <div class="col-lg-12 min-500">
+        <div class="col-lg-12 min-700-lg">
             <img data-src="/assets/img/decentral-toronto-flatiron.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is a critical node in a growing network of companies using decentralized technologies.">
         </div>
     </div>
     
     <!--team-->
     
-<!--
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
             <h2 class="h4">Decentral team</h2>
@@ -160,14 +160,14 @@ include 'includes/header.php';
             <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
             <a href="/team.php"><p class="p-btn mt-3">Learn more &#8594;</p></a>  
         </div>
-    </div>end row
+    </div>
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/jaxx-testimonials.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
+<!--            <img data-src="/assets/img/jaxx-partners.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">-->
+            <img data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
         </div>
     </div>
--->
     
     <!--testimonials-->
     
@@ -195,7 +195,7 @@ include 'includes/header.php';
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div role="banner" class="container-fluid">
-            <div class="row d-flex min-500 p-0 scene_element scene_element--fadein">        
+            <div class="row d-flex min-700-lg p-0 scene_element scene_element--fadein">        
                 <div class="col-lg-9 banner-left p-5 o-12 scene_element scene_element--fadeindown">
                     <h3 class="section-title text-light font-weight-light">"In Jaxx, Presearch has a popular, well-respected wallet to offer its exponentially growing user base of over 300,000 members. We join Decentral in the mission of putting users first.”</h3>
                     <h3 class="font-weight-bold orange mt-3">Colin Paper</h3>
@@ -207,7 +207,7 @@ include 'includes/header.php';
         </div>
         <div class="carousel-item">
           <div role="banner" class="container-fluid">
-            <div class="row d-flex min-500 p-0 scene_element scene_element--fadein">        
+            <div class="row d-flex min-700-lg p-0 scene_element scene_element--fadein">        
                 <div class="col-lg-9 banner-left p-5 o-12 scene_element scene_element--fadeindown">
                     <h3 class="section-title text-light font-weight-light">"I look forward to seeing the new Jaxx Liberty and how the broader DigiByte community will use it."</h3>
                     <h3 class="font-weight-bold orange mt-3">Josiah Spackman</h3>
@@ -219,7 +219,7 @@ include 'includes/header.php';
         </div>
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-500 p-0 bg--slide-3 scene_element scene_element--fadein">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">
                 <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"Polymath welcomes the launch of Jaxx Liberty. We chose Jaxx Liberty as our go-to wallet for the POLY token community."</h3>
                     <h3 class="font-weight-bold orange mt-3">Trevor Koverko</h3>
@@ -231,7 +231,7 @@ include 'includes/header.php';
         </div><!--end slide-->
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-500 p-0 bg--slide-3 scene_element scene_element--fadein">    <div class="col-lg-9 banner-left p-5 o-12">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">    <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"We’re very happy to partner with Jaxx, a highly-secure and easy-to-use wallet that is the first to support RSK"</h3>
                     <h3 class="font-weight-bold orange mt-3">Diego Gutierrez Zaldivar</h3>
                     <p class="p-big orange mb-3">&mdash; CEO & Co-Founder, RSK Labs</p>
@@ -242,7 +242,7 @@ include 'includes/header.php';
         </div><!--end slide-->
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-500 p-0 bg--slide-3 scene_element scene_element--fadein">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">
                 <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">“Jaxx is a partner we rely on. We can be sure Jaxx Liberty will serve and support our expanding ecosystem.”</h3>
                     <h3 class="font-weight-bold orange mt-3">Malcolm CasSelle</h3>
@@ -308,8 +308,8 @@ include 'includes/header.php';
     </div><!--end row-->
 
      <div class="row d-flex bg-light">
-        <div class="col-lg-12 min-500">
-            <img src="/assets/img/decentral-community-red.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral" title="Decentral Inc.">
+        <div class="col-lg-12 min-700-lg">
+            <img data-src="/assets/img/decentral-community-red.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral" title="Decentral Inc.">
         </div>
     </div>
      

@@ -11,12 +11,13 @@ include 'includes/header.php';
     <!--jumbotron-->
     
     <div role="banner" class="container-fluid bg-black p-0">
-        <div class="row d-flex min-700-lg relative py-5">
-            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-black-cubes.jpeg" alt="About Decentral">
+        <div class="row d-flex min-700-lg relative py-5 ts">
+<!--            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-black-cubes.jpeg" alt="About Decentral">-->
+            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-3">About Decentral</h1>
-                <h2 class="site-title knockout-gradient font-weight-bold">On a mission to create opportunity and empower individuals around the world.</h2>
-                <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>
+                <h2 class="site-title text-light font-weight-bold">On a mission to create opportunity and empower individuals around the world.</h2>
+                <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
             </div>
             <div class="offset-lg-3"></div>
         </div>
@@ -40,9 +41,9 @@ include 'includes/header.php';
         <!-- values modal -->
         <div class="modal fade" id="values" tabindex="-1" role="dialog" aria-labelledby="values" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content bg-black text-light">
               <div class="modal-header border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">X</span>
                 </button>
               </div>
@@ -112,13 +113,14 @@ include 'includes/header.php';
         </div><!--end modal-->
 
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-500">
-                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+            <div class="col-lg-12 min-700-lg">
+<!--                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">-->
+            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-iphone-here-look.jpg" alt="Jaxx Liberty">
             </div>
         </div>
         
         <!--anthony message-->       
-        <div class="row d-flex p-5 min-500 text-secondary bg-white">
+        <div class="row d-flex p-5 min-500 text-secondary bg-white relative z-1">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Anthony Di Iorio</h2>
                 <h3 class="section-title text-dark mb-0">A message from the founder.</h3>
@@ -129,9 +131,9 @@ include 'includes/header.php';
             </div>
         </div><!--end row-->
         
-        <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-500">
-                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
+        <div class="row d-flex bg-light">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full absolute z-0 left-0 top-0 lazy" data-src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
             </div>
         </div>
         
@@ -149,8 +151,8 @@ include 'includes/header.php';
         </div><!--end row-->
         
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-500">
-                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
             </div>
         </div>
        
@@ -516,8 +518,8 @@ include 'includes/header.php';
         </div><!--end modal-->
 
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-500">
-                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Jaxx Classic">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Decentral Team">
             </div>
         </div>
         
@@ -526,7 +528,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Careers</h2>
                 <h3 class="section-title text-dark mb-0">Informing. Empowering. Uniting.</h3>
-                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world, changing the way people think about the exchange of value.</p>
+                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
@@ -535,9 +537,8 @@ include 'includes/header.php';
         </div><!--end row-->
         
         <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-500">
-<!--                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Work for Decentral">-->
-                <img class="img-full absolute z-0 left-0 lazy" src="/assets/img/jaxx-testimonials.jpeg" alt="Work for Decentral">
+            <div class="col-lg-12 min-700-lg">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-testimonials.jpeg" alt="Work for Decentral">
             </div>
         </div>
 
