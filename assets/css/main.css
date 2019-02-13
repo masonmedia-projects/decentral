@@ -1031,6 +1031,7 @@ img.decentral-logo,
     margin-bottom: 5px;
 }
 
+/*
 .timeline-item::before {
     border-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
     border-image: linear-gradient(to top, rgba(255, 255, 255, 0.8) 60%, rgba(255, 105, 2, 0)) 1 100%;
@@ -1045,6 +1046,7 @@ img.decentral-logo,
     font-size: .785rem;
     font-size: 18px;
     }
+*/
 .timeline-item::after {
   width: 10px;
   height: 10px;
