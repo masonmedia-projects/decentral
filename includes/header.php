@@ -21,19 +21,19 @@
         <link rel="shortcut icon" href="/favicon.png">
         <!-- Place favicon.ico in the root directory -->
         <!-- Open Graph Meta Data -->
-        <meta property="og:description" content="Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.">
-        <meta property="og:image" content="https://www.jaxx.io/img/jaxx-banner-ss.jpg">
-        <meta property="og:site_name" content="jaxx.io">
-        <meta property="og:title" content="Jaxx Liberty: Your trusted all-in-one multi-asset digital wallet.">
+        <meta property="og:description" content="Decentral Inc. is Canada's leading blockchain startup. Decentral is the maker of the Jaxx Liberty, the leading digital asset wallet, and hosted Toronto's first Bitcoin ATM.">
+        <meta property="og:image" content="https://www.decentral.ca/assets/img/decentral.ca-social-ss.png">
+        <meta property="og:site_name" content="decentral.ca">
+        <meta property="og:title" content="Decentral Inc. is Canada's leading blockchain company.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://jaxx.io">
+        <meta property="og:url" content="https://decentral.ca">
         <!-- Twitter Card Meta Data -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="https://jaxx.io">
         <meta name="twitter:creator" content="Decentral">
-        <meta name="twitter:title" content="Jaxx Liberty: Your trusted all-in-one multi-asset digital wallet.">
-        <meta name="twitter:description" content="Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.">
-        <meta name="twitter:image" content="https://www.jaxx.io/img/jaxx-banner-ss.jpg">
+        <meta name="twitter:title" content="Decentral Inc. is Canada's leading blockchain company.">
+        <meta name="twitter:description" content="Decentral Inc. is Canada's leading blockchain startup. Decentral is the maker of the Jaxx Liberty, the leading digital asset wallet, and hosted Toronto's first Bitcoin ATM.">
+        <meta name="twitter:image" content="https://www.decentral.ca/assets/img/decentral.ca-social-ss.png">
 
         <!-- Styles -->
         <link rel="stylesheet" href="/assets/css/aos.css">
@@ -73,7 +73,7 @@
        
        <!--nav-->
         <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-med">
-            <a class="navbar-brand" href="/index.php">
+            <a class="navbar-brand" href="/">
                 <!--<img class="decentral-navbar-brand" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">-->
                 <img class="decentral-navbar-brand" src="/assets/img/decentral_D_logo_white.png" alt="Decentral Inc.">
             </a>

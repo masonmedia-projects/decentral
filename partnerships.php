@@ -114,8 +114,8 @@ include 'includes/header.php';
             <h3 class="section-title">Contact our business development team for more information.</h3>
         </div>
         <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
-           <div class="container-fluid">
-               <div class="row">
+           <div class="container-fluid pl-0">
+               <div class="row pl-0">
                    <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">
                        <div class="col-xs-3">
                             <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">

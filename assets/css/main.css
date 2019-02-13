@@ -461,7 +461,7 @@ p {
 
 /*fade*/
 .transition-fade {
-    transition: .4s;
+    transition: .5s;
     transition-timing-function: ease-in-out;
     opacity: 1;
 }
@@ -1020,7 +1020,7 @@ img.decentral-logo,
 
 .timeline-item {
 /*  padding: 3em 2em 2em;*/
-  padding: 3em 0 2em 2em;
+  padding: 0.5em 0 2em 2em;
   position: relative;
 /*  color: rgba(0, 0, 0, 0.7);*/
   border-left: 2px solid rgba(0, 0, 0, 0.3);
@@ -1527,7 +1527,8 @@ footer li a {
     
     /*about page history modal*/
     .timeline-item {
-      padding: 3em 0 1.5em 1.5em;
+/*      padding: 3em 0 1.5em 1.5em;*/
+      padding: 0.5em 0 1.5em 1.5em;
     }
     
     #values p,

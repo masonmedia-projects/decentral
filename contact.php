@@ -76,7 +76,6 @@ include 'includes/header.php';
             <a href="mailto:pr@decentral.ca"><p class="p-btn mt-3">pr@decentral.ca</p></a>
             <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Anthony Di Iorio speaking & media requests</h3>
             <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">pr@decentral.ca</p></a>
-            
         </div>
         <div class="offset-lg-2"></div>
     </div>
@@ -86,8 +85,6 @@ include 'includes/header.php';
             <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="Get in touch.">
         </div>
     </div>
-    
-    
 
 </div><!--end main container-->
 

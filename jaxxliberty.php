@@ -127,14 +127,14 @@ include 'includes/header.php';
             <h2 class="h4">Download</h2>
             <h3 class="section-title font-weight-bold">Join thousands of users who already trust Jaxx Liberty. Download it for free on Android, iOS, Mac OS X, Windows, Linux, or Google Chrome extension.</h3>
             <div class="btn-group">
-                <p id="download" class="p-big mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start now &#8594;</p>
+                <p id="download" class="p-btn mt-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start now &#8594;</p>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.liberty.jaxx" target="_blank" onclick="googleAnalyticsTrigger('Android', 'Home_Section2')">Android</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" onclick="googleAnalyticsTrigger('iOS', 'Home_Section2')" href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8" target="_blank">iOS</a>
                  <div class="dropdown-divider"></div>
                 <!--chrome extension-->
-                <a class="dropdown-item" role="button" onclick="googleAnalyticsTrigger('Desktop', 'Home_Section2')" href="/downloads.php">Desktop</a>
+                <a class="dropdown-item" role="button" onclick="googleAnalyticsTrigger('Desktop', 'Home_Section2')" href="https://jaxx.io/downloads" target="_blank">Desktop</a>
                 <div class="dropdown-divider"></div>
                 <!--chrome extension-->
                 <a class="dropdown-item" role="button" onclick="googleAnalyticsTrigger('Chrome', 'Home_Section2')" href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne" target="_blank">Chrome</a>
