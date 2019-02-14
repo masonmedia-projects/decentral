@@ -98,8 +98,8 @@ include 'includes/header.php';
             <h3 class="section-title text-dark">Canada's leading blockchain company.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
-            <p class="p-big pt-3">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
-            <a href="/about.php"><p class="p-btn mt-3">Discover &#8594;</p></a>  
+            <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
+            <a href="/about.php"><p class="p-btn mt-3">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
      
@@ -119,7 +119,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
             <p class="p-big pt-3 m-0">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
-            <a href="/jaxxliberty.php"><p class="p-btn mt-3">Explore &#8594;</p></a>  
+            <a href="/jaxxliberty.php"><p class="p-btn mt-3">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
@@ -139,7 +139,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
             <p class="p-big pt-3 m-0">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
-            <a href="/partnerships.php"><p class="p-btn mt-3">Learn more &#8594;</p></a> 
+            <a href="/partnerships.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
     </div><!--end row-->
     
@@ -158,7 +158,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
             <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
-            <a href="/team.php"><p class="p-btn mt-3">Learn more &#8594;</p></a>  
+            <a href="/team.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div>
     
@@ -184,7 +184,7 @@ include 'includes/header.php';
     <!-- carousel-->
     
     <div id="testimonials" class="carousel slide carousel-fade relative" data-ride="carousel" data-aos="fade" data-aos-easing="ease-in-out-quart" data-aos-duration="1000">
-      <img data-src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" class="img-full absolute z-0 lazy" alt="Decentral is an innovation hub for disruptive and decentralized technologies." title="Decentral testimonials">
+      <img data-src="/assets/img/decentral-home-banner.jpeg" class="img-full absolute z-0 lazy" alt="Decentral is an innovation hub for disruptive and decentralized technologies." title="Decentral testimonials">
      
       <ol class="carousel-indicators">
         <li data-target="#testimonials" data-slide-to="0" class="active"></li>
@@ -271,7 +271,7 @@ include 'includes/header.php';
                    <div class="col-lg-12 d-flex justify-content-start align-items-start py-2 px-0">
                        <div class="col-xs-3">
                             <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
-                            <i class="fa fa-facebook orange"></i>
+                            <i class="fa fa-facebook orange pl-0"></i>
                             </a>
                         </div>
                         <div class="col-xs-3">

@@ -12,7 +12,7 @@
            echo "Default title tag"; 
         } ?></title>
         <!--core meta data-->
-        <meta name="description" content="Decentral Inc. is Canada's leading blockchain startup. Decentral is the maker of the Jaxx Liberty, the leading digital asset wallet, and hosted Toronto's first Bitcoin ATM.">
+        <meta name="description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
         <meta name="keywords" content="Decentral,Jaxx Liberty,Blockchain,Cryptocurrency,Decentral Inc.,Anthony Di Iorio">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="manifest" href="site.webmanifest">
@@ -21,8 +21,8 @@
         <link rel="shortcut icon" href="/favicon.png">
         <!-- Place favicon.ico in the root directory -->
         <!-- Open Graph Meta Data -->
-        <meta property="og:description" content="Decentral Inc. is Canada's leading blockchain startup. Decentral is the maker of the Jaxx Liberty, the leading digital asset wallet, and hosted Toronto's first Bitcoin ATM.">
-        <meta property="og:image" content="https://www.decentral.ca/assets/img/decentral.ca-social-ss.png">
+        <meta property="og:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
+        <meta property="og:image" content="https://www.decentral.ca/assets/img/decentral-social-ss.png">
         <meta property="og:site_name" content="decentral.ca">
         <meta property="og:title" content="Decentral Inc. is Canada's leading blockchain company.">
         <meta property="og:type" content="website">
@@ -32,14 +32,12 @@
         <meta name="twitter:site" content="https://jaxx.io">
         <meta name="twitter:creator" content="Decentral">
         <meta name="twitter:title" content="Decentral Inc. is Canada's leading blockchain company.">
-        <meta name="twitter:description" content="Decentral Inc. is Canada's leading blockchain startup. Decentral is the maker of the Jaxx Liberty, the leading digital asset wallet, and hosted Toronto's first Bitcoin ATM.">
-        <meta name="twitter:image" content="https://www.decentral.ca/assets/img/decentral.ca-social-ss.png">
-
+        <meta name="twitter:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
+        <meta name="twitter:image" content="https://www.decentral.ca/assets/img/decentral-social-ss.png">
         <!-- Styles -->
         <link rel="stylesheet" href="/assets/css/aos.css">
         <link rel="stylesheet" href="/assets/css/normalize.css">
         <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/html5-device-mockups/dist/device-mockups.min.css">
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/main.min.css">
         <!--cookies banner-->
@@ -96,7 +94,7 @@
                         <a class="nav-link" href="/jaxxliberty.php">Jaxx Liberty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/partnerships.php">Partner Network</a>
+                        <a class="nav-link" href="/partner-network.php">Partner Network</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>

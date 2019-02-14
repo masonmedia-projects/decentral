@@ -32,7 +32,7 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
             <h2 class="h4 mt-4">Jaxx Liberty customer support</h2>
             <h3 class="section-title font-weight-bold">Get free world-class support from our User Success Team, via email or social media, available 24/7.</h3>
-            <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-3">Get in touch &#8594;</p></a>
+            <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-3">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>

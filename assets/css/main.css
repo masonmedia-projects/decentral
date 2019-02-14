@@ -865,7 +865,7 @@ img.decentral-logo,
     padding: 30px;
 }
 
-/*  downloads modals */
+/*  modals */
 
 .modal-content {
      border: 10px solid lightgrey;
@@ -877,19 +877,6 @@ img.decentral-logo,
 	transition: opacity .5s linear, top .5s ease-out;
 }
 /*or add fade-scale class*/
-
-.fade-scale {
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	opacity: 0;
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
-}
-.fade-scale.in {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
 
 /* cookies consent banner ======================*/
 
@@ -975,6 +962,84 @@ img.decentral-logo,
 	background: url(/assets/img/decentral-office-original-redux.jpg) center;
 	background-size: cover;
 }
+
+/* about modal toggle close */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6902;
+  background-color: linear-gradient(to right, #f5af19, #f12711);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff6902;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff6902;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: transparent;
+    /* text-shadow: 0 1px 0 #fff; */
+     text-shadow: none; 
+     opacity: 1; 
+}
+
 
 /* jaxx liberty ======================*/
 
@@ -1323,7 +1388,7 @@ nav,
 .icon {
 	font-size: 50px;
 }
-#swup .fa {
+.fa {
 	font-size: 10vmin;
     font-size: 6vmin;
     font-size: 35px;
@@ -1334,8 +1399,8 @@ nav,
     font-size: 40px;
     padding: 10px 40px 10px 0;
 }
-#banner .fa-btn {
-    font-size: 20px;
+#banner .fa-btn, .fa-btn {
+    font-size: 25px;
     padding: 0 5px;
 }
 .fa--stroke {

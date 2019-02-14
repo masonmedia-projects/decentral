@@ -53,7 +53,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
             <p class="p-big pt-3 m-0">To that end Decentral is building relationships with a range of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Get in touch &#8594;</p></a> 
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
     </div><!--end row-->
     
@@ -73,7 +73,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
             <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">We have a broad user base with over a million downloads of Jaxx Classic, thousands now using Jaxx Liberty, with an average of 3000 daily transactions. Exposure to this wide base of crypto and blockchain insiders is a strong way to increase visibility and adoption of your project. Reach out to us for more information on integrating new coins, tokens, and digital assets into Jaxx Liberty.</p>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Join us &#8594;</p></a>  
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Join us <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
@@ -141,7 +141,7 @@ include 'includes/header.php';
                    </div>
                    <div class="col-lg-12 d-flex flex-column justify-content-start align-items-start">
                        <p class="p-big m-0">Or drop us a line out on one of our verified social channels.</p>
-                       <a href="mailto:bd@decentral.ca" target="_blank"><p class="p-btn mt-3">Reach out &#8594;</p></a>
+                       <a href="mailto:bd@decentral.ca" target="_blank"><p class="p-btn mt-3">Reach out <i class="fa fa-angle-right fa-btn orange"></i></p></a>
                    </div>
                </div>
            </div>

@@ -32,9 +32,9 @@ include 'includes/header.php';
                 <h3 class="section-title text-dark mb-0">Working together to unite blockchain projects around the globe.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our purpose is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
+                <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3">Explore our values &#8594;</p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
 
@@ -43,8 +43,12 @@ include 'includes/header.php';
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-black text-light">
               <div class="modal-header border-0">
-                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">X</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <!-- Rounded switch -->
+                <label aria-hidden="true" class="switch">
+                  <input type="checkbox checked">
+                  <span class="slider round"></span>
+                </label>
                 </button>
               </div>
               <div class="modal-body px-4 pt-0">
@@ -99,8 +103,8 @@ include 'includes/header.php';
                             <p class="py-2">We know that change is inevitable in life. We choose to embrace it. Change is an opportunity for growth.</p>
                        </div>
                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4">
-                            <h3 class="h2 font-weight-bold pt-2">12. We are Decentral.</h3>
-                            <p class="py-2">Championing the decentralized movement, building the technology that empowers and creates wins for all.</p>
+                            <h3 class="h2 font-weight-bold pt-2">12. Our purpose.</h3>
+                            <p class="py-2">We champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
                        </div>
                    </div>
                </div><!--end container-->
@@ -114,7 +118,6 @@ include 'includes/header.php';
 
         <div class="row d-flex bg-light relative">
             <div class="col-lg-12 min-700-lg">
-<!--                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">-->
             <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-iphone-here-look.jpg" alt="Jaxx Liberty">
             </div>
         </div>
@@ -146,7 +149,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In the course of six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. Find out more about Decentral.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Find out more &#8594;</p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
         
@@ -162,7 +165,11 @@ include 'includes/header.php';
             <div class="modal-content bg-black text-light">
               <div class="modal-header border-0">
                 <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">X</span>
+                   <!-- Rounded switch -->
+                    <label aria-hidden="true" class="switch">
+                      <input type="checkbox checked">
+                      <span class="slider round"></span>
+                    </label>
                 </button>
               </div>
               <div class="modal-body px-5 pt-0">
@@ -287,7 +294,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
                 <p class="p-big pt-3 m-0">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3">Meet the Decentral team &#8594;</p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3">Meet the Decentral team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
         
@@ -297,7 +304,11 @@ include 'includes/header.php';
             <div class="modal-content">
               <div class="modal-header border-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">X</span>
+                   <!-- Rounded switch -->
+                    <label aria-hidden="true" class="switch">
+                      <input type="checkbox checked">
+                      <span class="slider round"></span>
+                    </label>
                 </button>
               </div>
               <div class="modal-body px-5 pt-0">
