@@ -1339,6 +1339,20 @@ nav,
   transform: rotate(-90deg) translateX(-3px);
 }
 
+/*jaxx mobile menu cube styles*/
+
+/* mobile nav toggler rotate on hover */
+
+.jaxx-mobile-menu {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.jaxx-mobile-menu:hover {
+	color: white;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
 /**/
 
 .nav-link,

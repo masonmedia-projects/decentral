@@ -22,6 +22,13 @@ RewriteRule ^team$ https://decentral.ca/about.php [R,L]
 # Redirects from https://decentral.ca/partnerships.html to decentral.ca/partner-network.php
 RewriteRule ^partnerships$ https://decentral.ca/partner-network.php [R,L]
 
+
+Redirect 301 /jaxx.html http://www.decentral.ca/jaxxliberty.php
+Redirect 301 /history.html http://www.decentral.ca/about.php
+Redirect 301 /team.html http://www.decentral.ca/about.php
+Redirect 301 /partnerships.html http://www.decentral.ca/partner-network.php
+
+
 Options -Indexes
 
 ## EXPIRES CACHING ##
