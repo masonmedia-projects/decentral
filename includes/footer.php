@@ -7,9 +7,9 @@
                             <li class="h4 font-weight-bold">Company</li>
                             <hr class="hr-big border-0 bg-secondary">
                             <li><a href="/about.php">About</a></li>
-                            <li><a href="/about.php">Partnerships</a></li>
-                            <li><a href="/community.php">Team</a></li>
-                            <li><a href="/history.php">History</a></li>
+                            <li><a href="/partner-network.php">Partner Network</a></li>
+                            <li><a href="/about.php">Team</a></li>
+                            <li><a href="/about.php">History</a></li>
                         </ul>
                     </div>
                     
@@ -17,9 +17,9 @@
                         <ul class="list-unstyled w-100">
                             <li class="h4 font-weight-bold">Jaxx Liberty</li>
                             <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="/features.php">Features</a></li>
-                            <li><a href="/community.php">Community</a></li>
-                            <li><a href="/legal/terms-current.php">Terms of Service</a></li>
+                            <li><a href="https://jaxx.io/features">Features</a></li>
+                            <li><a href="https://jaxx.io/community">Community</a></li>
+                            <li><a href="https://jaxx.io/legal/terms-current">Terms of Service</a></li>
                             <li><a href="https://blog.jaxx.io">Blog</a></li>
                         </ul>
                     </div>
@@ -31,7 +31,7 @@
                             <li><a href="https://play.google.com/store/apps/details?id=com.liberty.jaxx">Android</a></li>
                             <li><a href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8">iOS</a></li>
                             <li><a href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne">Chrome</a></li>
-                            <li><a href="/downloads.php">Desktop</a></li>
+                            <li><a href="https://jaxx.io/downloads">Desktop</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew">

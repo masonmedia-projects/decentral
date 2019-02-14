@@ -139,7 +139,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
             <p class="p-big pt-3 m-0">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
-            <a href="/partnerships.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
+            <a href="/partner-network.php"><p class="p-btn mt-3">Connect with us <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
     </div><!--end row-->
     
