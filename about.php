@@ -144,12 +144,12 @@ include 'includes/header.php';
         <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Decentral history</h2>
-                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
+                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2013 and has become Canada’s leading blockchain company.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In the course of six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. Find out more about Decentral.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
         

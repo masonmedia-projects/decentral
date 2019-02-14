@@ -43,6 +43,66 @@ include 'includes/header.php';
             <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-imac-closeup-support.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">
         </div>
     </div>
+     
+     <!--social-->
+      
+    <div class="row d-flex min-500 bg-white">
+        <div class="offset-lg-2"></div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
+            <h2 class="h4 mt-4">The Decentral Ecosystem</h2>
+            <h3 class="section-title font-weight-bold">Join the Decentral community today. Read the latest posts about Jaxx Liberty, integrations, blockchain news, our partners, and more.</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-center align-items-center py-3 px-0">
+                       <div class="col-xs-3 mr-2">
+                            <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
+                            <i class="fa fa-facebook orange p-3"></i>
+        <!--                                <p class="h2 text-secondary font-weight-light">FB</p>-->
+                            </a>
+                        </div>
+                        <div class="col-xs-3 mr-2">
+                            <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Contact_Page')">
+                            <i class="fa fa-twitter orange p-3"></i>
+        <!--                             <p class="h2 text-secondary font-weight-light">TW</p>-->
+                            </a>
+                        </div>
+                        <div class="col-xs-3 mr-2">
+                            <a href="https://www.instagram.com/jaxx_io/" target="_blank" onclick="googleAnalyticsTrigger('Instagram', 'Contact_Page')">
+                            <i class="fa fa-instagram orange p-3"></i>
+        <!--                             <p class="h2 text-secondary font-weight-light">IG</p>-->
+                            </a>
+                        </div>
+                        <div class="col-xs-3 mr-2">
+                            <a href="https://www.youtube.com/user/decentralTV" target="_blank" onclick="googleAnalyticsTrigger('Youtube', 'Contact_Page')">
+                            <i class="fa fa-youtube orange p-3"></i>
+        <!--                            <p class="h2 text-secondary font-weight-light">YT</p>-->
+                            </a>
+                        </div>
+                        <div class="col-xs-3 mr-2">
+                            <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Contact_Page')">
+                            <i class="fa fa-telegram orange p-3"></i>
+        <!--                            <p class="h2 text-secondary font-weight-light">TG</p>-->
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Contact_Page')">
+                            <i class="fa fa-reddit orange p-3"></i>
+        <!--                            <p class="h2 text-secondary font-weight-light">RT</p>-->
+                            </a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="offset-lg-2"></div>
+    </div>
+        
+    <div class="row d-flex bg-light relative">
+        <div class="col-lg-12 min-700-lg">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-three-people-selfie.jpg" alt="Get in touch.">
+        </div>
+    </div>
       
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
@@ -79,12 +139,13 @@ include 'includes/header.php';
         </div>
         <div class="offset-lg-2"></div>
     </div>
-         
-    <div class="row d-flex bg-light relative">
+      
+      <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
             <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="Get in touch.">
         </div>
     </div>
+
 
 </div><!--end main container-->
 

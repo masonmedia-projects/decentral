@@ -19,7 +19,7 @@
                             <hr class="hr-big border-0 bg-secondary">
                             <li><a href="https://jaxx.io/features">Features</a></li>
                             <li><a href="https://jaxx.io/community">Community</a></li>
-                            <li><a href="https://jaxx.io/legal/terms-current">Terms of Service</a></li>
+                            <li><a href="https://support.decentral.ca/hc/en-us" target="_blank">Jaxx Support</a></li>
                             <li><a href="https://blog.jaxx.io">Blog</a></li>
                         </ul>
                     </div>
@@ -38,9 +38,9 @@
                         <ul class="list-unstyled w-100">
                             <li class="h4 font-weight-bold">Connect</li>
                             <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="https://support.decentral.ca/hc/en-us" target="_blank">Jaxx Support</a></li>
                             <li><a href="https://www.facebook.com/JaxxWallet" target="_blank">Facebook</a></li>
                             <li><a href="https://twitter.com/jaxx_io" target="_blank">Twitter</a> / <a href="https://twitter.com/Jaxx_Support" target="_blank">Twitter Support</a></li>
+                            <li><a href="https://www.instagram.com/jaxx_io/" target="_blank">Instagram</a></li>
                             <li><a href="https://www.reddit.com/r/jaxx/" target="_blank">Reddit</a></li>
                         </ul>
                     </div>

@@ -119,7 +119,7 @@ include 'includes/header.php';
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
             <p class="p-big pt-3 m-0">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
-            <a href="/jaxxliberty.php"><p class="p-btn mt-3">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <a href="/jaxxliberty.php"><p class="p-btn mt-3">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
@@ -154,11 +154,11 @@ include 'includes/header.php';
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
             <h2 class="h4">Decentral team</h2>
-            <h3 class="section-title text-dark mb-0">Working together to unite blockchain projects around the globe.</h3>
+            <h3 class="section-title text-dark mb-0">On a mission to create opportunity and empower individuals around the world.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-            <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
-            <a href="/team.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0">Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all. </p>
+            <a href="/about.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div>
     
@@ -258,52 +258,13 @@ include 'includes/header.php';
    <!--social-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
             <h2 class="h4 scene_element scene_element--fadeinright">Stay connected</h2>
             <h3 class="section-title m-0">Become a part of the Decentral ecosystem.</h3>
         </div>
-        <div class="col-lg-6 d-flex justify-content-start align-items-center o-12 scene_element scene_element--fadeindown">
-           <div class="container-fluid">
-               <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">
-                        <p class="p-big pt-3 m-0">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partnerships.php"><span class="orange">partners</span></a> around the world.</p>
-                    </div>
-                   <div class="col-lg-12 d-flex justify-content-start align-items-start py-2 px-0">
-                       <div class="col-xs-3">
-                            <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
-                            <i class="fa fa-facebook orange pl-0"></i>
-                            </a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Community_Page')">
-                            <i class="fa fa-twitter orange"></i>
-                            </a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://www.instagram.com/jaxx_io/" target="_blank" onclick="googleAnalyticsTrigger('Instagram', 'Community_Page')">
-                            <i class="fa fa-instagram orange"></i>
-                            </a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://www.youtube.com/user/decentralTV" target="_blank" onclick="googleAnalyticsTrigger('Youtube', 'Community_Page')">
-                            <i class="fa fa-youtube orange"></i>
-                            </a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Community_Page')">
-                            <i class="fa fa-telegram orange"></i>
-                            </a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Community_Page')">
-                            <i class="fa fa-reddit orange"></i>
-                            </a>
-                        </div>
-                       
-                   </div>
-               </div>
-           </div>        
-            
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
+            <p class="p-big pt-3 m-0">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partnerships.php"><span class="orange">partners</span></a> around the world. Join the Jaxx Liberty community today.</p>
+            <a href="/contact.php"><p class="p-btn mt-3">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
