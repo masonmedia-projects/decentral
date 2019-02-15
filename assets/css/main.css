@@ -254,7 +254,7 @@ p {
 	font-weight: 600;
 	line-height: 95%;
     letter-spacing: -2px;
-    padding: 0 0 10px;
+    padding: 5px 0 10px;
 }
 .site-title-big {
     font-size: 80px; /*apple app store text*/
@@ -665,6 +665,11 @@ img.decentral-logo,
 	height: auto;
 	width: 185px;
 }
+.decentral-D {
+	height: auto;
+    opacity: 1;
+	width: 80px;
+}
 .decentral-mobile-menu {
 	height: auto;
 	width: 40px;
@@ -674,10 +679,7 @@ img.decentral-logo,
 	margin-bottom: -20px;
 	width: 20vw;
 }
-.decentral-heart-logo {
-	height: auto;
-	width: 500px;
-}
+
 /* page/section images */
 
 /*===== Home ======*/
@@ -1343,15 +1345,17 @@ nav,
 
 /* mobile nav toggler rotate on hover */
 
-.jaxx-mobile-menu {
+.decentral-mobile-menu {
+/*    perspective: 1000px;*/
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+    width: 45px;
 }
-.jaxx-mobile-menu:hover {
-	color: white;
+.decentral-mobile-menu:hover {
+    filter: rotate(90deg);
 	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
 }
+
 
 /**/
 

@@ -9,7 +9,7 @@
            echo $title; 
         } 
         else { 
-           echo "Default title tag"; 
+           echo "Decentral Inc. | Canada's Leading Blockchain Startup"; 
         } ?></title>
         <!--core meta data-->
         <meta name="description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
@@ -76,14 +76,15 @@
                 <img class="decentral-navbar-brand" src="/assets/img/decentral_D_logo_white.png" alt="Decentral Inc.">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            
-<!--            <img class="decentral-mobile-menu" src="/assets/img/jaxx-menu-orange.png" alt="Jaxx Liberty Menu">-->
+            <!--<img style="opacity: 1" class="decentral-mobile-menu" src="/assets/img/jaxx-menu-orange.png" alt="Jaxx Liberty Menu">-->
+            <img style="opacity: 1" class="decentral-mobile-menu" src="/assets/img/decentral-menu-rubiks-solid.png">
+<!--
                 <div class="wrapper-menu">
                   <div class="line-menu half start"></div>
                   <div class="line-menu"></div>
                   <div class="line-menu half end"></div>
                 </div>
-                
+-->
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">

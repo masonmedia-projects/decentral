@@ -1,8 +1,6 @@
 <?php
 
-$title = "Decentral | Home";
-
-$metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.";
+$title = "Decentral Inc. | Canada's leading blockchain startup";
 
 include 'includes/header.php';
 
@@ -33,16 +31,16 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
             <!--<h1 class="h4 mt-5">Decentral</h1>-->
             <img class="decentral-logo my-3 lazy slide-right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
-            <h2 class="site-title d-flex flex-wrap knockout-gradient text-light font-weight-bold slide-right">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h2 class="site-title knockout-gradient text-light font-weight-bold slide-right">Interface. Infrastructure. Integrations. Innovation.</h2>
             <h2 class="h4 slide-right">Building the tools to usher in a new world of decentralization.</h2>
             <!--button container-->
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
                     <div class="col-xs-6 pr-3">
-                        <a href="#sec-1"><p class="p-big knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient "></i></p></a> 
+                        <a href="#sec-1"><p class="p-btn knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
                     </div>
                     <div class="col-xs-6">
-                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-big knockout-gradient mb-1 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
+                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn knockout-gradient mb-1 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
                     </div>
                 </div>
             </div>

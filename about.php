@@ -1,8 +1,6 @@
 <?php
 
-$title = "Decentral | About Us";
-
-$metaD = "Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.";
+$title = "Decentral Inc. | About Us";
 
 include 'includes/header.php';
 
@@ -12,12 +10,12 @@ include 'includes/header.php';
     
     <div role="banner" class="container-fluid bg-black p-0">
         <div class="row d-flex min-700-lg relative py-5 ts">
-<!--            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-black-cubes.jpeg" alt="About Decentral">-->
+        <!--<img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-black-cubes.jpeg" alt="About Decentral">-->
             <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
-                <h1 class="h4 mt-3">About Decentral</h1>
-                <h2 class="site-title text-light font-weight-bold">On a mission to create opportunity and empower individuals around the world.</h2>
-                <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
+                <h1 class="h4 mt-4 slide-right">About Decentral</h1>
+                <h2 class="site-title text-light font-weight-bold slide-right">On a mission to create opportunity and empower individuals around the world.</h2>
+                <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
             </div>
             <div class="offset-lg-3"></div>
         </div>
@@ -28,13 +26,13 @@ include 'includes/header.php';
        <!--intro-->
        <div id="sec-1" class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Company</h2>
-                <h3 class="section-title text-dark mb-0">Working together to unite blockchain projects around the globe.</h3>
+                <h2 class="h4 orange slide-down">Company</h2>
+                <h3 class="section-title text-dark mb-0 slide-down">Working together to unite blockchain projects around the globe.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
+                <p class="p-big pt-3 m-0 slide-down">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3 slide-down">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
 
@@ -55,56 +53,57 @@ include 'includes/header.php';
                <h2 class="section-title knockout-gradient text-center pb-4 pl-4 pt-0 border-bottom w-100" data-aos="fade" data-aos-duration="1000">Our Values</h2>
                <div class="container-fluid">
                    <div class="row">
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">1. Think big. Be bold.</h3>
-                            <p class="py-2">The ability to think big and to be bold are vital to success. It’s what motivates you. We want you to step outside of your comfort zone.</p>
+                            <!--<p class="py-2">The ability to think big and to be bold are vital to success. It’s what motivates you. We want you to step outside of your comfort zone.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">2. Challenge equals opportunity.</h3>
-                            <p class="pt-2">We see challenges as opportunities in disguise. We can definitely turn each challenge into an opportunity.</p>
+                            <!--<p class="pt-2">We see challenges as opportunities in disguise. We can definitely turn each challenge into an opportunity.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">3. Normal sucks. Be strange.</h3>
-                            <p class="py-2">We live and thrive outside the lines. Are you ready to be strange?</p>
+                            <!--<p class="py-2">We live and thrive outside the lines. Are you ready to be strange?</p>-->
                        </div>
                        
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">4. Perfect for some. Not for everyone.</h3>
-                            <p class="py-2">And that’s perfectly okay.</p>
+                            <!--<p class="py-2">And that’s perfectly okay.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">5. Improve, improve, improve. Waste is a villain.</h3>
-                            <p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                            <!--<p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">6. Question everything. There's a solution to every problem.</h3>
-                            <p class="py-2">Problems arise from making assumptions. Ask questions, and seek answers.</p>
+                            <!--<p class="py-2">Problems arise from making assumptions. Ask questions, and seek answers.</p>-->
                        </div>
                     
-                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">7. Present minded. Future driven. Long term focused.</h3>
-                            <p class="py-2">We strive to continuously adapt and evolve, constantly improving our products, services, and processes, while maintaining an eye on the future.</p>
+                            <!--<p class="py-2">We strive to continuously adapt and evolve, constantly improving our products, services, and processes, while maintaining an eye on the future.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
                             <h3 class="h2 font-weight-bold pt-2">8. Come and say Hi. We'd love to hear from you.</h3>
-                            <p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>
+                            <!--<p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-bottom">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-bottom">
                            <h3 class="h2 font-weight-bold pt-2">9. We're sidekicks in a world of Heroes.</h3>
-                           <p class="py-2">Our customers, partners, and community are the heroes. We’re here to be the guides and provide them with the tools they need to be empowered.</p>
+                            <!--<p class="py-2">Our customers, partners, and community are the heroes. We’re here to be the guides and provide them with the tools they need to be empowered.</p>-->
                        </div>
                        
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right">
                             <h3 class="h2 font-weight-bold pt-2">10. Life's a game. Keep leveling up.</h3>
-                            <p class="py-2">We strive to always improve the way we do things, making sure we never plateau. We work smarter, not harder.</p>
+                            <!--<p class="py-2">We strive to always improve the way we do things, making sure we never plateau. We work smarter, not harder.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4 border-right">
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right">
                             <h3 class="h2 font-weight-bold pt-2">11. Change happens. Embrace it.</h3>
-                            <p class="py-2">We know that change is inevitable in life. We choose to embrace it. Change is an opportunity for growth.</p>
+                            <!--<p class="py-2">We know that change is inevitable in life. We choose to embrace it. Change is an opportunity for growth.</p>-->
                        </div>
-                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-start align-items-start text-left p-4">
-                            <h3 class="h2 font-weight-bold pt-2">12. Our purpose.</h3>
-                            <p class="py-2">We champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
+                       <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center text-left p-5">
+                           <img src="/assets/img/decentral_D_logo_white.png" class="decentral-D" alt="">
+<!--                            <h3 class="h2 font-weight-bold pt-2">12. Our purpose.</h3>-->
+                            <!--<p class="py-2">We champion the decentralized movement by building the technology that empowers and creates wins for all.</p>-->
                        </div>
                    </div>
                </div><!--end container-->
@@ -125,12 +124,12 @@ include 'includes/header.php';
         <!--anthony message-->       
         <div class="row d-flex p-5 min-500 text-secondary bg-white relative z-1">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Anthony Di Iorio</h2>
-                <h3 class="section-title text-dark mb-0">A message from the founder.</h3>
-                <p class="p-big pt-3 m-0">Decentralization is a buzzword with bite. It is the future of computing, finance, and the Internet. Decentralization is changing the very fabric of the global economy.</p>
+                <h2 class="h4 orange slide-right">Anthony Di Iorio</h2>
+                <h3 class="section-title text-dark mb-0 slide-right">A message from the founder.</h3>
+                <p class="p-big pt-3 m-0 slide-right">Decentralization is a buzzword with bite. It is the future of computing, finance, and the Internet. Decentralization is changing the very fabric of the global economy.</p>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">Decentralized technologies power trust-less, frictionless, efficient networks and markets by enabling people to create, store, transfer and receive value from anyone, anywhere — friends, strangers, colleagues, businesses — without the assistance or cost of traditional middlemen. As a result, every sector—from marketing to manufacturing, from healthcare to energy, from law to accounting — is being disrupted. Join us in our mission to create opportunity and empower individuals around the world.</p>
+                <p class="p-big pt-3 m-0 slide-right">Decentralized technologies power trust-less, frictionless, efficient networks and markets by enabling people to create, store, transfer and receive value from anyone, anywhere — friends, strangers, colleagues, businesses — without the assistance or cost of traditional middlemen. As a result, every sector—from marketing to manufacturing, from healthcare to energy, from law to accounting — is being disrupted. Join us in our mission to create opportunity and empower individuals around the world.</p>
             </div>
         </div><!--end row-->
         
@@ -143,13 +142,13 @@ include 'includes/header.php';
      <!--history-->       
         <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Decentral history</h2>
-                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
+                <h2 class="h4 orange slide-down">Decentral history</h2>
+                <h3 class="section-title text-dark mb-0 slide-down">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives. </p>
+                <p class="p-big pt-3 m-0 slide-down">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives. </p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3 slide-down">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
         
@@ -288,13 +287,13 @@ include 'includes/header.php';
         <!--Innovation-->
         <div class="row d-flex p-5 min-500 bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Innovation</h2>
-                <h3 class="section-title text-dark mb-0">Leading the blockchain market into 2019.</h3>
+                <h2 class="h4 orange slide-right">Innovation</h2>
+                <h3 class="section-title text-dark mb-0 slide-right">Leading the blockchain market into 2019.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-                <p class="p-big pt-3 m-0">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
+                <p class="p-big pt-3 m-0 slide-right">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3">Meet the Decentral team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3 slide-right">Meet the team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
         
@@ -552,13 +551,13 @@ include 'includes/header.php';
         <!--careers-->       
         <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Careers</h2>
-                <h3 class="section-title text-dark mb-0">Informing. Empowering. Uniting.</h3>
+                <h2 class="h4 orange slide-down">Careers</h2>
+                <h3 class="section-title text-dark mb-0 slide-down">Informing. Empowering. Uniting.</h3>
                 <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
-                <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3">Get in touch &#8594;</p></a>
+                <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
+                <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3 slide-down">Get in touch &#8594;</p></a>
             </div>
         </div><!--end row-->
         

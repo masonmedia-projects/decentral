@@ -1,8 +1,6 @@
 <?php
 
-$title = "Jaxx Liberty | Contact";
-
-$metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.";
+$title = "Decentral Inc. | Contact";
 
 include 'includes/header.php';
 
@@ -15,9 +13,9 @@ include 'includes/header.php';
         <img class="img-full min-700-lg absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center ts p-5">
-            <h1 class="h4 mt-3">Contact Decentral</h1>
-            <h2 class="site-title font-weight-bold">Connect with us.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
+            <h1 class="h4 mt-3 slide-right">Contact Decentral</h1>
+            <h2 class="site-title font-weight-bold slide-right">Connect with us.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>
@@ -30,17 +28,17 @@ include 'includes/header.php';
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 mt-4">Jaxx Liberty customer support</h2>
-            <h3 class="section-title font-weight-bold">Get free world-class support from our User Success Team, via email or social media, available 24/7.</h3>
-            <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-3">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a>
+            <h2 class="h4 mt-4 slide-down">Jaxx Liberty customer support</h2>
+            <h3 class="section-title font-weight-bold slide-down">Get free world-class support from our User Success Team, via email or social media, available 24/7.</h3>
+            <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-3 slide-down">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>
       
     <div class="row d-flex bg-light p-0">
         <div class="col-lg-12 min-700-lg p-0">
-<!--            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-lap-laptop-coffee-support.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">-->
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-imac-closeup-support.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">
+            <!--<img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-lap-laptop-coffee-support.jpg" alt="Get free world-class support from our User Success Team, via email or social media, available 24/7.">-->
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-imac-closeup-support.jpg" alt="Get free 24/7 support from our User Success Team, via email or social media">
         </div>
     </div>
      
@@ -49,45 +47,39 @@ include 'includes/header.php';
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 mt-4">The Decentral Ecosystem</h2>
-            <h3 class="section-title font-weight-bold">Join the Decentral community today. Read the latest posts about Jaxx Liberty, integrations, blockchain news, our partners, and more.</h3>
+            <h2 class="h4 mt-4 slide-right">The Decentral Ecosystem</h2>
+            <h3 class="section-title font-weight-bold slide-right">Join the Decentral community today. Read the latest posts about Jaxx Liberty, integrations, blockchain news, our partners, and more.</h3>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-center align-items-center py-3 px-0">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-center align-items-center py-3 px-0 slide-right">
                        <div class="col-xs-3 mr-2">
                             <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
                             <i class="fa fa-facebook orange p-3"></i>
-        <!--                                <p class="h2 text-secondary font-weight-light">FB</p>-->
                             </a>
                         </div>
                         <div class="col-xs-3 mr-2">
                             <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Contact_Page')">
                             <i class="fa fa-twitter orange p-3"></i>
-        <!--                             <p class="h2 text-secondary font-weight-light">TW</p>-->
                             </a>
                         </div>
                         <div class="col-xs-3 mr-2">
                             <a href="https://www.instagram.com/jaxx_io/" target="_blank" onclick="googleAnalyticsTrigger('Instagram', 'Contact_Page')">
                             <i class="fa fa-instagram orange p-3"></i>
-        <!--                             <p class="h2 text-secondary font-weight-light">IG</p>-->
                             </a>
                         </div>
                         <div class="col-xs-3 mr-2">
                             <a href="https://www.youtube.com/user/decentralTV" target="_blank" onclick="googleAnalyticsTrigger('Youtube', 'Contact_Page')">
                             <i class="fa fa-youtube orange p-3"></i>
-        <!--                            <p class="h2 text-secondary font-weight-light">YT</p>-->
                             </a>
                         </div>
                         <div class="col-xs-3 mr-2">
                             <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Contact_Page')">
                             <i class="fa fa-telegram orange p-3"></i>
-        <!--                            <p class="h2 text-secondary font-weight-light">TG</p>-->
                             </a>
                         </div>
                         <div class="col-xs-3">
                             <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Contact_Page')">
                             <i class="fa fa-reddit orange p-3"></i>
-        <!--                            <p class="h2 text-secondary font-weight-light">RT</p>-->
                             </a>
                         </div>
                    </div>
@@ -107,14 +99,14 @@ include 'includes/header.php';
     <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 mt-4">Get in touch</h2>
-            <h3 class="section-title font-weight-bold">General inquiries.</h3>
-            <p class="p-big pt-3 m-0">292 Adelaide Street West
-                <span class="d-block">Suite 401, 4th Floor</span>
-                <span class="d-block">Toronto, Ontario</span>
-                <span class="d-block">M5V 1P6</span>
+            <h2 class="h4 mt-4 slide-down">Get in touch</h2>
+            <h3 class="section-title font-weight-bold slide-down">General inquiries.</h3>
+            <p class="p-big pt-3 m-0 slide-down">292 Adelaide Street West
+                <span class="d-block slide-down">Suite 401, 4th Floor</span>
+                <span class="d-block slide-down">Toronto, Ontario</span>
+                <span class="d-block slide-down">M5V 1P6</span>
                 </p>
-            <p class="p-big pt-3 m-0"><a href="mailto:info@decentral.ca"><span class="orange">info@decentral.ca</span></a></p>
+            <p class="p-big pt-3 m-0 slide-down"><a href="mailto:info@decentral.ca"><span class="orange">info@decentral.ca</span></a></p>
         </div>
         <div class="offset-lg-2"></div>
     </div>
@@ -129,13 +121,13 @@ include 'includes/header.php';
      <div class="row d-flex min-500 bg-white">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5">
-            <h2 class="h4 my-4 scene_element scene_element--fadeinright">Department specific inquiries</h2>
-            <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Business Development</h3>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">bd@decentral.ca</p></a>
-            <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Press & Marketing</h3>
-            <a href="mailto:pr@decentral.ca"><p class="p-btn mt-3">pr@decentral.ca</p></a>
-            <h3 class="section-title font-weight-bold scene_element scene_element--fadeindown">Anthony Di Iorio speaking & media requests</h3>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">pr@decentral.ca</p></a>
+            <h2 class="h4 my-4 slide-right">Department specific inquiries</h2>
+            <h3 class="section-title font-weight-bold slide-right">Business Development</h3>
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3 slide-right">bd@decentral.ca</p></a>
+            <h3 class="section-title font-weight-bold slide-right">Press & Marketing</h3>
+            <a href="mailto:pr@decentral.ca"><p class="p-btn mt-3 slide-right">pr@decentral.ca</p></a>
+            <h3 class="section-title font-weight-bold slide-right">Anthony Di Iorio speaking & media requests</h3>
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3 slide-right">pr@decentral.ca</p></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>

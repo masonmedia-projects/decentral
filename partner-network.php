@@ -1,8 +1,6 @@
 <?php
 
-$title = "Decentral | Partnerships";
-
-$metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.";
+$title = "Decentral Inc. | Partner Network";
 
 include 'includes/header.php';
 
@@ -12,11 +10,11 @@ include 'includes/header.php';
     
 <div id="home" role="banner" class="container-fluid bg-black relative p-0">  
     <div class="row d-flex min-700-lg text-light ts py-5 px-0">
-        <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Decentral partnerships.">  
+        <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Join the Decentral partner network.">  
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 mt-3">Decentral partnerships</h1>
-            <h2 class="site-title font-weight-bold">Work with Canada's leading blockchain company.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0"></i></a>
+            <h1 class="h4 mt-4 slide-right">Decentral partner network</h1>
+            <h2 class="site-title font-weight-bold slide-right">Work with Canada's leading blockchain company.</h2>
+            <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
         </div>
         <div class="offset-lg-3"></div>
     </div>
@@ -28,12 +26,12 @@ include 'includes/header.php';
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4 orange">Working together</h2>
-            <h3 class="section-title text-dark">Canada's blockchain innovators.</h3>
-            <p class="p-big pt-3">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
+            <h2 class="h4 orange slide-down">Working together</h2>
+            <h3 class="section-title text-dark slide-down">Canada's blockchain innovators.</h3>
+            <p class="p-big pt-3 slide-down">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-            <p class="p-big pt-3">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant Internet of the future.</p>
+            <p class="p-big pt-3 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant Internet of the future.</p>
         </div>
     </div><!--end row-->
    
@@ -47,13 +45,13 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4 orange">The way forward</h2>
-            <h3 class="section-title text-dark">Building relationships.</h3>
-            <p class="p-big pt-3 scene_element scene_element--fadeinright">Mutually beneficial partnerships are the best way forward on this mission.</p>
+            <h2 class="h4 orange slide-right">The way forward</h2>
+            <h3 class="section-title text-dark slide-right">Building relationships.</h3>
+            <p class="p-big pt-3 slide-right">Mutually beneficial partnerships are the best way forward on this mission.</p>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-            <p class="p-big pt-3 m-0">To that end Decentral is building relationships with a range of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
+            <p class="p-big pt-3 m-0 slide-right">To that end Decentral is building relationships with a range of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3 slide-right">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
     </div><!--end row-->
     
@@ -67,13 +65,13 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4 orange">Integrations</h2>
-            <h3 class="section-title text-dark">The Jaxx Liberty digital asset wallet.</h3>
-            <p class="p-big pt-3 m-0">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet integrating over 85 blockchain projects. It is available on all platforms including iOS, Android, Chrome Extension, Mac, Windows and Linux desktops.</p>
+            <h2 class="h4 orange slide-down">Integrations</h2>
+            <h3 class="section-title text-dark slide-down">The Jaxx Liberty digital asset wallet.</h3>
+            <p class="p-big pt-3 m-0 slide-down">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet integrating over 85 blockchain projects. It is available on all platforms including iOS, Android, Chrome Extension, Mac, Windows and Linux desktops.</p>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-            <p class="p-big pt-3 m-0 scene_element scene_element--fadeinright">We have a broad user base with over a million downloads of Jaxx Classic, thousands now using Jaxx Liberty, with an average of 3000 daily transactions. Exposure to this wide base of crypto and blockchain insiders is a strong way to increase visibility and adoption of your project. Reach out to us for more information on integrating new coins, tokens, and digital assets into Jaxx Liberty.</p>
-            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Join us <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0 slide-down">We have a broad user base with over a million downloads of Jaxx Classic, thousands now using Jaxx Liberty, with an average of 3000 daily transactions. Exposure to this wide base of crypto and blockchain insiders is a strong way to increase visibility and adoption of your project. Reach out to us for more information on integrating new coins, tokens, and digital assets into Jaxx Liberty.</p>
+            <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3 slide-down">Join us <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
@@ -110,29 +108,29 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4 orange">Get in touch</h2>
-            <h3 class="section-title">Contact our business development team for more information.</h3>
+            <h2 class="h4 orange slide-right">Get in touch</h2>
+            <h3 class="section-title slide-right">Contact our business development team for more information.</h3>
         </div>
         <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
            <div class="container-fluid pl-0">
                <div class="row pl-0">
                    <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">
-                       <div class="col-xs-3">
+                       <div class="col-xs-3 slide-right">
                             <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
                             <i class="fa fa-facebook orange"></i>
                             </a>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xs-3 slide-right">
                             <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Community_Page')">
                             <i class="fa fa-twitter orange"></i>
                             </a>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xs-3 slide-right">
                             <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Community_Page')">
                             <i class="fa fa-telegram orange"></i>
                             </a>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xs-3 slide-right">
                             <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Community_Page')">
                             <i class="fa fa-reddit orange"></i>
                             </a>
@@ -140,8 +138,8 @@ include 'includes/header.php';
                        
                    </div>
                    <div class="col-lg-12 d-flex flex-column justify-content-start align-items-start">
-                       <p class="p-big m-0">Or drop us a line out on one of our verified social channels.</p>
-                       <a href="mailto:bd@decentral.ca" target="_blank"><p class="p-btn mt-3">Reach out <i class="fa fa-angle-right fa-btn orange"></i></p></a>
+                       <p class="p-big m-0 slide-right">Or drop us a line out on one of our verified social channels.</p>
+                       <a href="mailto:bd@decentral.ca" target="_blank"><p class="p-btn mt-3 slide-right">Reach out <i class="fa fa-angle-right fa-btn orange"></i></p></a>
                    </div>
                </div>
            </div>
