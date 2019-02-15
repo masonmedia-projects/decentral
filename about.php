@@ -144,10 +144,10 @@ include 'includes/header.php';
         <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange">Decentral history</h2>
-                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2013 and has become Canada’s leading blockchain company.</h3>
+                <h3 class="section-title text-dark mb-0">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In the course of six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. Find out more about Decentral.</p>
+                <p class="p-big pt-3 m-0">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives. </p>
                 <!-- Button trigger modal -->
                 <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
@@ -200,7 +200,7 @@ include 'includes/header.php';
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="h5 orange pb-2">4</h2>
                     <h3 class="h1">Early 2014</h3>
-                    <p>New Year’s Day: Decentral opens its doors at 64 Spadina Ave. The Bitcoin ATM in this new office is the first in Toronto and second in the country.</p>
+                    <p>New Year’s Day: <span class="orange font-weight-bold">Decentral</span> opens its doors at 64 Spadina Ave. The Bitcoin ATM in this new office is the first in Toronto and second in the country.</p>
                     <p>Decentral organizes and runs the Bitcoin Expo 2014 (bitcoinexpo.ca), attended by thousands and the biggest cryptocurrency event in Canada at the time.</p>
                     <hr class="mb-0 mt-4">
                 </div>

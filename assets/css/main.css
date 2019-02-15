@@ -89,7 +89,7 @@ textarea {
 
 body {
     background: black;
-	font-family: 'Helvetica Neue', Avenir, Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Avenir, sans-serif;
 	overflow-x: hidden;
     max-width: 1500px;
     margin: auto;
