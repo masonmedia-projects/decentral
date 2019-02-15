@@ -16,53 +16,6 @@ $(document).ready(function() {
     });
 });
 
-//init slick slider
-$('.slick-slider').slick({
-  dots: true,
-  infinite: true,
-//     vertical: true,
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    useTransform: true,
-    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
-    
-
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-	
-
-
-
 //init AOS library
 $(document).ready(function() {
     AOS.init();
@@ -108,6 +61,63 @@ $(document).ready(function() {
         threshold: 5,     // scroll distance from element before its loaded
         printable: true    // be printer friendly and show all elements on document print
     //    live: true          // auto bind lazy loading to ajax loaded elements
+    });
+});
+
+//scroll reveal 
+$(document).ready(function() {
+//    var slideUp = {
+//        distance: '150%',
+//        duration: 2000,
+//        opacity: 0,
+//        origin: 'bottom',
+//    //    easing: 'cubic-bezier(.46,.18,0,1.06)',
+//        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
+//        interval: 10,
+//        reset: true
+//    };
+//
+//    ScrollReveal().reveal('.slide-up', slideUp);
+    
+    ScrollReveal().reveal('.flip', {
+        rotate: {
+            x: 100,
+            z: 20
+        },
+        duration: 1500,
+        opacity: 0,
+        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
+        interval: 10,
+        reset: true
+            
+    });
+    
+    ScrollReveal().reveal('.slide-up', {
+        distance: '150%',
+        duration: 1800,
+        opacity: 0,
+        origin: 'bottom',
+        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
+        interval: 10,
+        reset: true
+    });
+    ScrollReveal().reveal('.slide-down', {
+        distance: '150%',
+        duration: 1500,
+        opacity: 0,
+        origin: 'top',
+        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        interval: 10,
+        reset: true
+    });
+    ScrollReveal().reveal('.slide-right', {
+        distance: '150%',
+        duration: 1500,
+        opacity: 0,
+        origin: 'left',
+        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        interval: 10,
+        reset: true
     });
 });
 
@@ -168,9 +178,47 @@ document.addEventListener('swup:contentReplaced', function () {
         printable: true    // be printer friendly and show all elements on document print
     //    live: true          // auto bind lazy loading to ajax loaded elements
     });
-
     
-        
+    //scroll reveal 
+    
+    var slideUp = {
+        distance: '150%',
+        duration: 2000,
+        opacity: 0,
+        origin: 'bottom',
+    //    easing: 'cubic-bezier(.46,.18,0,1.06)',
+        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
+        interval: 10,
+        reset: true
+    };
+
+    ScrollReveal().reveal('.slide-up', slideUp);
+
+    var slideRight = {
+        distance: '150%',
+        duration: 1500,
+        opacity: 0,
+        origin: 'left',
+        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        interval: 10,
+        reset: true
+    };
+
+    ScrollReveal().reveal('.slide-right', slideRight);
+
+    var slideDown = {
+        distance: '150%',
+        duration: 1500,
+        opacity: 0,
+        origin: 'top',
+        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        interval: 10,
+        reset: true
+    };
+
+    ScrollReveal().reveal('.slide-down', slideDown);
+    
+
 });
 //end swup reinit
 

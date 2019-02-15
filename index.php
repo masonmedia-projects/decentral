@@ -29,26 +29,23 @@ include 'includes/header.php';
 -->
   
   <div id="banner" class="row d-flex min-700-lg bg-black text-light relative py-5">
-        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Decentral Inc.">
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
-<!--            <h1 class="h4 mt-5">Decentral</h1>-->
-            <img class="decentral-logo my-3 lazy" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
-            <h2 class="site-title knockout-gradient text-light font-weight-bold">Interface. Infrastructure. Integrations. Innovation.</h2>
-            <h2 class="h4">Building the tools to usher in a new world of decentralization.</h2>
+            <!--<h1 class="h4 mt-5">Decentral</h1>-->
+            <img class="decentral-logo my-3 lazy slide-right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+            <h2 class="site-title d-flex flex-wrap knockout-gradient text-light font-weight-bold slide-right">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h2 class="h4 slide-right">Building the tools to usher in a new world of decentralization.</h2>
             <!--button container-->
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
                     <div class="col-xs-6 pr-3">
-<!--                        <a href="#sec-1"><p class="btn btn-outline-light btn-lg  mr-2">Learn more</p></a>-->
-                        <a href="#sec-1"><p class="p-big knockout-gradient mb-1">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient "></i></p></a> 
+                        <a href="#sec-1"><p class="p-big knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient "></i></p></a> 
                     </div>
                     <div class="col-xs-6">
-<!--                        <p class="btn btn-outline-light btn-lg ">Download Jaxx Liberty</p>-->
-                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-big knockout-gradient mb-1">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
+                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-big knockout-gradient mb-1 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
                     </div>
                 </div>
             </div>
-        <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>-->
         </div>
         <div class="offset-lg-4"></div>
     </div>
@@ -94,19 +91,18 @@ include 'includes/header.php';
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
-            <h2 class="h4">About Decentral</h2>
-            <h3 class="section-title text-dark">Canada's leading blockchain company.</h3>
+            <h2 class="h4 slide-down">About Decentral</h2>
+            <h3 class="section-title text-dark slide-down">Canada's leading blockchain company.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
-            <p class="p-big pt-3 m-0">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
-            <a href="/about.php"><p class="p-btn mt-3">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0 slide-down">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a commuwnity of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
+            <a href="/about.php"><p class="p-btn mt-3 slide-down">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
      
      <div class="row d-flex bg-white">
         <div class="col-lg-12 min-700-lg d-flex flex-column justify-content-center align-items-center">
             <img data-src="/assets/img/jaxx-imac-white.jpg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">
-<!--            <img data-src="/assets/img/jaxx-macbook-air.png" class="w-75 absolute z-0 lazy" alt="Decentral is Canada's leading blockchain company." title="Decentral Inc.">-->
         </div>
     </div>
       
@@ -114,19 +110,18 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Jaxx Liberty</h2>
-            <h3 class="section-title text-dark">The leading multi-platform digital asset wallet.</h3>
+            <h2 class="h4 slide-right">Jaxx Liberty</h2>
+            <h3 class="section-title text-dark slide-right">The leading multi-platform digital asset wallet.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
-            <p class="p-big pt-3 m-0">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
-            <a href="/jaxxliberty.php"><p class="p-btn mt-3">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
+            <a href="/jaxxliberty.php"><p class="p-btn mt-3 slide-right">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-<!--            <img data-src="/assets/img/jaxx-group-people.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">-->
-            <img data-src="/assets/img/jaxx-android-tablet-pc.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty: the leading digital asset wallet by Decentral." title="Jaxx Liberty">
+            <img data-src="/assets/img/jaxx-android-tablet-pc.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty is the leading digital asset wallet made by Decentral." title="Jaxx Liberty">
         </div>
     </div>
     
@@ -134,18 +129,18 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Decentral partnerships</h2>
-            <h3 class="section-title text-dark">Connecting, informing, sharing.</h3>
+            <h2 class="h4 slide-down">Decentral partnerships</h2>
+            <h3 class="section-title text-dark slide-down">Connecting, informing, sharing.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
-            <p class="p-big pt-3 m-0">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
-            <a href="/partner-network.php"><p class="p-btn mt-3">Connect with us <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
+            <p class="p-big pt-3 m-0 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
+            <a href="/partner-network.php"><p class="p-btn mt-3 slide-down">Connect with us <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
     </div><!--end row-->
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/decentral-toronto-flatiron.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is a critical node in a growing network of companies using decentralized technologies.">
+            <img data-src="/assets/img/decentral-toronto-flatiron.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral is a critical node in a growing network of companies using decentralized technologies." title="Decentral partnerships">
         </div>
     </div>
     
@@ -153,19 +148,19 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
-            <h2 class="h4">Decentral team</h2>
-            <h3 class="section-title text-dark mb-0">On a mission to create opportunity and empower individuals around the world.</h3>
+            <h2 class="h4 slide-right">Decentral team</h2>
+            <h3 class="section-title text-dark mb-0 slide-right">On a mission to create opportunity and empower individuals around the world.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-            <p class="p-big pt-3 m-0">Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all. </p>
-            <a href="/about.php"><p class="p-btn mt-3">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0 slide-right">Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all. </p>
+            <a href="/about.php"><p class="p-btn mt-3 slide-right">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div>
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
 <!--            <img data-src="/assets/img/jaxx-partners.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">-->
-            <img data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">
+            <img data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" class="img-full absolute z-0 left-0 lazy" alt="We champion the decentralized movement by building technology that empowers." title="Decentral team">
         </div>
     </div>
     
@@ -173,11 +168,11 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Trusted by the best</h2>
-            <h3 class="section-title mb-0">You're in good company.</h3>
+            <h2 class="h4 slide-down">Trusted by the best</h2>
+            <h3 class="section-title mb-0 slide-down">You're in good company.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-             <p class="p-big pt-0 m-0">Decentral has diverse relationships with a variety of companies in a wide range of sectors, in addition to thousands of users of our products. See what industry leaders are saying.</p>
+             <p class="p-big pt-0 m-0 slide-down">Decentral has diverse relationships with a variety of companies in a wide range of sectors, in addition to thousands of users of our products. See what industry leaders are saying.</p>
         </div>
     </div>
     
@@ -259,18 +254,18 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4 scene_element scene_element--fadeinright">Stay connected</h2>
-            <h3 class="section-title m-0">Become a part of the Decentral ecosystem.</h3>
+            <h2 class="h4 slide-right">Stay connected</h2>
+            <h3 class="section-title m-0 slide-right">Become a part of the Decentral ecosystem.</h3>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-            <p class="p-big pt-3 m-0">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partnerships.php"><span class="orange">partners</span></a> around the world. Join the Jaxx Liberty community today.</p>
-            <a href="/contact.php"><p class="p-btn mt-3">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+            <p class="p-big pt-3 m-0 slide-right">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partnerships.php"><span class="orange">partners</span></a> around the world. Join the Jaxx Liberty community today.</p>
+            <a href="/contact.php"><p class="p-btn mt-3 slide-right">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
     </div><!--end row-->
 
      <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/decentral-community-red.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Decentral" title="Decentral Inc.">
+            <img data-src="/assets/img/decentral-community-red.jpeg" class="img-full absolute z-0 left-0 lazy" alt="Join the Decentral community" title="Decentral ecosystem">
         </div>
     </div>
      

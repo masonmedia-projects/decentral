@@ -4,48 +4,48 @@
                 <div class="row d-flex d-flex justify-content-center align-items-end text-secondary bg-light text-secondary px-3 pt-5">
                    <div class="col-lg-3 col-md-6 px-4 py-3 skew">
                         <ul class="list-unstyled w-100">
-                            <li class="h4 font-weight-bold">Company</li>
-                            <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="/about.php">About</a></li>
-                            <li><a href="/partner-network.php">Partner Network</a></li>
-                            <li><a href="/about.php">Team</a></li>
-                            <li><a href="/about.php">History</a></li>
+                            <li class="h4 font-weight-bold slide-down">Company</li>
+                            <hr class="hr-big border-0 bg-secondary slide-down">
+                            <li class="slide-down"><a href="/about.php">About</a></li>
+                            <li class="slide-down"><a href="/partner-network.php">Partner Network</a></li>
+                            <li class="slide-down"><a href="/about.php">Team</a></li>
+                            <li class="slide-down"><a href="/about.php">History</a></li>
                         </ul>
                     </div>
                     
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew">
                         <ul class="list-unstyled w-100">
-                            <li class="h4 font-weight-bold">Jaxx Liberty</li>
-                            <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="https://jaxx.io/features">Features</a></li>
-                            <li><a href="https://jaxx.io/community">Community</a></li>
-                            <li><a href="https://support.decentral.ca/hc/en-us" target="_blank">Jaxx Support</a></li>
-                            <li><a href="https://blog.jaxx.io">Blog</a></li>
+                            <li class="h4 font-weight-bold slide-down">Jaxx Liberty</li>
+                            <hr class="hr-big border-0 bg-secondary slide-down">
+                            <li class="slide-down"><a href="https://jaxx.io/features">Features</a></li>
+                            <li class="slide-down"><a href="https://jaxx.io/community">Community</a></li>
+                            <li class="slide-down"><a href="https://support.decentral.ca/hc/en-us" target="_blank">Jaxx Support</a></li>
+                            <li class="slide-down"><a href="https://blog.jaxx.io">Blog</a></li>
                         </ul>
                     </div>
                     
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew">
                         <ul class="list-unstyled w-100">
-                            <li class="h4 font-weight-bold">Download</li>
-                            <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="https://play.google.com/store/apps/details?id=com.liberty.jaxx">Android</a></li>
-                            <li><a href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8">iOS</a></li>
-                            <li><a href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne">Chrome</a></li>
-                            <li><a href="https://jaxx.io/downloads">Desktop</a></li>
+                            <li class="h4 font-weight-bold slide-down">Download</li>
+                            <hr class="hr-big border-0 bg-secondary slide-down">
+                            <li class="slide-down"><a href="https://play.google.com/store/apps/details?id=com.liberty.jaxx">Android</a></li>
+                            <li class="slide-down"><a href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8">iOS</a></li>
+                            <li class="slide-down"><a href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne">Chrome</a></li>
+                            <li class="slide-down"><a href="https://jaxx.io/downloads">Desktop</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew">
                         <ul class="list-unstyled w-100">
-                            <li class="h4 font-weight-bold">Connect</li>
-                            <hr class="hr-big border-0 bg-secondary">
-                            <li><a href="https://www.facebook.com/JaxxWallet" target="_blank">Facebook</a></li>
-                            <li><a href="https://twitter.com/jaxx_io" target="_blank">Twitter</a> / <a href="https://twitter.com/Jaxx_Support" target="_blank">Twitter Support</a></li>
-                            <li><a href="https://www.instagram.com/jaxx_io/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.reddit.com/r/jaxx/" target="_blank">Reddit</a></li>
+                            <li class="h4 font-weight-bold slide-down">Connect</li>
+                            <hr class="hr-big border-0 bg-secondary slide-down">
+                            <li class="slide-down"><a href="https://www.facebook.com/JaxxWallet" target="_blank">Facebook</a></li>
+                            <li class="slide-down"><a href="https://twitter.com/jaxx_io" target="_blank">Twitter</a> / <a href="https://twitter.com/Jaxx_Support" target="_blank">Twitter Support</a></li>
+                            <li class="slide-down"><a href="https://www.instagram.com/jaxx_io/" target="_blank">Instagram</a></li>
+                            <li class="slide-down"><a href="https://www.reddit.com/r/jaxx/" target="_blank">Reddit</a></li>
                         </ul>
                     </div>
                     
-                    <div class="col-sm-12 d-flex justify-content-center text-center py-4 navy">
+                    <div class="col-sm-12 d-flex justify-content-center text-center py-4 navy slide-down">
                         <p class="font-weight-light m-0"><a href="https://decentral.ca/" target="_blank" onclick="googleAnalyticsTrigger('decentral.ca', 'Legal_Footer')">&copy; Decentral Inc.</a> <img class="footer-leaf mx-1" src="/assets/img/jaxx-maple-leaf-navy-2.png" alt="Decentral inc."> Made with love in Canada</p>
                     </div>
                 </div><!--end row-->
@@ -63,10 +63,10 @@
     <script src="/assets/js/bootstrap.min.js"></script>
     <!--aos js-->
     <script src="/assets/js/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- recliner lazy load js-->
     <script src="/assets/js/recliner.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <!--js tilt 404-->
     <script src="/assets/js/tilt.jquery.min.js"></script>
     <script src="/assets/js/cookieconsent.min.js"></script>

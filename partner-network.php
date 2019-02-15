@@ -28,7 +28,7 @@ include 'includes/header.php';
    
     <div id="sec-1" class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Working together</h2>
+            <h2 class="h4 orange">Working together</h2>
             <h3 class="section-title text-dark">Canada's blockchain innovators.</h3>
             <p class="p-big pt-3">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
         </div>
@@ -47,7 +47,7 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">The way forward</h2>
+            <h2 class="h4 orange">The way forward</h2>
             <h3 class="section-title text-dark">Building relationships.</h3>
             <p class="p-big pt-3 scene_element scene_element--fadeinright">Mutually beneficial partnerships are the best way forward on this mission.</p>
         </div>
@@ -67,7 +67,7 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Integrations</h2>
+            <h2 class="h4 orange">Integrations</h2>
             <h3 class="section-title text-dark">The Jaxx Liberty digital asset wallet.</h3>
             <p class="p-big pt-3 m-0">Decentral’s flagship product, Jaxx Liberty, is a multi-asset cryptocurrency wallet integrating over 85 blockchain projects. It is available on all platforms including iOS, Android, Chrome Extension, Mac, Windows and Linux desktops.</p>
         </div>
@@ -110,7 +110,7 @@ include 'includes/header.php';
     
     <div class="row d-flex p-5 min-500 bg-white">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-            <h2 class="h4">Get in touch</h2>
+            <h2 class="h4 orange">Get in touch</h2>
             <h3 class="section-title">Contact our business development team for more information.</h3>
         </div>
         <div class="col-lg-6 d-flex justify-content-start align-items-center o-12">
