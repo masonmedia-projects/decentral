@@ -36,11 +36,10 @@ include 'includes/header.php';
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
                     <div class="col-xs-6 pr-3">
-                        <a href="#sec-1"><button class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></button></a> 
-                        <!--<p class="p-btn knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p>-->
+                       <a href="#sec-1"><p class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a>
                     </div>
                     <div class="col-xs-6">
-                        <a href="https://jaxx.io/downloads" target="_blank"><button class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></button></a> 
+                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
                     </div>
                 </div>
             </div>
@@ -107,11 +106,11 @@ include 'includes/header.php';
     <!--jaxx liberty-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
             <h2 class="h4 slide-right">Jaxx Liberty</h2>
             <h3 class="section-title text-dark slide-right">The leading multi-platform digital asset wallet.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
             <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
             <a href="/jaxxliberty.php"><p class="p-btn mt-3 slide-right">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
@@ -126,11 +125,11 @@ include 'includes/header.php';
     <!--partnerships-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
             <h2 class="h4 slide-down">Decentral partnerships</h2>
             <h3 class="section-title text-dark slide-down">Connecting, informing, sharing.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 scene_element">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
             <p class="p-big pt-3 m-0 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
             <a href="/partner-network.php"><p class="p-btn mt-3 slide-down">Connect with us <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
         </div>
@@ -145,11 +144,11 @@ include 'includes/header.php';
     <!--team-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left scene_element scene_element--fadeindown">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
             <h2 class="h4 slide-right">Decentral team</h2>
             <h3 class="section-title text-dark mb-0 slide-right">On a mission to create opportunity and empower individuals around the world.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 left">
             <p class="p-big pt-3 m-0 slide-right">Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all. </p>
             <a href="/about.php"><p class="p-btn mt-3 slide-right">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>
@@ -157,7 +156,6 @@ include 'includes/header.php';
     
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-<!--            <img data-src="/assets/img/jaxx-partners.jpeg" class="img-full absolute z-0 left-0 lazy" alt="See what industry leaders are saying about Decentral and Jaxx Liberty." title="Decentral Team">-->
             <img data-src="/assets/img/jaxx-ipad-macbook-closeup-desk.jpg" class="img-full absolute z-0 left-0 lazy" alt="We champion the decentralized movement by building technology that empowers." title="Decentral team">
         </div>
     </div>
@@ -178,7 +176,6 @@ include 'includes/header.php';
     
     <div id="testimonials" class="carousel slide carousel-fade relative" data-ride="carousel" data-aos="fade" data-aos-easing="ease-in-out-quart" data-aos-duration="1000">
       <img data-src="/assets/img/decentral-home-banner.jpeg" class="img-full absolute z-0 lazy" alt="Decentral is an innovation hub for disruptive and decentralized technologies." title="Decentral testimonials">
-     
       <ol class="carousel-indicators">
         <li data-target="#testimonials" data-slide-to="0" class="active"></li>
         <li data-target="#testimonials" data-slide-to="1"></li>
@@ -252,11 +249,11 @@ include 'includes/header.php';
    <!--social-->
     
     <div class="row d-flex p-5 min-500 bg-white">
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
             <h2 class="h4 slide-right">Stay connected</h2>
             <h3 class="section-title m-0 slide-right">Become a part of the Decentral ecosystem.</h3>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 left">
             <p class="p-big pt-3 m-0 slide-right">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partnerships.php"><span class="orange">partners</span></a> around the world. Join the Jaxx Liberty community today.</p>
             <a href="/contact.php"><p class="p-btn mt-3 slide-right">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
         </div>

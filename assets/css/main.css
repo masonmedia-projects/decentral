@@ -260,8 +260,8 @@ p {
     font-size: 80px; /*apple app store text*/
     font-size: 11vmin; /*same in vmin*/
     font-weight: 900;
-    line-height: 100%;
-    letter-spacing: -2px;
+    line-height: 95%;
+    letter-spacing: -3px;
     padding: 10px 0;
 }
 .page-title {
@@ -1160,7 +1160,7 @@ input:checked + .slider:before {
 /* contact ======================*/
 
 .bg--contact-banner {
-    background: url(https://images.unsplash.com/photo-1450609283058-0ec52fa7eac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center top;
+    background: url(/assets/img/decentral-contact-banner.jpeg) center top;
     background-size: cover;
 }
 .bg--contact-support {
@@ -1170,6 +1170,13 @@ input:checked + .slider:before {
 .bg--support-heart-hands {
     background: url(/assets/img/jaxx-support-welcome-redux.jpg) center;
     background-size: cover;
+}
+
+/* 404 page */
+
+.d {
+    height: auto;
+    width: 200px;
 }
 
 
@@ -1561,6 +1568,10 @@ footer li a {
     .timeline-item {
 /*      padding: 3em 0 1.5em 1.5em;*/
       padding: 0.5em 0 1.5em 1.5em;
+    }
+    .timeline-item:last-child {
+      -o-border-image: none;
+         border-image: none;
     }
     
     #values p,

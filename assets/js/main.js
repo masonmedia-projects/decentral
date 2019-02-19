@@ -16,11 +16,6 @@ $(document).ready(function() {
     });
 });
 
-//init AOS library
-$(document).ready(function() {
-    AOS.init();
-});
-
 //mobile menu animation
 //$(document).ready(function() {
 //    var wrapperMenu = document.querySelector('.wrapper-menu');
@@ -43,14 +38,29 @@ $(document).ready(function() {
 });
 
 //smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
-$(document).ready(function() {
-    $('a[href*="#"]').on('click', function (e) {
-	   e.preventDefault();
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-	   $('html, body').animate({
-		  scrollTop: $($(this).attr('href')).offset().top
-	   }, 500, 'linear');
-    });
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
 
 //change nav color on scroll
@@ -117,8 +127,6 @@ $(document).ready(function() {
 //swup reinit plugins
 
 document.addEventListener('swup:contentReplaced', function () {
-    //aos reinit
-    AOS.init();
 
     //lazyload reinit
     $(".lazy").recliner({
@@ -148,13 +156,22 @@ document.addEventListener('swup:contentReplaced', function () {
 
     //smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 
-    $('a[href*="#"]').on('click', function (e) {
-	   e.preventDefault();
+  $("a").on('click', function(event) {
 
-	   $('html, body').animate({
-		  scrollTop: $($(this).attr('href')).offset().top
-	   }, 500, 'linear');
-    });
+    if (this.hash !== "") {
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+//        window.location.hash = hash;
+      });
+    } // End if
+  });
 
 
 //change nav color on scroll

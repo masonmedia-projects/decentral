@@ -32,7 +32,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0 slide-down">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
                 <!-- Button trigger modal -->
-                <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3 slide-down">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                <button class="bg-trans border-0 p-0" data-toggle="modal" data-target="#values"><p class="p-btn mt-3 slide-down">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
         </div><!--end row-->
 
@@ -533,7 +533,6 @@ include 'includes/header.php';
                         </div>
                         <div class="offset-lg-3"></div>
                     </div><!--end avatars row-->       	
-                	
               </div><!--end modal content-->
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
