@@ -22,17 +22,23 @@ $(document).ready(function() {
 });
 
 //mobile menu animation
-$(document).ready(function() {
-    var wrapperMenu = document.querySelector('.wrapper-menu');
-        wrapperMenu.addEventListener('click', function(){
-        wrapperMenu.classList.toggle('open');  
-        })
-});
+//$(document).ready(function() {
+//    var wrapperMenu = document.querySelector('.wrapper-menu');
+//        wrapperMenu.addEventListener('click', function(){
+//        wrapperMenu.classList.toggle('open');  
+//        })
+//});
 
 //close mobile nav on click
 $(document).ready(function() {
     $('.nav-link, body').on('click',function() {
       $('.navbar-collapse').collapse('hide');
+    });
+});
+//close mobile menu on nav link click
+$(document).ready(function() {
+    $('.navbar-toggler, .nav-item').on('click',function() {
+      $('.wrapper-menu').toggleClass('open');
     });
 });
 
@@ -66,19 +72,6 @@ $(document).ready(function() {
 
 //scroll reveal 
 $(document).ready(function() {
-//    var slideUp = {
-//        distance: '150%',
-//        duration: 2000,
-//        opacity: 0,
-//        origin: 'bottom',
-//    //    easing: 'cubic-bezier(.46,.18,0,1.06)',
-//        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
-//        interval: 10,
-//        reset: true
-//    };
-//
-//    ScrollReveal().reveal('.slide-up', slideUp);
-    
     ScrollReveal().reveal('.flip', {
         rotate: {
             x: 100,
@@ -91,10 +84,9 @@ $(document).ready(function() {
         reset: true
             
     });
-    
     ScrollReveal().reveal('.slide-up', {
-        distance: '150%',
-        duration: 1800,
+        distance: '70%',
+        duration: 1500,
         opacity: 0,
         origin: 'bottom',
         easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
@@ -102,7 +94,7 @@ $(document).ready(function() {
         reset: true
     });
     ScrollReveal().reveal('.slide-down', {
-        distance: '150%',
+        distance: '70%',
         duration: 1500,
         opacity: 0,
         origin: 'top',
@@ -111,7 +103,7 @@ $(document).ready(function() {
         reset: true
     });
     ScrollReveal().reveal('.slide-right', {
-        distance: '150%',
+        distance: '70%',
         duration: 1500,
         opacity: 0,
         origin: 'left',
@@ -144,18 +136,17 @@ document.addEventListener('swup:contentReplaced', function () {
 
     //mobile menu animation
 
-    var wrapperMenu = document.querySelector('.wrapper-menu, .nav-item');
-        wrapperMenu.addEventListener('click', function(){
-        wrapperMenu.classList.toggle('open');  
-        })
-
+    //close mobile menu on nav link click
+    $('.navbar-toggler, .nav-item').on('click',function() {
+      $('.wrapper-menu').toggleClass('open');
+    });
 
     //close mobile nav on click
     $('.nav-link, body').on('click',function() {
       $('.navbar-collapse').collapse('hide');
     });
 
-//smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
+    //smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 
     $('a[href*="#"]').on('click', function (e) {
 	   e.preventDefault();
@@ -181,42 +172,46 @@ document.addEventListener('swup:contentReplaced', function () {
     
     //scroll reveal 
     
-    var slideUp = {
-        distance: '150%',
-        duration: 2000,
+    ScrollReveal().reveal('.flip', {
+        rotate: {
+            x: 100,
+            z: 20
+        },
+        duration: 1500,
         opacity: 0,
-        origin: 'bottom',
-    //    easing: 'cubic-bezier(.46,.18,0,1.06)',
         easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
         interval: 10,
         reset: true
-    };
-
-    ScrollReveal().reveal('.slide-up', slideUp);
-
-    var slideRight = {
-        distance: '150%',
-        duration: 1500,
+            
+    });
+    
+    ScrollReveal().reveal('.slide-up', {
+        distance: '70%',
+        duration: 1800,
         opacity: 0,
-        origin: 'left',
-        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        origin: 'bottom',
+        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
         interval: 10,
         reset: true
-    };
-
-    ScrollReveal().reveal('.slide-right', slideRight);
-
-    var slideDown = {
-        distance: '150%',
+    });
+    ScrollReveal().reveal('.slide-down', {
+        distance: '70%',
         duration: 1500,
         opacity: 0,
         origin: 'top',
         easing: 'cubic-bezier(.46,.18,0,1.06)',
         interval: 10,
         reset: true
-    };
-
-    ScrollReveal().reveal('.slide-down', slideDown);
+    });
+    ScrollReveal().reveal('.slide-right', {
+        distance: '70%',
+        duration: 1500,
+        opacity: 0,
+        origin: 'left',
+        easing: 'cubic-bezier(.46,.18,0,1.06)',
+        interval: 10,
+        reset: true
+    });
     
 
 });

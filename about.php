@@ -10,12 +10,12 @@ include 'includes/header.php';
     
     <div role="banner" class="container-fluid bg-black p-0">
         <div class="row d-flex min-700-lg relative py-5 ts">
-        <!--<img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-black-cubes.jpeg" alt="About Decentral">-->
             <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-4 slide-right">About Decentral</h1>
                 <h2 class="site-title text-light font-weight-bold slide-right">On a mission to create opportunity and empower individuals around the world.</h2>
-                <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
+                <!--<a href="#sec-1"><button class="bg-trans border-0 slide-right"><i class="fa fa-angle-down text-light p-0"></i></button></a> -->
+                <a href="#sec-1"><button class="p-btn text-light ts bg-trans border-0 mb-1 p-0 slide-right">Learn more <i class="fa fa-angle-right fa-btn text-light"></i></button></a>
             </div>
             <div class="offset-lg-3"></div>
         </div>
@@ -50,7 +50,7 @@ include 'includes/header.php';
                 </button>
               </div>
               <div class="modal-body px-4 pt-0">
-               <h2 class="section-title knockout-gradient text-center pb-4 pl-4 pt-0 border-bottom w-100" data-aos="fade" data-aos-duration="1000">Our Values</h2>
+               <h2 class="section-title knockout-gradient text-center pb-5 pt-0 border-bottom w-100">Our Values</h2>
                <div class="container-fluid">
                    <div class="row">
                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
@@ -102,7 +102,7 @@ include 'includes/header.php';
                        </div>
                        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center text-left p-5">
                            <img src="/assets/img/decentral_D_logo_white.png" class="decentral-D" alt="">
-<!--                            <h3 class="h2 font-weight-bold pt-2">12. Our purpose.</h3>-->
+                            <!--<h3 class="h2 font-weight-bold pt-2">12. Our purpose.</h3>-->
                             <!--<p class="py-2">We champion the decentralized movement by building the technology that empowers and creates wins for all.</p>-->
                        </div>
                    </div>
@@ -135,18 +135,18 @@ include 'includes/header.php';
         
         <div class="row d-flex bg-light">
             <div class="col-lg-12 min-700-lg">
-                <img class="img-full absolute z-0 left-0 top-0 lazy" data-src="/assets/img/decentral-anthony-1.jpg" alt="About Decentral">
+                <img class="img-full absolute z-0 left-0 top-0 lazy" data-src="/assets/img/decentral-anthony-1.jpg" alt="Anthony Di Iorio">
             </div>
         </div>
         
-     <!--history-->       
+        <!--history-->       
         <div class="row d-flex p-5 min-500 text-secondary bg-white">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-down">Decentral history</h2>
                 <h3 class="section-title text-dark mb-0 slide-down">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
-                <p class="p-big pt-3 m-0 slide-down">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives. </p>
+                <p class="p-big pt-3 m-0 slide-down">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives.</p>
                 <!-- Button trigger modal -->
                 <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#history"><p class="p-btn mt-3 slide-down">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
             </div>
@@ -154,7 +154,7 @@ include 'includes/header.php';
         
         <div class="row d-flex bg-light relative">
             <div class="col-lg-12 min-700-lg">
-                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-vintage-collage.jpg" alt="About Decentral">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-vintage-collage.jpg" alt="Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives.">
             </div>
         </div>
        
@@ -172,8 +172,8 @@ include 'includes/header.php';
                 </button>
               </div>
               <div class="modal-body px-5 pt-0">
-                <h2 class="section-title knockout-gradient pb-4 pt-0" data-aos="fade" data-aos-duration="1000">The History of Decentral</h2>
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title knockout-gradient pb-4 pt-0">The History of Decentral</h2>
+                <div class="timeline-item">
                     <!--date-is='1' -->
                     <h2 class="h5 orange pb-2">1</h2>
                     <h3 class="h1">Early 2012</h3>
@@ -181,7 +181,7 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">2</h2>
                     <h3 class="h1">Early 2013</h3>
                     <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="http://blockchainassociation.ca" target="_blank"><span class="orange">“Blockchain Association”</span>)</a></p>
@@ -189,14 +189,14 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">3</h2>
                     <h3 class="h1">Late 2013</h3>
                     <p>Vitalik Buterin shows Anthony a project he has been working on: Anthony is the first reader of what will become the Ethereum Whitepaper. Anthony dedicates funds and his full attention to building a team to pursue the Ethereum Project and becomes co-founder of Ethereum.</p>
                     <p>Ethereum is born: Decentral gives the Ethereum Project its first home. Anthony Di Iorio, Mihai Alisie, Vitalik Buterin, Charles Hoskinson and Amir Chetrit co-found the project to develop the platform laid out in the whitepaper. (Joseph Lubin, Gavin Wood, and Jeffrey Wilke are added as founders a few months later).</p>
                     <hr class="mb-0 mt-4">
                 </div>
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">4</h2>
                     <h3 class="h1">Early 2014</h3>
                     <p>New Year’s Day: <span class="orange font-weight-bold">Decentral</span> opens its doors at 64 Spadina Ave. The Bitcoin ATM in this new office is the first in Toronto and second in the country.</p>
@@ -204,7 +204,7 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">5</h2>
                     <h3 class="h1">Summer 2014</h3>
                     <p>Ethereum global crowdsale begins and eventually leads to $18m in ether sales (now worth over $44 billion).</p>
@@ -212,28 +212,28 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">6</h2>
                     <h3 class="h1">Late 2014</h3>
                     <p>Decentral hosts its 100th event. Seeks new event space to accommodate demand and crowd size.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">7</h2>
                     <h3 class="h1">Early 2015</h3>
                     <p>Decentral partners with <a href="https://www.marsdd.com/facilities/event-space/" target="_blank"><span class="orange">MaRS</span></a> to host events in 2015.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">8</h2>
                     <h3 class="h1">Early 2016</h3>
                     <p>Jaxx 1.0 released. Additional platforms supported.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">9</h2>
                     <h3 class="h1">Late 2016</h3>
                     <p>Jaxx passes 100,000 users; Android is the most popular of the 9 platforms Jaxx supports.</p>
@@ -241,28 +241,28 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">10</h2>
                     <h3 class="h1">Early 2017</h3>
                     <p>Jaxx hits 300,000 users; users can pair their Jaxx masterseeds across iOS, Android, Chrome Browser, Linux, Mac, and Windows.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">11</h2>
                     <h3 class="h1">Spring 2017</h3>
                     <p>Decentral announces upwards of 70 industry partnerships; companies include Coinbase, RSK, BitPay, Bittrex, Blockchain Capital, QTUM, Bancor, MonaCoin, Omni, Lisk, Stratus and others.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">12</h2>
                     <h3 class="h1">Summer 2017</h3>
                     <p>Decentral Grand Odyssey Boat Cruise - hit blockchain event celebrates 4 years of Decentral events.</p>
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">13</h2>
                     <h3 class="h1">November 2017</h3>
                     <p>Jaxx exceeds 400,000 users around the world.</p>
@@ -270,7 +270,7 @@ include 'includes/header.php';
                     <hr class="mb-0 mt-4">
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-item">
                     <h2 class="h5 orange pb-2">14</h2>
                     <h3 class="h1">December 2017</h3>
                     <p><p>Bitcoin prices hits $20,000 CAD. 2000x higher than when Decentral’s founder, Anthony Di Iorio, started building the Toronto cryptocurrency community.</p>
@@ -297,7 +297,7 @@ include 'includes/header.php';
             </div>
         </div><!--end row-->
         
-        <!-- team Modal -->
+        <!-- team modal -->
         <div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="team" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -544,7 +544,7 @@ include 'includes/header.php';
 
         <div class="row d-flex bg-light relative">
             <div class="col-lg-12 min-700-lg">
-                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Decentral Team">
+                <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-buildings-sky.jpeg" alt="Meet the Decentral Team">
             </div>
         </div>
         
@@ -553,7 +553,7 @@ include 'includes/header.php';
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-down">Careers</h2>
                 <h3 class="section-title text-dark mb-0 slide-down">Informing. Empowering. Uniting.</h3>
-                <p class="p-big pt-3 m-0">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
+                <p class="p-big pt-3 m-0 slide-down">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12">
                 <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>

@@ -29,7 +29,6 @@ include 'includes/header.php';
   <div id="banner" class="row d-flex min-700-lg bg-black text-light relative py-5">
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5 transition-fade">
-            <!--<h1 class="h4 mt-5">Decentral</h1>-->
             <img class="decentral-logo my-3 lazy slide-right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold slide-right">Interface. Infrastructure. Integrations. Innovation.</h2>
             <h2 class="h4 slide-right">Building the tools to usher in a new world of decentralization.</h2>
@@ -37,10 +36,11 @@ include 'includes/header.php';
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
                     <div class="col-xs-6 pr-3">
-                        <a href="#sec-1"><p class="p-btn knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
+                        <a href="#sec-1"><button class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></button></a> 
+                        <!--<p class="p-btn knockout-gradient mb-1 slide-right">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p>-->
                     </div>
                     <div class="col-xs-6">
-                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn knockout-gradient mb-1 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
+                        <a href="https://jaxx.io/downloads" target="_blank"><button class="p-btn knockout-gradient mb-1 border-0 p-0 slide-right">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></button></a> 
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@ include 'includes/header.php';
 
     <div class="row d-flex bg-light">
         <div class="col-lg-12 min-700-lg">
-            <img data-src="/assets/img/jaxx-android-tablet-pc.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty is the leading digital asset wallet made by Decentral." title="Jaxx Liberty">
+            <img data-src="/assets/img/jaxx-android-tablet-pc.jpg" class="img-full absolute z-0 left-0 lazy" alt="Jaxx Liberty is the leading multi-platform digital asset wallet." title="Jaxx Liberty">
         </div>
     </div>
     
@@ -188,8 +188,8 @@ include 'includes/header.php';
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div role="banner" class="container-fluid">
-            <div class="row d-flex min-700-lg p-0 scene_element scene_element--fadein">        
-                <div class="col-lg-9 banner-left p-5 o-12 scene_element scene_element--fadeindown">
+            <div class="row d-flex min-700-lg p-0">        
+                <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"In Jaxx, Presearch has a popular, well-respected wallet to offer its exponentially growing user base of over 300,000 members. We join Decentral in the mission of putting users first.”</h3>
                     <h3 class="font-weight-bold orange mt-3">Colin Paper</h3>
                     <p class="p-big orange mb-3">&mdash; Founder, Presearch</p>
@@ -200,8 +200,8 @@ include 'includes/header.php';
         </div>
         <div class="carousel-item">
           <div role="banner" class="container-fluid">
-            <div class="row d-flex min-700-lg p-0 scene_element scene_element--fadein">        
-                <div class="col-lg-9 banner-left p-5 o-12 scene_element scene_element--fadeindown">
+            <div class="row d-flex min-700-lg p-0">        
+                <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"I look forward to seeing the new Jaxx Liberty and how the broader DigiByte community will use it."</h3>
                     <h3 class="font-weight-bold orange mt-3">Josiah Spackman</h3>
                     <p class="p-big orange mb-3">&mdash; Ambassador, DigiByte Foundation</p>
@@ -212,7 +212,7 @@ include 'includes/header.php';
         </div>
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3">
                 <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"Polymath welcomes the launch of Jaxx Liberty. We chose Jaxx Liberty as our go-to wallet for the POLY token community."</h3>
                     <h3 class="font-weight-bold orange mt-3">Trevor Koverko</h3>
@@ -224,7 +224,8 @@ include 'includes/header.php';
         </div><!--end slide-->
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">    <div class="col-lg-9 banner-left p-5 o-12">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3">    
+                <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">"We’re very happy to partner with Jaxx, a highly-secure and easy-to-use wallet that is the first to support RSK"</h3>
                     <h3 class="font-weight-bold orange mt-3">Diego Gutierrez Zaldivar</h3>
                     <p class="p-big orange mb-3">&mdash; CEO & Co-Founder, RSK Labs</p>
@@ -235,7 +236,7 @@ include 'includes/header.php';
         </div><!--end slide-->
         <div class="carousel-item">
           <div class="container-fluid">
-            <div class="row d-flex min-700-lg p-0 bg--slide-3 scene_element scene_element--fadein">
+            <div class="row d-flex min-700-lg p-0 bg--slide-3">
                 <div class="col-lg-9 banner-left p-5 o-12">
                     <h3 class="section-title text-light font-weight-light">“Jaxx is a partner we rely on. We can be sure Jaxx Liberty will serve and support our expanding ecosystem.”</h3>
                     <h3 class="font-weight-bold orange mt-3">Malcolm CasSelle</h3>

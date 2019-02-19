@@ -2,7 +2,7 @@
 
 $title = "Decentral Inc. | Jaxx Liberty";
 
-$metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.";
+$metaD = "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Mac, Linux, Windows, and Google Chrome.";
 
 include 'includes/header.php';
 
@@ -16,7 +16,8 @@ include 'includes/header.php';
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 slide-right">Jaxx Liberty</h1>
             <h2 class="site-title knockout-gradient font-weight-bold slide-right">Your all-in-one digital asset wallet.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0 slide-right"></i></a>
+            <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0 slide-right"></i></a>-->
+            <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 p-0 slide-right">Discover <i class="fa fa-angle-right fa-btn text-light"></i></button></a> 
         </div>
         <div class="offset-lg-5"></div>
     </div>
@@ -56,7 +57,7 @@ include 'includes/header.php';
       
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Classic">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Liberty is the leading digital asset wallet that allows you to securely manage and exchange over 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash.">
         </div>
     </div>
       
@@ -71,7 +72,7 @@ include 'includes/header.php';
     
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-iphone-isometric-gallery.jpg" alt="Jaxx Liberty is packed with features. Go to jaxx.io for more.">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-iphone-isometric-gallery.jpg" alt="Jaxx Liberty is packed with features. Visit jaxx.io for more information.">
         </div>
     </div>     
       
@@ -104,7 +105,7 @@ include 'includes/header.php';
   
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free 24/7 support from our User Success Team.">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free 24/7 support from our world-class User Success Team.">
         </div>
     </div>
       

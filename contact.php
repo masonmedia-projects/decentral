@@ -15,7 +15,8 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center ts p-5">
             <h1 class="h4 mt-3 slide-right">Contact Decentral</h1>
             <h2 class="site-title font-weight-bold slide-right">Connect with us.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
+            <!--<a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>-->
+             <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 slide-right"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>
@@ -92,7 +93,7 @@ include 'includes/header.php';
         
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-three-people-selfie.jpg" alt="Get in touch.">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-three-people-selfie.jpg" alt="Join the Decentral social media community today.">
         </div>
     </div>
       
@@ -134,7 +135,7 @@ include 'includes/header.php';
       
       <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="Get in touch.">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-couple-fireworks.jpg" alt="We'd love to hear from you.">
         </div>
     </div>
 

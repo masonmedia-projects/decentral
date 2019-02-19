@@ -2,6 +2,8 @@
 
 $title = "Decentral Inc. | Partner Network";
 
+$metaD = "Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.";
+    
 include 'includes/header.php';
 
 ?>
@@ -14,7 +16,8 @@ include 'includes/header.php';
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-4 slide-right">Decentral partner network</h1>
             <h2 class="site-title font-weight-bold slide-right">Work with Canada's leading blockchain company.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>
+            <!--<a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>-->
+            <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 slide-right"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a> 
         </div>
         <div class="offset-lg-3"></div>
     </div>
@@ -57,7 +60,7 @@ include 'includes/header.php';
     
     <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-about-passion-redux.jpg" alt="Decentral is building relationships with a variety of companies in a wide variety of sectors.">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-about-passion-redux.jpg" alt="Decentral is building relationships with a range of companies in a wide variety of sectors.">
         </div>
     </div>
      
@@ -80,7 +83,6 @@ include 'includes/header.php';
            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-ipad-palm-desk.jpg" alt="Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.">
         </div>
     </div>
-    
     
     <!--advisory -- investments-->
     
@@ -116,22 +118,22 @@ include 'includes/header.php';
                <div class="row pl-0">
                    <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">
                        <div class="col-xs-3 slide-right">
-                            <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
+                            <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Partner_Network_Page')">
                             <i class="fa fa-facebook orange"></i>
                             </a>
                         </div>
                         <div class="col-xs-3 slide-right">
-                            <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Community_Page')">
+                            <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Partner_Network_Page')">
                             <i class="fa fa-twitter orange"></i>
                             </a>
                         </div>
                         <div class="col-xs-3 slide-right">
-                            <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Community_Page')">
+                            <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Partner_Network_Page')">
                             <i class="fa fa-telegram orange"></i>
                             </a>
                         </div>
                         <div class="col-xs-3 slide-right">
-                            <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Community_Page')">
+                            <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Partner_Network_Page')">
                             <i class="fa fa-reddit orange"></i>
                             </a>
                         </div>
@@ -148,7 +150,7 @@ include 'includes/header.php';
 
      <div class="row d-flex bg-light relative">
         <div class="col-lg-12 min-700-lg">
-            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-heart-hands-love.jpg" alt="Get in touch with us!">
+            <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-heart-hands-love.jpg" alt="Get in touch with us. We'd love to hear from you.">
         </div>
     </div>
       

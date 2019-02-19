@@ -72,20 +72,17 @@
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <!-- Global site tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85893600-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52743378-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-85893600-1');
-
+      gtag('config', 'UA-52743378-1');
     </script>
     
-    
-    <!-- Google Analytics -->
+    <!-- Google Analytics for button tags -->
+<!--
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -99,7 +96,7 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-85893600-1', 'auto');
+        ga('create', 'UA-52743378-1', 'auto');
         ga('send', 'pageview');
 
         function googleAnalyticsTrigger(category, label) {
@@ -112,5 +109,6 @@
         }
 
     </script>
+-->
   </body>
 </html>

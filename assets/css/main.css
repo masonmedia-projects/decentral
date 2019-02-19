@@ -553,6 +553,9 @@ p {
 }
 /* bg colors ======================*/
 
+.bg-trans {
+    background: transparent !important;
+}
 .bg-orange {
 	background-color: #ff6902 !important;
 }
@@ -725,7 +728,8 @@ img.decentral-logo,
 	background-size: cover;
 }
 .bg--home-skyline {
-	background: url(https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;
+/*	background: url(https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;*/
+	background: url(/assets/img/decentral-toronto-skyline.jpeg) center;
 	background-size: cover;
 }
 .bg--home-building {
@@ -765,8 +769,8 @@ img.decentral-logo,
 	background-size: cover;
 }
 .bg--home-city {
-    background: url(https://images.unsplash.com/photo-1496683174592-796fdff97407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) center; /*hooters aerial*/
-    background: url(https://images.unsplash.com/photo-1505318650824-d27732836a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80) center;
+/*    background: url(https://images.unsplash.com/photo-1505318650824-d27732836a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80) center;*/
+    background: url(/assets/img/decentral-toronto-flatiron.jpeg) center;
     background-size: cover;
 }
 .bg--home-platform {
@@ -786,7 +790,8 @@ img.decentral-logo,
 	background-size: cover;
 }
 .bg--home-testimonials-carousel {
-	background: url(https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80) center;
+/*	background: url(https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80) center;*/
+	background: url(/assets/img/decentral-home-banner.jpeg) center;
 	background-size: cover;
 }
 .bg--home-community {
@@ -807,7 +812,7 @@ img.decentral-logo,
 	background-size: cover;
 }
 .bg--home-social {
-	background: url(https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center top;
+	background: url(/assets/img/decentral-community-red.jpeg) center top;
 	background-size: cover;
 }
 .bg--home-download {
@@ -878,6 +883,7 @@ img.decentral-logo,
 	-webkit-transition: opacity .5s linear, top .5s ease-out;
 	transition: opacity .5s linear, top .5s ease-out;
 }
+
 /*or add fade-scale class*/
 
 /* cookies consent banner ======================*/
@@ -1054,15 +1060,6 @@ input:checked + .slider:before {
 	background-size: cover;
 }
 
-/*about carousel slick*/
-
-/*
-.slick-prev {
-    color: black;
-    background: orange;
-}
-*/
-
 /* partnerships ======================*/
 
 .bg--partnerships-banner {
@@ -1132,69 +1129,6 @@ input:checked + .slider:before {
      border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0)) 1 100%;
 }
 
-/*shapes ==================*/
-
-.shape {
-    position: absolute;
-    z-index: 0;
-}
-.rect-left {
-    height: 600px;
-    width: 90%;
-    border-radius: 15px;
-    transform: rotate(25deg);
-    top: 8%;
-    left: -200px;
-}
-.rect-left-2 {
-    height: 600px;
-    width: 90%;
-    border-radius: 15px;
-    transform: rotate(25deg);
-    top: 50%;
-    left: -200px;
-}
-.rect-right {
-    height: 600px;
-    width: 90%;
-    border-radius: 15px;
-    transform: rotate(-25deg);
-    top: 30%;
-    right: -200px;
-}
-.circle-left {
-    height: 1000px;
-    width: 1000px;
-    border-radius: 100%;
-    top: 50%;
-    left: -200px;
-}
-.circle-right {
-    height: 1000px;
-    width: 1000px;
-    border-radius: 100%;
-    top: 30%;
-    right: -200px;
-}
-.circle-right-2 {
-    height: 1000px;
-    width: 1000px;
-    border-radius: 100%;
-    top: 70%;
-    right: -200px;
-}
-/*
-.hex-right {
-    height: 800px;
-    width: 800px;
-    top: 30%;
-    right: -200px;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-*/
-
-
 /* partnerships ======================
 
 .bg--partnerships-love {
@@ -1217,7 +1151,6 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background: url(/assets/img/jaxx-screen-medley.png) center;
     background: url(/assets/img/jaxx-laptop-hands.jpg) center;
     background-size: cover;
-/*    filter: drop-shadow(16px 16px 10px lightgrey);*/
 }
 .bg--team-office {
     background: url(/assets/img/jaxx-three-people-selfie.jpg) center;
@@ -1578,9 +1511,14 @@ footer li a {
     }
 }
 
-@media (max-width: 768px) {    
+@media (max-width: 768px) {  
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
 	/* homepage front title */
-
 	.page-title {
 		font-size: 10vmin;
 		font-weight: 900;
@@ -1608,6 +1546,15 @@ footer li a {
     p {
         font-size: 19px;
         font-weight: bold;
+    }
+    
+    /* styles for improved scroll on chrome --> http://www.sanyamkhurana.com/blog/bootstrap-modal-scroll-bug-on-chrome-easy-fix.html */
+    .modal-body {
+        position: relative;
+    /*    padding: 20px;*/
+        height: auto;
+        height: 500px;
+        overflow-y: scroll;
     }
     
     /*about page history modal*/
