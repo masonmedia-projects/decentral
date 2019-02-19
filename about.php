@@ -9,8 +9,8 @@ include 'includes/header.php';
     <!--jumbotron-->
     
     <div role="banner" class="container-fluid bg-black p-0">
-        <div class="row d-flex min-700-lg relative py-5 ts">
-            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+        <div class="row d-flex min-700-lg relative py-5 ts stagger-right">
+            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-4 slide-right">About Decentral</h1>
                 <h2 class="site-title text-light font-weight-bold slide-right">On a mission to create opportunity and empower individuals around the world.</h2>
@@ -24,7 +24,7 @@ include 'includes/header.php';
     <div class="container-fluid p-0 relative">
 
        <!--intro-->
-       <div id="sec-1" class="row d-flex p-5 min-500 text-secondary bg-white">
+       <div id="sec-1" class="row d-flex p-5 min-500 text-secondary bg-white stagger-down">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-down">Company</h2>
                 <h3 class="section-title text-dark mb-0 slide-down">Working together to unite blockchain projects around the globe.</h3>
@@ -122,7 +122,7 @@ include 'includes/header.php';
         </div>
         
         <!--anthony message-->       
-        <div class="row d-flex p-5 min-500 text-secondary bg-white relative z-1">
+        <div class="row d-flex p-5 min-500 text-secondary bg-white relative z-1 stagger-right">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-right">Anthony Di Iorio</h2>
                 <h3 class="section-title text-dark mb-0 slide-right">A message from the founder.</h3>
@@ -140,7 +140,7 @@ include 'includes/header.php';
         </div>
         
         <!--history-->       
-        <div class="row d-flex p-5 min-500 text-secondary bg-white">
+        <div class="row d-flex p-5 min-500 text-secondary bg-white stagger-down">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-down">Decentral history</h2>
                 <h3 class="section-title text-dark mb-0 slide-down">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
@@ -285,7 +285,7 @@ include 'includes/header.php';
         </div><!--end modal-->
         
         <!--Innovation-->
-        <div class="row d-flex p-5 min-500 bg-white">
+        <div class="row d-flex p-5 min-500 bg-white stagger-right">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-right">Innovation</h2>
                 <h3 class="section-title text-dark mb-0 slide-right">Leading the blockchain market into 2019.</h3>
@@ -548,7 +548,7 @@ include 'includes/header.php';
         </div>
         
         <!--careers-->       
-        <div class="row d-flex p-5 min-500 text-secondary bg-white">
+        <div class="row d-flex p-5 min-500 text-secondary bg-white stagger-down">
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
                 <h2 class="h4 orange slide-down">Careers</h2>
                 <h3 class="section-title text-dark mb-0 slide-down">Informing. Empowering. Uniting.</h3>
