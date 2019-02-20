@@ -91,19 +91,19 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link right" href="/about.php">About</a>
+                        <a class="nav-link" href="/about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right" href="/jaxxliberty.php">Jaxx Liberty</a>
+                        <a class="nav-link" href="/jaxxliberty.php">Jaxx Liberty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right" href="/partner-network.php">Partner Network</a>
+                        <a class="nav-link" href="/partner-network.php">Partner Network</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right" href="https://blog.jaxx.io/" target="_blank">Blog</a>
+                        <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right" href="/contact.php">Contact</a>
+                        <a class="nav-link" href="/contact.php">Contact</a>
                     </li>
                 </ul>
             </div>

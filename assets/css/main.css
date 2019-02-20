@@ -1318,6 +1318,13 @@ input:checked + .slider:before {
     background-size: cover;
 }
 
+/*download badges*/
+
+.store-badge {
+    opacity: 1;
+    width: 150px;
+}
+
 /* partnerships ======================*/
 
 /*

@@ -111,7 +111,7 @@ $(document).ready(function() {
     }); 
 
         $(".animate-link").click(function(){
-          TweenMax.to("h1, h2, h3, .h4, li, p, .nav-item, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
+          TweenMax.to("h1, h2, h3, .h4, li, p, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
           TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
         });
 
@@ -153,7 +153,7 @@ $(document).ready(function(){
     var top = $('body').find($(this).attr('href')).offset().top;
     $('html, body').animate({
         scrollTop: top
-    }, 1000, 'easeInOutExpo');
+    }, 1200, 'easeInOutExpo');
 
     return false;
   });
@@ -263,7 +263,7 @@ document.addEventListener('swup:contentReplaced', function () {
     }); 
     
     $(".animate-link").click(function(){
-      TweenMax.to("h1, h2, h3, .h4, li, p, .nav-item, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
+      TweenMax.to("h1, h2, h3, .h4, li, p, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
       TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
     });
     
