@@ -21,26 +21,6 @@ include 'includes/header.php';
         </div>
         <div class="offset-lg-5"></div>
     </div>
-    
-<!--
-    <div class="row d-flex min-700-lg py-5 bg-white text-secondary">
-        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 mt-3">Your all-in-one digital asset wallet</h1>
-            <h2 class="section-title knockout-gradient font-weight-bold">Jaxx Liberty is an industry leading investment tool that is reshaping the way people manage their digital portfolios.</h2>
-            <a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0"></i></a>
-        </div>
-        <div class="offset-lg-4"></div>
-    </div>
--->
-  
-<!--
-    <div class="row d-flex bg-light relative">
-        <div class="col-lg-12 min-500">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-2-people-selfie.jpeg" alt="Jaxx Classic">
-        </div>
-    </div>
-</div>
--->
 
 <!--main body-->
 
@@ -176,7 +156,7 @@ include 'includes/header.php';
                         <a onclick="googleAnalyticsTrigger('iOS', 'Downloads_Mobile')" href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne" target="_blank"><img title="iTunes Store Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-chrome-store.png" alt="Chrome Web Store"/></a>
                     </div><!--end button nest row--> 
                     <div class="right right-med">
-                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn pt-3 slide-down">Desktop versions <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
+                        <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn pt-3 mt-2 slide-right">Desktop versions <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
 <!--
                     <div class="btn-group dropup right right-med">

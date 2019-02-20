@@ -76,7 +76,7 @@
 <body>
     <div id="swup" class="transition-fade">
        <!--nav-->
-        <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-slow">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg down down-med">
             <a class="navbar-brand" href="/">
                 <img class="decentral-navbar-brand" src="/assets/img/decentral_D_logo_white.png" alt="Decentral Inc.">
             </a>
@@ -90,6 +90,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about.php">About</a>
                     </li>
