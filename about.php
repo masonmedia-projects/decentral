@@ -8,18 +8,20 @@ include 'includes/header.php';
 
     <!--jumbotron-->
     
-    <div role="banner" class="container-fluid bg-black p-0">
+    <div id="banner" role="banner" class="container-fluid bg-black p-0">
         <div class="row d-flex min-700-lg relative py-5 ts stagger-right">
-            <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
-                <h1 class="h4 mt-4 slide-right">About Decentral</h1>
-                <h2 class="site-title text-light font-weight-bold slide-right">On a mission to create opportunity and empower individuals around the world.</h2>
+                <h1 class="h4 mt-4 right">About Decentral</h1>
+                <h2 class="site-title text-light font-weight-bold right right-med">On a mission to create opportunity and empower individuals around the world.</h2>
                 <!--<a href="#sec-1"><button class="bg-trans border-0 slide-right"><i class="fa fa-angle-down text-light p-0"></i></button></a> -->
-                <a href="#sec-1"><button class="p-btn text-light ts bg-trans border-0 mb-1 p-0 slide-right">Learn more <i class="fa fa-angle-right fa-btn text-light"></i></button></a>
+                <a href="#sec-1"><button class="p-btn text-light ts bg-trans border-0 mb-1 p-0 right right-slow">Learn more <i class="fa fa-angle-right fa-btn text-light"></i></button></a>
             </div>
             <div class="offset-lg-3"></div>
         </div>
     </div>
+    
+    <main id="main">
     
     <div class="container-fluid p-0 relative">
 
@@ -587,6 +589,7 @@ include 'includes/header.php';
         
     </div>
     <!--end container-->   
+</main>
     
 <?php
 

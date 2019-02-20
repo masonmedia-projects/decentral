@@ -534,6 +534,11 @@ p {
     animation-delay: 2s;
 }
 
+/*scroll to ID highlight links*/
+#menu a:hover, #menu a.mPS2id-highlight{
+	color: #ff6902;
+}
+
 /*SWUP transition animations*/
 
 /*fade*/
@@ -542,8 +547,9 @@ p {
     -webkit-transition: .5s;
     transition: .5s;
     transition-delay: .5s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+/*    -webkit-transition-timing-function: ease-in-out;*/
+    transition-timing-function: linear;
+/*    transition-timing-function: cubic-bezier(.75,-0.5,0,1.75);*/
     opacity: 1;
 }
 
@@ -638,12 +644,22 @@ p {
 
 /*med variations*/
 
+.down, 
+.up, 
+.left, 
+.right {
+/*    transition-timing-function: cubic-bezier(.75,-0.5,0,1.75);*/
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+/*    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+}
+
 .right-med,
 .left-med,
 .up-med,
 .down-med {
     -webkit-transition: 1.5s;
     transition: 1.5s;
+     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /*slow variations*/
@@ -654,6 +670,7 @@ p {
 .down-slow {
     -webkit-transition: 2s;
     transition: 2s;
+     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 

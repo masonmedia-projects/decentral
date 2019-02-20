@@ -10,14 +10,14 @@ include 'includes/header.php';
 
 <!--banner-->
 
-<div role="banner" class="container-fluid p-0">
+<div id="banner" role="banner" class="container-fluid p-0">
     <div class="row d-flex min-700-lg py-5 text-light relative">
        <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/jaxx-tablet-chair-right.jpg" alt="Jaxx Liberty is your all-in-one digital asset wallet.">
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 slide-right">Jaxx Liberty</h1>
-            <h2 class="site-title knockout-gradient font-weight-bold slide-right">Your all-in-one digital asset wallet.</h2>
+            <h1 class="h4 right">Jaxx Liberty</h1>
+            <h2 class="site-title knockout-gradient font-weight-bold right right-med">Your all-in-one digital asset wallet.</h2>
             <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0 slide-right"></i></a>-->
-            <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 p-0 slide-right">Discover <i class="fa fa-angle-right fa-btn text-light"></i></button></a> 
+            <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 p-0 right right-slow">Discover <i class="fa fa-angle-right fa-btn text-light"></i></button></a> 
         </div>
         <div class="offset-lg-5"></div>
     </div>

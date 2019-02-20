@@ -2,7 +2,7 @@
         <footer>
             <div class="container-fluid p-0 stagger-down">
                 <div class="row d-flex d-flex justify-content-center align-items-end text-secondary bg-light text-secondary px-3 pt-5">
-                   <div class="col-lg-3 col-md-6 px-4 py-3 skew">
+                   <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
                             <li class="h4 font-weight-bold ">Company</li>
                             <hr class="hr-big border-0 bg-secondary ">
@@ -13,7 +13,7 @@
                         </ul>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 px-4 py-3 skew">
+                    <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
                             <li class="h4 font-weight-bold">Jaxx Liberty</li>
                             <hr class="hr-big border-0 bg-secondary ">
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 px-4 py-3 skew">
+                    <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
                             <li class="h4 font-weight-bold">Download</li>
                             <hr class="hr-big border-0 bg-secondary">
@@ -34,7 +34,7 @@
                             <li><a href="https://jaxx.io/downloads">Desktop</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 px-4 py-3 skew">
+                    <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
                             <li class="h4 font-weight-bold">Connect</li>
                             <hr class="hr-big border-0 bg-secondary">
@@ -63,7 +63,7 @@
     <script src="/assets/js/bootstrap.min.js"></script>
     <!--aos js-->
 <!--    <script src="/assets/js/aos.js"></script>-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/assets/js/jquery.malihu.PageScroll2id.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>

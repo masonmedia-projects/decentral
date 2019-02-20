@@ -109,19 +109,29 @@ $(document).ready(function() {
             .setTween(fadeIn)
             .addTo(controller);
     }); 
-    
-    $(".nav-item").click(function(){
-      TweenMax.to(".slide-down", 0.5, {opacity:0, delay: 0, y:-100, ease:Back.easeIn}, 0.1);
-      TweenMax.to(".slide-right", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-      TweenMax.to(".slide-up", 0.5, {opacity:0, delay: 0, y:100, ease:Back.easeIn}, 0.1);
-    });
-//    $(".slide-right").click(function(){
-//      TweenMax.to(".slide-right", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-//    });
-//    $(".slide-up").click(function(){
-//      TweenMax.to(".slide-up", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-//    });
+
+        $(".animate-link").click(function(){
+          TweenMax.to("h1, h2, h3, .h4, li, p, .nav-item, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
+          TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
+        });
+
 });
+
+//    ahish add class code 
+    
+//    jQuery.each( $('.nav-link'), function( i, navLink ) {
+//         if(navLink.href == window.window.location.href){
+//             $(navLink).addClass('selected');
+//         }
+//    });
+//    
+//        $(".nav-link").click(function(){
+//            if(!$(".nav-link").hasClass('selected')){
+//                $(".nav-link").addClass('selected');
+//                TweenMax.to("h1, h2, h3, p, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
+//                TweenMax.to("img", 0.5, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);   
+//        }
+//    });
 
 
 //close mobile nav on click
@@ -139,34 +149,15 @@ $(document).ready(function() {
 
 //smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $('a').click(function(){
+    var top = $('body').find($(this).attr('href')).offset().top;
+    $('html, body').animate({
+        scrollTop: top
+    }, 1000, 'easeInOutExpo');
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+    return false;
   });
 });
-
-//change nav color on scroll
-$(document).scroll(function () {
-    $('#home nav, #home .navbar, #home .decentral-navbar-brand, #home .decentral-mobile-menu').toggleClass('scrolled', $(this).scrollTop() > 20);
-  });
 
 //lazy load
 
@@ -178,56 +169,105 @@ $(document).ready(function() {
         printable: true    // be printer friendly and show all elements on document print
     //    live: true          // auto bind lazy loading to ajax loaded elements
     });
-});
-
-//scroll reveal 
-//$(document).ready(function() {
-//    ScrollReveal().reveal('.flip', {
-//        rotate: {
-//            x: 100,
-//            z: 20
-//        },
-//        duration: 1500,
-//        opacity: 0,
-//        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
-//        interval: 10,
-//        reset: true
-//            
-//    });
-//    ScrollReveal().reveal('.slide-up', {
-//        distance: '70%',
-//        duration: 1500,
-//        opacity: 0,
-//        origin: 'bottom',
-//        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
-//        interval: 10,
-//        reset: true
-//    });
-//    ScrollReveal().reveal('.slide-down', {
-//        distance: '70%',
-//        duration: 1500,
-//        opacity: 0,
-//        origin: 'top',
-//        easing: 'cubic-bezier(.46,.18,0,1.06)',
-//        interval: 10,
-//        reset: true
-//    });
-//    ScrollReveal().reveal('.slide-right', {
-//        distance: '70%',
-//        duration: 1500,
-//        opacity: 0,
-//        origin: 'left',
-//        easing: 'cubic-bezier(.46,.18,0,1.06)',
-//        interval: 10,
-//        reset: true
-//    });
-//});
+    
+   
+});//end main js init
 
 
 //swup reinit plugins
 
 document.addEventListener('swup:contentReplaced', function () {
+    
+    //gsap reinit
+    
+    var controller = new ScrollMagic.Controller();
 
+    $(".stagger-up").each(function() {
+
+      var stagger = TweenMax.staggerFrom($(this).find(".slide-up"), 1, {
+    //      scale:0.5,
+          opacity:0,    
+          delay:0,
+          y: 50,
+          ease: Back.easeInOut.config(1.7),
+          force3D:true
+      },
+      0.1);
+
+        var fadeUp = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 'onEnter',
+                reverse:true
+            })
+            .setTween(stagger)
+            .addTo(controller);
+    }); 
+    
+    $(".stagger-right").each(function() {
+
+      var stagger2 = TweenMax.staggerFrom($(this).find(".slide-right"), 1, {
+          opacity:0,    
+          delay:0,
+          x: -50,
+          ease: Back.easeInOut.config(1.7),
+          force3D:true
+      },
+      0.1);
+
+        var fadeRight = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 'onEnter',
+                reverse:true
+            })
+            .setTween(stagger2)
+            .addTo(controller);
+    }); 
+    
+    $(".stagger-down").each(function() {
+
+      var stagger3 = TweenMax.staggerFrom($(this).find(".slide-down"), 1, {
+          opacity:0,    
+          delay:0,
+          y: -50,
+          ease: Back.easeInOut.config(1.7),
+          force3D:true
+      },
+      0.1);
+
+        var fadeDown = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 'onEnter',
+                reverse:true
+            })
+            .setTween(stagger3)
+            .addTo(controller);
+    }); 
+    
+    $(".fade-trigger").each(function() {
+
+      var fadeIn = TweenMax.staggerFrom($(this).find(".fade-in"), 1, {
+          opacity:0,    
+          delay:0,
+          ease: Back.easeInOut.config(1.7),
+          force3D:true
+      },
+      0.1);
+
+        var fadeDown = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 'onEnter',
+                reverse:true
+            })
+            .setTween(fadeIn)
+            .addTo(controller);
+    }); 
+    
+    $(".animate-link").click(function(){
+      TweenMax.to("h1, h2, h3, .h4, li, p, .nav-item, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
+      TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
+    });
+    
+    
     //lazyload reinit
     $(".lazy").recliner({
         attrib: "data-src", // selector for attribute containing the media src
@@ -237,17 +277,6 @@ document.addEventListener('swup:contentReplaced', function () {
     //    live: true          // auto bind lazy loading to ajax loaded elements
     });
     
-    $(".nav-item").click(function(){
-      TweenMax.to(".slide-down", 0.5, {opacity:0, delay: 0, y:-100, ease:Back.easeIn}, 0.1);
-      TweenMax.to(".slide-right", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-      TweenMax.to(".slide-up", 0.5, {opacity:0, delay: 0, y:100, ease:Back.easeIn}, 0.1);
-    });
-    $(".slide-right").click(function(){
-      TweenMax.to(".slide-right", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-    });
-    $(".slide-up").click(function(){
-      TweenMax.to(".slide-up", 0.5, {opacity:0, delay: 0, y:100, ease:Back.easeIn}, 0.1);
-    });
     
     //init BS carousel and pass speed option
 
@@ -268,30 +297,18 @@ document.addEventListener('swup:contentReplaced', function () {
     });
 
     //smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
+    //https://stackoverflow.com/questions/16680045/how-to-add-easing-to-animate-scrolltop
 
-  $("a").on('click', function(event) {
+    $('a').click(function(){
+        var top = $('body').find($(this).attr('href')).offset().top;
+        $('html, body').animate({
+            scrollTop: top
+        }, 1000, 'easeInOutExpo');
 
-    if (this.hash !== "") {
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-//        window.location.hash = hash;
+        return false;
       });
-    } // End if
-  });
 
-
-//change nav color on scroll
-    $('#home nav, #home .navbar, #home .decentral-navbar-brand, #home .decentral-mobile-menu').toggleClass('scrolled', $(this).scrollTop() > 20);
-
-
-//lazy load
+    //lazy load
     $(".lazy").recliner({
         attrib: "data-src", // selector for attribute containing the media src
         throttle: 0,      // millisecond interval at which to process events
@@ -300,52 +317,8 @@ document.addEventListener('swup:contentReplaced', function () {
     //    live: true          // auto bind lazy loading to ajax loaded elements
     });
     
-    //scroll reveal 
-    
-    ScrollReveal().reveal('.flip', {
-        rotate: {
-            x: 100,
-            z: 20
-        },
-        duration: 1500,
-        opacity: 0,
-        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
-        interval: 10,
-        reset: true
-            
-    });
-    
-    ScrollReveal().reveal('.slide-up', {
-        distance: '70%',
-        duration: 1800,
-        opacity: 0,
-        origin: 'bottom',
-        easing: 'cubic-bezier(.49,-0.63,.34,1.33)',
-        interval: 10,
-        reset: true
-    });
-    ScrollReveal().reveal('.slide-down', {
-        distance: '70%',
-        duration: 1500,
-        opacity: 0,
-        origin: 'top',
-        easing: 'cubic-bezier(.46,.18,0,1.06)',
-        interval: 10,
-        reset: true
-    });
-    ScrollReveal().reveal('.slide-right', {
-        distance: '70%',
-        duration: 1500,
-        opacity: 0,
-        origin: 'left',
-        easing: 'cubic-bezier(.46,.18,0,1.06)',
-        interval: 10,
-        reset: true
-    });
-    
 
-});
-//end swup reinit
+});//end swup reinit
 
 
 // API js display jaxx blog --> https://www.youtube.com/watch?v=rGObWtjxGBc

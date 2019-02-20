@@ -10,7 +10,7 @@ include 'includes/header.php';
 
 <!--banner-->
     
-<div id="home" role="banner" class="container-fluid bg-black relative p-0">  
+<div id="banner" role="banner" class="container-fluid bg-black relative p-0">  
     <div class="row d-flex min-700-lg text-light ts py-5 px-0">
         <img class="img-full absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Join the Decentral partner network.">  
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">

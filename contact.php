@@ -8,7 +8,7 @@ include 'includes/header.php';
 
 <!--banner-->
 
-<div role="banner" class="container-fluid bg-black relative p-0">
+<div id="banner" role="banner" class="container-fluid bg-black relative p-0">
     <div class="row d-flex min-700-lg text-light">
         <img class="img-full min-700-lg absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
         <div class="offset-lg-2"></div>
