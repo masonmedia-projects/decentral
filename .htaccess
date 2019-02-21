@@ -52,1240 +52,2034 @@ ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
 
-
-# .htaccess config from HTML5 Boilerplate -- https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess
-
-# (!) Using `.htaccess` files slows down Apache, therefore, if you have
-# access to the main server configuration file (which is usually called
-# `httpd.conf`), you should add this logic there.
-
-# ######################################################################
-# # CROSS-ORIGIN                                                       #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Cross-origin requests                                              |
-# ----------------------------------------------------------------------
-
-# Allow cross-origin requests.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-# https://enable-cors.org/
-# https://www.w3.org/TR/cors/
-
-# <IfModule mod_headers.c>
-#     Header set Access-Control-Allow-Origin "*"
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Cross-origin images                                                |
-# ----------------------------------------------------------------------
-
-# Send the CORS header for images when browsers request it.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
-# https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
-
-<IfModule mod_setenvif.c>
-    <IfModule mod_headers.c>
-        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
-            SetEnvIf Origin ":" IS_CORS
-            Header set Access-Control-Allow-Origin "*" env=IS_CORS
-        </FilesMatch>
-    </IfModule>
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Cross-origin web fonts                                             |
-# ----------------------------------------------------------------------
-
-# Allow cross-origin access to web fonts.
-#
-# https://developers.google.com/fonts/docs/troubleshooting
-
-<IfModule mod_headers.c>
-    <FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
-        Header set Access-Control-Allow-Origin "*"
-    </FilesMatch>
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Cross-origin resource timing                                       |
-# ----------------------------------------------------------------------
-
-# Allow cross-origin access to the timing information for all resources.
-#
-# If a resource isn't served with a `Timing-Allow-Origin` header that
-# would allow its timing information to be shared with the document,
-# some of the attributes of the `PerformanceResourceTiming` object will
-# be set to zero.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin
-# https://www.w3.org/TR/resource-timing/
-# https://www.stevesouders.com/blog/2014/08/21/resource-timing-practical-tips/
-
-# <IfModule mod_headers.c>
-#     Header set Timing-Allow-Origin: "*"
-# </IfModule>
-
-# ######################################################################
-# # ERRORS                                                             #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Custom error messages/pages                                        |
-# ----------------------------------------------------------------------
-
-# Customize what Apache returns to the client in case of an error.
-#
-# https://httpd.apache.org/docs/current/mod/core.html#errordocument
-
-ErrorDocument 404 /404.html
-
-# ----------------------------------------------------------------------
-# | Error prevention                                                   |
-# ----------------------------------------------------------------------
-
-# Disable the pattern matching based on filenames.
-#
-# This setting prevents Apache from returning a 404 error as the result
-# of a rewrite when the directory with the same name does not exist.
-#
-# https://httpd.apache.org/docs/current/content-negotiation.html#multiviews
-
-Options -MultiViews
-
-# ######################################################################
-# # INTERNET EXPLORER                                                  #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Document modes                                                     |
-# ----------------------------------------------------------------------
-
-# Force Internet Explorer 8/9/10 to render pages in the highest mode
-# available in the various cases when it may not.
-#
-# https://hsivonen.fi/doctype/#ie8
-#
-# (!) Starting with Internet Explorer 11, document modes are deprecated.
-# If your business still relies on older web apps and services that were
-# designed for older versions of Internet Explorer, you might want to
-# consider enabling `Enterprise Mode` throughout your company.
-#
-# https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
-# https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
-# https://msdn.microsoft.com/en-us/library/ff955275.aspx
-
-<IfModule mod_headers.c>
-
-    Header set X-UA-Compatible "IE=edge"
-
-    # `mod_headers` cannot match based on the content-type, however,
-    # the `X-UA-Compatible` response header should be sent only for
-    # HTML documents and not for the other resources.
-
-    <FilesMatch "\.(appcache|atom|bbaw|bmp|br|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|gz|htc|ic[os]|jpe?g|m?js|json(ld)?|m4[av]|manifest|map|markdown|md|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|wasm|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
-        Header unset X-UA-Compatible
-    </FilesMatch>
-
-</IfModule>
-
-# ######################################################################
-# # MEDIA TYPES AND CHARACTER ENCODINGS                                #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Media types                                                        |
-# ----------------------------------------------------------------------
-
-# Serve resources with the proper media types (f.k.a. MIME types).
-#
-# https://www.iana.org/assignments/media-types/media-types.xhtml
-# https://httpd.apache.org/docs/current/mod/mod_mime.html#addtype
-
-<IfModule mod_mime.c>
-
-  # Data interchange
-
-    AddType application/atom+xml                        atom
-    AddType application/json                            json map topojson
-    AddType application/ld+json                         jsonld
-    AddType application/rss+xml                         rss
-    AddType application/vnd.geo+json                    geojson
-    AddType application/xml                             rdf xml
-
-
-  # JavaScript
-
-    # Servers should use text/javascript for JavaScript resources.
-    # https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
-
-    AddType text/javascript                             js mjs
-
-
-  # Manifest files
-
-    AddType application/manifest+json                   webmanifest
-    AddType application/x-web-app-manifest+json         webapp
-    AddType text/cache-manifest                         appcache
-
-
-  # Media files
-
-    AddType audio/mp4                                   f4a f4b m4a
-    AddType audio/ogg                                   oga ogg opus
-    AddType image/bmp                                   bmp
-    AddType image/svg+xml                               svg svgz
-    AddType image/webp                                  webp
-    AddType video/mp4                                   f4v f4p m4v mp4
-    AddType video/ogg                                   ogv
-    AddType video/webm                                  webm
-    AddType video/x-flv                                 flv
-
-    # Serving `.ico` image files with a different media type
-    # prevents Internet Explorer from displaying them as images:
-    # https://github.com/h5bp/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee
-
-    AddType image/x-icon                                cur ico
-
-
-  # WebAssembly
-
-    AddType application/wasm                            wasm
-
-
-  # Web fonts
-
-    AddType font/woff                                   woff
-    AddType font/woff2                                  woff2
-    AddType application/vnd.ms-fontobject               eot
-    AddType font/ttf                                    ttf
-    AddType font/collection                             ttc
-    AddType font/otf                                    otf
-
-
-  # Other
-
-    AddType application/octet-stream                    safariextz
-    AddType application/x-bb-appworld                   bbaw
-    AddType application/x-chrome-extension              crx
-    AddType application/x-opera-extension               oex
-    AddType application/x-xpinstall                     xpi
-    AddType text/calendar                               ics
-    AddType text/markdown                               markdown md
-    AddType text/vcard                                  vcard vcf
-    AddType text/vnd.rim.location.xloc                  xloc
-    AddType text/vtt                                    vtt
-    AddType text/x-component                            htc
-
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Character encodings                                                |
-# ----------------------------------------------------------------------
-
-# Serve all resources labeled as `text/html` or `text/plain`
-# with the media type `charset` parameter set to `UTF-8`.
-#
-# https://httpd.apache.org/docs/current/mod/core.html#adddefaultcharset
-
-AddDefaultCharset utf-8
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Serve the following file types with the media type `charset`
-# parameter set to `UTF-8`.
-#
-# https://httpd.apache.org/docs/current/mod/mod_mime.html#addcharset
-
-<IfModule mod_mime.c>
-    AddCharset utf-8 .atom \
-                     .bbaw \
-                     .css \
-                     .geojson \
-                     .ics \
-                     .js \
-                     .json \
-                     .jsonld \
-                     .manifest \
-                     .markdown \
-                     .md \
-                     .mjs \
-                     .rdf \
-                     .rss \
-                     .topojson \
-                     .vtt \
-                     .webapp \
-                     .webmanifest \
-                     .xloc \
-                     .xml
-</IfModule>
-
-# ######################################################################
-# # REWRITES                                                           #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Rewrite engine                                                     |
-# ----------------------------------------------------------------------
-
-# (1) Turn on the rewrite engine (this is necessary in order for
-#     the `RewriteRule` directives to work).
-#
-#     https://httpd.apache.org/docs/current/mod/mod_rewrite.html#RewriteEngine
-#
-# (2) Enable the `FollowSymLinks` option if it isn't already.
-#
-#     https://httpd.apache.org/docs/current/mod/core.html#options
-#
-# (3) If your web host doesn't allow the `FollowSymlinks` option,
-#     you need to comment it out or remove it, and then uncomment
-#     the `Options +SymLinksIfOwnerMatch` line (4), but be aware
-#     of the performance impact.
-#
-#     https://httpd.apache.org/docs/current/misc/perf-tuning.html#symlinks
-#
-# (4) Some cloud hosting services will require you set `RewriteBase`.
-#
-#     https://www.rackspace.com/knowledge_center/frequently-asked-question/why-is-modrewrite-not-working-on-my-site
-#     https://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
-#
-# (5) Depending on how your server is set up, you may also need to
-#     use the `RewriteOptions` directive to enable some options for
-#     the rewrite engine.
-#
-#     https://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewriteoptions
-#
-# (6) Set %{ENV:PROTO} variable, to allow rewrites to redirect with the
-#     appropriate schema automatically (http or https).
-
-<IfModule mod_rewrite.c>
-
-    # (1)
-    RewriteEngine On
-
-    # (2)
-    Options +FollowSymlinks
-
-    # (3)
-    # Options +SymLinksIfOwnerMatch
-
-    # (4)
-    # RewriteBase /
-
-    # (5)
-    # RewriteOptions <options>
-
-    # (6)
-    RewriteCond %{HTTPS} =on
-    RewriteRule ^ - [env=proto:https]
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ - [env=proto:http]
-
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Forcing `https://`                                                 |
-# ----------------------------------------------------------------------
-
-# Redirect from the `http://` to the `https://` version of the URL.
-#
-# https://wiki.apache.org/httpd/RewriteHTTPToHTTPS
-
-# (1) If you're using cPanel AutoSSL or the Let's Encrypt webroot
-#     method it will fail to validate the certificate if validation
-#     requests are redirected to HTTPS. Turn on the condition(s)
-#     you need.
-#
-#     https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml
-#     https://tools.ietf.org/html/draft-ietf-acme-acme-12
-
-# <IfModule mod_rewrite.c>
-#    RewriteEngine On
-#    RewriteCond %{HTTPS} !=on
-#    # (1)
-#    # RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
-#    # RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[\w-]+$
-#    # RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-#    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Suppressing the `www.` at the beginning of URLs                    |
-# ----------------------------------------------------------------------
-
-# Rewrite www.example.com → example.com
-
-# The same content should never be available under two different
-# URLs, especially not with and without `www.` at the beginning.
-# This can cause SEO problems (duplicate content), and therefore,
-# you should choose one of the alternatives and redirect the other
-# one.
-#
-# (!) NEVER USE BOTH WWW-RELATED RULES AT THE SAME TIME!
-
-# (1) The rule assumes by default that both HTTP and HTTPS
-#     environments are available for redirection.
-#     If your SSL certificate could not handle one of the domains
-#     used during redirection, you should turn the condition on.
-#
-#     https://github.com/h5bp/server-configs-apache/issues/52
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    # (1)
-    # RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Forcing the `www.` at the beginning of URLs                        |
-# ----------------------------------------------------------------------
-
-# Rewrite example.com → www.example.com
-
-# The same content should never be available under two different
-# URLs, especially not with and without `www.` at the beginning.
-# This can cause SEO problems (duplicate content), and therefore,
-# you should choose one of the alternatives and redirect the other
-# one.
-#
-# (!) NEVER USE BOTH WWW-RELATED RULES AT THE SAME TIME!
-
-# (1) The rule assumes by default that both HTTP and HTTPS
-#     environments are available for redirection.
-#     If your SSL certificate could not handle one of the domains
-#     used during redirection, you should turn the condition on.
-#
-#     https://github.com/h5bp/server-configs-apache/issues/52
-
-# Be aware that the following might not be a good idea if you use "real"
-# subdomains for certain parts of your website.
-
-# <IfModule mod_rewrite.c>
-#     RewriteEngine On
-#     # (1)
-#     # RewriteCond %{HTTPS} !=on
-#     RewriteCond %{HTTP_HOST} !^www\. [NC]
-#     RewriteCond %{SERVER_ADDR} !=127.0.0.1
-#     RewriteCond %{SERVER_ADDR} !=::1
-#     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-# </IfModule>
-
-# ######################################################################
-# # SECURITY                                                           #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Clickjacking                                                       |
-# ----------------------------------------------------------------------
-
-# Protect website against clickjacking.
-#
-# The example below sends the `X-Frame-Options` response header with
-# the value `DENY`, informing browsers not to display the content of
-# the web page in any frame.
-#
-# This might not be the best setting for everyone. You should read
-# about the other two possible values the `X-Frame-Options` header
-# field can have: `SAMEORIGIN` and `ALLOW-FROM`.
-# https://tools.ietf.org/html/rfc7034#section-2.1.
-#
-# Keep in mind that while you could send the `X-Frame-Options` header
-# for all of your website’s pages, this has the potential downside that
-# it forbids even non-malicious framing of your content (e.g.: when
-# users visit your website using a Google Image Search results page).
-#
-# Nonetheless, you should ensure that you send the `X-Frame-Options`
-# header for all pages that allow a user to make a state changing
-# operation (e.g: pages that contain one-click purchase links, checkout
-# or bank-transfer confirmation pages, pages that make permanent
-# configuration changes, etc.).
-#
-# Sending the `X-Frame-Options` header can also protect your website
-# against more than just clickjacking attacks:
-# https://cure53.de/xfo-clickjacking.pdf.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
-# https://tools.ietf.org/html/rfc7034
-# https://blogs.msdn.microsoft.com/ieinternals/2010/03/30/combating-clickjacking-with-x-frame-options/
-# https://www.owasp.org/index.php/Clickjacking
-
-# <IfModule mod_headers.c>
-
-#     Header set X-Frame-Options "DENY"
-
-#     # `mod_headers` cannot match based on the content-type, however,
-#     # the `X-Frame-Options` response header should be sent only for
-#     # HTML documents and not for the other resources.
-
-#     <FilesMatch "\.(appcache|atom|bbaw|bmp|br|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|gz|htc|ic[os]|jpe?g|m?js|json(ld)?|m4[av]|manifest|map|markdown|md|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|wasm|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
-#         Header unset X-Frame-Options
-#     </FilesMatch>
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Content Security Policy (CSP)                                      |
-# ----------------------------------------------------------------------
-
-# Mitigate the risk of cross-site scripting and other content-injection
-# attacks.
-#
-# This can be done by setting a `Content Security Policy` which
-# whitelists trusted sources of content for your website.
-#
-# The example header below allows ONLY scripts that are loaded from
-# the current website's origin (no inline scripts, no CDN, etc).
-# That almost certainly won't work as-is for your website!
-#
-# To make things easier, you can use an online CSP header generator
-# such as: https://www.cspisawesome.com/.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-# https://www.w3.org/TR/CSP3/
-# https://content-security-policy.com/
-# https://www.html5rocks.com/en/tutorials/security/content-security-policy/
-
-# <IfModule mod_headers.c>
-
-#     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
-
-#     # `mod_headers` cannot match based on the content-type, however,
-#     # the `Content-Security-Policy` response header should be sent
-#     # only for HTML documents and not for the other resources.
-
-#     <FilesMatch "\.(appcache|atom|bbaw|bmp|br|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|gz|htc|ic[os]|jpe?g|m?js|json(ld)?|m4[av]|manifest|map|markdown|md|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|wasm|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
-#         Header unset Content-Security-Policy
-#     </FilesMatch>
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | File access                                                        |
-# ----------------------------------------------------------------------
-
-# Block access to directories without a default document.
-#
-# You should leave the following uncommented, as you shouldn't allow
-# anyone to surf through every directory on your server (which may
-# includes rather private places such as the CMS's directories).
-
-<IfModule mod_autoindex.c>
-    Options -Indexes
-</IfModule>
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Block access to all hidden files and directories with the exception of
-# the visible content from within the `/.well-known/` hidden directory.
-#
-# These types of files usually contain user preferences or the preserved
-# state of an utility, and can include rather private places like, for
-# example, the `.git` or `.svn` directories.
-#
-# The `/.well-known/` directory represents the standard (RFC 5785) path
-# prefix for "well-known locations" (e.g.: `/.well-known/manifest.json`,
-# `/.well-known/keybase.txt`), and therefore, access to its visible
-# content should not be blocked.
-#
-# https://www.mnot.net/blog/2010/04/07/well-known
-# https://tools.ietf.org/html/rfc5785
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
-    RewriteCond %{SCRIPT_FILENAME} -d [OR]
-    RewriteCond %{SCRIPT_FILENAME} -f
-    RewriteRule "(^|/)\." - [F]
-</IfModule>
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Block access to files that can expose sensitive information.
-#
-# By default, block access to backup and source files that may be
-# left by some text editors and can pose a security risk when anyone
-# has access to them.
-#
-# https://feross.org/cmsploit/
-#
-# (!) Update the `<FilesMatch>` regular expression from below to
-# include any files that might end up on your production server and
-# can expose sensitive information about your website. These files may
-# include: configuration files, files that contain metadata about the
-# project (e.g.: project dependencies), build scripts, etc..
-
-<IfModule mod_authz_core.c>
-    <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
-        Require all denied
-    </FilesMatch>
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | HTTP Strict Transport Security (HSTS)                              |
-# ----------------------------------------------------------------------
-
-# Force client-side SSL redirection.
-#
-# If a user types `example.com` in their browser, even if the server
-# redirects them to the secure version of the website, that still leaves
-# a window of opportunity (the initial HTTP connection) for an attacker
-# to downgrade or redirect the request.
-#
-# The following header ensures that browser will ONLY connect to your
-# server via HTTPS, regardless of what the users type in the browser's
-# address bar.
-#
-# (!) Be aware that this, once published, is not revokable and you must ensure
-# being able to serve the site via SSL for the duration you've specified
-# in max-age. When you don't have a valid SSL connection (anymore) your
-# visitors will see a nasty error message even when attempting to connect
-# via simple HTTP.
-#
-# (!) Remove the `includeSubDomains` optional directive if the website's
-# subdomains are not using HTTPS.
-#
-# (1) If you want to submit your site for HSTS preload (2) you must
-#     * ensure the `includeSubDomains` directive to be present
-#     * the `preload` directive to be specified
-#     * the `max-age` to be at least 31536000 seconds (1 year) according to the current status.
-#
-#     It is also advised (3) to only serve the HSTS header via a secure connection
-#     which can be done with either `env=https` or `"expr=%{HTTPS} == 'on'"` (4). The
-#     exact way depends on your environment and might just be tried.
-#
-# (2) https://hstspreload.org/
-# (3) https://tools.ietf.org/html/rfc6797#section-7.2
-# (4) https://stackoverflow.com/questions/24144552/how-to-set-hsts-header-from-htaccess-only-on-https/24145033#comment81632711_24145033
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
-# https://tools.ietf.org/html/rfc6797#section-6.1
-# https://www.html5rocks.com/en/tutorials/security/transport-layer-security/
-# https://blogs.msdn.microsoft.com/ieinternals/2014/08/18/strict-transport-security/
-
-# <IfModule mod_headers.c>
-#     Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
-#     # (1) or if HSTS preloading is desired (respect (2) for current requirements):
-#     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-#     # (4) respectively… (respect (2) for current requirements):
-#     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Reducing MIME type security risks                                  |
-# ----------------------------------------------------------------------
-
-# Prevent some browsers from MIME-sniffing the response.
-#
-# This reduces exposure to drive-by download attacks and cross-origin
-# data leaks, and should be left uncommented, especially if the server
-# is serving user-uploaded content or content that could potentially be
-# treated as executable by the browser.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
-# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-v-comprehensive-protection/
-# https://mimesniff.spec.whatwg.org/
-
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Reflected Cross-Site Scripting (XSS) attacks                       |
-# ----------------------------------------------------------------------
-
-# (1) Try to re-enable the cross-site scripting (XSS) filter built
-#     into most web browsers.
-#
-#     The filter is usually enabled by default, but in some cases it
-#     may be disabled by the user. However, in Internet Explorer for
-#     example, it can be re-enabled just by sending the
-#     `X-XSS-Protection` header with the value of `1`.
-#
-# (2) Prevent web browsers from rendering the web page if a potential
-#     reflected (a.k.a non-persistent) XSS attack is detected by the
-#     filter.
-#
-#     By default, if the filter is enabled and browsers detect a
-#     reflected XSS attack, they will attempt to block the attack
-#     by making the smallest possible modifications to the returned
-#     web page.
-#
-#     Unfortunately, in some browsers (e.g.: Internet Explorer),
-#     this default behavior may allow the XSS filter to be exploited,
-#     thereby, it's better to inform browsers to prevent the rendering
-#     of the page altogether, instead of attempting to modify it.
-#
-#     https://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
-#
-# (!) Do not rely on the XSS filter to prevent XSS attacks! Ensure that
-#     you are taking all possible measures to prevent XSS attacks, the
-#     most obvious being: validating and sanitizing your website's inputs.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
-# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-iv-the-xss-filter/
-# https://blogs.msdn.microsoft.com/ieinternals/2011/01/31/controlling-the-xss-filter/
-# https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
-
-# <IfModule mod_headers.c>
-
-#     #                           (1)    (2)
-#     Header set X-XSS-Protection "1; mode=block"
-
-#     # `mod_headers` cannot match based on the content-type, however,
-#     # the `X-XSS-Protection` response header should be sent only for
-#     # HTML documents and not for the other resources.
-
-#     <FilesMatch "\.(appcache|atom|bbaw|bmp|br|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|gz|htc|ic[os]|jpe?g|m?js|json(ld)?|m4[av]|manifest|map|markdown|md|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|wasm|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
-#         Header unset X-XSS-Protection
-#     </FilesMatch>
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Referrer Policy                                                    |
-# ----------------------------------------------------------------------
-
-# A web application uses HTTPS and a URL-based session identifier.
-# The web application might wish to link to HTTPS resources on other
-# web sites without leaking the user's session identifier in the URL.
-#
-# This can be done by setting a `Referrer Policy` which
-# whitelists trusted sources of content for your website.
-#
-# To check your referrer policy, you can use an online service
-# such as: https://securityheaders.io/.
-#
-# https://scotthelme.co.uk/a-new-security-header-referrer-policy/
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
-
-# <IfModule mod_headers.c>
-
-#     # no-referrer-when-downgrade (default)
-#     # This should be the user agent's default behavior if no policy is
-#     # specified.The origin is sent as referrer to a-priori as-much-secure
-#     # destination (HTTPS->HTTPS), but isn't sent to a less secure destination
-#     # (HTTPS->HTTP).
-
-#     Header set Referrer-Policy "no-referrer-when-downgrade"
-
-#     # `mod_headers` cannot match based on the content-type, however,
-#     # the `Referrer-Policy` response header should be sent
-#     # only for HTML documents and not for the other resources.
-
-#     <FilesMatch "\.(appcache|atom|bbaw|bmp|br|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|gz|htc|ic[os]|jpe?g|m?js|json(ld)?|m4[av]|manifest|map|markdown|md|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|wasm|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
-#         Header unset Referrer-Policy
-#     </FilesMatch>
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Disable TRACE HTTP Method                                          |
-# ----------------------------------------------------------------------
-
-# Prevent Apache from responding to `TRACE` HTTP request.
-#
-# The TRACE method, while apparently harmless, can be successfully
-# leveraged in some scenarios to steal legitimate users' credentials
-#
-# Modern browsers now prevent TRACE requests being made via JavaScript,
-# however, other ways of sending TRACE requests with browsers have been
-# discovered, such as using Java.
-#
-# (!) The `TraceEnable` directive will only work in the main server
-# configuration file, so don't try to enable it in the `.htaccess` file!
-#
-# https://tools.ietf.org/html/rfc7231#section-4.3.8
-# https://www.owasp.org/index.php/Cross_Site_Tracing
-# https://www.owasp.org/index.php/Test_HTTP_Methods_(OTG-CONFIG-006)
-# https://httpd.apache.org/docs/current/mod/core.html#traceenable
-
-# TraceEnable Off
-
-# ----------------------------------------------------------------------
-# | Server-side technology information                                 |
-# ----------------------------------------------------------------------
-
-# Remove the `X-Powered-By` response header that:
-#
-#  * is set by some frameworks and server-side languages
-#    (e.g.: ASP.NET, PHP), and its value contains information
-#    about them (e.g.: their name, version number)
-#
-#  * doesn't provide any value to users, contributes to header
-#    bloat, and in some cases, the information it provides can
-#    expose vulnerabilities
-#
-# (!) If you can, you should disable the `X-Powered-By` header from the
-# language / framework level (e.g.: for PHP, you can do that by setting
-# `expose_php = off` in `php.ini`)
-#
-# https://php.net/manual/en/ini.core.php#ini.expose-php
-
-<IfModule mod_headers.c>
-    Header unset X-Powered-By
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Server software information                                        |
-# ----------------------------------------------------------------------
-
-# Prevent Apache from adding a trailing footer line containing
-# information about the server to the server-generated documents
-# (e.g.: error messages, directory listings, etc.)
-#
-# https://httpd.apache.org/docs/current/mod/core.html#serversignature
-
-ServerSignature Off
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Prevent Apache from sending in the `Server` response header its
-# exact version number, the description of the generic OS-type or
-# information about its compiled-in modules.
-#
-# (!) The `ServerTokens` directive will only work in the main server
-# configuration file, so don't try to enable it in the `.htaccess` file!
-#
-# https://httpd.apache.org/docs/current/mod/core.html#servertokens
-
-# ServerTokens Prod
-
-# ######################################################################
-# # WEB PERFORMANCE                                                    #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Compression                                                        |
-# ----------------------------------------------------------------------
-
-<IfModule mod_deflate.c>
-
-    # Force compression for mangled `Accept-Encoding` request headers
-    #
-    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding
-    # https://calendar.perfplanet.com/2010/pushing-beyond-gzipping/
-
-    <IfModule mod_setenvif.c>
-        <IfModule mod_headers.c>
-            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
-            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-        </IfModule>
-    </IfModule>
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Compress all output labeled with one of the following media types.
-    #
-    # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
-
-    <IfModule mod_filter.c>
-        AddOutputFilterByType DEFLATE "application/atom+xml" \
-                                      "application/javascript" \
-                                      "application/json" \
-                                      "application/ld+json" \
-                                      "application/manifest+json" \
-                                      "application/rdf+xml" \
-                                      "application/rss+xml" \
-                                      "application/schema+json" \
-                                      "application/vnd.geo+json" \
-                                      "application/vnd.ms-fontobject" \
-                                      "application/wasm" \
-                                      "application/x-font-ttf" \
-                                      "application/x-javascript" \
-                                      "application/x-web-app-manifest+json" \
-                                      "application/xhtml+xml" \
-                                      "application/xml" \
-                                      "font/collection" \
-                                      "font/eot" \
-                                      "font/opentype" \
-                                      "font/otf" \
-                                      "font/ttf" \
-                                      "image/bmp" \
-                                      "image/svg+xml" \
-                                      "image/vnd.microsoft.icon" \
-                                      "image/x-icon" \
-                                      "text/cache-manifest" \
-                                      "text/calendar" \
-                                      "text/css" \
-                                      "text/html" \
-                                      "text/javascript" \
-                                      "text/plain" \
-                                      "text/markdown" \
-                                      "text/vcard" \
-                                      "text/vnd.rim.location.xloc" \
-                                      "text/vtt" \
-                                      "text/x-component" \
-                                      "text/x-cross-domain-policy" \
-                                      "text/xml"
-
-    </IfModule>
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Map the following filename extensions to the specified
-    # encoding type in order to make Apache serve the file types
-    # with the appropriate `Content-Encoding` response header
-    # (do note that this will NOT make Apache compress them!).
-    #
-    # If these files types would be served without an appropriate
-    # `Content-Enable` response header, client applications (e.g.:
-    # browsers) wouldn't know that they first need to uncompress
-    # the response, and thus, wouldn't be able to understand the
-    # content.
-    #
-    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
-    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
-
-    <IfModule mod_mime.c>
-        AddEncoding gzip              svgz
-    </IfModule>
-
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | Brotli pre-compressed content                                      |
-# ----------------------------------------------------------------------
-
-# Serve brotli compressed CSS, JS, HTML, SVG, ICS and JSON files
-# if they exist and if the client accepts br encoding.
-#
-# (!) To make this part relevant, you need to generate encoded
-# files by your own. Enabling this part will not auto-generate
-# brotlied files.
-#
-# Note that some clients (eg. browsers) require a secure connection
-# to request brotli-compressed resources.
-# https://www.chromestatus.com/feature/5420797577396224
-#
-# https://httpd.apache.org/docs/current/mod/mod_brotli.html#precompressed
-
-# <IfModule mod_headers.c>
-
-#     RewriteCond %{HTTP:Accept-Encoding} br
-#     RewriteCond %{REQUEST_FILENAME}\.br -f
-#     RewriteRule \.(css|ics|js|json|html|svg)$ %{REQUEST_URI}.br [L]
-
-#     # Prevent mod_deflate double gzip
-#     RewriteRule \.br$ - [E=no-gzip:1]
-
-#     <FilesMatch "\.br$">
-
-#         <IfModule mod_mime.c>
-#             # Serve correct content types
-#             AddType text/css              css.br
-#             AddType text/calendar         ics.br
-#             AddType text/javascript       js.br
-#             AddType application/json      json.br
-#             AddType text/html             html.br
-#             AddType image/svg+xml         svg.br
-
-#             # Serve correct content charset
-#             AddCharset utf-8 .css.br \
-#                              .ics.br \
-#                              .js.br \
-#                              .json.br
-#         </IfModule>
-
-#         # Force proxies to cache brotlied and non-brotlied files separately
-#         Header append Vary Accept-Encoding
-
-#     </FilesMatch>
-
-#     # Serve correct encoding type
-#     AddEncoding br .br
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | GZip pre-compressed content                                        |
-# ----------------------------------------------------------------------
-
-# Serve gzip compressed CSS, JS, HTML, SVG, ICS and JSON files
-# if they exist and if the client accepts gzip encoding.
-#
-# (!) To make this part relevant, you need to generate encoded
-# files by your own. Enabling this part will not auto-generate
-# gziped files.
-#
-# https://httpd.apache.org/docs/current/mod/mod_deflate.html#precompressed
-#
-# (1)
-# Removing default MIME Type for .gz files allowing to add custom
-# sub-types.
-# You may prefer using less generic extensions such as .html_gz in
-# order to keep default behavior regarding .gz files.
-# https://httpd.apache.org/docs/current/mod/mod_mime.html#removetype
-
-# <IfModule mod_headers.c>
-
-#     RewriteCond %{HTTP:Accept-Encoding} gzip
-#     RewriteCond %{REQUEST_FILENAME}\.gz -f
-#     RewriteRule \.(css|ics|js|json|html|svg)$ %{REQUEST_URI}.gz [L]
-
-#     # Prevent mod_deflate double gzip
-#     RewriteRule \.gz$ - [E=no-gzip:1]
-
-#     <FilesMatch "\.gz$">
-
-#         # Serve correct content types
-#         <IfModule mod_mime.c>
-#             # (1)
-#             RemoveType gz
-
-#             # Serve correct content types
-#             AddType text/css              css.gz
-#             AddType text/calendar         ics.gz
-#             AddType text/javascript       js.gz
-#             AddType application/json      json.gz
-#             AddType text/html             html.gz
-#             AddType image/svg+xml         svg.gz
-
-#             # Serve correct content charset
-#             AddCharset utf-8 .css.gz \
-#                              .ics.gz \
-#                              .js.gz \
-#                              .json.gz
-#         </IfModule>
-
-#         # Force proxies to cache gzipped and non-gzipped files separately
-#         Header append Vary Accept-Encoding
-
-#     </FilesMatch>
-
-#     # Serve correct encoding type
-#     AddEncoding gzip .gz
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Content transformation                                             |
-# ----------------------------------------------------------------------
-
-# Prevent intermediate caches or proxies (e.g.: such as the ones
-# used by mobile network providers) from modifying the website's
-# content.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
-# https://tools.ietf.org/html/rfc2616#section-14.9.5
-#
-# (!) If you are using `mod_pagespeed`, please note that setting
-# the `Cache-Control: no-transform` response header will prevent
-# `PageSpeed` from rewriting `HTML` files, and, if the
-# `ModPagespeedDisableRewriteOnNoTransform` directive isn't set
-# to `off`, also from rewriting other resources.
-#
-# https://developers.google.com/speed/pagespeed/module/configuration#notransform
-
-# <IfModule mod_headers.c>
-#     Header merge Cache-Control "no-transform"
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | ETags                                                              |
-# ----------------------------------------------------------------------
-
-# Remove `ETags` as resources are sent with far-future expires headers.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
-# https://developer.yahoo.com/performance/rules.html#etags
-# https://tools.ietf.org/html/rfc7232#section-2.3
-
-# `FileETag None` doesn't work in all cases.
-<IfModule mod_headers.c>
-    Header unset ETag
-</IfModule>
-
-FileETag None
-
-# ----------------------------------------------------------------------
-# | Cache expiration                                                   |
-# ----------------------------------------------------------------------
-
-# Serve resources with far-future expiration date.
-#
-# (!) If you don't control versioning with filename-based
-# cache busting, you should consider lowering the cache times
-# to something like one week.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires
-# https://httpd.apache.org/docs/current/mod/mod_expires.html
-
-<IfModule mod_expires.c>
-
-    ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
-
-  # CSS
-
-    ExpiresByType text/css                              "access plus 1 year"
-
-
-  # Data interchange
-
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rdf+xml                   "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
-
-    ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
-    ExpiresByType application/schema+json               "access plus 0 seconds"
-    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/calendar                         "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
-
-
-  # Favicon (cannot be renamed!) and cursor images
-
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
-    ExpiresByType image/x-icon                          "access plus 1 week"
-
-  # HTML
-
-    ExpiresByType text/html                             "access plus 0 seconds"
-
-
-  # JavaScript
-
-    ExpiresByType application/javascript                "access plus 1 year"
-    ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
-
-
-  # Manifest files
-
-    ExpiresByType application/manifest+json             "access plus 1 week"
-    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
-    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
-
-  # Markdown
-
-    ExpiresByType text/markdown                         "access plus 0 seconds"
-
-
-  # Media files
-
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
-
-
-  # WebAssembly
-
-    ExpiresByType application/wasm                      "access plus 1 year"
-
-
-  # Web fonts
-
-    # Collection
-    ExpiresByType font/collection                       "access plus 1 month"
-
-    # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
-
-    # OpenType
-    ExpiresByType font/opentype                         "access plus 1 month"
-    ExpiresByType font/otf                              "access plus 1 month"
-
-    # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
-    ExpiresByType font/ttf                              "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/x-font-woff               "access plus 1 month"
-    ExpiresByType font/woff                             "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 month"
-    ExpiresByType font/woff2                            "access plus 1 month"
-
-
-  # Other
-
-    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
-
-</IfModule>
-
-# ----------------------------------------------------------------------
-# | File concatenation                                                 |
-# ----------------------------------------------------------------------
-
-# Allow concatenation from within specific files.
-#
-# e.g.:
-#
-#   If you have the following lines in a file called, for
-#   example, `main.combined.js`:
-#
-#       <!--#include file="js/jquery.js" -->
-#       <!--#include file="js/jquery.timer.js" -->
-#
-#   Apache will replace those lines with the content of the
-#   specified files.
-
-# <IfModule mod_include.c>
-
-#     <FilesMatch "\.combined\.js$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES application/javascript \
-#                                        application/x-javascript \
-#                                        text/javascript
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
-
-#     <FilesMatch "\.combined\.css$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES text/css
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
-
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Filename-based cache busting                                       |
-# ----------------------------------------------------------------------
-
-# If you're not using a build process to manage your filename version
-# revving, you might want to consider enabling the following directives
-# to route all requests such as `/style.12345.css` to `/style.css`.
-#
-# To understand why this is important and even a better solution than
-# using something like `*.css?v231`, please see:
-# https://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
-
-# <IfModule mod_rewrite.c>
-#     RewriteEngine On
-#     RewriteCond %{REQUEST_FILENAME} !-f
-#     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
-# </IfModule>
-
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
-
-
+# GeoBlocking
+# Since jaxx.io is on shared hosting on DreamHost it wasn't possible to install ip module
+# No access to root or admin user on the server
+<Files downloads.html>
+Order allow,deny
+Allow from all
+# Region of Crimea
+Deny from 5.59.38.0/23 
+Deny from 5.59.104.0/24 
+Deny from 5.101.208.0/21 
+Deny from 5.149.208.0/20 
+Deny from 5.188.144.0/22 
+Deny from 5.188.172.0/22 
+Deny from 5.189.220.0/22 
+Deny from 31.3.24.0/21 
+Deny from 31.28.224.0/19 
+Deny from 31.40.128.70/32 
+Deny from 1.135.96.0/19 
+Deny from 31.148.176.0/20 
+Deny from 31.148.218.0/24 
+Deny from 31.184.244.0/22 
+Deny from 37.75.216.0/21 
+Deny from 37.139.96.0/20 
+Deny from 46.35.224.0/19 
+Deny from 46.36.202.216/29 
+Deny from 46.36.202.224/31 
+Deny from 46.148.176.0/23 
+Deny from 46.148.178.0/27 
+Deny from 46.148.178.32/30 
+Deny from 46.148.178.37/32 
+Deny from 46.148.178.38/31 
+Deny from 46.148.178.40/29 
+Deny from 46.148.178.48/28 
+Deny from 46.148.178.64/26 
+Deny from 46.148.178.128/25 
+Deny from 46.148.179.0/24 
+Deny from 46.148.180.0/22 
+Deny from 46.148.184.0/21 
+Deny from 46.151.144.0/21 
+Deny from 46.172.192.0/19 
+Deny from 77.120.56.0/22 
+Deny from 77.121.32.0/19 
+Deny from 77.123.192.0/18 
+Deny from 77.246.248.0/21 
+Deny from 78.30.192.0/18 
+Deny from 78.154.170.22/32 
+Deny from 78.158.192.0/25 
+Deny from 78.158.192.160/27 
+Deny from 78.158.192.192/26 
+Deny from 78.158.193.0/24 
+Deny from 78.158.194.0/23 
+Deny from 78.158.196.0/22 
+Deny from 78.158.200.0/21 
+Deny from 78.158.208.0/20 
+Deny from 80.242.108.0/22 
+Deny from 80.245.112.0/20 
+Deny from 81.162.64.0/20 
+Deny from 81.162.96.0/19 
+Deny from 88.135.80.0/22 
+Deny from 88.135.84.0/24 
+Deny from 88.135.85.0/25 
+Deny from 88.135.85.128/26 
+Deny from 88.135.85.192/28 
+Deny from 88.135.85.208/29 
+Deny from 88.135.85.216/30 
+Deny from 88.135.85.220/31 
+Deny from 88.135.85.222/32 
+Deny from 88.135.85.224/27 
+Deny from 88.135.86.0/23 
+Deny from 88.135.88.0/21 
+Deny from 88.135.112.0/20 
+Deny from 89.22.240.0/20 
+Deny from 89.107.136.0/22 
+Deny from 91.194.162.0/23 
+Deny from 91.200.44.0/22 
+Deny from 91.205.216.0/22 
+Deny from 91.207.106.0/23 
+Deny from 91.207.146.0/23 
+Deny from 91.210.120.0/22 
+Deny from 91.210.148.0/24 
+Deny from 91.210.176.0/22 
+Deny from 91.214.124.0/22 
+Deny from 91.214.128.0/22 
+Deny from 91.215.60.0/22 
+Deny from 91.215.248.0/22 
+Deny from 91.216.240.0/24 
+Deny from 91.217.78.0/23 
+Deny from 91.218.28.0/22 
+Deny from 91.223.48.0/24 
+Deny from 91.224.30.0/24 
+Deny from 91.224.168.0/23 
+Deny from 91.233.172.0/23 
+Deny from 91.235.12.0/22 
+Deny from 91.235.84.0/22 
+Deny from 91.236.134.0/23 
+Deny from 91.237.182.0/23 
+Deny from 91.238.74.0/23 
+Deny from 91.241.128.0/19 
+Deny from 91.243.36.0/22 
+Deny from 91.244.233.15/32 
+Deny from 91.247.96.0/19 
+Deny from 92.38.96.0/19 
+Deny from 93.77.160.0/19 
+Deny from 93.171.14.0/23 
+Deny from 93.171.16.0/20 
+Deny from 93.171.209.0/24 
+Deny from 93.190.176.0/21 
+Deny from 109.110.64.0/19 
+Deny from 109.200.128.0/19 
+Deny from 130.255.128.0/20 
+Deny from 146.120.240.0/24 
+Deny from 176.99.96.0/20 
+Deny from 176.99.112.0/21 
+Deny from 176.99.120.0/26 
+Deny from 176.99.120.64/29 
+Deny from 176.99.120.72/30 
+Deny from 176.99.120.76/31 
+Deny from 176.99.120.79/32 
+Deny from 176.99.120.80/28 
+Deny from 176.99.120.96/27 
+Deny from 176.99.120.128/25 
+Deny from 176.99.121.0/24 
+Deny from 176.99.122.0/23 
+Deny from 176.99.124.0/22 
+Deny from 176.101.184.0/21 
+Deny from 176.114.32.0/20 
+Deny from 176.241.147.97/32 
+Deny from 178.16.80.0/21 
+Deny from 178.16.88.0/24 
+Deny from 178.34.152.0/22 
+Deny from 178.34.156.0/23 
+Deny from 178.34.158.0/25 
+Deny from 178.34.158.129/32 
+Deny from 178.34.158.130/31 
+Deny from 178.34.158.132/30 
+Deny from 178.34.158.136/29 
+Deny from 178.34.158.144/28 
+Deny from 178.34.158.160/27 
+Deny from 178.34.158.192/26 
+Deny from 178.34.159.0/24 
+Deny from 178.34.176.0/20 
+Deny from 178.159.112.0/20 
+Deny from 178.219.160.0/20 
+Deny from 178.219.240.0/20 
+Deny from 185.9.160.0/22 
+Deny from 185.14.16.0/22 
+Deny from 185.16.28.0/22 
+Deny from 185.28.236.0/22 
+Deny from 185.64.44.0/24 
+Deny from 185.64.45.0/25 
+Deny from 185.64.45.128/26 
+Deny from 185.64.45.192/27 
+Deny from 185.64.45.224/28 
+Deny from 185.64.45.240/29 
+Deny from 185.64.45.248/30 
+Deny from 185.64.45.252/31 
+Deny from 185.64.45.255/32 
+Deny from 185.64.46.0/24 
+Deny from 185.64.47.0/26 
+Deny from 185.64.47.64/27 
+Deny from 185.64.47.96/28 
+Deny from 185.64.47.112/29 
+Deny from 185.64.47.128/25 
+Deny from 185.78.232.0/23 
+Deny from 185.92.139.1/32 
+Deny from 185.92.139.2/31 
+Deny from 185.92.139.4/30 
+Deny from 185.92.139.8/29 
+Deny from 185.92.139.16/28 
+Deny from 185.92.139.32/27 
+Deny from 185.92.139.64/26 
+Deny from 185.92.139.128/25 
+Deny from 185.92.144.0/22 
+Deny from 185.94.212.0/22 
+Deny from 185.99.152.0/21 
+Deny from 185.99.160.0/22 
+Deny from 185.99.168.0/22 
+Deny from 185.100.100.0/24 
+Deny from 185.100.102.0/24 
+Deny from 185.103.254.0/23 
+Deny from 185.104.92.0/22 
+Deny from 185.104.112.0/22 
+Deny from 185.105.88.0/22 
+Deny from 185.105.116.0/22 
+Deny from 185.107.124.0/22 
+Deny from 185.107.136.0/22 
+Deny from 185.107.156.0/22 
+Deny from 185.107.164.0/22 
+Deny from 185.112.120.0/22 
+Deny from 185.114.244.0/22 
+Deny from 185.119.56.0/22 
+Deny from 185.125.112.0/22 
+Deny from 185.129.128.0/22 
+Deny from 185.135.180.0/22 
+Deny from 185.138.200.0/22 
+Deny from 185.141.40.0/22 
+Deny from 185.151.128.0/22 
+Deny from 185.153.132.0/22 
+Deny from 185.173.112.0/22 
+Deny from 185.183.76.0/23 
+Deny from 185.185.0.0/22 
+Deny from 185.185.180.0/22 
+Deny from 185.186.232.0/22 
+Deny from 185.205.236.0/22 
+Deny from 185.229.184.0/22 
+Deny from 185.232.104.0/22 
+Deny from 185.244.175.0/24 
+Deny from 188.114.192.0/22 
+Deny from 188.114.200.0/21 
+Deny from 188.191.16.0/20 
+Deny from 193.25.121.24/32 
+Deny from 193.27.242.0/24 
+Deny from 193.27.243.0/25 
+Deny from 193.27.243.128/26 
+Deny from 193.27.243.192/29 
+Deny from 193.27.243.200/30 
+Deny from 193.27.243.204/32 
+Deny from 193.27.243.206/31 
+Deny from 193.27.243.208/28 
+Deny from 193.27.243.224/27 
+Deny from 193.34.200.128/25 
+Deny from 193.47.166.0/24 
+Deny from 193.104.145.0/24 
+Deny from 193.138.84.0/24 
+Deny from 193.188.254.0/24 
+Deny from 193.200.183.0/24 
+Deny from 193.238.108.0/22 
+Deny from 194.9.26.0/23 
+Deny from 194.12.96.0/19 
+Deny from 194.28.36.0/22 
+Deny from 194.28.88.0/22 
+Deny from 194.36.178.0/23 
+Deny from 194.54.152.0/22 
+Deny from 194.135.1.0/24 
+Deny from 194.135.2.0/24 
+Deny from 194.135.16.0/23 
+Deny from 194.135.23.0/24 
+Deny from 194.135.24.0/24 
+Deny from 194.135.32.0/23 
+Deny from 194.135.34.0/24 
+Deny from 194.135.36.0/24 
+Deny from 194.135.39.0/24 
+Deny from 194.135.44.0/23 
+Deny from 194.140.228.0/24 
+Deny from 194.187.148.0/22 
+Deny from 195.3.244.0/22 
+Deny from 195.20.28.0/22 
+Deny from 195.26.80.0/22 
+Deny from 195.49.200.0/21 
+Deny from 195.54.42.0/23 
+Deny from 195.66.138.0/23 
+Deny from 195.88.14.0/23 
+Deny from 195.110.6.0/23 
+Deny from 195.189.16.0/22 
+Deny from 195.211.116.67/32 
+Deny from 212.110.154.102/32 
+Deny from 212.110.156.0/22 
+Deny from 217.175.0.0/20 
+
+# -------------------------------------------------------
+# Free IP2Location Firewall List by Country
+# Source: https://www.ip2location.com/free/visitor-blocker
+# Last Generated: 21 Nov 2018 15:53:16 GMT
+# [Important] Please update this list every month
+# Country: SY - Syrian Arab Republic
+# -------------------------------------------------------
+deny from 5.0.0.0/16
+deny from 5.104.128.0/21
+deny from 5.134.200.0/21
+deny from 5.134.224.0/19
+deny from 5.155.0.0/16
+deny from 31.9.0.0/16
+deny from 31.14.164.0/22
+deny from 31.148.152.0/21
+deny from 31.193.64.0/20
+deny from 37.48.128.0/18
+deny from 37.48.192.0/19
+deny from 46.40.128.0/18
+deny from 46.53.0.0/17
+deny from 46.57.128.0/17
+deny from 46.58.128.0/17
+deny from 46.161.192.0/18
+deny from 46.213.0.0/16
+deny from 46.243.145.0/24
+deny from 57.88.224.0/20
+deny from 62.16.80.0/20
+deny from 63.243.163.0/24
+deny from 66.198.39.0/24
+deny from 66.198.41.0/24
+deny from 67.16.140.142/32
+deny from 67.16.172.127/32
+deny from 67.16.172.243/32
+deny from 67.16.180.162/32
+deny from 67.16.180.166/32
+deny from 67.16.185.69/32
+deny from 67.16.185.70/32
+deny from 67.16.185.73/32
+deny from 67.16.187.226/32
+deny from 67.16.190.218/32
+deny from 67.16.190.234/32
+deny from 67.17.66.94/32
+deny from 67.17.104.162/32
+deny from 77.44.128.0/17
+deny from 78.110.96.0/20
+deny from 78.155.64.0/19
+deny from 79.141.224.0/20
+deny from 80.70.120.0/21
+deny from 82.97.208.0/20
+deny from 82.100.128.0/18
+deny from 82.116.129.0/24
+deny from 82.137.192.0/20
+deny from 82.137.208.0/21
+deny from 82.137.216.0/22
+deny from 82.137.220.0/23
+deny from 82.137.223.0/24
+deny from 82.137.224.0/19
+deny from 83.229.27.216/29
+deny from 84.39.192.0/22
+deny from 86.107.16.0/22
+deny from 88.86.0.0/19
+deny from 89.33.56.0/21
+deny from 89.33.224.0/21
+deny from 89.34.162.0/23
+deny from 89.41.138.0/23
+deny from 89.41.140.0/22
+deny from 89.45.128.0/20
+deny from 89.47.80.0/21
+deny from 90.153.128.0/17
+deny from 91.144.0.0/18
+deny from 92.253.224.0/21
+deny from 93.113.164.0/22
+deny from 93.114.208.0/21
+deny from 93.118.48.0/20
+deny from 94.47.0.0/16
+deny from 94.102.80.0/21
+deny from 94.102.92.0/22
+deny from 94.141.192.0/19
+deny from 94.143.120.0/22
+deny from 94.232.248.0/22
+deny from 94.252.128.0/17
+deny from 95.87.112.0/21
+deny from 95.140.96.0/20
+deny from 95.159.0.0/18
+deny from 95.212.0.0/23
+deny from 95.212.2.0/24
+deny from 95.212.4.0/23
+deny from 95.212.8.0/23
+deny from 95.212.14.0/23
+deny from 95.212.17.0/24
+deny from 95.212.21.0/24
+deny from 95.212.30.0/23
+deny from 95.212.32.0/22
+deny from 95.212.36.0/24
+deny from 95.212.38.0/23
+deny from 95.212.40.0/24
+deny from 95.212.43.0/24
+deny from 95.212.45.0/24
+deny from 95.212.46.0/23
+deny from 95.212.53.0/24
+deny from 95.212.56.0/24
+deny from 95.212.59.0/24
+deny from 95.212.64.0/18
+deny from 95.212.128.0/18
+deny from 95.212.192.0/19
+deny from 109.163.229.160/32
+deny from 109.163.229.162/31
+deny from 109.163.229.164/30
+deny from 109.163.229.168/29
+deny from 109.238.144.0/20
+deny from 130.0.240.0/20
+deny from 130.180.128.0/18
+deny from 130.244.10.173/32
+deny from 130.244.108.61/32
+deny from 130.244.123.23/32
+deny from 130.244.123.25/32
+deny from 130.244.123.113/32
+deny from 130.244.149.99/32
+deny from 130.244.149.195/32
+deny from 145.249.0.0/18
+deny from 145.249.64.0/19
+deny from 146.120.252.0/22
+deny from 178.52.128.0/17
+deny from 178.171.128.0/17
+deny from 178.218.252.0/22
+deny from 178.253.64.0/18
+deny from 185.4.84.0/22
+deny from 185.19.124.0/22
+deny from 185.23.184.0/22
+deny from 185.24.60.0/22
+deny from 185.41.84.0/22
+deny from 185.52.232.0/22
+deny from 185.54.132.0/22
+deny from 185.75.224.0/22
+deny from 185.84.48.0/22
+deny from 185.84.236.0/22
+deny from 185.90.248.0/22
+deny from 185.92.28.0/22
+deny from 185.92.88.0/22
+deny from 185.96.108.0/22
+deny from 185.99.100.0/22
+deny from 185.109.212.22/31
+deny from 185.109.212.24/29
+deny from 185.109.212.32/27
+deny from 185.109.212.64/26
+deny from 185.109.212.128/25
+deny from 185.109.213.0/24
+deny from 185.109.214.0/23
+deny from 185.110.104.0/22
+deny from 185.114.240.0/22
+deny from 185.121.184.0/22
+deny from 185.128.180.0/22
+deny from 185.134.132.0/22
+deny from 185.135.48.0/22
+deny from 185.136.144.0/22
+deny from 185.145.236.0/22
+deny from 185.146.136.0/22
+deny from 185.148.192.0/22
+deny from 185.150.140.0/22
+deny from 185.151.80.0/22
+deny from 185.151.148.0/22
+deny from 185.154.248.0/22
+deny from 185.155.160.0/22
+deny from 185.158.32.0/22
+deny from 185.158.92.0/22
+deny from 185.162.164.0/22
+deny from 185.163.216.0/22
+deny from 185.164.132.0/22
+deny from 185.164.200.0/22
+deny from 185.164.248.0/22
+deny from 185.167.12.0/22
+deny from 185.169.160.0/22
+deny from 185.171.72.0/22
+deny from 185.171.132.0/22
+deny from 185.172.72.0/22
+deny from 185.172.236.0/22
+deny from 185.173.172.0/22
+deny from 185.174.228.0/22
+deny from 185.174.236.0/22
+deny from 185.175.52.0/22
+deny from 185.175.228.0/22
+deny from 185.178.148.0/22
+deny from 185.181.108.0/22
+deny from 185.184.104.0/22
+deny from 185.185.72.0/22
+deny from 185.185.220.0/22
+deny from 185.187.192.0/22
+deny from 185.187.220.0/22
+deny from 185.194.72.0/22
+deny from 185.194.124.0/22
+deny from 185.196.140.0/22
+deny from 185.196.144.0/22
+deny from 185.197.20.0/22
+deny from 185.198.172.0/22
+deny from 185.199.244.0/22
+deny from 185.203.68.0/22
+deny from 185.204.80.0/22
+deny from 185.204.88.0/22
+deny from 185.209.32.0/22
+deny from 185.209.200.0/22
+deny from 185.216.132.0/22
+deny from 185.216.196.0/22
+deny from 185.217.172.0/22
+deny from 185.220.168.0/22
+deny from 185.224.124.0/22
+deny from 185.225.40.0/22
+deny from 185.227.140.0/22
+deny from 185.228.12.0/22
+deny from 185.231.44.0/22
+deny from 185.233.220.0/22
+deny from 185.235.16.0/22
+deny from 185.235.24.0/22
+deny from 185.236.100.0/22
+deny from 185.244.204.0/22
+deny from 185.246.76.0/22
+deny from 185.254.108.0/22
+deny from 185.254.180.0/22
+deny from 188.133.0.0/17
+deny from 188.139.128.0/17
+deny from 188.160.0.0/16
+deny from 188.164.74.0/23
+deny from 188.209.208.0/22
+deny from 188.215.100.0/22
+deny from 188.227.196.0/22
+deny from 188.229.128.0/17
+deny from 188.247.0.0/19
+deny from 193.17.188.0/22
+deny from 193.124.10.0/23
+deny from 193.124.12.0/23
+deny from 193.124.26.0/23
+deny from 193.124.28.0/23
+deny from 193.124.38.0/23
+deny from 193.124.52.0/23
+deny from 193.124.62.0/23
+deny from 193.124.68.0/23
+deny from 193.124.72.0/22
+deny from 193.124.82.0/23
+deny from 193.124.86.0/23
+deny from 193.124.96.0/20
+deny from 193.124.122.0/23
+deny from 193.124.126.0/23
+deny from 193.124.152.0/22
+deny from 193.124.156.0/23
+deny from 193.124.160.0/20
+deny from 193.124.192.0/21
+deny from 193.124.208.0/20
+deny from 193.124.228.0/22
+deny from 193.124.232.0/21
+deny from 193.124.252.0/23
+deny from 194.5.160.0/22
+deny from 194.31.72.0/22
+deny from 194.58.0.0/20
+deny from 194.58.16.0/21
+deny from 194.58.48.0/21
+deny from 194.58.128.0/20
+deny from 194.58.144.0/21
+deny from 194.58.156.0/22
+deny from 194.58.208.0/21
+deny from 194.58.224.0/20
+deny from 194.58.248.0/21
+deny from 194.61.124.0/22
+deny from 194.135.106.0/23
+deny from 194.135.116.0/23
+deny from 194.135.248.0/21
+deny from 195.60.236.0/22
+deny from 195.238.104.0/22
+deny from 196.2.4.0/22
+deny from 198.51.143.0/24
+deny from 198.51.144.0/23
+deny from 198.51.146.0/24
+deny from 209.58.115.0/24
+deny from 209.58.123.0/24
+deny from 212.11.192.0/19
+deny from 212.151.222.73/32
+deny from 213.178.224.0/19
+deny from 216.6.0.0/23
+deny from 217.20.208.0/20
+
+# -------------------------------------------------------
+# Free IP2Location Firewall List by Country
+# Source: https://www.ip2location.com/free/visitor-blocker
+# Last Generated: 21 Nov 2018 15:55:43 GMT
+# [Important] Please update this list every month
+# Country: Korea, Democratic People's Republic of
+# -------------------------------------------------------
+deny from 175.45.176.0/22
+deny from 202.72.96.4/30
+
+# -------------------------------------------------------
+# Free IP2Location Firewall List by Country
+# Source: https://www.ip2location.com/free/visitor-blocker
+# Last Generated: 21 Nov 2018 15:57:15 GMT
+# [Important] Please update this list every month
+# Country: Iran, Islamic Republic of
+# -------------------------------------------------------
+deny from 2.144.0.0/14
+deny from 2.176.0.0/12
+deny from 5.22.0.0/17
+deny from 5.22.192.0/19
+deny from 5.23.112.0/21
+deny from 5.28.192.0/19
+deny from 5.34.192.0/19
+deny from 5.52.0.0/16
+deny from 5.53.32.0/19
+deny from 5.56.128.0/22
+deny from 5.56.132.0/24
+deny from 5.56.134.0/23
+deny from 5.57.32.0/21
+deny from 5.61.24.0/23
+deny from 5.61.26.0/24
+deny from 5.61.29.0/24
+deny from 5.61.30.0/23
+deny from 5.62.160.0/19
+deny from 5.62.192.0/18
+deny from 5.63.8.0/21
+deny from 5.72.0.0/14
+deny from 5.78.0.0/16
+deny from 5.104.208.0/21
+deny from 5.106.0.0/16
+deny from 5.112.0.0/12
+deny from 5.134.128.0/18
+deny from 5.134.192.0/21
+deny from 5.144.128.0/21
+deny from 5.145.112.0/21
+deny from 5.159.48.0/21
+deny from 5.160.0.0/15
+deny from 5.190.0.0/18
+deny from 5.190.64.0/19
+deny from 5.190.96.0/20
+deny from 5.190.112.0/21
+deny from 5.190.120.0/23
+deny from 5.190.122.0/24
+deny from 5.190.124.0/22
+deny from 5.190.128.0/17
+deny from 5.198.160.0/19
+deny from 5.200.64.0/18
+deny from 5.200.128.0/17
+deny from 5.201.128.0/17
+deny from 5.202.0.0/16
+deny from 5.208.0.0/12
+deny from 5.226.48.0/21
+deny from 5.232.0.0/13
+deny from 5.250.0.0/17
+deny from 31.2.128.0/17
+deny from 31.7.64.0/18
+deny from 31.7.128.0/20
+deny from 31.14.80.0/20
+deny from 31.14.112.0/20
+deny from 31.14.144.0/20
+deny from 31.24.204.0/22
+deny from 31.24.232.0/21
+deny from 31.25.88.0/21
+deny from 31.25.104.0/21
+deny from 31.25.128.0/21
+deny from 31.25.232.0/21
+deny from 31.29.32.0/19
+deny from 31.40.0.0/21
+deny from 31.47.32.0/20
+deny from 31.47.48.0/22
+deny from 31.47.52.0/24
+deny from 31.47.53.0/28
+deny from 31.47.53.16/29
+deny from 31.47.53.28/30
+deny from 31.47.53.32/27
+deny from 31.47.53.64/26
+deny from 31.47.53.128/25
+deny from 31.47.54.0/23
+deny from 31.47.56.0/21
+deny from 31.56.0.0/14
+deny from 31.130.176.0/20
+deny from 31.170.48.0/20
+deny from 31.171.216.0/21
+deny from 31.184.128.0/18
+deny from 31.193.112.0/21
+deny from 31.193.144.0/20
+deny from 31.217.208.0/21
+deny from 37.9.248.0/21
+deny from 37.10.64.0/22
+deny from 37.19.80.0/20
+deny from 37.27.0.0/16
+deny from 37.32.0.0/19
+deny from 37.32.32.0/20
+deny from 37.32.112.0/20
+deny from 37.44.56.0/21
+deny from 37.49.144.0/21
+deny from 37.63.128.0/17
+deny from 37.75.240.0/21
+deny from 37.98.0.0/17
+deny from 37.114.192.0/18
+deny from 37.128.240.0/20
+deny from 37.129.0.0/16
+deny from 37.130.200.0/21
+deny from 37.137.0.0/16
+deny from 37.143.144.0/21
+deny from 37.148.0.0/17
+deny from 37.148.248.0/22
+deny from 37.152.160.0/19
+deny from 37.153.128.0/22
+deny from 37.153.176.0/20
+deny from 37.156.0.0/22
+deny from 37.156.8.0/21
+deny from 37.156.16.0/20
+deny from 37.156.48.0/20
+deny from 37.156.100.0/22
+deny from 37.156.112.0/20
+deny from 37.156.128.0/20
+deny from 37.156.144.0/22
+deny from 37.156.152.0/21
+deny from 37.156.160.0/21
+deny from 37.156.176.0/22
+deny from 37.156.212.0/22
+deny from 37.156.232.0/21
+deny from 37.156.240.0/22
+deny from 37.156.248.0/22
+deny from 37.191.64.0/19
+deny from 37.202.128.0/17
+deny from 37.221.0.0/18
+deny from 37.228.131.0/24
+deny from 37.228.133.0/24
+deny from 37.228.135.0/24
+deny from 37.228.136.0/22
+deny from 37.235.16.0/20
+deny from 37.254.0.0/16
+deny from 37.255.0.0/17
+deny from 37.255.128.0/19
+deny from 37.255.160.0/20
+deny from 37.255.176.0/21
+deny from 37.255.184.0/23
+deny from 37.255.186.0/24
+deny from 37.255.187.32/27
+deny from 37.255.187.64/26
+deny from 37.255.187.128/25
+deny from 37.255.188.0/22
+deny from 37.255.192.0/18
+deny from 46.18.248.0/21
+deny from 46.21.80.0/20
+deny from 46.28.72.0/23
+deny from 46.28.74.0/24
+deny from 46.32.0.0/19
+deny from 46.34.96.0/19
+deny from 46.34.160.0/19
+deny from 46.36.96.0/19
+deny from 46.38.128.0/20
+deny from 46.38.148.0/22
+deny from 46.38.156.0/22
+deny from 46.41.192.0/18
+deny from 46.51.0.0/17
+deny from 46.62.128.0/17
+deny from 46.100.0.0/16
+deny from 46.102.120.0/21
+deny from 46.102.128.0/20
+deny from 46.102.184.0/22
+deny from 46.143.0.0/16
+deny from 46.148.32.0/20
+deny from 46.164.64.0/18
+deny from 46.167.128.0/19
+deny from 46.182.32.0/21
+deny from 46.209.0.0/16
+deny from 46.224.0.0/15
+deny from 46.235.76.0/23
+deny from 46.245.0.0/17
+deny from 46.248.32.0/19
+deny from 46.249.96.0/24
+deny from 46.249.98.0/24
+deny from 46.249.112.0/20
+deny from 46.255.216.0/21
+deny from 57.88.80.0/20
+deny from 62.32.49.128/26
+deny from 62.32.49.192/27
+deny from 62.32.49.224/29
+deny from 62.32.49.240/28
+deny from 62.32.50.0/24
+deny from 62.32.53.64/26
+deny from 62.32.53.168/29
+deny from 62.32.53.224/28
+deny from 62.32.61.96/27
+deny from 62.32.61.224/27
+deny from 62.32.63.128/26
+deny from 62.60.128.0/17
+deny from 62.102.128.0/20
+deny from 62.193.0.0/19
+deny from 62.220.96.0/19
+deny from 63.243.185.0/24
+deny from 64.214.116.16/32
+deny from 66.79.96.0/19
+deny from 67.16.178.147/32
+deny from 67.16.178.148/31
+deny from 67.16.178.150/32
+deny from 77.36.128.0/17
+deny from 77.37.112.0/20
+deny from 77.42.0.0/17
+deny from 77.77.64.0/18
+deny from 77.81.32.0/20
+deny from 77.81.76.0/22
+deny from 77.81.80.0/22
+deny from 77.81.128.0/21
+deny from 77.81.144.0/20
+deny from 77.81.192.0/19
+deny from 77.95.220.0/24
+deny from 77.104.64.0/18
+deny from 77.237.64.0/19
+deny from 77.237.160.0/19
+deny from 77.238.104.0/21
+deny from 77.238.112.0/20
+deny from 77.245.224.0/20
+deny from 78.31.232.0/22
+deny from 78.38.0.0/15
+deny from 78.109.192.0/20
+deny from 78.110.112.0/20
+deny from 78.111.0.0/20
+deny from 78.154.32.0/19
+deny from 78.157.32.0/19
+deny from 78.158.160.0/19
+deny from 79.127.0.0/17
+deny from 79.132.192.0/19
+deny from 79.143.84.0/23
+deny from 79.143.86.0/24
+deny from 79.174.160.0/21
+deny from 79.175.128.0/19
+deny from 79.175.160.0/22
+deny from 79.175.164.0/23
+deny from 79.175.166.0/24
+deny from 79.175.167.0/25
+deny from 79.175.167.128/30
+deny from 79.175.167.132/31
+deny from 79.175.167.144/28
+deny from 79.175.167.160/27
+deny from 79.175.167.192/26
+deny from 79.175.168.0/21
+deny from 79.175.176.0/20
+deny from 80.66.176.0/20
+deny from 80.69.240.0/20
+deny from 80.71.112.0/20
+deny from 80.75.0.0/20
+deny from 80.191.0.0/16
+deny from 80.210.0.0/18
+deny from 80.210.128.0/17
+deny from 80.242.0.0/20
+deny from 80.249.112.0/22
+deny from 80.250.192.0/20
+deny from 80.253.128.0/19
+deny from 81.12.0.0/17
+deny from 81.16.112.0/20
+deny from 81.28.32.0/19
+deny from 81.29.240.0/20
+deny from 81.31.160.0/19
+deny from 81.31.224.0/19
+deny from 81.90.144.0/20
+deny from 81.91.128.0/19
+deny from 81.92.216.0/24
+deny from 81.163.0.0/21
+deny from 82.97.224.0/22
+deny from 82.97.228.0/24
+deny from 82.97.229.0/26
+deny from 82.97.229.80/28
+deny from 82.97.229.96/27
+deny from 82.97.229.128/25
+deny from 82.97.230.0/23
+deny from 82.97.232.0/21
+deny from 82.97.240.0/20
+deny from 82.99.192.0/18
+deny from 82.115.0.0/21
+deny from 82.115.8.0/22
+deny from 82.115.12.0/23
+deny from 82.115.14.0/24
+deny from 82.115.16.0/20
+deny from 82.138.140.0/25
+deny from 83.120.0.0/14
+deny from 83.147.192.0/21
+deny from 83.147.212.0/22
+deny from 83.147.216.0/21
+deny from 83.147.232.0/21
+deny from 83.147.240.0/20
+deny from 84.17.168.32/27
+deny from 84.47.192.0/18
+deny from 84.241.0.0/18
+deny from 85.9.64.0/18
+deny from 85.15.0.0/18
+deny from 85.33.41.120/29
+deny from 85.133.128.0/17
+deny from 85.185.0.0/16
+deny from 85.198.0.0/18
+deny from 85.204.30.0/23
+deny from 85.204.76.0/23
+deny from 85.204.80.0/20
+deny from 85.204.104.0/23
+deny from 85.204.128.0/22
+deny from 85.204.208.0/20
+deny from 85.239.192.0/19
+deny from 86.55.0.0/16
+deny from 86.57.0.0/17
+deny from 86.104.32.0/20
+deny from 86.104.80.0/20
+deny from 86.104.96.0/20
+deny from 86.104.232.0/21
+deny from 86.104.240.0/21
+deny from 86.105.40.0/21
+deny from 86.105.128.0/20
+deny from 86.106.24.0/23
+deny from 86.106.142.0/24
+deny from 86.106.192.0/21
+deny from 86.107.0.0/20
+deny from 86.107.80.0/20
+deny from 86.107.144.0/20
+deny from 86.107.172.0/22
+deny from 86.107.208.0/20
+deny from 86.109.32.0/19
+deny from 87.107.0.0/16
+deny from 87.236.211.0/24
+deny from 87.236.213.0/24
+deny from 87.236.214.0/24
+deny from 87.247.160.0/19
+deny from 87.248.128.0/20
+deny from 87.248.144.0/21
+deny from 87.248.152.0/22
+deny from 87.248.156.0/23
+deny from 87.248.158.0/24
+deny from 87.251.128.0/19
+deny from 88.135.32.0/20
+deny from 89.32.0.0/19
+deny from 89.32.96.0/20
+deny from 89.32.196.0/23
+deny from 89.32.248.0/22
+deny from 89.33.18.0/23
+deny from 89.33.100.0/22
+deny from 89.33.128.0/23
+deny from 89.33.204.0/23
+deny from 89.33.234.0/23
+deny from 89.33.240.0/23
+deny from 89.34.20.0/23
+deny from 89.34.32.0/19
+deny from 89.34.88.0/23
+deny from 89.34.94.0/23
+deny from 89.34.128.0/19
+deny from 89.34.168.0/23
+deny from 89.34.176.0/23
+deny from 89.34.200.0/23
+deny from 89.34.248.0/21
+deny from 89.35.58.0/23
+deny from 89.35.64.0/21
+deny from 89.35.120.0/22
+deny from 89.35.132.0/23
+deny from 89.35.156.0/23
+deny from 89.35.176.0/23
+deny from 89.35.180.0/22
+deny from 89.35.194.0/23
+deny from 89.36.16.0/23
+deny from 89.36.48.0/20
+deny from 89.36.96.0/20
+deny from 89.36.176.0/20
+deny from 89.36.194.0/23
+deny from 89.36.226.0/23
+deny from 89.36.252.0/23
+deny from 89.37.0.0/20
+deny from 89.37.30.0/23
+deny from 89.37.42.0/23
+deny from 89.37.102.0/23
+deny from 89.37.144.0/21
+deny from 89.37.152.0/22
+deny from 89.37.168.0/22
+deny from 89.37.198.0/23
+deny from 89.37.208.0/22
+deny from 89.37.218.0/23
+deny from 89.37.240.0/20
+deny from 89.38.24.0/23
+deny from 89.38.80.0/20
+deny from 89.38.102.0/23
+deny from 89.38.184.0/21
+deny from 89.38.192.0/21
+deny from 89.38.212.0/22
+deny from 89.38.242.0/23
+deny from 89.38.244.0/22
+deny from 89.39.8.0/22
+deny from 89.39.186.0/23
+deny from 89.39.208.0/24
+deny from 89.40.38.0/23
+deny from 89.40.78.0/23
+deny from 89.40.90.0/23
+deny from 89.40.106.0/23
+deny from 89.40.110.0/23
+deny from 89.40.128.0/23
+deny from 89.40.152.0/21
+deny from 89.40.240.0/20
+deny from 89.41.8.0/21
+deny from 89.41.16.0/21
+deny from 89.41.32.0/23
+deny from 89.41.40.0/22
+deny from 89.41.58.0/23
+deny from 89.41.184.0/22
+deny from 89.41.192.0/19
+deny from 89.41.224.0/20
+deny from 89.41.240.0/21
+deny from 89.42.32.0/23
+deny from 89.42.44.0/22
+deny from 89.42.56.0/23
+deny from 89.42.68.0/23
+deny from 89.42.96.0/21
+deny from 89.42.136.0/22
+deny from 89.42.150.0/23
+deny from 89.42.184.0/21
+deny from 89.42.196.0/22
+deny from 89.42.208.0/23
+deny from 89.42.210.0/24
+deny from 89.42.228.0/23
+deny from 89.43.0.0/20
+deny from 89.43.36.0/23
+deny from 89.43.70.0/23
+deny from 89.43.88.0/21
+deny from 89.43.96.0/21
+deny from 89.43.144.0/21
+deny from 89.43.182.0/23
+deny from 89.43.188.0/23
+deny from 89.43.204.0/23
+deny from 89.43.216.0/21
+deny from 89.43.224.0/21
+deny from 89.44.112.0/23
+deny from 89.44.118.0/23
+deny from 89.44.128.0/21
+deny from 89.44.146.0/23
+deny from 89.44.176.0/21
+deny from 89.44.190.0/23
+deny from 89.44.202.0/23
+deny from 89.44.240.0/22
+deny from 89.45.48.0/20
+deny from 89.45.68.0/23
+deny from 89.45.80.0/23
+deny from 89.45.112.0/21
+deny from 89.45.126.0/23
+deny from 89.45.152.0/21
+deny from 89.45.230.0/23
+deny from 89.46.44.0/23
+deny from 89.46.60.0/23
+deny from 89.46.94.0/23
+deny from 89.46.184.0/21
+deny from 89.46.216.0/22
+deny from 89.47.64.0/20
+deny from 89.47.128.0/19
+deny from 89.47.196.0/22
+deny from 89.47.200.0/22
+deny from 89.144.128.0/18
+deny from 89.149.153.32/30
+deny from 89.165.0.0/17
+deny from 89.184.192.0/19
+deny from 89.196.0.0/16
+deny from 89.198.0.0/15
+deny from 89.219.64.0/18
+deny from 89.219.192.0/18
+deny from 89.221.80.0/20
+deny from 89.235.64.0/18
+deny from 91.92.104.0/24
+deny from 91.92.114.0/24
+deny from 91.92.121.0/24
+deny from 91.92.122.0/23
+deny from 91.92.124.0/22
+deny from 91.92.129.0/24
+deny from 91.92.130.0/23
+deny from 91.92.132.0/22
+deny from 91.92.145.0/24
+deny from 91.92.146.0/23
+deny from 91.92.148.0/22
+deny from 91.92.172.0/24
+deny from 91.92.180.0/23
+deny from 91.92.184.0/21
+deny from 91.92.192.0/23
+deny from 91.92.208.0/21
+deny from 91.92.231.0/24
+deny from 91.98.0.0/15
+deny from 91.106.64.0/19
+deny from 91.107.128.0/17
+deny from 91.108.128.0/19
+deny from 91.108.194.0/23
+deny from 91.108.196.0/23
+deny from 91.108.208.0/21
+deny from 91.109.104.0/21
+deny from 91.133.128.0/17
+deny from 91.147.64.0/20
+deny from 91.184.64.0/19
+deny from 91.185.128.0/19
+deny from 91.186.192.0/19
+deny from 91.190.88.0/21
+deny from 91.206.122.0/23
+deny from 91.207.138.0/23
+deny from 91.208.165.0/24
+deny from 91.209.242.0/24
+deny from 91.212.16.0/24
+deny from 91.212.252.0/24
+deny from 91.216.4.0/24
+deny from 91.217.64.0/23
+deny from 91.220.79.0/24
+deny from 91.222.196.0/22
+deny from 91.222.204.0/22
+deny from 91.224.110.0/23
+deny from 91.224.176.0/23
+deny from 91.225.52.0/22
+deny from 91.226.224.0/23
+deny from 91.227.84.0/22
+deny from 91.228.189.0/24
+deny from 91.229.214.0/23
+deny from 91.230.32.0/24
+deny from 91.232.64.0/22
+deny from 91.232.68.0/23
+deny from 91.232.72.0/22
+deny from 91.233.56.0/22
+deny from 91.236.168.0/23
+deny from 91.237.254.0/23
+deny from 91.238.0.0/24
+deny from 91.239.14.0/24
+deny from 91.239.54.0/23
+deny from 91.239.108.0/22
+deny from 91.239.214.0/24
+deny from 91.240.60.0/22
+deny from 91.240.180.0/22
+deny from 91.241.20.0/23
+deny from 91.241.92.0/24
+deny from 91.242.44.0/23
+deny from 91.243.126.0/23
+deny from 91.243.160.0/20
+deny from 91.244.120.0/22
+deny from 91.245.228.0/22
+deny from 91.247.66.0/23
+deny from 91.250.224.0/20
+deny from 91.251.0.0/16
+deny from 92.42.48.0/21
+deny from 92.43.160.0/22
+deny from 92.50.0.0/18
+deny from 92.61.176.0/20
+deny from 92.62.176.0/20
+deny from 92.114.16.0/20
+deny from 92.114.48.0/22
+deny from 92.114.64.0/20
+deny from 92.242.192.0/19
+deny from 92.246.144.0/22
+deny from 92.246.156.0/22
+deny from 92.253.192.0/20
+deny from 93.88.64.0/21
+deny from 93.88.72.0/23
+deny from 93.110.64.0/18
+deny from 93.110.128.0/19
+deny from 93.110.168.0/21
+deny from 93.110.192.0/18
+deny from 93.113.224.0/20
+deny from 93.114.16.0/20
+deny from 93.114.104.0/21
+deny from 93.115.120.0/21
+deny from 93.115.144.0/21
+deny from 93.115.216.0/21
+deny from 93.115.224.0/20
+deny from 93.117.0.0/19
+deny from 93.117.32.0/20
+deny from 93.117.96.0/19
+deny from 93.117.176.0/20
+deny from 93.118.96.0/19
+deny from 93.118.128.0/19
+deny from 93.118.160.0/20
+deny from 93.118.180.0/22
+deny from 93.118.184.0/22
+deny from 93.119.32.0/19
+deny from 93.119.64.0/19
+deny from 93.119.208.0/20
+deny from 93.126.0.0/18
+deny from 93.190.24.0/21
+deny from 94.24.0.0/20
+deny from 94.24.16.0/21
+deny from 94.24.80.0/20
+deny from 94.24.96.0/21
+deny from 94.74.128.0/18
+deny from 94.101.120.0/22
+deny from 94.101.128.0/20
+deny from 94.101.176.0/20
+deny from 94.101.240.0/20
+deny from 94.139.160.0/19
+deny from 94.176.8.0/21
+deny from 94.176.16.0/20
+deny from 94.176.32.0/21
+deny from 94.176.48.0/20
+deny from 94.176.80.0/20
+deny from 94.177.72.0/21
+deny from 94.182.0.0/15
+deny from 94.184.0.0/16
+deny from 94.199.136.0/22
+deny from 94.232.168.0/21
+deny from 94.241.128.0/22
+deny from 94.241.136.0/21
+deny from 94.241.144.0/20
+deny from 94.241.160.0/19
+deny from 95.38.0.0/16
+deny from 95.64.0.0/17
+deny from 95.80.128.0/18
+deny from 95.81.64.0/18
+deny from 95.82.0.0/17
+deny from 95.130.56.0/21
+deny from 95.130.240.0/21
+deny from 95.142.224.0/20
+deny from 95.156.252.0/22
+deny from 95.162.0.0/16
+deny from 95.215.160.0/22
+deny from 95.215.173.0/24
+deny from 103.215.220.0/22
+deny from 103.216.60.0/22
+deny from 103.231.136.0/22
+deny from 109.72.192.0/20
+deny from 109.74.224.0/20
+deny from 109.94.164.0/22
+deny from 109.95.56.0/21
+deny from 109.95.64.0/21
+deny from 109.108.160.0/19
+deny from 109.109.32.0/19
+deny from 109.110.160.0/19
+deny from 109.111.32.0/22
+deny from 109.111.39.0/24
+deny from 109.111.40.0/21
+deny from 109.111.48.0/20
+deny from 109.122.192.0/18
+deny from 109.125.128.0/18
+deny from 109.162.128.0/17
+deny from 109.201.0.0/19
+deny from 109.203.128.0/18
+deny from 109.206.252.0/22
+deny from 109.225.128.0/18
+deny from 109.230.64.0/18
+deny from 109.232.0.0/21
+deny from 109.238.176.0/20
+deny from 109.239.0.0/20
+deny from 128.65.160.0/19
+deny from 128.140.0.0/17
+deny from 130.185.72.0/21
+deny from 130.244.41.211/32
+deny from 130.244.71.67/32
+deny from 130.244.71.72/31
+deny from 130.244.71.74/32
+deny from 130.244.71.80/31
+deny from 130.255.192.0/18
+deny from 146.66.128.0/21
+deny from 151.232.0.0/14
+deny from 151.238.0.0/15
+deny from 151.240.0.0/13
+deny from 157.119.100.0/22
+deny from 157.119.188.0/22
+deny from 158.58.0.0/17
+deny from 158.58.184.0/21
+deny from 159.20.96.0/20
+deny from 164.138.16.0/21
+deny from 164.138.128.0/18
+deny from 164.215.40.0/21
+deny from 164.215.56.0/21
+deny from 164.215.128.0/17
+deny from 176.12.64.0/20
+deny from 176.46.128.0/19
+deny from 176.56.144.0/20
+deny from 176.62.144.0/21
+deny from 176.65.160.0/19
+deny from 176.65.192.0/18
+deny from 176.67.64.0/20
+deny from 176.101.32.0/20
+deny from 176.101.48.0/21
+deny from 176.102.224.0/19
+deny from 176.110.108.0/22
+deny from 176.122.210.0/23
+deny from 176.123.64.0/18
+deny from 176.124.64.0/22
+deny from 176.221.16.0/20
+deny from 176.221.64.0/21
+deny from 176.223.80.0/21
+deny from 178.21.40.0/21
+deny from 178.21.160.0/21
+deny from 178.22.72.0/22
+deny from 178.22.76.0/23
+deny from 178.22.120.0/21
+deny from 178.131.0.0/16
+deny from 178.157.0.0/23
+deny from 178.157.4.0/22
+deny from 178.169.0.0/19
+deny from 178.173.128.0/18
+deny from 178.173.192.0/19
+deny from 178.215.0.0/18
+deny from 178.216.248.0/21
+deny from 178.219.224.0/20
+deny from 178.236.32.0/20
+deny from 178.236.96.0/20
+deny from 178.238.192.0/20
+deny from 178.239.144.0/20
+deny from 178.248.40.0/21
+deny from 178.251.208.0/21
+deny from 178.252.128.0/18
+deny from 178.253.0.0/18
+deny from 179.60.151.0/24
+deny from 185.1.77.0/24
+deny from 185.2.12.0/22
+deny from 185.3.124.0/22
+deny from 185.3.200.0/22
+deny from 185.3.212.0/22
+deny from 185.4.0.0/22
+deny from 185.4.16.0/22
+deny from 185.4.28.0/22
+deny from 185.4.104.0/22
+deny from 185.4.220.0/22
+deny from 185.5.156.0/22
+deny from 185.8.172.0/22
+deny from 185.10.71.0/24
+deny from 185.10.72.0/22
+deny from 185.11.68.0/22
+deny from 185.11.88.0/22
+deny from 185.11.176.0/22
+deny from 185.12.60.0/22
+deny from 185.12.101.0/24
+deny from 185.12.102.0/24
+deny from 185.13.228.0/22
+deny from 185.14.80.0/22
+deny from 185.14.160.0/22
+deny from 185.16.232.0/22
+deny from 185.18.156.0/22
+deny from 185.18.212.0/22
+deny from 185.20.160.0/22
+deny from 185.21.68.0/22
+deny from 185.21.76.0/22
+deny from 185.22.28.0/22
+deny from 185.23.128.0/22
+deny from 185.24.136.0/22
+deny from 185.24.228.0/22
+deny from 185.24.252.0/22
+deny from 185.26.32.0/22
+deny from 185.26.232.0/22
+deny from 185.29.220.0/22
+deny from 185.30.4.0/22
+deny from 185.30.76.0/22
+deny from 185.31.124.0/22
+deny from 185.32.128.0/22
+deny from 185.34.160.0/22
+deny from 185.37.52.0/22
+deny from 185.39.180.0/22
+deny from 185.40.240.0/22
+deny from 185.41.0.0/22
+deny from 185.42.24.0/22
+deny from 185.42.212.0/22
+deny from 185.42.224.0/22
+deny from 185.44.36.0/22
+deny from 185.44.100.0/22
+deny from 185.44.112.0/22
+deny from 185.45.188.0/22
+deny from 185.46.0.0/22
+deny from 185.46.108.0/22
+deny from 185.46.216.0/22
+deny from 185.47.48.0/22
+deny from 185.49.84.0/22
+deny from 185.49.96.0/22
+deny from 185.49.104.0/22
+deny from 185.50.37.0/24
+deny from 185.50.38.0/23
+deny from 185.51.40.0/22
+deny from 185.51.200.0/22
+deny from 185.53.140.0/22
+deny from 185.55.224.0/22
+deny from 185.56.92.0/22
+deny from 185.56.96.0/22
+deny from 185.57.132.0/22
+deny from 185.57.164.0/22
+deny from 185.57.200.0/22
+deny from 185.58.240.0/22
+deny from 185.59.112.0/22
+deny from 185.60.32.0/22
+deny from 185.60.136.0/22
+deny from 185.62.232.0/22
+deny from 185.63.236.0/22
+deny from 185.64.176.0/22
+deny from 185.66.224.0/21
+deny from 185.67.12.0/22
+deny from 185.67.100.0/22
+deny from 185.67.156.0/22
+deny from 185.67.212.0/22
+deny from 185.69.108.0/22
+deny from 185.69.120.0/22
+deny from 185.70.60.0/22
+deny from 185.70.196.0/22
+deny from 185.71.152.0/22
+deny from 185.71.192.0/22
+deny from 185.72.24.0/22
+deny from 185.72.80.0/22
+deny from 185.73.0.0/22
+deny from 185.73.76.0/22
+deny from 185.73.114.0/23
+deny from 185.74.164.0/22
+deny from 185.75.196.0/22
+deny from 185.75.204.0/22
+deny from 185.76.248.0/22
+deny from 185.78.20.0/22
+deny from 185.78.104.0/22
+deny from 185.79.60.0/22
+deny from 185.79.96.0/22
+deny from 185.79.156.0/22
+deny from 185.80.100.0/22
+deny from 185.80.196.0/22
+deny from 185.81.40.0/22
+deny from 185.81.96.0/23
+deny from 185.81.99.0/24
+deny from 185.82.28.0/22
+deny from 185.82.64.0/22
+deny from 185.82.136.0/22
+deny from 185.82.164.0/22
+deny from 185.82.180.0/22
+deny from 185.83.28.0/22
+deny from 185.83.72.0/21
+deny from 185.83.80.0/22
+deny from 185.83.88.0/22
+deny from 185.83.112.0/22
+deny from 185.83.180.0/22
+deny from 185.83.184.0/22
+deny from 185.83.196.0/22
+deny from 185.83.200.0/22
+deny from 185.83.208.0/22
+deny from 185.84.160.0/22
+deny from 185.84.220.0/22
+deny from 185.85.68.0/22
+deny from 185.85.136.0/22
+deny from 185.86.36.0/22
+deny from 185.86.180.0/22
+deny from 185.88.48.0/22
+deny from 185.88.152.0/22
+deny from 185.88.176.0/22
+deny from 185.88.254.0/23
+deny from 185.89.112.0/22
+deny from 185.92.4.0/22
+deny from 185.92.8.0/22
+deny from 185.92.40.0/22
+deny from 185.93.164.0/22
+deny from 185.94.96.0/23
+deny from 185.94.98.0/24
+deny from 185.94.99.0/25
+deny from 185.94.99.136/29
+deny from 185.94.99.144/28
+deny from 185.94.99.160/27
+deny from 185.94.99.192/26
+deny from 185.95.60.0/22
+deny from 185.95.152.0/22
+deny from 185.95.180.0/22
+deny from 185.96.240.0/22
+deny from 185.97.116.0/22
+deny from 185.98.112.0/22
+deny from 185.99.212.0/22
+deny from 185.100.44.0/22
+deny from 185.101.228.0/22
+deny from 185.103.84.0/22
+deny from 185.103.128.0/22
+deny from 185.103.244.0/22
+deny from 185.103.248.0/22
+deny from 185.104.192.0/22
+deny from 185.104.228.0/22
+deny from 185.104.232.0/22
+deny from 185.104.240.0/22
+deny from 185.105.100.0/22
+deny from 185.105.120.0/22
+deny from 185.105.184.0/22
+deny from 185.105.236.0/22
+deny from 185.106.136.0/22
+deny from 185.106.144.0/22
+deny from 185.106.200.0/23
+deny from 185.106.228.0/22
+deny from 185.107.28.0/22
+deny from 185.107.32.0/22
+deny from 185.107.244.0/22
+deny from 185.107.248.0/22
+deny from 185.108.96.0/22
+deny from 185.108.164.0/22
+deny from 185.109.60.0/22
+deny from 185.109.72.0/22
+deny from 185.109.80.0/22
+deny from 185.109.128.0/22
+deny from 185.109.244.0/22
+deny from 185.109.248.0/22
+deny from 185.110.28.0/22
+deny from 185.110.216.0/22
+deny from 185.110.228.0/22
+deny from 185.110.236.0/22
+deny from 185.110.244.0/22
+deny from 185.110.252.0/22
+deny from 185.111.8.0/21
+deny from 185.111.64.0/22
+deny from 185.111.80.0/22
+deny from 185.111.128.0/22
+deny from 185.111.136.0/22
+deny from 185.112.32.0/21
+deny from 185.112.128.0/22
+deny from 185.112.148.0/22
+deny from 185.112.168.0/22
+deny from 185.113.56.0/22
+deny from 185.113.104.0/22
+deny from 185.113.112.0/22
+deny from 185.113.148.0/22
+deny from 185.113.152.0/22
+deny from 185.114.188.0/22
+deny from 185.115.76.0/22
+deny from 185.115.148.0/22
+deny from 185.115.164.0/22
+deny from 185.115.168.0/22
+deny from 185.116.20.0/22
+deny from 185.116.24.0/22
+deny from 185.116.44.0/22
+deny from 185.116.160.0/22
+deny from 185.117.96.0/22
+deny from 185.117.136.0/22
+deny from 185.117.204.0/22
+deny from 185.118.12.0/22
+deny from 185.118.136.0/22
+deny from 185.118.152.0/22
+deny from 185.119.4.0/22
+deny from 185.119.164.0/22
+deny from 185.119.240.0/22
+deny from 185.120.120.0/22
+deny from 185.120.136.0/22
+deny from 185.120.160.0/22
+deny from 185.120.168.0/22
+deny from 185.120.192.0/21
+deny from 185.120.200.0/22
+deny from 185.120.208.0/20
+deny from 185.120.224.0/20
+deny from 185.120.240.0/21
+deny from 185.120.248.0/22
+deny from 185.121.56.0/22
+deny from 185.121.128.0/22
+deny from 185.122.80.0/22
+deny from 185.123.68.0/22
+deny from 185.123.208.0/22
+deny from 185.124.112.0/22
+deny from 185.124.156.0/22
+deny from 185.124.172.0/22
+deny from 185.125.20.0/22
+deny from 185.125.244.0/22
+deny from 185.125.248.0/21
+deny from 185.126.0.0/20
+deny from 185.126.16.0/22
+deny from 185.126.40.0/22
+deny from 185.126.132.0/22
+deny from 185.126.156.0/23
+deny from 185.126.200.0/22
+deny from 185.127.176.0/22
+deny from 185.127.232.0/22
+deny from 185.128.48.0/22
+deny from 185.128.80.0/22
+deny from 185.128.136.0/22
+deny from 185.128.152.0/22
+deny from 185.129.80.0/22
+deny from 185.129.108.0/24
+deny from 185.129.116.0/22
+deny from 185.129.124.0/22
+deny from 185.129.168.0/22
+deny from 185.129.184.0/21
+deny from 185.129.196.0/22
+deny from 185.129.200.0/22
+deny from 185.129.212.0/22
+deny from 185.129.216.0/22
+deny from 185.129.228.0/22
+deny from 185.129.232.0/21
+deny from 185.129.240.0/22
+deny from 185.130.76.0/22
+deny from 185.131.28.0/22
+deny from 185.131.84.0/22
+deny from 185.131.88.0/21
+deny from 185.131.100.0/22
+deny from 185.131.108.0/22
+deny from 185.131.112.0/21
+deny from 185.131.124.0/22
+deny from 185.131.128.0/22
+deny from 185.131.136.0/21
+deny from 185.131.148.0/22
+deny from 185.131.152.0/21
+deny from 185.131.164.0/22
+deny from 185.131.168.0/22
+deny from 185.132.80.0/22
+deny from 185.132.212.0/22
+deny from 185.133.152.0/22
+deny from 185.133.164.0/22
+deny from 185.133.212.0/22
+deny from 185.133.244.0/23
+deny from 185.133.246.0/24
+deny from 185.134.96.0/22
+deny from 185.135.28.0/22
+deny from 185.135.73.0/24
+deny from 185.135.74.0/23
+deny from 185.135.77.0/24
+deny from 185.135.78.0/23
+deny from 185.135.84.0/24
+deny from 185.135.86.0/23
+deny from 185.135.228.0/22
+deny from 185.136.100.0/22
+deny from 185.136.172.0/22
+deny from 185.136.180.0/22
+deny from 185.136.220.0/22
+deny from 185.137.24.0/22
+deny from 185.137.60.0/22
+deny from 185.137.108.0/22
+deny from 185.139.64.0/22
+deny from 185.140.4.0/22
+deny from 185.140.12.0/22
+deny from 185.140.56.0/22
+deny from 185.140.232.0/22
+deny from 185.140.240.0/22
+deny from 185.141.36.0/22
+deny from 185.141.48.0/22
+deny from 185.141.104.0/22
+deny from 185.141.132.0/22
+deny from 185.141.168.0/22
+deny from 185.141.212.0/22
+deny from 185.141.244.0/22
+deny from 185.142.92.0/22
+deny from 185.142.124.0/22
+deny from 185.142.156.0/22
+deny from 185.142.232.0/22
+deny from 185.143.204.0/22
+deny from 185.144.64.0/22
+deny from 185.145.8.0/22
+deny from 185.145.184.0/22
+deny from 185.147.40.0/22
+deny from 185.147.84.0/22
+deny from 185.147.160.0/22
+deny from 185.147.176.0/22
+deny from 185.150.108.0/22
+deny from 185.151.96.0/22
+deny from 185.153.184.0/22
+deny from 185.153.208.0/22
+deny from 185.154.184.0/22
+deny from 185.155.8.0/21
+deny from 185.155.72.0/22
+deny from 185.155.236.0/22
+deny from 185.156.44.0/22
+deny from 185.157.8.0/22
+deny from 185.158.172.0/22
+deny from 185.159.84.0/22
+deny from 185.159.88.0/22
+deny from 185.159.152.0/22
+deny from 185.159.176.0/22
+deny from 185.160.104.0/22
+deny from 185.160.176.0/22
+deny from 185.161.36.0/22
+deny from 185.161.112.0/22
+deny from 185.162.40.0/22
+deny from 185.162.216.0/22
+deny from 185.163.88.0/22
+deny from 185.164.72.0/22
+deny from 185.164.252.0/22
+deny from 185.165.28.0/22
+deny from 185.165.40.0/22
+deny from 185.165.100.0/22
+deny from 185.165.116.0/22
+deny from 185.165.204.0/22
+deny from 185.166.60.0/22
+deny from 185.166.104.0/22
+deny from 185.166.112.0/22
+deny from 185.167.52.0/22
+deny from 185.167.72.0/22
+deny from 185.167.100.0/22
+deny from 185.167.124.0/22
+deny from 185.168.28.0/22
+deny from 185.169.20.0/22
+deny from 185.169.36.0/22
+deny from 185.170.236.0/22
+deny from 185.171.52.0/22
+deny from 185.172.0.0/22
+deny from 185.172.68.0/22
+deny from 185.172.212.0/22
+deny from 185.173.104.0/22
+deny from 185.173.168.0/22
+deny from 185.174.132.0/22
+deny from 185.174.200.0/22
+deny from 185.174.248.0/22
+deny from 185.175.240.0/22
+deny from 185.176.32.0/22
+deny from 185.176.56.0/22
+deny from 185.177.156.0/22
+deny from 185.177.232.0/22
+deny from 185.178.104.0/22
+deny from 185.178.220.0/22
+deny from 185.179.168.0/22
+deny from 185.179.220.0/22
+deny from 185.180.52.0/22
+deny from 185.180.128.0/22
+deny from 185.181.180.0/22
+deny from 185.182.220.0/22
+deny from 185.182.248.0/22
+deny from 185.183.128.0/22
+deny from 185.184.32.0/22
+deny from 185.184.48.0/22
+deny from 185.185.16.0/22
+deny from 185.185.240.0/22
+deny from 185.186.48.0/22
+deny from 185.186.240.0/22
+deny from 185.187.48.0/22
+deny from 185.187.84.0/22
+deny from 185.188.104.0/22
+deny from 185.188.112.0/22
+deny from 185.189.120.0/22
+deny from 185.190.20.0/22
+deny from 185.191.76.0/22
+deny from 185.192.8.0/22
+deny from 185.192.112.0/22
+deny from 185.193.208.0/21
+deny from 185.193.235.0/24
+deny from 185.194.76.0/22
+deny from 185.194.244.0/22
+deny from 185.195.72.0/22
+deny from 185.196.148.0/22
+deny from 185.197.68.0/22
+deny from 185.197.112.0/22
+deny from 185.198.160.0/22
+deny from 185.198.252.0/22
+deny from 185.199.64.0/22
+deny from 185.199.208.0/22
+deny from 185.201.48.0/22
+deny from 185.201.190.0/24
+deny from 185.202.56.0/22
+deny from 185.202.92.0/22
+deny from 185.203.160.0/22
+deny from 185.203.196.128/25
+deny from 185.204.168.0/22
+deny from 185.204.180.0/22
+deny from 185.205.140.0/22
+deny from 185.205.220.0/22
+deny from 185.206.68.0/22
+deny from 185.206.236.0/22
+deny from 185.207.4.0/22
+deny from 185.207.52.0/22
+deny from 185.207.72.0/22
+deny from 185.208.76.0/22
+deny from 185.208.148.0/22
+deny from 185.208.172.0/22
+deny from 185.208.181.0/24
+deny from 185.208.182.0/23
+deny from 185.209.188.0/22
+deny from 185.210.200.0/22
+deny from 185.211.56.0/22
+deny from 185.211.84.0/22
+deny from 185.211.88.0/22
+deny from 185.212.48.0/22
+deny from 185.212.120.0/22
+deny from 185.212.192.0/22
+deny from 185.213.8.0/22
+deny from 185.213.164.0/22
+deny from 185.214.36.0/22
+deny from 185.215.124.0/22
+deny from 185.215.152.0/22
+deny from 185.215.228.0/22
+deny from 185.215.232.0/22
+deny from 185.215.244.0/22
+deny from 185.216.124.0/22
+deny from 185.217.160.0/22
+deny from 185.219.112.0/22
+deny from 185.220.236.0/22
+deny from 185.221.112.0/22
+deny from 185.221.192.0/22
+deny from 185.222.120.0/22
+deny from 185.222.180.0/22
+deny from 185.222.184.0/22
+deny from 185.224.176.0/22
+deny from 185.225.80.0/22
+deny from 185.225.180.0/22
+deny from 185.225.240.0/22
+deny from 185.226.132.0/22
+deny from 185.226.140.0/22
+deny from 185.227.64.0/22
+deny from 185.227.116.0/22
+deny from 185.227.137.0/24
+deny from 185.229.0.0/22
+deny from 185.229.28.0/22
+deny from 185.231.112.0/24
+deny from 185.232.152.0/22
+deny from 185.232.176.0/22
+deny from 185.233.12.0/22
+deny from 185.234.192.0/22
+deny from 185.235.40.0/22
+deny from 185.235.136.0/22
+deny from 185.236.36.0/22
+deny from 185.236.88.0/22
+deny from 185.237.8.0/22
+deny from 185.237.84.0/22
+deny from 185.238.20.0/22
+deny from 185.238.44.0/22
+deny from 185.238.92.0/24
+deny from 185.238.95.0/24
+deny from 185.239.0.0/22
+deny from 185.240.56.0/22
+deny from 185.240.148.0/22
+deny from 185.242.60.0/22
+deny from 185.243.48.0/22
+deny from 185.244.52.0/22
+deny from 185.246.4.0/22
+deny from 185.249.52.0/22
+deny from 185.251.76.0/22
+deny from 185.252.28.0/22
+deny from 185.255.68.0/22
+deny from 185.255.88.0/22
+deny from 185.255.208.0/22
+deny from 188.0.240.0/20
+deny from 188.34.0.0/16
+deny from 188.75.64.0/18
+deny from 188.118.64.0/18
+deny from 188.121.96.0/19
+deny from 188.121.128.0/19
+deny from 188.122.96.0/19
+deny from 188.136.128.0/17
+deny from 188.158.0.0/15
+deny from 188.191.176.0/21
+deny from 188.208.56.0/21
+deny from 188.208.64.0/19
+deny from 188.208.144.0/20
+deny from 188.208.160.0/19
+deny from 188.208.200.0/22
+deny from 188.208.208.0/21
+deny from 188.208.224.0/19
+deny from 188.209.0.0/19
+deny from 188.209.32.0/20
+deny from 188.209.64.0/20
+deny from 188.209.116.0/22
+deny from 188.209.128.0/20
+deny from 188.209.152.0/22
+deny from 188.209.192.0/20
+deny from 188.210.64.0/20
+deny from 188.210.80.0/21
+deny from 188.210.96.0/19
+deny from 188.210.128.0/18
+deny from 188.210.192.0/20
+deny from 188.210.232.0/22
+deny from 188.211.0.0/20
+deny from 188.211.32.0/19
+deny from 188.211.64.0/18
+deny from 188.211.128.0/19
+deny from 188.211.176.0/20
+deny from 188.211.192.0/19
+deny from 188.212.6.0/23
+deny from 188.212.22.0/24
+deny from 188.212.48.0/20
+deny from 188.212.64.0/19
+deny from 188.212.96.0/22
+deny from 188.212.144.0/21
+deny from 188.212.160.0/19
+deny from 188.212.200.0/21
+deny from 188.212.208.0/20
+deny from 188.212.224.0/20
+deny from 188.212.240.0/21
+deny from 188.213.64.0/20
+deny from 188.213.96.0/19
+deny from 188.213.144.0/20
+deny from 188.213.176.0/20
+deny from 188.213.192.0/21
+deny from 188.213.208.0/22
+deny from 188.214.4.0/22
+deny from 188.214.84.0/22
+deny from 188.214.96.0/22
+deny from 188.214.120.0/23
+deny from 188.214.160.0/19
+deny from 188.214.216.0/21
+deny from 188.214.232.0/21
+deny from 188.215.24.0/22
+deny from 188.215.88.0/22
+deny from 188.215.128.0/20
+deny from 188.215.160.0/19
+deny from 188.215.192.0/19
+deny from 188.215.240.0/22
+deny from 188.229.0.0/17
+deny from 188.240.196.0/24
+deny from 188.240.212.0/24
+deny from 188.240.248.0/21
+deny from 188.245.0.0/16
+deny from 188.253.0.0/22
+deny from 188.253.32.0/19
+deny from 188.253.64.0/19
+deny from 188.253.100.0/23
+deny from 188.253.104.0/21
+deny from 188.253.112.0/21
+deny from 188.253.124.0/22
+deny from 193.0.156.0/24
+deny from 193.8.139.0/24
+deny from 193.19.144.0/23
+deny from 193.28.181.0/24
+deny from 193.32.80.0/23
+deny from 193.34.244.0/22
+deny from 193.35.62.0/24
+deny from 193.104.22.0/24
+deny from 193.104.212.0/24
+deny from 193.105.2.0/24
+deny from 193.105.6.0/24
+deny from 193.108.242.0/23
+deny from 193.142.30.0/24
+deny from 193.151.128.0/19
+deny from 193.176.240.0/22
+deny from 193.178.200.0/22
+deny from 193.189.122.0/23
+deny from 193.201.192.0/22
+deny from 193.222.51.0/24
+deny from 193.242.194.0/23
+deny from 193.242.208.0/23
+deny from 194.5.40.0/22
+deny from 194.5.176.0/22
+deny from 194.26.72.0/22
+deny from 194.33.104.0/22
+deny from 194.33.122.0/23
+deny from 194.33.124.0/22
+deny from 194.34.160.0/22
+deny from 194.36.174.0/24
+deny from 194.39.36.0/22
+deny from 194.41.48.0/22
+deny from 194.60.208.0/22
+deny from 194.60.228.0/22
+deny from 194.73.51.160/28
+deny from 194.143.140.0/23
+deny from 194.146.148.0/22
+deny from 194.147.164.0/22
+deny from 194.150.68.0/22
+deny from 194.156.140.0/22
+deny from 194.225.0.0/16
+deny from 195.20.136.0/24
+deny from 195.27.14.0/29
+deny from 195.88.188.0/23
+deny from 195.96.139.16/28
+deny from 195.110.38.0/23
+deny from 195.146.32.0/19
+deny from 195.170.163.0/24
+deny from 195.181.0.0/17
+deny from 195.191.74.0/23
+deny from 195.211.44.0/22
+deny from 195.219.71.0/24
+deny from 195.238.124.0/22
+deny from 195.245.70.0/23
+deny from 196.3.91.0/24
+deny from 204.245.22.24/30
+deny from 204.245.22.29/32
+deny from 204.245.22.30/31
+deny from 208.48.251.249/32
+deny from 209.28.123.0/26
+deny from 210.5.196.64/26
+deny from 210.5.197.64/26
+deny from 210.5.198.32/29
+deny from 210.5.198.64/28
+deny from 210.5.198.96/27
+deny from 210.5.198.128/26
+deny from 210.5.198.192/27
+deny from 210.5.204.0/25
+deny from 210.5.205.0/26
+deny from 210.5.208.0/26
+deny from 210.5.208.128/25
+deny from 210.5.209.0/25
+deny from 210.5.214.192/26
+deny from 210.5.218.64/26
+deny from 210.5.218.128/25
+deny from 210.5.232.0/25
+deny from 210.5.233.0/25
+deny from 210.5.233.128/26
+deny from 212.1.192.0/21
+deny from 212.6.37.0/24
+deny from 212.6.38.0/24
+deny from 212.6.41.0/25
+deny from 212.6.42.0/24
+deny from 212.6.45.0/24
+deny from 212.6.47.0/24
+deny from 212.6.50.0/24
+deny from 212.16.64.0/19
+deny from 212.33.197.0/24
+deny from 212.33.199.0/24
+deny from 212.33.200.0/24
+deny from 212.33.202.0/23
+deny from 212.33.204.0/22
+deny from 212.33.208.0/20
+deny from 212.80.0.0/19
+deny from 212.86.64.0/19
+deny from 212.120.192.0/19
+deny from 212.151.182.155/32
+deny from 212.151.182.156/31
+deny from 213.108.240.0/22
+deny from 213.109.240.0/20
+deny from 213.176.0.0/21
+deny from 213.176.8.0/22
+deny from 213.176.16.0/21
+deny from 213.176.28.0/22
+deny from 213.176.72.0/21
+deny from 213.176.88.0/21
+deny from 213.176.96.0/19
+deny from 213.195.0.0/18
+deny from 213.207.192.0/18
+deny from 213.217.32.0/19
+deny from 213.233.160.0/19
+deny from 217.11.16.0/20
+deny from 217.24.144.0/20
+deny from 217.25.48.0/20
+deny from 217.60.0.0/16
+deny from 217.66.192.0/19
+deny from 217.77.112.0/20
+deny from 217.146.191.62/31
+deny from 217.146.191.64/32
+deny from 217.146.191.66/31
+deny from 217.146.191.68/32
+deny from 217.146.191.70/31
+deny from 217.146.191.72/29
+deny from 217.146.191.80/28
+deny from 217.146.191.118/32
+deny from 217.146.191.125/32
+deny from 217.146.191.126/31
+deny from 217.146.191.128/32
+deny from 217.146.191.130/31
+deny from 217.146.191.132/30
+deny from 217.146.191.137/32
+deny from 217.146.191.138/31
+deny from 217.146.191.141/32
+deny from 217.146.191.143/32
+deny from 217.146.191.144/28
+deny from 217.146.191.160/27
+deny from 217.146.191.192/32
+deny from 217.146.191.194/31
+deny from 217.146.191.196/30
+deny from 217.146.191.207/32
+deny from 217.146.191.208/28
+deny from 217.146.191.224/27
+deny from 217.146.208.0/20
+deny from 217.161.16.0/24
+deny from 217.170.240.0/20
+deny from 217.171.145.0/24
+deny from 217.171.148.0/22
+deny from 217.171.191.220/30
+deny from 217.172.102.0/23
+deny from 217.172.104.0/21
+deny from 217.172.112.0/20
+deny from 217.174.16.0/20
+deny from 217.218.0.0/15
+
+# -------------------------------------------------------
+# Free IP2Location Firewall List by Country
+# Source: https://www.ip2location.com/free/visitor-blocker
+# Last Generated: 21 Nov 2018 15:58:25 GMT
+# [Important] Please update this list every month
+# Country: Cuba
+# -------------------------------------------------------
+deny from 201.220.192.0/19
+deny from 200.55.178.96/27
+deny from 200.55.178.80/29
+deny from 200.55.178.64/28
+deny from 200.55.178.56/29
+deny from 200.55.178.32/28
+deny from 200.55.178.0/27
+deny from 200.55.176.0/23
+deny from 200.55.160.0/20
+deny from 200.55.128.0/19
+deny from 200.55.178.128/25
+deny from 200.55.179.0/24
+deny from 200.55.188.0/22
+deny from 200.55.187.192/26
+deny from 200.55.187.176/28
+deny from 200.55.187.160/29
+deny from 200.55.187.128/27
+deny from 200.55.187.0/25
+deny from 200.55.186.0/24
+deny from 200.55.184.0/23
+deny from 200.55.180.0/22
+deny from 200.14.48.0/21
+deny from 200.13.144.0/21
+deny from 190.98.130.0/27
+deny from 190.92.112.0/20
+deny from 190.15.144.0/20
+deny from 190.6.64.0/19
+deny from 185.185.124.0/24
+deny from 181.225.224.0/19
+deny from 169.158.0.0/16
+deny from 152.206.0.0/15
+deny from 57.91.32.0/20
+deny from 190.107.0.0/20
+deny from 200.0.16.0/28
+deny from 200.5.12.0/22
+deny from 200.0.24.0/22
+deny from 200.0.16.128/25
+deny from 200.0.16.64/26
+deny from 200.0.16.32/27
+deny from 200.0.16.24/29
+deny from 200.0.16.22/31
+deny from 200.0.16.20/32
+deny from 200.0.16.16/30
+deny from 41.194.23.160/28
+</Files>
