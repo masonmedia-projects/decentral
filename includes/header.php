@@ -20,7 +20,7 @@
     else { 
        echo "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies."; 
     } ?>" />
-    <meta name="keywords" content="Decentral,Jaxx Liberty,Blockchain,Cryptocurrency,Decentral Inc.,Anthony Di Iorio">
+    <meta name="keywords" content="Decentral,Jaxx Liberty,Blockchain,Cryptocurrency,Anthony Di Iorio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="manifest" href="site.webmanifest">
     <!--icons-->
@@ -29,18 +29,18 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- Open Graph Meta Data -->
     <meta property="og:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
-    <meta property="og:image" content="https://www.decentral.ca/assets/img/decentral-social-ss.png">
+    <meta property="og:image" content="https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg">
     <meta property="og:site_name" content="decentral.ca">
     <meta property="og:title" content="Decentral Inc. is Canada's leading blockchain company.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://decentral.ca">
     <!-- Twitter Card Meta Data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://jaxx.io">
+    <meta name="twitter:site" content="https://decentral.ca">
     <meta name="twitter:creator" content="Decentral">
     <meta name="twitter:title" content="Decentral Inc. is Canada's leading blockchain company.">
     <meta name="twitter:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
-    <meta name="twitter:image" content="https://www.decentral.ca/assets/img/decentral-social-ss.png">
+    <meta name="twitter:image" content="https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg">
     <!-- Styles -->
 <!--        <link rel="stylesheet" href="/assets/css/aos.css">-->
     <link rel="stylesheet" href="/assets/css/normalize.css">
