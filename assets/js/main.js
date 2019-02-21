@@ -28,8 +28,9 @@ $(document).ready(function() {
       0.1);
 
         var fadeUp = new ScrollMagic.Scene({
-                triggerElement: this,
+                triggerElement: "this",
                 triggerHook: 'onEnter',
+                duration: 300,
                 reverse:true
             })
             .setTween(stagger)
@@ -43,14 +44,14 @@ $(document).ready(function() {
           delay:0,
           x: -50,
           ease: Back.easeInOut.config(1.7)
-//          force3D:true
       },
       0.1);
 
         var fadeRight = new ScrollMagic.Scene({
-                triggerElement: this,
+                triggerElement: "this",
                 triggerHook: 'onEnter',
-                reverse:true
+                duration: 300,
+                reverse: true
             })
             .setTween(stagger2)
             .addTo(controller);
@@ -69,12 +70,12 @@ $(document).ready(function() {
         var fadeDown = new ScrollMagic.Scene({
                 triggerElement: this,
                 triggerHook: 'onEnter',
-                reverse:true
+                reverse: true
             })
             .setTween(stagger3)
             .addTo(controller);
     }); 
-
+    
         //timeline animation -- not using
         $(".animate-link").click(function(){
           TweenMax.to("h1, h2, h3, .h4, li, p, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
@@ -105,8 +106,8 @@ $(document).ready(function() {
             attrib: "data-src", // selector for attribute containing the media src
             throttle: 0,      // millisecond interval at which to process events
             threshold: 5,     // scroll distance from element before its loaded
-            printable: true    // be printer friendly and show all elements on document print
-        //    live: true          // auto bind lazy loading to ajax loaded elements
+            printable: true,    // be printer friendly and show all elements on document print
+            live: true          // auto bind lazy loading to ajax loaded elements
         });
        
 });//end doc ready
@@ -132,8 +133,9 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeUp = new ScrollMagic.Scene({
-                triggerElement: this,
+                triggerElement: "this",
                 triggerHook: 'onEnter',
+                duration: 300,
                 reverse:true
             })
             .setTween(stagger)
@@ -151,8 +153,9 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeRight = new ScrollMagic.Scene({
-                triggerElement: this,
+                triggerElement: "this",
                 triggerHook: 'onEnter',
+                duration: 300,
                 reverse:true
             })
             .setTween(stagger2)
@@ -170,8 +173,9 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeDown = new ScrollMagic.Scene({
-                triggerElement: this,
+                triggerElement: "this",
                 triggerHook: 'onEnter',
+                duration: 300,
                 reverse:true
             })
             .setTween(stagger3)
@@ -188,8 +192,8 @@ document.addEventListener('swup:contentReplaced', function () {
         attrib: "data-src", // selector for attribute containing the media src
         throttle: 0,      // millisecond interval at which to process events
         threshold: 5,     // scroll distance from element before its loaded
-        printable: true    // be printer friendly and show all elements on document print
-    //    live: true          // auto bind lazy loading to ajax loaded elements
+        printable: true,    // be printer friendly and show all elements on document print
+        live: true          // auto bind lazy loading to ajax loaded elements
     });
     
     //init BS carousel and pass speed option

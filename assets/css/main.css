@@ -96,6 +96,7 @@ textarea {
    ========================================================================== */
 
 body {
+    background-color: black;
     background: black;
     font-family: 'Helvetica Neue', Helvetica, Avenir, sans-serif;
     overflow-x: hidden;
@@ -355,14 +356,6 @@ p {
     -webkit-background-clip: text;
 }
 
-.knockout-about {
-    color: #000;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(transparent, transparent);
-    background-size: cover;
-    -webkit-background-clip: text;
-}
-
 .knockout-jaxx {
     color: #000;
     -webkit-text-fill-color: transparent;
@@ -389,16 +382,6 @@ p {
     background: -o-linear-gradient(transparent, transparent);
     background-size: cover;
     -webkit-background-clip: text;
-}
-
-.knockout-heart {
-    color: grey;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(transparent, transparent);
-    background-size: 200%;
-    -webkit-background-clip: text;
-    padding: 5px 0 10px;
-    /*    background: url(/assets/img/Jaxx_Primary_Icon.png);*/
 }
 
 .line-height {
@@ -531,12 +514,15 @@ p {
 /* animation ===================*/
 
 .animated {
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
 
 /*scroll to ID highlight links*/
-#menu a:hover, #menu a.mPS2id-highlight{
-	color: #ff6902;
+
+#menu a:hover,
+#menu a.mPS2id-highlight {
+    color: #ff6902;
 }
 
 /*SWUP transition animations*/
@@ -562,10 +548,14 @@ p {
     opacity: 1;
     -webkit-transition: .5s;
     transition: .5s;
+    transition: .5s;
+    -webkit-transition-delay: .5s;
     transition-delay: .5s;
+    -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
-html.is-animating .transition-fade{
+
+.is-animating .transition-fade {
     opacity: 0;
 }
 
@@ -658,11 +648,12 @@ html.is-animating .transition-fade{
 
 /*med variations*/
 
-.down, 
-.up, 
-.left, 
+.down,
+.up,
+.left,
 .right {
-/*    transition-timing-function: cubic-bezier(.75,-0.5,0,1.75);*/
+    /*    transition-timing-function: cubic-bezier(.75,-0.5,0,1.75);*/
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -672,7 +663,8 @@ html.is-animating .transition-fade{
 .down-med {
     -webkit-transition: 1.5s;
     transition: 1.5s;
-     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /*slow variations*/
@@ -683,11 +675,35 @@ html.is-animating .transition-fade{
 .down-slow {
     -webkit-transition: 2s;
     transition: 2s;
-     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* overlay animation: add div with transition-wipe for animation and the overlay to be revealed and moved
+<div class="transition-wipe overlay"></div> */
 
+/*
+.overlay {
+    position: absolute;
+    background: #ff6902;
+    top: 0;
+    width: 2000px; 
+    z-index: 2000;
+    transform: scale(0);
+    transform-origin: left;
+}
 
+.transition-wipe {
+    transition: 1s ease-in-out;
+    transform: scaleX(0);
+}
+
+html.is-animating .transition-wipe {
+    transform: scaleX(1);
+    width: 3000px;
+    height: 10000px;
+}
+*/
 
 /* colors ===================*/
 
@@ -894,156 +910,6 @@ img.decentral-logo,
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: left;
-}
-
-.bg--home-banner {
-    background: url(https://images.unsplash.com/photo-1485844254435-b7509760a25c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center;
-    background-size: cover;
-}
-
-.bg--home-banner-2 {
-    background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1045&q=80) center;
-    background-size: cover;
-}
-
-.bg--home-banner-3 {
-    background: url(https://images.unsplash.com/photo-1520188740392-665a13f453fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80) center;
-    background-size: cover;
-}
-
-.bg--home-banner-4 {
-    background: url(https://images.unsplash.com/photo-1490822239899-bc196b6f19f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1088&q=80) center;
-    background-size: cover;
-}
-
-.bg--home-banner-5 {
-    background: url(https://images.unsplash.com/photo-1512551980832-13df02babc9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80) center;
-    background-size: cover;
-}
-
-.bg--home-anthony {
-    background: url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iAYI6oSYfeEE/v0/-1x-1.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-skyline {
-    /*	background: url(https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;*/
-    background: url(/assets/img/decentral-toronto-skyline.jpeg) center;
-    background-size: cover;
-}
-
-.bg--home-building {
-    background: url(https://images.unsplash.com/photo-1534024669648-7183524c6fbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80) center top;
-    background-size: cover;
-}
-
-.bg--home-group {
-    background: url(/assets/img/jaxx-group-people.jpg) center left;
-    background-size: cover;
-}
-
-.bg--home-ipad {
-    background: url(/assets/img/jaxx-clay-iphone-ipad-myjaxx.png) center;
-    background-size: cover;
-    -webkit-filter: drop-shadow(8px 8px 15px darkgrey);
-    filter: drop-shadow(8px 8px 15px darkgrey);
-}
-
-.bg--home-imac {
-    background: url(/assets/img/jaxx-imac-white-2.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-dude {
-    background: url(/assets/img/jaxx-iphone-6-showoff.png) center;
-    background-size: contain;
-    -webkit-filter: drop-shadow(8px 8px 15px black);
-    filter: drop-shadow(8px 8px 15px black);
-}
-
-.bg--home-hand {
-    background: url(/assets/img/jaxx-android-girl-hand.png) center;
-    background-size: cover;
-}
-
-.bg--home-devices {
-    background: url(/assets/img/jaxx-iphones-white-mockup-screens.jpg) center right;
-    background-size: cover;
-}
-
-.bg--home-girl {
-    background: url(/assets/img/jaxx-iphone-tat-girl-crowd-photo.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-city {
-    /*    background: url(https://images.unsplash.com/photo-1505318650824-d27732836a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80) center;*/
-    background: url(/assets/img/decentral-toronto-flatiron.jpeg) center;
-    background-size: cover;
-}
-
-.bg--home-platform {
-    background: url(/assets/img/jaxx-iphone-on-macbook.jpg) center;
-    background: url(/assets/img/jaxx-iphone-white-mockup-port.jpg) center;
-    background: url(/assets/img/jaxx-iphone-isometric-gallery.png) center;
-    background-size: cover;
-}
-
-.bg--home-platform-2 {
-    background: url(/assets/img/jaxx-clay-iphone-ipad-trans.png) center;
-    background: url(/assets/img/jaxx-clay-iphone-ipad-myjaxx.png) center;
-    background-size: cover;
-    -webkit-filter: drop-shadow(8px 8px 15px grey);
-    filter: drop-shadow(8px 8px 15px grey);
-}
-
-.bg--home-testimonials {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/assets/img/jaxx-testimonials.jpeg) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/img/jaxx-testimonials.jpeg) center;
-    background-size: cover;
-}
-
-.bg--home-testimonials-carousel {
-    /*	background: url(https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80) center;*/
-    background: url(/assets/img/decentral-home-banner.jpeg) center;
-    background-size: cover;
-}
-
-.bg--home-community {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/jaxx-support-welcome-redux.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-friends {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/jaxx-friends.jpg) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/jaxx-friends.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-support {
-    background: url(/assets/img/jaxx-support-jump.jpeg) center;
-    background-size: cover;
-}
-
-.bg--home-assets {
-    background: url(/assets/img/jaxx-3-screens.png) center;
-    background: url(/assets/img/jaxx-android-multiscreen.png) center;
-    background-size: cover;
-}
-
-.bg--home-social {
-    background: url(/assets/img/decentral-community-red.jpeg) center top;
-    background-size: cover;
-}
-
-.bg--home-download {
-    background: url(/assets/img/jaxx-couple-fireworks.jpg) center;
-    background-size: cover;
-}
-
-.bg--home-laptop-hands {
-    background: url(/assets/img/jaxx-laptop-hands.jpg) center;
-    background-size: cover;
 }
 
 /* home styles */
@@ -1523,9 +1389,8 @@ nav,
 /*mobile nav dropdown speed*/
 
 .collapsing {
-  -webkit-transition: all .5s ease-in-out;
-       -o-transition: all .5s ease-in-out;
-          transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 /* mobile menu line animation */

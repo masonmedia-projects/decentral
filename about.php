@@ -10,7 +10,7 @@ include 'includes/header.php';
     
     <div id="banner" role="banner" class="container-fluid bg-black p-0">
         <div class="row d-flex min-700-lg relative py-5 ts stagger-right">
-            <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
+            <img class="img-full absolute z-0 left-0 up up-slow lazy" data-src="/assets/img/jaxx-community-banner.jpg" alt="About Decentral">
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-4 right">About Decentral</h1>
                 <h2 class="site-title text-light font-weight-bold right right-med">On a mission to create opportunity and empower individuals around the world.</h2>
