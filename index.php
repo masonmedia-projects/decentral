@@ -8,7 +8,7 @@ include 'includes/header.php';
 
 <!--banner-->
 
-<div id="banner" role="banner" class="container-fluid p-0">
+<div id="banner" role="banner" class="container-fluid p-0 fadeIn">
   <div class="row d-flex min-700-lg bg-black text-light relative py-5 stagger-right">
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
