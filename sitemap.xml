@@ -6,35 +6,29 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <url>
-      <loc>https://jaxx.io/</loc>
+      <loc>https://decentral.ca/</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
       <priority>1.00</priority>
     </url>
 
    <url>
-      <loc>https://jaxx.io/features.php</loc>
+      <loc>https://decentral.ca/about.php</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
       <priority>0.80</priority>
     </url>
     
     <url>
-      <loc>https://jaxx.io/downloads.php</loc>
+      <loc>https://decentral.ca/jaxxliberty.php</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
       <priority>0.80</priority>
     </url>
     
     <url>
-      <loc>https://jaxx.io/security.php</loc>
+      <loc>https://decentral.ca/partner-network.php</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
       <priority>0.80</priority>
     </url>
     
-    <url>
-      <loc>https://jaxx.io/community.php</loc>
-      <lastmod>2017-11-30T23:59:59+00:00</lastmod>
-      <priority>0.80</priority>
-    </url>
-
     <url>
       <loc>https://blog.jaxx.io/</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
@@ -42,32 +36,8 @@
     </url>
 
     <url>
-      <loc>https://jaxx.io/about.php</loc>
+      <loc>https://decentral.ca/contact.php</loc>
       <lastmod>2017-11-30T23:59:59+00:00</lastmod>
       <priority>0.80</priority>
-    </url>
-
-    <url>
-        <loc>https://jaxx.io/changeLog.php</loc>
-        <lastmod>2017-11-30T23:59:59+00:00</lastmod>
-        <priority>0.00</priority>
-    </url>
-
-   <url>
-        <loc>https://jaxx.io/thirdparties-current.php</loc>
-        <lastmod>2017-11-30T23:59:59+00:00</lastmod>
-        <priority>0.00</priority>
-    </url>
-    
-    <url>
-        <loc>https://jaxx.io/legal.php</loc>
-        <lastmod>2017-11-30T23:59:59+00:00</lastmod>
-        <priority>0.00</priority>
-    </url>
-
-    <url>
-        <loc>https://support.decentral.ca/hc/en-us</loc>
-        <lastmod>2017-11-30T23:59:59+00:00</lastmod>
-        <priority>0.00</priority>
     </url>
 </urlset>

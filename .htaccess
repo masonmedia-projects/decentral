@@ -10,6 +10,7 @@ RewriteRule ^(.*)\.html$ $1.php [L]
 #remove .php extension
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+# Rewrite redirects
 # Redirects from https://decentral.ca/jaxx.html to decentral.ca/jaxxliberty.php
 RewriteRule ^jaxx$ https://decentral.ca/jaxxliberty.php [R,L]
 
@@ -22,12 +23,15 @@ RewriteRule ^team$ https://decentral.ca/about.php [R,L]
 # Redirects from https://decentral.ca/partnerships.html to decentral.ca/partner-network.php
 RewriteRule ^partnerships$ https://decentral.ca/partner-network.php [R,L]
 
-
+# 301 redirects
 Redirect 301 /jaxx.html http://www.decentral.ca/jaxxliberty.php
 Redirect 301 /history.html http://www.decentral.ca/about.php
 Redirect 301 /team.html http://www.decentral.ca/about.php
 Redirect 301 /partnerships.html http://www.decentral.ca/partner-network.php
 
+# Set custom 404 + 403 error pages
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
 
 Options -Indexes
 
@@ -47,24 +51,6 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
-
-# Redirects people from https://jaxx.io/support to the Zendesk URL for quicker referencing
-RewriteRule ^support.html$ https://decentral.zendesk.com/hc/en-us [R,L]
-
-# Redirects from https://jaxx.io/legal.html to jaxx.io/legal/terms-current.html
-RewriteRule ^legal.html$ https://jaxx.io/legal/terms-current.html [R,L]
-
-# Redirects from https://jaxx.io/betaslack to the jaxx slack channel URL
-# Redirects people from https://jaxx.io/betaslack to jaxx slack channel
-RewriteRule ^betaslack$ https://join.slack.com/t/libertybeta/shared_invite/enQtMzg0NDQwNDA2NjkwLTA5OTIxMWY3Yzk4NzYwMWEwMzUzMzIzYWNkY2Y0NGJlODYyOTQ1M2I1NjI3MzFmNDY4ODIyMTM5ODViZmVlMTM [R,L]
-
-
-# Redirects people from https://jaxx.io/jaxx-liberty.html to jaxx.io/downloads/html
-RewriteRule ^jaxx-liberty-beta$ https://jaxx.io/downloads.html [R,L]
-
-# Set custom 404 error page
-ErrorDocument 404 /404.php
-ErrorDocument 403 /403.php
 
 # GeoBlocking
 # Since jaxx.io is on shared hosting on DreamHost it wasn't possible to install ip module
