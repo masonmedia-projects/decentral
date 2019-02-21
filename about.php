@@ -14,7 +14,6 @@ include 'includes/header.php';
             <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
                 <h1 class="h4 mt-4 right">About Decentral</h1>
                 <h2 class="site-title text-light font-weight-bold right right-med">On a mission to create opportunity and empower individuals around the world.</h2>
-                <!--<a href="#sec-1"><button class="bg-trans border-0 slide-right"><i class="fa fa-angle-down text-light p-0"></i></button></a> -->
                 <a href="#sec-1"><button class="p-btn text-light ts bg-trans border-0 mb-1 p-0 right right-slow">Learn more <i class="fa fa-angle-right fa-btn text-light"></i></button></a>
             </div>
             <div class="offset-lg-3"></div>
@@ -594,28 +593,8 @@ include 'includes/header.php';
                 </div>
             </div>
         </section>
-
-        <!--jaxx classic-->
-<!--
-        <div class="row d-flex p-5 min-500 bg-white">
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4 orange">Jaxx Classic</h2>
-                <h3 class="section-title text-dark mb-0">Redefining.</h3>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-                <p class="p-big pt-3 m-0">Jaxx Classic, a leading multi-platform digital wallet with over a million downloads, was developed in 2015 by Anthony Di Iorio, co-founder of Ethereum, and founder and CEO of Decentral Inc. Jaxx Classic was created to give people an easy way to manage their digital assets and virtual lives.</p>
-            </div>
-        </div>
-            
-        <div class="row d-flex bg-light relative">
-            <div class="col-lg-12 min-700-lg">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-jaxx-classic-closeup.jpg" alt="Jaxx Classic">
-            </div>
-        </div>
--->
         
-    </div>
-    <!--end container-->   
+    </div><!--end container-->   
 </main>
     
 <?php

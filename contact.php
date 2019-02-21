@@ -64,32 +64,32 @@ include 'includes/header.php';
                         <div class="row">
                             <div class="col-lg-12 d-flex flex-wrap justify-content-center align-items-center py-3 px-0 slide-right">
                                <div class="col-xs-3 mr-2">
-                                    <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Community_Page')">
+                                    <a href="https://www.facebook.com/JaxxWallet/" target="_blank">
                                     <i class="fa fa-facebook orange p-3"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 mr-2">
-                                    <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Contact_Page')">
+                                    <a href="https://twitter.com/jaxx_io?lang=en" target="_blank">
                                     <i class="fa fa-twitter orange p-3"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 mr-2">
-                                    <a href="https://www.instagram.com/jaxx_io/" target="_blank" onclick="googleAnalyticsTrigger('Instagram', 'Contact_Page')">
+                                    <a href="https://www.instagram.com/jaxx_io/" target="_blank">
                                     <i class="fa fa-instagram orange p-3"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 mr-2">
-                                    <a href="https://www.youtube.com/user/decentralTV" target="_blank" onclick="googleAnalyticsTrigger('Youtube', 'Contact_Page')">
+                                    <a href="https://www.youtube.com/user/decentralTV" target="_blank">
                                     <i class="fa fa-youtube orange p-3"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 mr-2">
-                                    <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Contact_Page')">
+                                    <a href="https://t.me/jaxxliberty" target="_blank">
                                     <i class="fa fa-telegram orange p-3"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Contact_Page')">
+                                    <a href="https://www.reddit.com/r/jaxx/" target="_blank">
                                     <i class="fa fa-reddit orange p-3"></i>
                                     </a>
                                 </div>

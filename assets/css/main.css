@@ -549,7 +549,8 @@ p {
     transition-delay: .5s;
 /*    -webkit-transition-timing-function: ease-in-out;*/
 /*    transition-timing-function: linear;*/
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+/*    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+    transition-timing-function: linear;
     opacity: 1;
 }
 

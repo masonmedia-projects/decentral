@@ -102,28 +102,6 @@ include 'includes/header.php';
             </div>
         </section>
 
-        <!--advisory -- investments-->
-
-    <!--
-        <div class="row d-flex p-5 min-500 bg-white">
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
-                <h2 class="h4">Investments</h2>
-                <h3 class="section-title text-dark">Refine your blockchain strategy.</h3>
-                <p class="p-big pt-3 m-0">Anthony Di Iorio and the Decentral team provide expertise to enterprises, small businesses and start-ups on the rapidly changing, disruptive space of digital currencies and blockchain technologies.</p>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
-                <p class="p-big pt-3 m-0 ">Engage Anthony and the experts of the Decentral team to create and refine your blockchain strategy. The team has recent experience guiding companies in a variety of sectors including: identity, lending, real estate, credit reporting, accounting and audit, e-sports, artificial intelligence, fine art, music licensing, content creation, digital advertising, and more. Reach out to us for more information on working with Anthony and the Decentral Team.</p>
-                <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3">Contact us &#8594;</p></a> 
-            </div>
-        </div>end row
-
-        <div class="row d-flex bg-light">
-            <div class="col-lg-12 min-700-lg d-flex justify-content-start align-items-center">
-                <img class="img-full min-700-lg absolute z-0 left-0 lazy" data-src="/assets/img/decentral-anthony-sepia.jpg" alt="Engage Anthony and the experts of the Decentral team to create and refine your blockchain strategy.">
-            </div>
-        </div>          
-    -->
-
        <!--social-->
 
         <section>
@@ -137,22 +115,22 @@ include 'includes/header.php';
                        <div class="row pl-0">
                            <div class="col-lg-12 d-flex justify-content-start align-items-start p-0">
                                <div class="col-xs-3 slide-right">
-                                    <a href="https://www.facebook.com/JaxxWallet/" target="_blank" onclick="googleAnalyticsTrigger('Facebook', 'Partner_Network_Page')">
+                                    <a href="https://www.facebook.com/JaxxWallet/" target="_blank">
                                     <i class="fa fa-facebook orange"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 slide-right">
-                                    <a href="https://twitter.com/jaxx_io?lang=en" target="_blank" onclick="googleAnalyticsTrigger('Twitter', 'Partner_Network_Page')">
+                                    <a href="https://twitter.com/jaxx_io?lang=en" target="_blank">
                                     <i class="fa fa-twitter orange"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 slide-right">
-                                    <a href="https://t.me/jaxxliberty" target="_blank" onclick="googleAnalyticsTrigger('Telegram', 'Partner_Network_Page')">
+                                    <a href="https://t.me/jaxxliberty" target="_blank">
                                     <i class="fa fa-telegram orange"></i>
                                     </a>
                                 </div>
                                 <div class="col-xs-3 slide-right">
-                                    <a href="https://www.reddit.com/r/jaxx/" target="_blank" onclick="googleAnalyticsTrigger('Reddit', 'Partner_Network_Page')">
+                                    <a href="https://www.reddit.com/r/jaxx/" target="_blank">
                                     <i class="fa fa-reddit orange"></i>
                                     </a>
                                 </div>

@@ -20,12 +20,10 @@ $(document).ready(function() {
     $(".stagger-up").each(function() {
 
       var stagger = TweenMax.staggerFrom($(this).find(".slide-up"), 1, {
-    //      scale:0.5,
           opacity:0,    
           delay:0,
           y: 50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
       },
       0.1);
 
@@ -44,8 +42,8 @@ $(document).ready(function() {
           opacity:0,    
           delay:0,
           x: -50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
+//          force3D:true
       },
       0.1);
 
@@ -64,8 +62,7 @@ $(document).ready(function() {
           opacity:0,    
           delay:0,
           y: -50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
       },
       0.1);
 
@@ -75,25 +72,6 @@ $(document).ready(function() {
                 reverse:true
             })
             .setTween(stagger3)
-            .addTo(controller);
-    }); 
-    
-    $(".fade-trigger").each(function() {
-
-      var fadeIn = TweenMax.staggerFrom($(this).find(".fade-in"), 1, {
-          opacity:0,    
-          delay:0,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
-      },
-      0.1);
-
-        var fadeDown = new ScrollMagic.Scene({
-                triggerElement: this,
-                triggerHook: 'onEnter',
-                reverse:true
-            })
-            .setTween(fadeIn)
             .addTo(controller);
     }); 
 
@@ -149,8 +127,7 @@ document.addEventListener('swup:contentReplaced', function () {
           opacity:0,    
           delay:0,
           y: 50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
       },
       0.1);
 
@@ -169,8 +146,7 @@ document.addEventListener('swup:contentReplaced', function () {
           opacity:0,    
           delay:0,
           x: -50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
       },
       0.1);
 
@@ -189,8 +165,7 @@ document.addEventListener('swup:contentReplaced', function () {
           opacity:0,    
           delay:0,
           y: -50,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
+          ease: Back.easeInOut.config(1.7)
       },
       0.1);
 
@@ -203,30 +178,10 @@ document.addEventListener('swup:contentReplaced', function () {
             .addTo(controller);
     }); 
     
-    $(".fade-trigger").each(function() {
-
-      var fadeIn = TweenMax.staggerFrom($(this).find(".fade-in"), 1, {
-          opacity:0,    
-          delay:0,
-          ease: Back.easeInOut.config(1.7),
-          force3D:true
-      },
-      0.1);
-
-        var fadeDown = new ScrollMagic.Scene({
-                triggerElement: this,
-                triggerHook: 'onEnter',
-                reverse:true
-            })
-            .setTween(fadeIn)
-            .addTo(controller);
-    }); 
-    
     $(".animate-link").click(function(){
       TweenMax.to("h1, h2, h3, .h4, li, p, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
       TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
     });
-    
     
     //lazyload reinit
     $(".lazy").recliner({
@@ -236,7 +191,6 @@ document.addEventListener('swup:contentReplaced', function () {
         printable: true    // be printer friendly and show all elements on document print
     //    live: true          // auto bind lazy loading to ajax loaded elements
     });
-    
     
     //init BS carousel and pass speed option
 
@@ -279,6 +233,5 @@ document.addEventListener('swup:contentReplaced', function () {
     
 
 });//end swup reinit
-
 
 // API js display jaxx blog --> https://www.youtube.com/watch?v=rGObWtjxGBc

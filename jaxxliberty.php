@@ -149,29 +149,15 @@ include 'includes/header.php';
                     </div>
                     <div class="row downloads-badge-container pt-2 pl-3 slide-right">
                         <!--jaxx liberty google store-->
-                        <a onclick="googleAnalyticsTrigger('Android/Tablet', 'Downloads_Mobile')" href="https://play.google.com/store/apps/details?id=com.liberty.jaxx" target="_blank"><img title="Play Play Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-google-play.png" alt="Google Play Button"/></a>
+                        <a onclick="googleAnalyticsTrigger('Android/Tablet', 'Decentral_JaxxLiberty')" href="https://play.google.com/store/apps/details?id=com.liberty.jaxx" target="_blank"><img title="Play Play Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-google-play.png" alt="Google Play Button"/></a>
                         <!--jaxx liberty itunes-->
-                        <a onclick="googleAnalyticsTrigger('iOS', 'Downloads_Mobile')" href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8" target="_blank"><img title="iTunes App Store Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-app-store.png" alt="iTunes App Store Button"/></a>
+                        <a onclick="googleAnalyticsTrigger('iOS', 'Decentral_JaxxLiberty')" href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8" target="_blank"><img title="iTunes App Store Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-app-store.png" alt="iTunes App Store Button"/></a>
                         <!--jaxx liberty chrome-->
-                        <a onclick="googleAnalyticsTrigger('iOS', 'Downloads_Mobile')" href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne" target="_blank"><img title="iTunes Store Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-chrome-store.png" alt="Chrome Web Store"/></a>
+                        <a onclick="googleAnalyticsTrigger('iOS', 'Decentral_JaxxLiberty')" href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne" target="_blank"><img title="iTunes Store Button" class="store-badge mr-1 mt-1" src="/assets/img/jaxx-chrome-store.png" alt="Chrome Web Store"/></a>
                     </div><!--end button nest row--> 
                     <div class="right right-med">
                         <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn pt-3 mt-2 slide-right">Desktop versions <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
-<!--
-                    <div class="btn-group dropup right right-med">
-                        <p id="download" class="p-btn mt-2 slide-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start now <i class="fa fa-angle-right fa-btn orange"></i></p>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.liberty.jaxx" target="_blank" onclick="googleAnalyticsTrigger('Android', 'Decentral_JaxxLiberty')">Android</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" onclick="googleAnalyticsTrigger('iOS', 'Decentral_JaxxLiberty')" href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8" target="_blank">iOS</a>
-                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" role="button" onclick="googleAnalyticsTrigger('Desktop', 'Decentral_JaxxLiberty')" href="https://jaxx.io/downloads" target="_blank">Desktop</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" role="button" onclick="googleAnalyticsTrigger('Chrome', 'Decentral_JaxxLiberty')" href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne" target="_blank">Chrome</a>
-                        </div>  
-                    </div>   
--->
                </div>
                <div class="offset-lg-4"></div>
             </div>
