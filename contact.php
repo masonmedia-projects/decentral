@@ -115,7 +115,7 @@ include 'includes/header.php';
             <div class="row d-flex min-500 bg-white stagger-down">
                 <div class="offset-lg-2"></div>
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center text-secondary p-5 down">
-                    <h2 class="h4 mt-4 slide-down">Get in touch</h2>
+                    <h2 class="h4 slide-down">Get in touch</h2>
                     <h3 class="section-title font-weight-bold slide-down">General inquiries.</h3>
                     <p class="p-big pt-3 m-0 slide-down">292 Adelaide Street West
                         <span class="d-block slide-down">Suite 401, 4th Floor</span>
@@ -132,7 +132,7 @@ include 'includes/header.php';
 
         <section>
             <div class="row d-flex p-0 bg-light">
-                <div class="col-lg-12 p-0 min-700-lg">
+                <div class="col-lg-12 p-0 min-700-lg down down-med">
                     <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-map-orange.png" alt="Contact Decentral Inc.">
                 </div>
             </div><!--end row-->

@@ -88,7 +88,7 @@ include 'includes/header.php';
                                 <!--<p class="py-2">We strive to continuously adapt and evolve, constantly improving our products, services, and processes, while maintaining an eye on the future.</p>-->
                            </div>
                            <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-right border-bottom">
-                                <h3 class="h2 font-weight-bold pt-2">8. Come and say Hi. We'd love to hear from you.</h3>
+                                <h3 class="h2 font-weight-bold pt-2">8. Come and say hi. We've got nothing to hide.</h3>
                                 <!--<p class="py-2">We adopt a focused approach at work, centering on the most important things that increase our efficiency.</p>-->
                            </div>
                            <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-start text-left p-5 border-bottom">

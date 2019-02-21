@@ -16,9 +16,8 @@ include 'includes/header.php';
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-4 right">Decentral partner network</h1>
             <h2 class="site-title font-weight-bold right right-med">Work with Canada's leading blockchain company.</h2>
-            <!--<a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>-->
             <div class="right right-slow">
-                <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 slide-right"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a> 
+                <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 pl-0 border-0 slide-right"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a> 
             </div>
         </div>
         <div class="offset-lg-3"></div>

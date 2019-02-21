@@ -83,7 +83,7 @@ include 'includes/header.php';
 <!--main body-->
    
 <main id="main">
-    <div class="container-fluid p-0 text-secondary">
+    <div class="container-fluid p-0 text-secondary zoom">
 
         <section>
             <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative stagger-down">

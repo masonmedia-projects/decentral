@@ -1,31 +1,18 @@
-//swup init
 $(document).ready(function() {
-    const swup = new Swup({
+    //swup 
+      const swup = new Swup({
         doScrollingRightAway: false,
         animateScroll: false,
         scrollFriction: .3,
         scrollAcceleration: .04
     //    scrollAcceleration: 0
     });
-});
-
-//init BS carousel and pass speed option
-$(document).ready(function() {
+       
+    //bs carousel
     $('.carousel').carousel({
       interval: 2000
     });
-});
-
-//mobile menu animation
-//$(document).ready(function() {
-//    var wrapperMenu = document.querySelector('.wrapper-menu');
-//        wrapperMenu.addEventListener('click', function(){
-//        wrapperMenu.classList.toggle('open');  
-//        })
-//});
-
-
-$(document).ready(function() {
+       
     //GSAP + Scroll Magic
     // init
     var controller = new ScrollMagic.Controller();
@@ -110,68 +97,41 @@ $(document).ready(function() {
             .addTo(controller);
     }); 
 
+        //timeline animation -- not using
         $(".animate-link").click(function(){
           TweenMax.to("h1, h2, h3, .h4, li, p, i, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
           TweenMax.to("img", 2, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);
         });
 
-});
-
-//    ahish add class code 
+       //close mobile nav on click
+       $('.nav-link, body').on('click',function() {
+           $('.navbar-collapse').collapse('hide');
+        });
+       
+        //toggle mobile menu animation
+       $('.navbar-toggler, .nav-item').on('click',function() {
+           $('.wrapper-menu').toggleClass('open');
+        });
+       
+       //smooth scroll
+        $('a').click(function(){
+            var top = $('body').find($(this).attr('href')).offset().top;
+            $('html, body').animate({
+                scrollTop: top
+            }, 1200, 'easeInOutExpo');
+            return false;
+        });
     
-//    jQuery.each( $('.nav-link'), function( i, navLink ) {
-//         if(navLink.href == window.window.location.href){
-//             $(navLink).addClass('selected');
-//         }
-//    });
-//    
-//        $(".nav-link").click(function(){
-//            if(!$(".nav-link").hasClass('selected')){
-//                $(".nav-link").addClass('selected');
-//                TweenMax.to("h1, h2, h3, p, hr", 0.5, {opacity:0, delay: 0, x:-100, ease:Back.easeIn}, 0.1);
-//                TweenMax.to("img", 0.5, {opacity:0, scale:0, delay: 0, ease:Back.easeIn}, 0.1);   
-//        }
-//    });
-
-
-//close mobile nav on click
-$(document).ready(function() {
-    $('.nav-link, body').on('click',function() {
-      $('.navbar-collapse').collapse('hide');
-    });
-});
-//close mobile menu on nav link click
-$(document).ready(function() {
-    $('.navbar-toggler, .nav-item').on('click',function() {
-      $('.wrapper-menu').toggleClass('open');
-    });
-});
-
-//smooth scroll https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
-$(document).ready(function(){
-  $('a').click(function(){
-    var top = $('body').find($(this).attr('href')).offset().top;
-    $('html, body').animate({
-        scrollTop: top
-    }, 1200, 'easeInOutExpo');
-
-    return false;
-  });
-});
-
-//lazy load
-
-$(document).ready(function() {
-    $(".lazy").recliner({
-        attrib: "data-src", // selector for attribute containing the media src
-        throttle: 0,      // millisecond interval at which to process events
-        threshold: 5,     // scroll distance from element before its loaded
-        printable: true    // be printer friendly and show all elements on document print
-    //    live: true          // auto bind lazy loading to ajax loaded elements
-    });
-    
-   
-});//end main js init
+       //lazy load
+        $(".lazy").recliner({
+            attrib: "data-src", // selector for attribute containing the media src
+            throttle: 0,      // millisecond interval at which to process events
+            threshold: 5,     // scroll distance from element before its loaded
+            printable: true    // be printer friendly and show all elements on document print
+        //    live: true          // auto bind lazy loading to ajax loaded elements
+        });
+       
+});//end doc ready
 
 
 //swup reinit plugins
