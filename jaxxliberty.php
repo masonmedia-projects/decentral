@@ -14,7 +14,7 @@ include 'includes/header.php';
     <div class="row d-flex min-700-lg py-5 text-light relative">
        <img class="img-full absolute z-0 left-0 filter-dark up up-slow lazy" data-src="/assets/img/jaxx-tablet-chair-right.jpg" alt="Jaxx Liberty is your all-in-one digital asset wallet.">
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 mt-5 right">Jaxx Liberty</h1>
+            <h1 class="h4 mt-3 right">Jaxx Liberty</h1>
             <h2 class="site-title knockout-gradient font-weight-bold right right-med">Your multi-platform, multi-currency digital asset wallet.</h2>           
             <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0 slide-right"></i></a>-->
             <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 p-0 right right-slow">Discover <i class="fa fa-angle-right fa-btn text-light"></i></button></a> 

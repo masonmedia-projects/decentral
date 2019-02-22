@@ -12,7 +12,7 @@ include 'includes/header.php';
   <div class="row d-flex min-700-lg bg-black text-light relative py-5 stagger-right">
         <img class="img-full absolute z-0 left-0 fuck lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
-            <img class="decentral-logo mb-3 mt-5 lazy right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+            <img class="decentral-logo my-3 lazy right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold right right-med">Interface. Infrastructure. Integrations. Innovation.</h2>
             <h2 class="h4 right">Building the tools to usher in a new world of decentralization.</h2>
             <!--button container-->
@@ -83,10 +83,10 @@ include 'includes/header.php';
 <!--main body-->
    
 <main id="main">
-    <div class="container-fluid p-0 text-secondary zoom">
+    <div class="container-fluid p-0 text-secondary">
 
         <section>
-            <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative stagger-down">
+            <div id="sec-1" class="row d-flex p-5 min-500 relative stagger-down">
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left down">
                     <h2 class="h4 slide-down">About Decentral</h2>
                     <h3 class="section-title text-dark slide-down">Canada's leading blockchain company.</h3>
