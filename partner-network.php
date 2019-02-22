@@ -14,7 +14,7 @@ include 'includes/header.php';
     <div class="row d-flex min-700-lg text-light ts py-5 px-0">
         <img class="img-full absolute z-0 left-0 filter-dark up up-slow lazy" data-src="/assets/img/decentral-partnerships-dark.jpg" alt="Join the Decentral partner network.">  
         <div class="col-lg-9 d-flex flex-column justify-content-center align-items-start text-left p-5">
-            <h1 class="h4 mt-4 right">Decentral partner network</h1>
+            <h1 class="h4 mt-5 right">Decentral partner network</h1>
             <h2 class="site-title font-weight-bold right right-med">Work with Canada's leading blockchain company.</h2>
             <div class="right right-slow">
                 <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 pl-0 border-0 slide-right"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a> 
