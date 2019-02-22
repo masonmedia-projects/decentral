@@ -32,9 +32,8 @@ $(document).ready(function() {
       0.1);
 
         var fadeUp = new ScrollMagic.Scene({
-                triggerElement: "this",
+                triggerElement: this,
                 triggerHook: 'onEnter',
-                duration: 300,
                 reverse:true
             })
             .setTween(stagger)
@@ -52,9 +51,8 @@ $(document).ready(function() {
       0.1);
 
         var fadeRight = new ScrollMagic.Scene({
-                triggerElement: "this",
+                triggerElement: this,
                 triggerHook: 'onEnter',
-                duration: 300,
                 reverse: true
             })
             .setTween(stagger2)
@@ -137,9 +135,8 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeUp = new ScrollMagic.Scene({
-                triggerElement: "this",
+                triggerElement: this,
                 triggerHook: 'onEnter',
-                duration: 300,
                 reverse:true
             })
             .setTween(stagger)
@@ -157,9 +154,8 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeRight = new ScrollMagic.Scene({
-                triggerElement: "this",
+                triggerElement: this,
                 triggerHook: 'onEnter',
-                duration: 300,
                 reverse:true
             })
             .setTween(stagger2)
@@ -177,9 +173,8 @@ document.addEventListener('swup:contentReplaced', function () {
       0.1);
 
         var fadeDown = new ScrollMagic.Scene({
-                triggerElement: "this",
+                triggerElement: this,
                 triggerHook: 'onEnter',
-                duration: 300,
                 reverse:true
             })
             .setTween(stagger3)

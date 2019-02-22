@@ -304,14 +304,16 @@ include 'includes/header.php';
         
         <section>
             <div class="row d-flex p-5 min-500 bg-white stagger-right">
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left right">
                     <h2 class="h4 orange slide-right">Innovation</h2>
                     <h3 class="section-title text-dark mb-0 slide-right">Leading the blockchain market into 2019.</h3>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
                     <p class="p-big pt-3 m-0 slide-right">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
-                    <!-- Button trigger modal -->
-                    <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3 slide-right">Meet the team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                    <div class="right right-slow">
+                        <!-- Button trigger modal -->
+                        <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3 slide-right">Meet the team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
+                    </div>
                 </div>
             </div><!--end row-->
         
@@ -577,7 +579,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark mb-0 slide-down">Informing. Empowering. Uniting.</h3>
                     <p class="p-big pt-3 m-0 slide-down">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down-med">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down down-med">
                     <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
                     <div class="down down-slow">
                         <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3 slide-down">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  

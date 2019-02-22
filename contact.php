@@ -15,7 +15,6 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center ts p-5">
             <h1 class="h4 mt-5 right">Contact Decentral</h1>
             <h2 class="site-title font-weight-bold right right-med">Connect with us.</h2>
-            <!--<a href="#sec-1"><i class="fa fa-angle-down p-0 slide-right"></i></a>-->
              <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 right right-slow"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a>
         </div>
         <div class="offset-lg-2"></div>
