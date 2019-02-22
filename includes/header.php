@@ -94,19 +94,19 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.php">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/jaxxliberty.php">Jaxx Liberty</a>
+                        <a class="nav-link" href="/jaxxliberty">Jaxx Liberty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/partner-network.php">Partner Network</a>
+                        <a class="nav-link" href="/partner-network">Partner Network</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.php">Contact</a>
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
