@@ -349,22 +349,6 @@ p {
 
 /* fonts + text effects */
 
-.knockout-site-title {
-    color: #000;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(transparent, transparent);
-    background-size: cover;
-    -webkit-background-clip: text;
-}
-
-.knockout-jaxx {
-    color: #000;
-    -webkit-text-fill-color: transparent;
-    background: -o-linear-gradient(transparent, transparent);
-    background-size: cover;
-    -webkit-background-clip: text;
-}
-
 .knockout-gradient {
     color: #000;
     -webkit-text-fill-color: transparent;
