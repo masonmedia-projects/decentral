@@ -1,3 +1,6 @@
+//load fade in
+TweenMax.to($("body"), 1.3, {autoAlpha:1, ease: Circ.easeInOut});
+
 $(document).ready(function() {
     //swup 
       const swup = new Swup({
@@ -16,6 +19,7 @@ $(document).ready(function() {
     //GSAP + Scroll Magic
     // init
     var controller = new ScrollMagic.Controller();
+    
     // assign trigger class
     $(".stagger-up").each(function() {
 
