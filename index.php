@@ -86,7 +86,7 @@ include 'includes/header.php';
     <div class="container-fluid p-0 text-secondary">
 
         <section>
-            <div id="sec-1" class="row d-flex p-5 min-500 relative stagger-down">
+            <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative stagger-down">
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left down">
                     <h2 class="h4 slide-down">About Decentral</h2>
                     <h3 class="section-title text-dark slide-down">Canada's leading blockchain company.</h3>
