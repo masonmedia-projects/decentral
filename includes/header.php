@@ -42,11 +42,10 @@
     <meta name="twitter:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
     <meta name="twitter:image" content="https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg">
     <!-- Styles -->
-<!--        <link rel="stylesheet" href="/assets/css/aos.css">-->
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.min.css">
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
     <script>            
