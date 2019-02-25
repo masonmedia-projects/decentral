@@ -1,20 +1,18 @@
 # **Decentral Inc. SWUP Version**
 
-The official website of Jaxx Liberty, the leading Multi-Platform Cryptocurrent Wallet created by Anthony Di Iorio, Co-founder of Ethereum and founder and CEO of Decentral and Jaxx.
+The official website of Decentral Inc., Canada's leading blockchain company. Decentral is the maker of Jaxx Liberty, the leading multi-platform cryptocurrent wallet, and was founded by Anthony Di Iorio, co-founder of Ethereum.
 
-For more information see [jaxx.io](https://jaxx.io) and [decentral.ca](https://decentral.ca).
+For more information see [decentral.ca](https://decentral.ca) and [jaxx.io](https://jaxx.io).
 
 ## **SWUP**
 
-This version of decentral.ca uses [SWUP](https://github.com/gmrchk/swup) as a framework for AJAX page transitions and the addition of entrance/exit animation classes. This gives the site an app-like user experience, as pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple (or complex) css and js animations.
-
-Compared to smoothstate.js - the library used on an earlier redesign of decentral.ca - SWUP's implementation is much easier, uses less code, and is more flexible in terms of animation, onAfter reinitialization of js and plugins, with simple css animations that can be applied to any element. Smoothstate seemed to be more finnicky and got bogged down in terms of performance when used with large numbers of images, and with animations other than relatively simple fading.
+This version of decentral.ca uses [SWUP](https://github.com/gmrchk/swup) as a framework for AJAX page transitions and the addition of entrance/exit animation classes. This gives the site an app-like user experience: pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple (or complex) css and js animations.
 
 SWUP works by wrapping main page content (any content you want changed without refresh) in a swup id `id="swup"`. This alone works to swap out content without reload. The addition of a `.transition-` class then offers great flexibility in creating custom animation options (refer the SWUP API). The base class for fading in and out is `.transition-fade`.
 
 ## **Layout and Frameworks**
 
-The site uses Bootstrap 4.1. Layout uses native Bootstrap classes, flexbox, and functional css.
+The site uses Bootstrap 4.1. Layout uses native Bootstrap classes, and functional css.
 
 ## **PHP**
 
@@ -22,9 +20,9 @@ PHP is used minimally for header and footer includes.
 
 ## **CSS**
 
-1. Functional [Atomic] css: the site employs the atomic css approach where small, single purpose classes are used based on visual function. Classes are referenced once in the CSS then used repeatedly in the HTML so as to avoid class repetition in the stylesheet.
+1. Functional [Atomic] css: the site employs the atomic css approach where small, single purpose classes are used based on visual function. Classes are referenced once in the CSS then used repeatedly in the HTML for DRY code and the lightest possible stylesheets.
 
-*Note: the HTML can get heavy with classes, specifically when it comes to spacing (padding and margin styles). Effort has been made to keep styles functional as much as possible, with added stylesheet classes only when necessary.*
+*Note: while great for fast scaffolding and modular, resuable architecture, the HTML can get heavy with classes, specifically when it comes to spacing (padding and margin styles). Effort has been made to keep styles functional as much as possible, with added stylesheet classes only when necessary. See #4 for class order convention.
 
 2. One stylesheet is used with an effort at organizing structure vertically based on relationship to HTML and page/section order. It starts with resets and global elements, proceeding to more specific styles.
 
@@ -41,8 +39,8 @@ PHP is used minimally for header and footer includes.
 
     - With layout elements, classes generally proceed in the same order (with some variation depending on when edits were made or if certain individual elements needed specific treatment):
         - structural element (`.container, .row, .column`)
-        - height (`.min-500`)
         - alignment (bootstrap flexbox alignment classes i.e. `.d-flex .justify-content-center`, etc.)
+        - height (`.min-500`)
         - text alignment
         - background image, bg color, text color
         - spacing (margin and padding)
@@ -69,7 +67,9 @@ PHP is used minimally for header and footer includes.
 
 2. GSAP: Greensock animation platform is a powerful js library for creating timeline and other complex animations. Initially AOS and then Scroll Reveal were used, but GSAP offers more versatility and is open source.
 
-3. Animation syntax: To achieve exit animations (without delving too deeply into SWUP's extensive API), the site uses GSAP for scroll animations, and SWUP css classes for entrances and exits. Individual text elements are given GSAP scroll classes (i.e. `.slide-right`), while structural elements are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exiting during view change.
+3. Animation approach and syntax: the site uses GSAP for scroll animations, and SWUP css classes for page entrances and exits. Individual text elements are given GSAP scroll classes (i.e. `.slide-right`), while structural elements are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exiting during view change.
+
+4. Recliner.js: Recliner is a lazy load library for better performance with images. A css `.lazy` class is added to img tags which loads the image only when it comes into the viewport, and also adds an entrance fade animation for smooth UX.
 
  ## **Google Analytics**
     
@@ -79,4 +79,4 @@ PHP is used minimally for header and footer includes.
 
 ## **.htaccess**
 
-1. Multiple .htaccess rewrites are employed to redirect now-defunct pages to current versions (i.e. /history.html --> /about), to redirect previous .html extensions to .php, and then to remove .php extensions for pretty urls.
+1. Multiple .htaccess redirects/301s are employed to point now-defunct pages to current versions (i.e. /history.html --> /about), as well as to redirect previous .html extensions to .php, and then to remove .php extensions entirely for pretty urls.

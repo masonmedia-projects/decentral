@@ -897,66 +897,6 @@ img.decentral-logo,
     text-align: left;
 }
 
-/* home styles */
-
-.card-deck .card {
-    margin-bottom: 15px;
-}
-
-#testimonials .card-deck p {
-    font-size: 17px;
-    font-style: italic;
-}
-
-@media (max-width: 992px) {
-    #testimonials .card-deck {
-        -ms-flex-flow: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-flow: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .card-deck {
-        -ms-flex-flow: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-flow: column;
-    }
-}
-
-/*features column count*/
-
-.columns {
-    -webkit-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
-    margin: 0 0 10px;
-    padding: 20px 20px 0;
-}
-
-/*features page columns*/
-
-.columns--features {
-    -webkit-column-count: 3;
-    column-count: 3;
-}
-
-.columns--features li {
-    -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-    margin-bottom: 10px;
-}
-
-.columns li {
-    border-radius: 5px;
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid;
-    padding: 30px;
-}
-
 /*  modals */
 
 .modal-content {
@@ -1020,55 +960,6 @@ img.decentral-logo,
     display: none;
     right: 3em;
     left: unset;
-}
-
-/*  about page ======================*/
-
-.bg--about-banner {
-    background: url(https://images.unsplash.com/photo-1524439654840-b12734d89414?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center;
-    background-size: cover;
-}
-
-.bg--about-banner-toronto {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://images.pexels.com/photos/1292843/pexels-photo-1292843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1292843/pexels-photo-1292843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center;
-    background-size: cover;
-}
-
-.bg--about-girl {
-    background: url(/assets/img/jaxx-community-banner.jpg) center;
-    background-size: cover;
-}
-
-.bg--about-jaxx {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://news.bitcoin.com/wp-content/uploads/2016/08/Apple-Tells-Jaxx-To-Remove-Dashpay.jpg) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://news.bitcoin.com/wp-content/uploads/2016/08/Apple-Tells-Jaxx-To-Remove-Dashpay.jpg) center;
-    background-size: cover;
-}
-
-.bg--about-jump {
-    background: url(/assets/img/jaxx-jump-2-redux.jpg) center;
-    background-size: cover;
-}
-
-.bg--about-liberty {
-    background: url(/assets/img/jaxx-multi-device-2-pair.jpg) center;
-    background-size: cover;
-}
-
-.bg--about-city {
-    background: url(https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center;
-    background-size: cover;
-}
-
-.bg--about-office {
-    background: url(/assets/img/jaxx-careers-office.jpg) center;
-    background-size: cover;
-}
-
-.bg-img-office-2 {
-    background: url(/assets/img/decentral-office-original-redux.jpg) center;
-    background-size: cover;
 }
 
 /* about modal toggle close */
@@ -1152,52 +1043,11 @@ input:checked + .slider:before {
     opacity: 1;
 }
 
-
-/* jaxx liberty ======================*/
-
-.bg--jaxx-banner {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/assets/img/jaxx-2-people-selfie.jpeg) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/img/jaxx-2-people-selfie.jpeg) center;
-    background-size: cover;
-}
-
-.bg--jaxx-security {
-    background: url(/assets/img/jaxx-security-phone-angle-top.png) center;
-    background-size: cover;
-}
-
 /*download badges*/
 
 .store-badge {
     opacity: 1;
     width: 150px;
-}
-
-/* partnerships ======================*/
-
-/*
-.bg--partnerships-banner {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://images.unsplash.com/photo-1504211910536-32e00cbd7cbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80) center top;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1504211910536-32e00cbd7cbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80) center top;
-	background-size: cover;
-}
-*/
-
-.bg--anthony-2 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/assets/img/decentral-anthony-sepia.jpg) center;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/assets/img/decentral-anthony-sepia.jpg) center;
-    background-size: cover;
-}
-
-.bg--partnerships-jaxx {
-    background: url(/assets/img/jaxx-macbook-off-canvas-left.jpg) center;
-    background: url(/assets/img/jaxx-iphone-X-left-grey-bg.jpg) center;
-    background-size: cover;
-}
-
-.bg--partnerships-passion {
-    background: url(/assets/img/jaxx-about-passion-redux.jpg) center;
-    background-size: cover;
 }
 
 /* history timeline ======================*/
@@ -1253,54 +1103,14 @@ input:checked + .slider:before {
     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0)) 1 100%;
 }
 
-/* partnerships ======================
-
-.bg--partnerships-love {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/jaxx-support-welcome-redux.jpg) center;
-    background-size: cover;
-}
-
-/* team ======================*/
-
-.bg--team-banner {
-    background: url(/assets/img/jaxx-3-people-stairs-prog.jpg) center;
-    background: url(/assets/img/jaxx-phone-hand-car.jpg) center;
-    background-size: cover;
-}
-
+/*old decentral bitcoin img*/
+/*
 .bg--team-2014 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://cointelegraph.com/storage/uploads/view/c6d74a6da5659a65c31fb4fa3177b84b.jpg) center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://cointelegraph.com/storage/uploads/view/c6d74a6da5659a65c31fb4fa3177b84b.jpg) center;
     background-size: cover;
 }
-
-.bg--team-jaxx {
-    background: url(/assets/img/jaxx-screen-medley.png) center;
-    background: url(/assets/img/jaxx-laptop-hands.jpg) center;
-    background-size: cover;
-}
-
-.bg--team-office {
-    background: url(/assets/img/jaxx-three-people-selfie.jpg) center;
-    background-size: cover;
-}
-
-/* contact ======================*/
-
-.bg--contact-banner {
-    background: url(/assets/img/decentral-contact-banner.jpeg) center top;
-    background-size: cover;
-}
-
-.bg--contact-support {
-    background: url(/assets/img/jaxx-support-banner-redux.jpg) center;
-    background-size: cover;
-}
-
-.bg--support-heart-hands {
-    background: url(/assets/img/jaxx-support-welcome-redux.jpg) center;
-    background-size: cover;
-}
+*/
 
 /* 404 page */
 

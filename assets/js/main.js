@@ -125,7 +125,6 @@ document.addEventListener('swup:contentReplaced', function () {
     $(".stagger-up").each(function() {
 
       var stagger = TweenMax.staggerFrom($(this).find(".slide-up"), 1, {
-    //      scale:0.5,
           opacity:0,    
           delay:0,
           y: 50,

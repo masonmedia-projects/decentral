@@ -143,8 +143,8 @@ include 'includes/header.php';
         </section>
         
         <section>
-            <div class="row d-flex bg-light down down-med">
-                <div class="col-lg-12 min-700-lg">
+            <div class="row d-flex bg-light relative">
+                <div class="col-lg-12 min-700-lg down down-med">
                     <img class="img-full absolute z-0 left-0 top-0 lazy" data-src="/assets/img/decentral-anthony-1.jpg" alt="Anthony Di Iorio">
                 </div>
             </div>
@@ -293,8 +293,8 @@ include 'includes/header.php';
         </section>
         
         <section>
-            <div class="row d-flex bg-light relative down down-med">
-                <div class="col-lg-12 min-700-lg">
+            <div class="row d-flex bg-light relative">
+                <div class="col-lg-12 min-700-lg down down-med">
                     <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-vintage-collage.jpg" alt="Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives.">
                 </div>
             </div>
