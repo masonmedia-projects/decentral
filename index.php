@@ -10,18 +10,18 @@ include 'includes/header.php';
 
 <div id="banner" role="banner" class="container-fluid p-0">
   <div class="row d-flex min-700-lg bg-black text-light relative py-5 stagger-right">
-        <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
-            <img class="decentral-logo my-3 lazy right" data-src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
-            <h2 class="site-title knockout-gradient text-light font-weight-bold right right-med">Interface. Infrastructure. Integrations. Innovation.</h2>
-            <h2 class="h4 right">Building the tools to usher in a new world of decentralization.</h2>
+            <img class="decentral-logo my-3 zoom" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
+            <h2 class="site-title knockout-gradient text-light font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h2 class="h4 zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h2>
             <!--button container-->
             <div class="container-fluid pt-3">
-                <div class="row d-flex right right-slow">
-                    <div class="col-xs-6 pr-3">
+                <div class="row d-flex">
+                    <div class="col-xs-6 pr-3 zoom zoom-slow">
                        <a href="#sec-1"><p class="p-btn knockout-gradient mb-1 border-0 p-0">Learn more <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a>
                     </div>
-                    <div class="col-xs-6 right right-slow">
+                    <div class="col-xs-6 zoom zoom-slow">
                         <a href="https://jaxx.io/downloads" target="_blank"><p class="p-btn knockout-gradient mb-1 border-0 p-0">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn knockout-gradient"></i></p></a> 
                     </div>
                 </div>

@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
     <script>            
@@ -80,7 +80,6 @@
                 <img class="decentral-navbar-brand" src="/assets/img/decentral_D_logo_white.png" alt="Decentral Inc.">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <!--<img style="opacity: 1" class="decentral-mobile-menu" src="/assets/img/jaxx-menu-orange.png" alt="Jaxx Liberty Menu">-->
                 <div class="wrapper-menu">
                   <div class="line-menu half start"></div>
                   <div class="line-menu"></div>

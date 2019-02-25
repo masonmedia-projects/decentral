@@ -10,12 +10,12 @@ include 'includes/header.php';
 
 <div id="banner" role="banner" class="container-fluid bg-black relative p-0">
     <div class="row d-flex min-700-lg text-light">
-        <img class="img-full min-700-lg absolute z-0 left-0 filter-dark up up-slow lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
+        <img class="img-full min-700-lg absolute z-0 left-0 filter-dark up up-med lazy" data-src="/assets/img/decentral-contact-banner.jpeg" alt="Contact Decentral.">
         <div class="offset-lg-2"></div>
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center ts p-5">
-            <h1 class="h4 mt-5 right">Contact Decentral</h1>
-            <h2 class="site-title font-weight-bold right right-med">Connect with us.</h2>
-             <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 right right-slow"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a>
+            <h1 class="h4 mt-5 zoom">Contact Decentral</h1>
+            <h2 class="site-title font-weight-bold zoom zoom-med">Connect with us.</h2>
+             <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 zoom zoom-slow"><i class="fa fa-angle-down text-light pt-0 pl-0"></i></button></a>
         </div>
         <div class="offset-lg-2"></div>
     </div>

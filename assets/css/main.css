@@ -478,43 +478,51 @@ p {
 
 /*SWUP transition animations*/
 
-/*fade*/
-
-/*
-.transition-fade {
-    -webkit-transition: .5s;
-    transition: .5s;
-    transition-delay: .5s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-timing-function: linear;
-    opacity: 1;
-}
-
-.is-animating .transition-fade {
-    opacity: 0;
-}
-*/
+/*main page transition fade*/
 
 .transition-fade {
     opacity: 1;
     -webkit-transition: .5s;
     transition: .5s;
-    transition: .5s;
-    -webkit-transition-delay: .5s;
-    transition-delay: .5s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 .is-animating .transition-fade {
     opacity: 0;
 }
 
+/*zoom [fade-in-right]*/
+
+.zoom {
+    opacity: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+    transform: translateX(0);
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.is-animating .zoom {
+    opacity: 0;
+    transform: translateX(-150px);
+}
+.zoom-med {
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+.zoom-med-slow {
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+.zoom-slow {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
 /*fade-down*/
 
 .down {
-    -webkit-transition: 1s;
-    transition: 1s;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
@@ -529,8 +537,6 @@ p {
 /*fade right*/
 
 .right {
-    -webkit-transition: 1s;
-    transition: 1s;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
@@ -540,16 +546,9 @@ p {
     transform: translateX(-150px);
 }
 
-.right-slow {
-    -webkit-transition: 2s;
-    transition: 2s;
-}
-
 /*fade left*/
 
 .left {
-    -webkit-transition: 1s;
-    transition: 1s;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
@@ -559,75 +558,46 @@ p {
     transform: translateX(150px);
 }
 
-/*left variations*/
-
-.left-med {
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-}
-
-.left-slow {
-    -webkit-transition: 2s;
-    transition: 2s;
-}
-
-/*fade-up*/
+/*fade-up [changed to simple fade]*/
 
 .up {
-    -webkit-transition: 1s;
-    transition: 1s;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    opacity: 1;
 }
 
 .is-animating .up {
-    -webkit-transform: translateY(150px);
-    transform: translateY(150px);
+    opacity: 0;
 }
 
-/*up variations*/
-
-.up-med {
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-}
-
-.up-slow {
-    -webkit-transition: 2s;
-    transition: 2s;
-}
-
-/*med variations*/
+/* transitions */
 
 .down,
 .up,
 .left,
 .right {
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
+    transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
 }
-
 .right-med,
 .left-med,
 .up-med,
 .down-med {
     -webkit-transition: 1.5s;
     transition: 1.5s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
+    transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
 }
-
-/*slow variations*/
-
 .right-slow,
 .left-slow,
 .up-slow,
 .down-slow {
     -webkit-transition: 2s;
     transition: 2s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     -webkit-transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
+    transition-timing-function: cubic-bezier(.75,-0.39,.25,1.4);
 }
+
 
 /* overlay animation: add div with transition-wipe for animation and the overlay to be revealed and moved
 <div class="transition-wipe overlay"></div> */
