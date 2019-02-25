@@ -75,7 +75,7 @@ include 'includes/header.php';
             <div class="row d-flex min-500 bg-white py-5 stagger-down">
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5 down">
                     <h1 class="h4 slide-down">Security</h1>
-                    <h2 class="section-title font-weight-bold slide-down">Enjoy industry leading security features including a 12-word backup phrase,  password protection, password strength checker, facial recognition, and state-of-the-art encryption.</h2>
+                    <h2 class="section-title font-weight-bold slide-down">Enjoy industry leading security features including a 12-word backup phrase, password protection, password strength checker, facial recognition, and state-of-the-art encryption.</h2>
                     <div class="down down-med">
                         <a href="https://jaxx.io/security" target="_blank"><p class="p-btn mt-2 slide-down">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
