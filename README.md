@@ -6,7 +6,7 @@ For more information see [decentral.ca](https://decentral.ca) and [jaxx.io](http
 
 ## **SWUP**
 
-This version of decentral.ca uses [SWUP](https://github.com/gmrchk/swup) as a framework for AJAX page transitions and the addition of entrance/exit animation classes. This gives the site an app-like user experience: pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple (or complex) css and js animations.
+This version of decentral.ca uses the [SWUP](https://github.com/gmrchk/swup) library for AJAX page transitions and the addition of entrance/exit animation classes. This gives the site an app-like user experience: pages do not reload, view changes are fast, the initial page load is light, and it is easily extensible with simple (or complex) css and js animations.
 
 SWUP works by wrapping main page content (any content you want changed without refresh) in a swup id `id="swup"`. This alone works to swap out content without reload. The addition of a `.transition-` class then offers great flexibility in creating custom animation options (refer the SWUP API). The base class for fading in and out is `.transition-fade`.
 
@@ -67,11 +67,13 @@ PHP is used minimally for header and footer includes.
 
 2. GSAP: Greensock animation platform is a powerful js library for creating timeline and other complex animations. Initially AOS and then Scroll Reveal were used, but GSAP offers more versatility and is open source.
 
-3. Animation approach and syntax: the site uses GSAP for scroll animations, and SWUP css classes for page entrances and exits. Individual text elements are given GSAP scroll classes (i.e. `.slide-right`), while structural elements are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exiting during view change.
+3. Animation approach and syntax: the site uses GSAP for scroll animations, and SWUP css classes for page entrances and exits. Sections receive a GSAP trigger class (`.stagger-right`), which then triggers individual text element animations (i.e. `.slide-right`) on entry into the viewport. Structural elements (and page banner text elements) are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exit animations during page/view changes.
 
 4. Recliner.js: Recliner is a lazy load library for better performance with images. A css `.lazy` class is added to img tags which loads the image only when it comes into the viewport, and also adds an entrance fade animation for smooth UX.
 
- ## **Google Analytics**
+4. Tilt.js: Tilt is a small js library that produces a perspective-like tilting effect on mouseover. It is used on the site 404 and 403 pages. See more [here](https://gijsroge.github.io/tilt.js/).
+
+## **Google Analytics**
     
 1. GA gtag script is added in footer for general analytics, traffic, page views, bounce rate, etc.
 
