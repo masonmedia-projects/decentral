@@ -4,7 +4,7 @@
                 <div class="row d-flex d-flex justify-content-center align-items-end text-secondary bg-light text-secondary px-3 pt-5">
                    <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
-                            <li class="h4 font-weight-bold ">Company</li>
+                            <li class="h4 font-weight-bold">Company</li>
                             <hr class="hr-big border-0 bg-secondary ">
                             <li><a href="/about.php">About</a></li>
                             <li><a href="/partner-network.php">Partner Network</a></li>
@@ -16,11 +16,11 @@
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
                         <ul class="list-unstyled w-100 slide-down">
                             <li class="h4 font-weight-bold">Jaxx Liberty</li>
-                            <hr class="hr-big border-0 bg-secondary ">
-                            <li><a href="https://jaxx.io/features">Features</a></li>
-                            <li><a href="https://jaxx.io/community">Community</a></li>
+                            <hr class="hr-big border-0 bg-secondary">
+                            <li><a href="https://jaxx.io/features" target="_blank">Features</a></li>
+                            <li><a href="https://jaxx.io/community" target="_blank">Community</a></li>
                             <li><a href="https://support.decentral.ca/hc/en-us" target="_blank">Jaxx Support</a></li>
-                            <li><a href="https://blog.jaxx.io">Blog</a></li>
+                            <li><a href="https://blog.jaxx.io" target="_blank">Blog</a></li>
                         </ul>
                     </div>
                     
@@ -31,7 +31,7 @@
                             <li><a href="https://play.google.com/store/apps/details?id=com.liberty.jaxx">Android</a></li>
                             <li><a href="https://itunes.apple.com/us/app/jaxx-liberty/id1435383184?ls=1&mt=8">iOS</a></li>
                             <li><a href="https://chrome.google.com/webstore/detail/jaxx-liberty/cjelfplplebdjjenllpjcblmjkfcffne">Chrome</a></li>
-                            <li><a href="https://jaxx.io/downloads">Desktop</a></li>
+                            <li><a href="https://jaxx.io/downloads" target="_blank">Desktop</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 px-4 py-3 skew down">
@@ -54,19 +54,18 @@
         </div><!--end main page-->
 
     <!-- Scripts -->
-    <!--seems to only work with either older jquery or non-slim build-->
-    <!--<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>-->
     <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/swup.min.js"></script>
     <script src="/assets/js/popper.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    <!--aos js-->
-<!--    <script src="/assets/js/aos.js"></script>-->
+    <!--smooth scroll-->
     <script src="/assets/js/jquery.malihu.PageScroll2id.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <!--gsap-->
+    <script src="/assets/js/TweenMax.min.js"></script>
+    <!--scroll magic-->
+    <script src="/assets/js/ScrollMagic.min.js"></script>
+    <script src="/assets/js/animation.gsap.min.js"></script>
     <!-- recliner lazy load js-->
     <script src="/assets/js/recliner.js"></script>
     <!--js tilt 404-->

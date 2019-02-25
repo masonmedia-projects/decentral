@@ -1,5 +1,5 @@
-//load fade in
-TweenMax.to($("body"), 1.3, {autoAlpha:1, ease: Circ.easeInOut});
+//onload fade in
+TweenMax.to($("body"), 1.3, {autoAlpha:1, ease: Power3.easeInOut});
 
 $(document).ready(function() {
     //swup 
@@ -8,7 +8,6 @@ $(document).ready(function() {
         animateScroll: false,
         scrollFriction: .3,
         scrollAcceleration: .04
-    //    scrollAcceleration: 0
     });
        
     //bs carousel
@@ -141,7 +140,7 @@ document.addEventListener('swup:contentReplaced', function () {
             })
             .setTween(stagger)
             .addTo(controller);
-    }); 
+    });     
     
     $(".stagger-right").each(function() {
 
