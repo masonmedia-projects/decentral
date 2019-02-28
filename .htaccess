@@ -12,22 +12,22 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # Rewrite redirects
 # Redirects from https://decentral.ca/jaxx.html to decentral.ca/jaxxliberty.php
-RewriteRule ^jaxx$ https://decentral.ca/jaxxliberty.php [R,L]
+RewriteRule ^jaxx$ https://decentral.ca/jaxxliberty [R,L]
 
 # Redirects from https://decentral.ca/history.html to decentral.ca/about.php
-RewriteRule ^history$ https://decentral.ca/about.php [R,L]
+RewriteRule ^history$ https://decentral.ca/about [R,L]
 
 # Redirects from https://decentral.ca/team.html to decentral.ca/about.php
-RewriteRule ^team$ https://decentral.ca/about.php [R,L]
+RewriteRule ^team$ https://decentral.ca/about [R,L]
 
 # Redirects from https://decentral.ca/partnerships.html to decentral.ca/partner-network.php
-RewriteRule ^partnerships$ https://decentral.ca/partner-network.php [R,L]
+RewriteRule ^partnerships$ https://decentral.ca/partner-network [R,L]
 
 # 301 redirects
-Redirect 301 /jaxx.html https://www.decentral.ca/jaxxliberty.php
-Redirect 301 /history.html https://www.decentral.ca/about.php
-Redirect 301 /team.html https://www.decentral.ca/about.php
-Redirect 301 /partnerships.html https://www.decentral.ca/partner-network.php
+Redirect 301 /jaxx.html https://www.decentral.ca/jaxxliberty
+Redirect 301 /history.html https://www.decentral.ca/about
+Redirect 301 /team.html https://www.decentral.ca/about
+Redirect 301 /partnerships.html https://www.decentral.ca/partner-network
 
 # Set custom 404 + 403 error pages
 ErrorDocument 404 /404.php

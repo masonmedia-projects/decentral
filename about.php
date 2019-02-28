@@ -33,7 +33,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark mb-0 slide-down">Working together to unite blockchain projects around the globe.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down down-med">
-                    <p class="p-big pt-3 m-0 slide-down">Decentral is an innovation hub for disruptive and decentralized technologies. We are home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
+                    <p class="p-big pt-3 m-0 slide-down">Decentral is an innovation hub for disruptive and decentralized technologies. Decentral was home to Canada’s first two-way Bitcoin ATM and from time to time hosts community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies. Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all.</p>
                     <!-- Button trigger modal -->
                     <button class="bg-trans border-0 p-0 down down-slow" data-toggle="modal" data-target="#values"><p class="p-btn mt-3 slide-down">Explore our values <i class="fa fa-angle-right fa-btn orange"></i></p></button>
                 </div>
@@ -159,7 +159,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark mb-0 slide-down">Decentral opened its doors in 2014 and has become Canada’s leading blockchain company.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down down-med">
-                    <p class="p-big pt-3 m-0 slide-down">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives.</p>
+                    <p class="p-big pt-3 m-0 slide-down">In late 2013 Anthony Di Iorio funded & co-founded Ethereum, the decentralized smart contract platform that at its peak hit $150 billion in market cap. In 2014 he founded what is now <span class="font-weight-bold">Decentral Inc.</span>, an innovation hub & software development company focused on decentralized technologies. Decentral is the maker of Jaxx Classic & Jaxx Liberty, digital asset platforms that empower millions of people with the tools they need to control their digital lives.</p>
                     <!-- Button trigger modal -->
                     <button class="bg-white border-0 p-0 down down-slow" data-toggle="modal" data-target="#history"><p class="p-btn mt-3 slide-down">Explore <i class="fa fa-angle-right fa-btn orange"></i></p></button>
                 </div>
@@ -191,7 +191,7 @@ include 'includes/header.php';
                     <div class="timeline-item">
                         <h2 class="h5 orange pb-2">2</h2>
                         <h3 class="h1">Early 2013</h3>
-                        <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="http://blockchainassociation.ca" target="_blank"><span class="orange">“Blockchain Association”</span>)</a></p>
+                        <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="https://digitalchamber.org/canada/" target="_blank"><span class="orange">“Digital Chamber of Commerce Canada”</span>)</a></p>
                         <p>Kryptokit is conceived and development begins. Kryptokit becomes the first Bitcoin wallet browser extension on release.</p>
                         <hr class="mb-0 mt-4">
                     </div>
@@ -580,7 +580,7 @@ include 'includes/header.php';
                     <p class="p-big pt-3 m-0 slide-down">Decentral is leading the blockchain movement in Canada and around the world. We're changing the way people think about the exchange of value.</p>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down down-med">
-                    <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the largest blockchain startup in Canada, submit your resume below.</p>
+                    <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the startup at the heart of blockchain in Canada, submit your resume below.</p>
                     <div class="down down-slow">
                         <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3 slide-down">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>

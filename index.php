@@ -55,11 +55,11 @@ include 'includes/header.php';
         <section>
             <div id="sec-1" class="row d-flex p-5 min-500 bg-white relative stagger-down">
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left down">
-                    <h2 class="h4 slide-down">About Decentral</h2>
+                    <h2 class="h4 slide-down">About Decentral Inc.</h2>
                     <h3 class="section-title text-dark slide-down">Canada's leading blockchain company.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down down-med">
-                    <p class="p-big pt-3 m-0 slide-down">Decentral was founded in 2013 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
+                    <p class="p-big pt-3 m-0 slide-down">Decentral was founded in 2014 by Anthony Di Iorio with the goal of becoming an innovation hub for disruptive and decentralized technologies. In just six years, the organization has created a community of hundreds of partner projects, most notably spawning Ethereum and Jaxx Liberty. We build the tools to enable people to be in control of their digital lives.</p>
                     <div class="down down-slow">
                         <a href="/about.php"><p class="p-btn mt-3 slide-down">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>
@@ -84,7 +84,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark slide-right">The leading multi-platform digital asset wallet.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
-                    <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
+                    <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry-leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
                     <div class="right right-slow">
                         <a href="/jaxxliberty.php"><p class="p-btn mt-3 slide-right">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>
@@ -109,7 +109,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark slide-down">Connecting, informing, sharing.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down down-med">
-                    <p class="p-big pt-3 m-0 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant Internet of the future.</p>
+                    <p class="p-big pt-3 m-0 slide-down">The Decentral team is a critical node in the growing network of people and groups using decentralized technologies. This interconnected web is creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless, censorship-resistant networks of the future.</p>
                     <div class="down down-slow">
                         <a href="/partner-network.php"><p class="p-btn mt-3 slide-down">Connect with us <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
@@ -159,7 +159,7 @@ include 'includes/header.php';
                     <h3 class="section-title mb-0 slide-down">You're in good company.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down-med">
-                     <p class="p-big pt-0 m-0 slide-down">Decentral has diverse relationships with a variety of companies in a wide range of sectors, in addition to thousands of users of our products. See what industry leaders are saying.</p>
+                     <p class="p-big pt-0 m-0 slide-down">Decentral has diverse relationships with a variety of groups and projects in a wide range of sectors, in addition to thousands of users of our products. See what community leaders are saying.</p>
                 </div>
             </div>
         </section>
@@ -216,7 +216,7 @@ include 'includes/header.php';
                   <div class="container-fluid">
                     <div class="row d-flex min-700-lg p-0 bg--slide-3">    
                         <div class="col-lg-9 banner-left p-5 o-12">
-                            <h3 class="section-title text-light font-weight-light">"We’re very happy to partner with Jaxx, a highly-secure and easy-to-use wallet that is the first to support RSK"</h3>
+                            <h3 class="section-title text-light font-weight-light">"We’re very happy to partner with Jaxx, a highly secure and easy-to-use wallet that is the first to support RSK"</h3>
                             <h3 class="font-weight-bold orange mt-3">Diego Gutierrez Zaldivar</h3>
                             <p class="p-big orange mb-3">&mdash; CEO & Co-Founder, RSK Labs</p>
                         </div>
