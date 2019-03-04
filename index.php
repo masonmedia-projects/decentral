@@ -133,9 +133,9 @@ include 'includes/header.php';
                     <h2 class="h4 slide-right">Decentral team</h2>
                     <h3 class="section-title text-dark mb-0 slide-right">On a mission to create opportunity and empower individuals around the world.</h3>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right-med">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
                     <p class="p-big pt-3 m-0 slide-right">Our <span class="font-weight-bold text-dark">purpose</span> is to champion the decentralized movement by building the technology that empowers and creates wins for all. </p>
-                    <div class="right-right-slow">
+                    <div class="right right-slow">
                         <a href="/about" class="animate-link"><p class="p-btn mt-3 slide-right">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>
                 </div>
@@ -158,7 +158,7 @@ include 'includes/header.php';
                     <h2 class="h4 slide-down">Trusted by the best</h2>
                     <h3 class="section-title mb-0 slide-down">You're in good company.</h3>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down-med">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down down-med">
                      <p class="p-big pt-0 m-0 slide-down">Decentral has diverse relationships with a variety of groups and projects in a wide range of sectors, in addition to thousands of users of our products. See what community leaders are saying.</p>
                 </div>
             </div>
@@ -248,10 +248,10 @@ include 'includes/header.php';
                     <h2 class="h4 slide-up">Stay connected</h2>
                     <h3 class="section-title m-0 slide-up">Become a part of the Decentral ecosystem.</h3>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 up-med">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 up up-med">
                     <p class="p-big pt-3 m-0 slide-up">We consider ourselves part of extensive ecosystem, a large and growing network of people, friends, users, and <a href="/partner-network.php"><span class="orange">partners</span></a> around the world. Join the Jaxx Liberty community today.</p>
                     <div class="up up-slow">
-                        <a href="/contact" class="animate-link"><p class="p-btn mt-3 slide-up">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+                        <a href="/contact.php"><p class="p-btn mt-3 slide-up">Join the adventure <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>
                 </div>
             </div><!--end row-->
