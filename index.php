@@ -84,7 +84,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark slide-right">The leading multi-platform digital asset wallet.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
-                    <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is an industry-leading investment tool that is transforming the way people invest, learn about blockchain, and manage digital assets.</p>
+                    <p class="p-big pt-3 m-0 slide-right">Decentral's flagship product <a class="font-weight-bold orange" href="https://jaxx.io" target="_blank">Jaxx Liberty</a> is a multi-currency, multi-platform digital asset wallet that allows you to securely manage and exchange more than 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash, all for free.</p>
                     <div class="right right-slow">
                         <a href="/jaxxliberty.php"><p class="p-btn mt-3 slide-right">Find out more <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>

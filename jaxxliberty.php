@@ -30,7 +30,7 @@ include 'includes/header.php';
         <section>
             <div class="row d-flex min-500 bg-white py-5 relative stagger-down">
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5 down">
-                    <h1 class="h4 slide-down">Transforming the way you invest</h1>
+                    <h1 class="h4 slide-down">Jaxx Liberty</h1>
                     <h2 class="section-title font-weight-bold slide-down">Securely manage and exchange more than 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash, all for free.</h2>
                     <div class="down down-med">
                         <a href="https://jaxx.io" target="_blank"><p class="p-btn mt-2 slide-down">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
