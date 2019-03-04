@@ -191,7 +191,7 @@ include 'includes/header.php';
                     <div class="timeline-item">
                         <h2 class="h5 orange pb-2">2</h2>
                         <h3 class="h1">Early 2013</h3>
-                        <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="https://digitalchamber.org/canada/" target="_blank"><span class="orange">“Digital Chamber of Commerce Canada”</span>)</a></p>
+                        <p>Anthony Di Iorio founds and is elected first Executive Director of the Bitcoin Alliance of Canada (now <a href="https://digitalchamber.org/canada/" target="_blank"><span class="orange">“Chamber of Digital Commerce Canada”</span>)</a></p>
                         <p>Kryptokit is conceived and development begins. Kryptokit becomes the first Bitcoin wallet browser extension on release.</p>
                         <hr class="mb-0 mt-4">
                     </div>
@@ -309,7 +309,7 @@ include 'includes/header.php';
                     <h3 class="section-title text-dark mb-0 slide-right">Leading the blockchain market into 2019.</h3>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
-                    <p class="p-big pt-3 m-0 slide-right">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. Decentral is home to Canada’s first two-way Bitcoin ATM and host to community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.</p>
+                    <p class="p-big pt-3 m-0 slide-right">Located in downtown Toronto, Decentral is an innovation hub for disruptive and decentralized technologies. We are building relationships with a range of companies in a wide variety of sectors that collectively are creating economic opportunity, and empowering individuals worldwide with financial liberty.</p>
                     <div class="right right-slow">
                         <!-- Button trigger modal -->
                         <button class="bg-white border-0 p-0" data-toggle="modal" data-target="#team"><p class="p-btn mt-3 slide-right">Meet the team <i class="fa fa-angle-right fa-btn orange"></i></p></button>
@@ -582,7 +582,7 @@ include 'includes/header.php';
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left o-12 down down-med">
                     <p class="p-big pt-3 m-0 slide-down">We're looking to meet talented and motivated people to join us in our Toronto offices. Our business is growing rapidly and we're actively seeking a variety of candidates for various roles. If you would like to work for the startup at the heart of blockchain in Canada, submit your resume below.</p>
                     <div class="down down-slow">
-                        <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3 slide-down">Discover <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
+                        <a href="mailto:careers@decentral.ca"><p class="p-btn mt-3 slide-down">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a>  
                     </div>
                 </div>
             </div><!--end row-->

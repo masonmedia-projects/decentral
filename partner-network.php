@@ -37,7 +37,7 @@ include 'includes/header.php';
                     <p class="p-big pt-3 slide-down">Partner with Decentral to capitalize on the knowledge, experience, and network of Canada's leading blockchain company.</p>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 down down-med">
-                    <p class="p-big pt-3 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant Internet of the future.</p>
+                    <p class="p-big pt-3 slide-down">The Decentral team is a critical node in the growing network of companies using decentralized technologies. Collectively we are creating economic opportunity, empowering individuals worldwide with financial liberty, and building the trustless censorship-resistant networks of the future.</p>
                 </div>
             </div><!--end row-->
         </section>
@@ -60,7 +60,7 @@ include 'includes/header.php';
                     <p class="p-big pt-3 slide-right">Mutually beneficial partnerships are the best way forward on this mission.</p>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left text-secondary o-12 right right-med">
-                    <p class="p-big pt-3 m-0 slide-right">To that end Decentral is building relationships with a range of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers</p>
+                    <p class="p-big pt-3 m-0 slide-right">To that end Decentral is building relationships with a range of companies in a wide variety of sectors. Our Jaxx Liberty platform is central to our efforts here, and our deep experience and expertise in the blockchain space is also a tool our team offers.</p>
                     <div class="right right-slow">
                         <a href="mailto:bd@decentral.ca"><p class="p-btn mt-3 slide-right">Get in touch <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
