@@ -46,6 +46,46 @@
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/main.min.css">
+    <!--schema structural data-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Decentral Inc.",
+          "@id":"https://decentral.ca",
+          "applicationCategory": "https://schema.org/DigitalWalletApplication",
+          "url": "https://www.decentral.ca",
+          "sameAs": [
+            "https://www.facebook.com/decentralca/",
+            "https://www.facebook.com/JaxxWallet",
+            "https://twitter.com/jaxx_io",
+            "https://twitter.com/Jaxx_Support",
+            "https://www.instagram.com/jaxx_io/",
+            "https://www.reddit.com/r/jaxx/"
+          ],
+          "logo": "https://www.jaxx.io/assets/img/JaxxLiberty_Logo_RGB_Screen.png",
+          "image": [
+            "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
+            "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
+            "https://decentral.ca/assets/img/jaxx-apple-multi-device-min.jpg",
+            "https://decentral.ca/assets/img/decentral-anthony-1.jpg",
+            "https://decentral.ca/assets/img/jaxx-pc-coffee.png",
+            "https://decentral.ca/assets/img/decentral-toronto-flatiron.jpeg"
+           ],
+          "address":{
+            "@type": "PostalAddress",
+            "streetAddress": "292 Adelaide St W Suite 401 4th floor",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "postalCode": "M5V 1P6",
+            "addressCountry": "CA"
+          },
+          "telephone": "+1 888-650-3796",
+          "founder": "Anthony Di Iorio",
+          "brand": "Jaxx Liberty",
+          "email": "info@decentral.ca"
+          }
+    </script>
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
     <script>            

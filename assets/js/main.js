@@ -110,7 +110,7 @@ $(document).ready(function() {
             printable: true,    // be printer friendly and show all elements on document print
             live: true          // auto bind lazy loading to ajax loaded elements
         });
-       
+    
 });//end doc ready
 
 
@@ -218,8 +218,7 @@ document.addEventListener('swup:contentReplaced', function () {
         var top = $('body').find($(this).attr('href')).offset().top;
         $('html, body').animate({
             scrollTop: top
-        }, 1000, 'easeInOutExpo');
-
+        }, 1200, 'easeInOutExpo');
         return false;
       });
 
