@@ -53,21 +53,20 @@
           "@type": "Organization",
           "name": "Decentral Inc.",
           "@id":"https://decentral.ca",
-          "applicationCategory": "https://schema.org/DigitalWalletApplication",
+          "knowsAbout": "Blockchain",
           "url": "https://www.decentral.ca",
           "sameAs": [
             "https://www.facebook.com/decentralca/",
-            "https://www.facebook.com/JaxxWallet",
-            "https://twitter.com/jaxx_io",
-            "https://twitter.com/Jaxx_Support",
-            "https://www.instagram.com/jaxx_io/",
-            "https://www.reddit.com/r/jaxx/"
+            "https://twitter.com/decentralca",
+            "https://www.youtube.com/channel/UCbRTp8VBYPvNF039IXO2dsg?view_as=subscriber",
+            "https://www.instagram.com/decentralproject/",
+            "https://www.linkedin.com/company/decentral/"
           ],
-          "logo": "https://www.jaxx.io/assets/img/JaxxLiberty_Logo_RGB_Screen.png",
+          "logo": "https://www.decentral.ca/assets/img/decentral_D_logo.png",
           "image": [
-            "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
-            "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
             "https://decentral.ca/assets/img/jaxx-apple-multi-device-min.jpg",
+            "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
+            "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
             "https://decentral.ca/assets/img/decentral-anthony-1.jpg",
             "https://decentral.ca/assets/img/jaxx-pc-coffee.png",
             "https://decentral.ca/assets/img/decentral-toronto-flatiron.jpeg"
@@ -83,6 +82,7 @@
           "telephone": "+1 888-650-3796",
           "founder": "Anthony Di Iorio",
           "brand": "Jaxx Liberty",
+          "owns": "Jaxx Liberty",
           "email": "info@decentral.ca"
           }
     </script>
