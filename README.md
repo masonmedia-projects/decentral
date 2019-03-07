@@ -79,6 +79,12 @@ PHP is used minimally for header and footer includes.
 
 2. Onclick events will be been added to all <a>, <button>, and nav links (like jaxx.io) to track user flow through the site.  Tags will be added once a more permanent URL/domain structure is adopted by Decentral (subdomains vs. subdirectories). Tags will be organized by category (destination and/or item i.e. Downloads page or Android), and given a label (location on page i.e. menu, section, footer) for analysis: <onclick="googleAnalyticsTrigger('Downloads_Page', 'Footer')">
 
+## **Schema/Google structured data/SEO**
+    
+1. Schema structured data exists in the header.php file in a script tag as JSON-LD. This data gives Google/search engines more content about the site, company, product, founder, etc. when displaying search results. This allows us to present "rich-snippets" including photos, video, blog post carousels, and information about Anthony as opposed to simple page and meta description content. 
+
+Refer to [schema.org](https://schema.org/docs/gs.html), [Google structured data]( https://codelabs.developers.google.com/codelabs/structured-data/index.html#0), and test structured data [here](https://search.google.com/structured-data/testing-tool/u/0/).
+
 ## **.htaccess**
 
 1. Multiple .htaccess redirects/301s are employed to point now-defunct pages to current versions (i.e. /history.html --> /about), as well as to redirect previous .html extensions to .php, and then to remove .php extensions entirely for pretty urls.
