@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/main.min.css">
-    <!--schema structural data-->
+    <!--schema structured data-->
     <script type="application/ld+json">
          {
           "@context": "https://schema.org",
