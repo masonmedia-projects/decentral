@@ -1,4 +1,4 @@
-# **Decentral Inc. SWUP Version**
+# **Decentral Inc.**
 
 The official website of Decentral Inc., Canada's leading blockchain company. Decentral is the maker of Jaxx Liberty, the leading multi-platform cryptocurrent wallet, and was founded by Anthony Di Iorio, co-founder of Ethereum.
 
@@ -22,7 +22,7 @@ PHP is used minimally for header and footer includes.
 
 1. Functional [Atomic] css: the site employs the atomic css approach where small, single purpose classes are used based on visual function. Classes are referenced once in the CSS then used repeatedly in the HTML for DRY code and the lightest possible stylesheets.
 
-*Note: while great for fast scaffolding and modular, resuable architecture, the HTML can get heavy with classes, specifically when it comes to spacing (padding and margin styles). Effort has been made to keep styles functional as much as possible, with added stylesheet classes only when necessary. See #4 for class order convention.
+*Note: while excellent for fast scaffolding and modular, resuable architecture, the HTML can get heavy with classes, specifically when it comes to spacing (padding and margin styles). Effort has been made to keep styles functional as much as possible, with added stylesheet classes only when necessary. See #3 for class order conventions.
 
 2. One stylesheet is used with an effort at organizing structure vertically based on relationship to HTML and page/section order. It starts with resets and global elements, proceeding to more specific styles.
 
@@ -67,9 +67,9 @@ PHP is used minimally for header and footer includes.
 
 2. GSAP: Greensock animation platform is a powerful js library for creating timeline and other complex animations. Initially AOS and then Scroll Reveal were used, but GSAP offers more versatility and is open source.
 
-3. Animation approach and syntax: the site uses GSAP for scroll animations, and SWUP css classes for page entrances and exits. Sections receive a GSAP trigger class (`.stagger-right`), which then triggers individual text element animations (i.e. `.slide-right`) on entry into the viewport. Structural elements (and page banner text elements) are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exit animations during page/view changes.
+3. Animation approach and syntax: the site uses GSAP & Scroll Magic for scroll animations, and SWUP css classes for page entrances and exits. Sections receive a GSAP trigger class (`.stagger-right`), which then triggers individual text element animations (i.e. `.slide-right`) on entry into the viewport. Structural elements (and page banner text elements) are assigned css SWUP classes (i.e. `.right`, `.right-med`, `.right-slow`) to handle exit animations during page/view changes.
 
-4. Recliner.js: Recliner is a lazy load library for better performance with images. A css `.lazy` class is added to img tags which loads the image only when it comes into the viewport, and also adds an entrance fade animation for smooth UX.
+4. Recliner.js: Recliner is a lazy load library for better performance with images. A css `.lazy` class is added to img tags which loads the image only when it comes into the viewport, and also adds an entrance fade animation for smooth UX. *Note: all `img` elements are set at `opacity: 0`, with full opacity being added once images are loaded for a fade-in effect. See: `img.lazy-loaded`.
 
 4. Tilt.js: Tilt is a small js library that produces a perspective-like tilting effect on mouseover. It is used on the site 404 and 403 pages. See more [here](https://gijsroge.github.io/tilt.js/).
 
