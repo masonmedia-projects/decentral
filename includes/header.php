@@ -83,19 +83,33 @@
                 "postalCode": "M5V 1P6",
                 "addressCountry": "CA"
               },
+              "foundingDate": "2014",
+              "foundingLocation": {
+                "@type": "Place",
+                "name": "Toronto, Canada",
+                "image": "https://decentral.ca/assets/img/decentral-map-grey.png"
+              },
               "telephone": "+1 888-650-3796",
-              "founder": "Anthony Di Iorio",
+              "founder": {
+                "@type": "Person",
+                "name": "Anthony Di Iorio",
+                "jobTitle": "Founder, CEO",
+                "knowsAbout": "Blockchain, Cryptocurrency, Decentralized technologies, Venture Capital",
+                "description": "Anthony Di Iorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies.",
+                "url": "https://anthonydiiorio.ca"
+              },
               "brand": {
                   "@type": "Product",
                   "name": "Jaxx Liberty",
-                  "description": "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome."
+                  "description": "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.",
+                  "url": "https://jaxx.io"
                   },
               "owns": { 
               "@type": "Product",
               "name": "Jaxx Liberty"
               },
               "email": "info@decentral.ca"
-              }
+            }
     </script>
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
