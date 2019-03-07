@@ -54,7 +54,7 @@
               "name": "Decentral Inc.",
               "description": "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.",
               "@id":"https://decentral.ca",
-              "knowsAbout": "Blockchain",
+              "knowsAbout": "Blockchain, Cryptocurrency, Decentralized technologies.",
               "url": "https://www.decentral.ca",
               "sameAs": [
                 "https://www.facebook.com/decentralca/",
