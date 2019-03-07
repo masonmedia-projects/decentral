@@ -68,7 +68,7 @@
               ],
               "logo": "https://www.decentral.ca/assets/img/decentral_D_logo.png",
               "image": [
-                "https://decentral.ca/assets/img/jaxx-apple-multi-device-min.jpg",
+                "https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg",
                 "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
                 "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
                 "https://decentral.ca/assets/img/decentral-anthony-1.jpg",
