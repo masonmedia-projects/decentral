@@ -48,10 +48,8 @@
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <!--schema structural data-->
     <script type="application/ld+json">
-        {
+         {
           "@context": "https://schema.org",
-          "@graph": [
-            { 
             "@type": "Organization",
               "name": "Decentral Inc.",
               "description": "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.",
@@ -63,7 +61,10 @@
                 "https://twitter.com/decentralca",
                 "https://www.youtube.com/channel/UCbRTp8VBYPvNF039IXO2dsg?view_as=subscriber",
                 "https://www.instagram.com/decentralproject/",
-                "https://www.linkedin.com/company/decentral/"
+                "https://www.linkedin.com/company/decentral/",
+                "https://support.decentral.ca/hc/en-us",
+                "https://jaxx.io",
+                "https://blog.jaxx.io"
               ],
               "logo": "https://www.decentral.ca/assets/img/decentral_D_logo.png",
               "image": [
@@ -94,30 +95,7 @@
               "name": "Jaxx Liberty"
               },
               "email": "info@decentral.ca"
-              },
-              {
-              "@context":"https://schema.org",
-              "@type":"ItemList",
-              "itemListElement":[
-                {
-                  "@type":"ListItem",
-                  "position":1,
-                  "url":"https://blog.jaxx.io/bch/"
-                },
-                {
-                  "@type":"ListItem",
-                  "position":2,
-                  "url":"https://blog.jaxx.io/all-in-on-jaxx-liberty/"
-                },
-                {
-                  "@type":"ListItem",
-                  "position":3,
-                  "url":"https://blog.jaxx.io/jaxx-classic-and-jaxx-liberty-were-not-affected-by-the-npm-vulnerability/"
-                }
-              ]
-            }
-            ]
-        }
+              }
     </script>
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
