@@ -46,7 +46,7 @@
                     </div>
                     
                     <div class="col-sm-12 d-flex justify-content-center text-center py-4 navy slide-down">
-                        <p class="font-weight-light m-0"><a href="https://decentral.ca/" target="_blank" onclick="googleAnalyticsTrigger('decentral.ca', 'Legal_Footer')">&copy; Decentral Inc.</a> <img class="footer-leaf mx-1" src="/assets/img/jaxx-maple-leaf-navy-2.png" alt="Decentral inc."> Made with love in Canada</p>
+                        <p class="font-weight-light m-0"><a href="https://decentral.ca/" target="_blank">&copy; Decentral Inc.</a> <img class="footer-leaf mx-1" src="/assets/img/jaxx-maple-leaf-navy-2.png" alt="Decentral inc."> Made with love in Canada</p>
                     </div>
                 </div><!--end row-->
             </div><!--end container-->

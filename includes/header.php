@@ -50,41 +50,74 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Decentral Inc.",
-          "@id":"https://decentral.ca",
-          "knowsAbout": "Blockchain",
-          "url": "https://www.decentral.ca",
-          "sameAs": [
-            "https://www.facebook.com/decentralca/",
-            "https://twitter.com/decentralca",
-            "https://www.youtube.com/channel/UCbRTp8VBYPvNF039IXO2dsg?view_as=subscriber",
-            "https://www.instagram.com/decentralproject/",
-            "https://www.linkedin.com/company/decentral/"
-          ],
-          "logo": "https://www.decentral.ca/assets/img/decentral_D_logo.png",
-          "image": [
-            "https://decentral.ca/assets/img/jaxx-apple-multi-device-min.jpg",
-            "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
-            "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
-            "https://decentral.ca/assets/img/decentral-anthony-1.jpg",
-            "https://decentral.ca/assets/img/jaxx-pc-coffee.png",
-            "https://decentral.ca/assets/img/decentral-toronto-flatiron.jpeg"
-           ],
-          "address":{
-            "@type": "PostalAddress",
-            "streetAddress": "292 Adelaide St W Suite 401 4th floor",
-            "addressLocality": "Toronto",
-            "addressRegion": "ON",
-            "postalCode": "M5V 1P6",
-            "addressCountry": "CA"
-          },
-          "telephone": "+1 888-650-3796",
-          "founder": "Anthony Di Iorio",
-          "brand": "Jaxx Liberty",
-          "owns": "Jaxx Liberty",
-          "email": "info@decentral.ca"
-          }
+          "@graph": [
+            { 
+            "@type": "Organization",
+              "name": "Decentral Inc.",
+              "description": "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.",
+              "@id":"https://decentral.ca",
+              "knowsAbout": "Blockchain",
+              "url": "https://www.decentral.ca",
+              "sameAs": [
+                "https://www.facebook.com/decentralca/",
+                "https://twitter.com/decentralca",
+                "https://www.youtube.com/channel/UCbRTp8VBYPvNF039IXO2dsg?view_as=subscriber",
+                "https://www.instagram.com/decentralproject/",
+                "https://www.linkedin.com/company/decentral/"
+              ],
+              "logo": "https://www.decentral.ca/assets/img/decentral_D_logo.png",
+              "image": [
+                "https://decentral.ca/assets/img/jaxx-apple-multi-device-min.jpg",
+                "https://decentral.ca/assets/img/jaxx-iphone-here-look.jpg",
+                "https://decentral.ca/assets/img/jaxx-desk-paraphernalia.jpg",
+                "https://decentral.ca/assets/img/decentral-anthony-1.jpg",
+                "https://decentral.ca/assets/img/jaxx-pc-coffee.png",
+                "https://decentral.ca/assets/img/decentral-toronto-flatiron.jpeg"
+               ],
+              "address":{
+                "@type": "PostalAddress",
+                "streetAddress": "292 Adelaide St W Suite 401 4th floor",
+                "addressLocality": "Toronto",
+                "addressRegion": "ON",
+                "postalCode": "M5V 1P6",
+                "addressCountry": "CA"
+              },
+              "telephone": "+1 888-650-3796",
+              "founder": "Anthony Di Iorio",
+              "brand": {
+                  "@type": "Product",
+                  "name": "Jaxx Liberty",
+                  "description": "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome."
+                  },
+              "owns": { 
+              "@type": "Product",
+              "name": "Jaxx Liberty"
+              },
+              "email": "info@decentral.ca"
+              },
+              {
+              "@context":"https://schema.org",
+              "@type":"ItemList",
+              "itemListElement":[
+                {
+                  "@type":"ListItem",
+                  "position":1,
+                  "url":"https://blog.jaxx.io/bch/"
+                },
+                {
+                  "@type":"ListItem",
+                  "position":2,
+                  "url":"https://blog.jaxx.io/all-in-on-jaxx-liberty/"
+                },
+                {
+                  "@type":"ListItem",
+                  "position":3,
+                  "url":"https://blog.jaxx.io/jaxx-classic-and-jaxx-liberty-were-not-affected-by-the-npm-vulnerability/"
+                }
+              ]
+            }
+            ]
+        }
     </script>
     <!--cookies banner-->
     <link rel="stylesheet" href="/assets/css/cookieconsent.min.css">
