@@ -17,7 +17,7 @@
        echo $metaD; 
     } 
     else { 
-       echo "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and from time to time host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies."; 
+       echo "Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies."; 
     } ?>" />
     <meta name="keywords" content="Decentral,Jaxx Liberty,Blockchain,Cryptocurrency,Anthony Di Iorio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.png">
     <!-- Place favicon.ico in the root directory -->
     <!-- Open Graph Meta Data -->
-    <meta property="og:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and from time to time host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
+    <meta property="og:description" content="Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies.">
     <meta property="og:image" content="https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg">
     <meta property="og:site_name" content="decentral.ca">
     <meta property="og:title" content="Decentral Inc. is Canada's leading blockchain company.">
@@ -38,20 +38,20 @@
     <meta name="twitter:site" content="https://decentral.ca">
     <meta name="twitter:creator" content="Decentral">
     <meta name="twitter:title" content="Decentral Inc. is Canada's leading blockchain company.">
-    <meta name="twitter:description" content="Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and from time to time host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.">
+    <meta name="twitter:description" content="Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies.">
     <meta name="twitter:image" content="https://decentral.ca/assets/img/jaxx-android-tablet-pc.jpg">
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <link rel="stylesheet" href="/assets/css/main.min.css?=10">
     <!--schema structured data-->
     <script type="application/ld+json">
          {
           "@context": "https://schema.org",
             "@type": "Organization",
               "name": "Decentral Inc.",
-              "description": "Decentral is a Toronto-based innovation hub and software development company focused on decentralized technologies. We were home to Canada’s first two-way Bitcoin ATM and from time to time host community-driven events in the domains of fintech, blockchain, cryptocurrencies and decentralized technologies.",
+              "description": "Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies.",
               "@id":"https://decentral.ca",
               "knowsAbout": "Blockchain, Cryptocurrency, Decentralized technologies.",
               "url": "https://www.decentral.ca",
@@ -100,7 +100,7 @@
               "brand": {
                   "@type": "Product",
                   "name": "Jaxx Liberty",
-                  "description": "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and Google Chrome.",
+                  "description": "Jaxx Liberty is a digital wallet that supports over 85 assets and is available on iOS, Android, Desktop, and for Google Chrome.",
                   "url": "https://jaxx.io"
                   },
               "owns": { 
@@ -168,9 +168,9 @@
                         <a class="nav-link" href="https://blog.jaxx.io/" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.php">Contact</a>
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!--end nav-->        
+        <!--end nav-->

@@ -14,7 +14,7 @@ include 'includes/header.php';
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
             <img class="decentral-logo my-3 zoom" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
-            <h2 class="h4 zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h2>
+            <h3 class="h4 zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
             <!--button container-->
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
