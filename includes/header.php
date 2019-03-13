@@ -44,10 +44,10 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.min.css?=10">
+    <link rel="stylesheet" href="/assets/css/main.min.css?=011">
     <!--schema structured data-->
     <script type="application/ld+json">
-         {
+    {
           "@context": "https://schema.org",
             "@type": "Organization",
               "name": "Decentral Inc.",
