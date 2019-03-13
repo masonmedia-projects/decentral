@@ -88,13 +88,14 @@
                 "name": "Toronto, Canada",
                 "image": "https://decentral.ca/assets/img/decentral-map-grey.png"
               },
-              "telephone": "+1 888-650-3796",
               "founder": {
                 "@type": "Person",
                 "name": "Anthony Di Iorio",
                 "jobTitle": "Founder, CEO",
+                "description": "Anthony Di Iorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies. Anthony is the Founder and CEO of Decentral Inc.",
+                "award": "2018 EY Emerging Entrepreneur of the Year Award (Ontario, Canada), 2018 FinTech Leader of the Year Award, named to Toronto Life’s list of the 50 Most Influential people in 2018.",
                 "knowsAbout": "Blockchain, Cryptocurrency, Decentralized technologies, Venture Capital",
-                "description": "Anthony Di Iorio is a serial entrepreneur, venture capitalist, community organizer, and thought leader in the field of digital currencies, blockchain and decentralized technologies.",
+                "affiliation": "Co-founder of Ethereum, Adjunct Professor at the University of Toronto Faculty of Law.",
                 "url": "https://anthonydiiorio.ca"
               },
               "brand": {
