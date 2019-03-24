@@ -49,7 +49,7 @@
     <script type="application/ld+json">
     {
           "@context": "https://schema.org",
-            "@type": "EducationalOrganization",
+            "@type": "Organization",
               "name": "Decentral Inc.",
               "description": "Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies.",
               "@id":"https://decentral.ca",
