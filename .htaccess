@@ -1,16 +1,37 @@
+
+#Original code
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
+#redirect html to php: https://stackoverflow.com/questions/5990240/redirect-all-html-extensions-to-php
+#RewriteRule ^(.*)\.html$ $1.php [L]
+#remove .php extension
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+########
+
+#Updated code for %2f security redirect to 404
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^index.html$ https://decentral.ca [R=301,L]
 
 #redirect html to php: https://stackoverflow.com/questions/5990240/redirect-all-html-extensions-to-php
 RewriteRule ^(.*)\.html$ $1.php [L]
 
 #remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# Rewrite redirects
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.php [L]
+
+#redirect html to php: https://stackoverflow.com/questions/5990240/redirect-all-html-extensions-to-php
+RewriteRule ^(.*)\.html$ $1.php [L]
+
+# Rewrite/redirects
 # Redirects from https://decentral.ca/jaxx.html to decentral.ca/jaxxliberty.php
 RewriteRule ^jaxx$ https://decentral.ca/jaxxliberty [R,L]
 
