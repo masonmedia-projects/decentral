@@ -1,6 +1,6 @@
 <?php
 
-$title = "Decentral Inc. | Home";
+$title = "Decentral Inc. | Canada's Leading Blockchain Startup";
 
 include 'includes/header.php';
 
@@ -9,13 +9,74 @@ include 'includes/header.php';
 <!--banner-->
 
 <div id="banner" role="banner" class="container-fluid p-0">
+  <div class="row d-flex min-700-lg bg-black relative py-5 stagger-right">
+        <!-- <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="https://images.unsplash.com/photo-1512998844734-cd2cca565822?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=663&q=80" alt="Welcome to Decentral Inc."> -->
+        <!-- <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Welcome to Decentral Inc."> -->
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="https://images.unsplash.com/photo-1491183672482-d0af0e44929d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Welcome to Decentral Inc.">
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5">
+            <img style="filter: grayscale(1)" class="decentral-logo mb-3 mt-5 zoom" src="/assets/img/Decentral_Primary_Logo_Large_RGB_Screen.png" alt="Decentral Inc.">
+            <h2 class="site-title font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h3 class="h4 text-secondary zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
+            <!--button container-->
+            <div class="container-fluid pt-3">
+                <div class="row d-flex">
+                    <div class="col-xs-6 zoom zoom-slow">
+                        <a href="https://jaxx.io/downloads" target="_blank">
+                            <button class="btn btn-lg btn-outline-secondary mb-1">Download Jaxx Liberty</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-4"></div>
+    </div>    
+</div><!--end banner-->
+
+<!--banner-->
+
+<div id="banner" role="banner" class="container-fluid p-0">
+  <div class="row d-flex min-700-lg bg-black relative py-5 stagger-right">
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Welcome to Decentral Inc.">
+        <div class="offset-lg-2"></div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center p-5">
+            <img style="filter: grayscale(1)" class="decentral-logo mb-3 mt-5 zoom" src="/assets/img/Decentral_Primary_Logo_Large_RGB_Screen.png" alt="Decentral Inc.">
+            <h2 class="site-title font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h3 class="h4 text-secondary zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
+            <a href="https://jaxx.io/downloads" target="_blank">
+                <button class="btn btn-lg btn-dark zoom zoom-slow my-3">Download Jaxx Liberty</button>
+            </a> 
+        </div>
+        <div class="offset-lg-2"></div>
+    </div>    
+</div><!--end banner-->
+
+<!--banner 3-->
+
+<div id="banner" role="banner" class="container-fluid p-0">
+  <div class="row d-flex min-700-lg bg-black relative py-5 stagger-right">
+        <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Welcome to Decentral Inc.">
+        <div class="offset-lg-2"></div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center text-center p-5">
+            <img class="decentral-logo mb-3 mt-5 zoom" src="/assets/img/Decentral_Primary_Logo_Large_RGB_Screen.png" alt="Decentral Inc.">
+            <h2 class="site-title font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h3 class="h4 text-secondary zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
+            <a href="https://jaxx.io/downloads" target="_blank">
+                <button class="btn btn-lg btn-dark zoom zoom-slow my-3">Download Jaxx Liberty</button>
+            </a> 
+        </div>
+        <div class="offset-lg-2"></div>
+    </div>    
+</div><!--end banner-->
+
+<!-- banner og -->
+
+<!-- <div id="banner" role="banner" class="container-fluid p-0">
   <div class="row d-flex min-700-lg bg-black text-light relative py-5 stagger-right">
         <img class="img-full absolute z-0 left-0 up up-med lazy" data-src="/assets/img/decentral-home-banner.jpeg" alt="Welcome to Decentral Inc.">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left text-light p-5">
             <img class="decentral-logo my-3 zoom" src="/assets/img/decentralLogo.png" alt="Decentral Inc.">
             <h2 class="site-title knockout-gradient text-light font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
             <h3 class="h4 zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
-            <!--button container-->
             <div class="container-fluid pt-3">
                 <div class="row d-flex">
                     <div class="col-xs-6 pr-3 zoom zoom-slow">
@@ -29,7 +90,8 @@ include 'includes/header.php';
         </div>
         <div class="offset-lg-4"></div>
     </div>    
-</div><!--end banner-->
+</div> -->
+<!--end banner-->
    
    <!--video banner
     <div class="row d-flex min-100 min--100 relative z-1">
