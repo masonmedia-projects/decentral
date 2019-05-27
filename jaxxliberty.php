@@ -16,7 +16,6 @@ include 'includes/header.php';
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start text-left p-5">
             <h1 class="h4 mt-3 zoom">Jaxx Liberty</h1>
             <h2 class="site-title knockout-gradient font-weight-bold zoom zoom-med">Your multi-platform, multi-currency digital asset wallet.</h2>           
-            <!--<a href="#sec-1"><i class="fa fa-angle-down knockout-gradient p-0 slide-right"></i></a>-->
             <a href="#sec-1"><button class="p-btn text-light bg-trans mb-1 border-0 p-0 zoom zoom-slow">Discover <i class="fa fa-angle-right fa-btn text-light"></i></button></a> 
         </div>
         <div class="offset-lg-5"></div>
@@ -31,7 +30,7 @@ include 'includes/header.php';
             <div class="row d-flex min-500 bg-white py-5 relative stagger-down">
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5 down">
                     <h1 class="h4 slide-down">Jaxx Liberty</h1>
-                    <h2 class="section-title font-weight-bold slide-down">Securely manage and exchange more than 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash, all for free.</h2>
+                    <h2 class="section-title font-weight-bold slide-down">Securely manage and exchange more than 80 cryptocurrencies including Bitcoin, Ethereum, Litecoin, and Dash.</h2>
                     <div class="down down-med">
                         <a href="https://jaxx.io" target="_blank"><p class="p-btn mt-2 slide-down">Learn more <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
@@ -43,7 +42,7 @@ include 'includes/header.php';
         <section>
             <div class="row d-flex bg-light relative">
                 <div class="col-lg-12 min-700-lg down down-med">
-                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Liberty is the leading digital asset wallet that allows you to securely manage and exchange over 85 digital assets including Bitcoin, Ethereum, Litecoin, and Dash.">
+                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/decentral-hand-iphone.jpg" alt="Jaxx Liberty is the leading digital asset wallet that allows you to securely manage and exchange more than 80 cryptocurrencies including Bitcoin, Ethereum, Litecoin, and Dash.">
                 </div>
             </div>
         </section>
@@ -98,7 +97,7 @@ include 'includes/header.php';
             <div class="row d-flex min-500 bg-white py-5 stagger-right">
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5 right">
                     <h1 class="h4 slide-right">Support</h1>
-                    <h2 class="section-title font-weight-bold slide-right">Jaxx Liberty's world class User Success Team is available to answer all of your questions through our written channels, 24/7.</h2>
+                    <h2 class="section-title font-weight-bold slide-right">Jaxx Liberty’s world class User Success Team is available to answer all your questions through our written channels 7 days a week.</h2>
                     <div class="right right-med">
                         <a href="https://support.decentral.ca/hc/en-us" target="_blank"><p class="p-btn mt-2 slide-right">Here for you <i class="fa fa-angle-right fa-btn orange"></i></p></a> 
                     </div>
@@ -110,7 +109,7 @@ include 'includes/header.php';
         <section>
             <div class="row d-flex bg-light relative">
                 <div class="col-lg-12 min-700-lg down down-med">
-                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free 24/7 support from our world-class User Success Team.">
+                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-support-jump.jpeg" alt="Enjoy free support 7 days a week from our world-class User Success Team.">
                 </div>
             </div>
         </section>
@@ -121,7 +120,7 @@ include 'includes/header.php';
             <div class="row d-flex min-500 bg-white py-5 stagger-down">
                 <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-left p-5 down">
                     <h1 class="h4 slide-down">Community</h1>
-                    <h2 class="section-title font-weight-bold slide-down">Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.</h2>
+                    <h2 class="section-title font-weight-bold slide-down">Jaxx Liberty brings together over 80 cryptocurrencies and communities including Bitcoin, Ethereum, Litecoin, Dash, Digitbyte, and more.</h2>
                     <div class="down down-med">
                         <a href="https://jaxx.io/community" target="_blank"><p class="p-btn mt-2 slide-down">Join the community <i class="fa fa-angle-right fa-btn orange"></i></p></a>
                     </div> 
@@ -133,7 +132,7 @@ include 'includes/header.php';
         <section>
             <div class="row d-flex bg-light relative">
                 <div class="col-lg-12 min-700-lg down down-med">
-                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-friends.jpg" alt="Jaxx Liberty brings together over 85 digital assets and communities including Bitcoin, Ethereum, Litecoin, Dash, Digibyte, Ripple, and more.">
+                    <img class="img-full absolute z-0 left-0 lazy" data-src="/assets/img/jaxx-friends.jpg" alt="Jaxx Liberty brings together over 80 cryptocurrencies and communities including Bitcoin, Ethereum, Litecoin, Dash, Digitbyte, and more.">
                 </div>
             </div>
         </section>
