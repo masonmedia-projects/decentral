@@ -102,8 +102,13 @@ body {
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* links */
@@ -351,6 +356,7 @@ p {
 .op-5 {
     opacity: 0.5;
 }
+
 .opacity-full {
     opacity: 1;
 }
@@ -765,7 +771,6 @@ img.decentral-logo,
     background: url(/assets/img/decentral-cubes.jpg) center left;
     background-size: cover;
 }
-
 
 /* decentral logo ======================*/
 
@@ -1347,6 +1352,10 @@ footer li a {
         font-size: 54px;
         font-size: 48px;
         font-size: 13vmin;
+    }
+
+    .bg--img-home-banner {
+        background: url(/assets/img/decentral-cubes.jpg) -169px 100%;
     }
 
     p {
