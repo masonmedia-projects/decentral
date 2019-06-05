@@ -6,7 +6,28 @@ include 'includes/header.php';
 
 ?>
 
-<!--banner-->
+<!--current banner-->
+
+<div id="banner" role="banner" class="container-fluid p-0">
+  <div class="row d-flex min-700-lg bg--img-home-banner py-5">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-left p-5">
+            <img class="decentral-logo my-3 opacity-full zoom" src="/assets/img/Decentral_Primary_Logo_Large_RGB_Screen.png" alt="Decentral Inc.">
+            <h2 class="site-title font-weight-bold zoom zoom-med">Interface. Infrastructure. Integrations. Innovation.</h2>
+            <h3 class="h4 font-weight-bold zoom zoom-med-slow">Building the tools to usher in a new world of decentralization.</h3>
+            <div class="container-fluid pt-3">
+                <div class="row d-flex">
+                    <div class="col-xs-6 pr-3 zoom zoom-slow">
+                       <a href="#sec-1"><button class="btn btn-lg btn-outline-dark mb-1">Learn more <i class="fa fa-angle-right fa-btn"></i></button></a>
+                    </div>
+                    <div class="col-xs-6 zoom zoom-slow">
+                        <a href="https://jaxx.io/downloads" target="_blank"><button class="btn btn-lg btn-outline-dark mb-1">Download Jaxx Liberty <i class="fa fa-angle-right fa-btn"></i></button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-6"></div>
+    </div>    
+</div>
 
 <div id="banner" role="banner" class="container-fluid p-0">
   <div class="row d-flex min-700-lg bg-black relative py-5 stagger-right">

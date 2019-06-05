@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.min.css?=011">
+    <link rel="stylesheet" href="/assets/css/main.min.css?=11">
     <!--schema structured data-->
     <script type="application/ld+json">
     {
