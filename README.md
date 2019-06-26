@@ -1,6 +1,6 @@
 # **Decentral Inc.**
 
-This is a repo for the original build of decentral.ca, the home website of Decentral Inc., a Canadian Blockchain Wallet company. The README outlines the frameworks, languages, approaches, and steps I used in the building and maintenance of the site.
+This README outlines the various frameworks, languages, approaches, and steps used in the building and maintenance of decentral.ca, version 2.0.
 
 ## **SWUP**
 
@@ -80,6 +80,10 @@ All of decentral.ca image assets live in the /assets/img folder. As this repo ha
 
 For best performance, all images are optimized in both dimensions and file size (using photoshop). Ideal width for main/large/banner images is `=> 1500px`, and ideal file size is `<= 150kb`.  With recliner.js (lazy load library), we can get away with larger file sizes as they are only loaded when in the viewport. Still however, it is best if these sizes not exceed `250-300kb` max. I generally reserve these for page banner images that require best resolution.
 
+#### **> Decentral Team Avatars + About Page**
+
+One of the most active pages for updating has been `about.php`. It houses a modal with a grid layout of Decentral employee avatar icons. The most current changes to Decentral staff have already applied. 
+
 ## **CSS**
 
 1. Functional [Atomic] css: the site employs the atomic css approach where small, single purpose classes are used based on visual function. Classes are referenced once in the CSS then used repeatedly in the HTML for DRY code and the lightest possible stylesheets. See #4 for class order convention.
@@ -141,7 +145,7 @@ For best performance, all images are optimized in both dimensions and file size 
 
 ## **Google Analytics**
     
-1. GA gtag script is added in footer for general analytics, traffic, page views, bounce rate, etc.
+GA gtag script is added in footer for general analytics, traffic, page views, bounce rate, etc.
 
 ## **.htaccess**
 
