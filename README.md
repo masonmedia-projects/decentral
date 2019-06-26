@@ -1,8 +1,6 @@
 # **Decentral Inc.**
 
-This README outlines the various frameworks, languages, approaches, and steps used in the building and maintenance of decentral.ca, version 2.0.
-
-Repo: `decentral.ca_reloaded`.
+This is a repo for the original build of decentral.ca, the home website of Decentral Inc., a Canadian Blockchain Wallet company. The README outlines the frameworks, languages, approaches, and steps I used in the building and maintenance of the site.
 
 ## **SWUP**
 
@@ -172,7 +170,7 @@ RewriteRule ^(.*)$ https://www.blog.jaxx.io%{REQUEST_URI} [R=301,NC,L,QSA]
 
 ### **dev.decentral.ca**
 
-Currently this is inactive. Previously dev.decentral.ca was the decentral dev URL, used for staging and testing. It has since been deactivated, possibly by cloudflare automatically, but please follow up with Shu/Jon for further info.
+Currently `dev.decentral.ca` is inactive. Previously this was the decentral dev URL, used for staging and testing. It has since been deactivated, possibly by cloudflare automatically, but please follow up with Shu/Jon for further info.
 
 ### **dev branch**
 
