@@ -17,7 +17,7 @@
        echo $metaD; 
     } 
     else { 
-       echo "Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Created by Ethereum co-founder and CEO and founder, Anthony Di Iorio.  Decentral Inc. is the maker of Jaxx Liberty, a multi-platform cryptocurrency wallet, was home to Canada’s first two-way Bitcoin ATM, and hosts community driven events in the domains of blockchain and decentralized technologies."; 
+       echo "Decentral is a Toronto-based innovation hub and software company focused on blockchain technologies. Decentral Inc. is the maker of Jaxx Liberty, a multi-platform blockchain wallet and was home to Canada’s first two-way Bitcoin ATM."; 
     } ?>" />
     <meta name="keywords" content="Decentral,Jaxx Liberty,Blockchain,Cryptocurrency,Anthony Di Iorio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -131,7 +131,7 @@
             "message": "Like most websites, we use analytics cookies to understand how this site is used — as long as your browser is set to accept them.",
             "dismiss": "Start exploring",
             "link": "Find out more.",
-            "href": "https://jaxx.io/thirdparties-current"
+            "href": "https://jaxx.io/legal/thirdparties-current"
           },
         })});
     </script>

@@ -9,8 +9,6 @@
 #remove .php extension
 #RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-########
-
 #Updated code for %2f security redirect to 404
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
@@ -28,7 +26,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /404.php [L]
 
-#redirect html to php: https://stackoverflow.com/questions/5990240/redirect-all-html-extensions-to-php
+#redirect html to php: https://stackoverflow.comcode .
+/questions/5990240/redirect-all-html-extensions-to-php
 RewriteRule ^(.*)\.html$ $1.php [L]
 
 # Rewrite/redirects
@@ -49,6 +48,10 @@ Redirect 301 /jaxx.html https://www.decentral.ca/jaxxliberty
 Redirect 301 /history.html https://www.decentral.ca/about
 Redirect 301 /team.html https://www.decentral.ca/about
 Redirect 301 /partnerships.html https://www.decentral.ca/partner-network
+Redirect 301 /partnerships.html https://www.decentral.ca/partner-network
+
+https://blog.decentral.ca/tag/press-release/
+
 
 # Set custom 404 + 403 error pages
 ErrorDocument 404 /404.php
