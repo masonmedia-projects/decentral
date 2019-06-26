@@ -26,7 +26,7 @@ The header (`header.php`) and footer (`footer.php`) files are contained in the `
 
 The header contains all meta and OG social tags, JSON-LD/google structured data, the [Cookies Consent Banner](https://cookieconsent.osano.com/download/) for GDPR compliance, as well as the site menu/navigation.
 
-##### **SEO**
+##### **> SEO**
 
 The meta `title` and `description` tags are important for SEO and may need ongoing updating contingent on Decentral SEO strategy. The `keyword` meta tag is generally ignored by Google, so while keeping it is advised, it's not essential.
 
