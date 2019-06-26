@@ -180,7 +180,7 @@ Currently `dev.decentral.ca` is inactive. Previously this was the decentral dev 
 
 I have been using the `decentral_test_branch` in decentral.ca_reloaded. This branch is still active.
 
-## A note on caching
+## **A note on caching**
 
 Decentral's Dreamhost and/or Cloudflare services make use of (or have enabled) **hard caching**. This causes updates to decentral.ca to generally not be viewable unless you/a user does a hard reload, or clears their cache.
 
