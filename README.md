@@ -1,5 +1,9 @@
 # **Decentral Inc.**
 
+<img src="assets/img/dc_browser_screen.png"
+     alt="decentral.ca homepage banner photo"
+     style="width: 100%; float: left; margin: 0 auto;" />
+
 This README outlines the various frameworks, languages, approaches, and steps used in the building and maintenance of decentral.ca, version 2.0.
 
 ## **SWUP**
